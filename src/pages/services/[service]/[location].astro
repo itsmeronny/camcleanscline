@@ -30,11 +30,12 @@ if (!service || !location) {
 }
 ---
 
-<Layout>
+<Layout
+  title={`${service.name} in ${location.name} | CamCleans`}
+  description={`Book ${service.name.toLowerCase()} in ${location.name}. Clear scope, vetted cleaners, fast availability.`}
+  canonicalPath={`/services/${serviceSlug}/${locationSlug}`}
+>
   <main>
-    <h1>{service.name} in {location.name}</h1>
-    <p>
-      Professional {service.name.toLowerCase()} services available in {location.name}.
-    </p>
+    ...
   </main>
 </Layout>

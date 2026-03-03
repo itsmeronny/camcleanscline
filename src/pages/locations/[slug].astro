@@ -1,5 +1,6 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import services from "../../data/services";
 import locations from "../../data/locations";
 
 export async function getStaticPaths() {
@@ -14,9 +15,12 @@ const location = locations[slug];
 if (!location) throw new Error("Location not found");
 ---
 
-<Layout>
+<Layout
+  title={`Cleaning Services in ${location.name} | CamCleans`}
+  description={`Professional cleaning services available in ${location.name}. Compare services and book.`}
+  canonicalPath={`/locations/${slug}`}
+>
   <main>
-    <h1>Cleaning Services in {location.name}</h1>
-    <p>Professional cleaning services available in {location.name}.</p>
+    ...
   </main>
 </Layout>

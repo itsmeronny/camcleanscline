@@ -1,102 +1,85 @@
-DEV LOG
-Status
+# DEV LOG
 
-Core routing layer operational.
+## Status
+Foundation + SEO plumbing complete. Build is clean and deterministic.
 
-Environment
+## Environment
+- Astro v5.18.0
+- Node v20.20.0
+- Dev container
+- Dev command: `npx astro dev --host --port 4321`
+- Build command: `npm run build`
 
-Astro v5.18.0
+## Resolved Issues
+- Dev container freeze / zombie terminals (fixed by new terminal + clean restart)
+- Port binding issue (needed `--host`)
+- `services.ts` schema mismatch (array → object keyed by slug)
+- `.map is not a function` + data contract break
+- Broken dynamic route after folder rebuild
+- Accidental filename confusion (quoted display from `ls`)
 
-Node v20.20.0
+## Current Working Routes
+- `/`
+- `/services/[slug]`
+- `/locations/[slug]`
+- `/services/[service]/[location]`
 
-Dev container
+## Architecture Now Stable
+### Data Layer
+- `src/data/services.ts` → object keyed by slug
+- `src/data/locations.ts` → object keyed by slug
 
-Dev command: npx astro dev --host --port 4321
+### Dynamic Routes
+- `src/pages/services/[slug].astro`
+- `src/pages/locations/[slug].astro`
+- `src/pages/services/[service]/[location].astro`
 
-Resolved Issues
+### Internal Linking
+- Service pages list all location variants
+- Location pages list all service variants
+- Full crawlability across programmatic pages
 
-Dev container freeze / zombie processes
+## SEO + Indexing
+### Layout Meta
+- Layout supports `title`, `description`, `canonicalPath`
+- OG tags present
 
-Port binding issue (required --host)
+### Production Canonical Base
+- `astro.config.mjs` set:
+- `site: "https://camcleans.co.uk"`
 
-services.ts schema mismatch (array → object)
+### Sitemap
+- Installed + enabled `@astrojs/sitemap`
+- `npm run build` generates:
+- `dist/sitemap-index.xml`
+- `dist/sitemap-0.xml`
+- Confirmed sitemap index points to:
+- `https://camcleans.co.uk/sitemap-0.xml`
 
-.map is not a function error
+### Robots
+- Added `public/robots.txt`
+- Confirmed output: `dist/robots.txt`
+- Contains sitemap reference:
+- `Sitemap: https://camcleans.co.uk/sitemap-index.xml`
 
-Broken dynamic route after folder rebuild
+## Static Generation Scope
+- 13 services × 18 locations = 234 service-location pages
+- Total built pages reported by Astro: 266
 
-Accidental filename confusion (quoted display from ls)
+## Next Phase
+1. Content blocks (non-styled but structured)
+- Service page: scope, inclusions, FAQs, CTA
+- Location page: localised intro, coverage notes, CTA
+- Service×Location page: unique copy template + CTA
 
-Current Working Routes
+2. Structured data (JSON-LD)
+- LocalBusiness / Service (minimal, safe claims)
+- BreadcrumbList
 
-/
+3. Navigation + footer
+- Header/nav skeleton
+- Footer: services list, locations list, legal links
 
-/services/[slug]
-
-/locations/[slug]
-
-/services/[service]/[location]
-
-Architecture Now Stable
-Data Layer
-
-services.ts → object keyed by slug
-
-locations.ts → object keyed by slug
-
-Dynamic Routes
-
-src/pages/services/[slug].astro
-
-src/pages/locations/[slug].astro
-
-src/pages/services/[service]/[location].astro
-
-Static Generation Scope
-
-13 services × 18 locations = 234 service-location pages generated.
-
-Foundation Phase Complete
-
-Routing stable
-
-Data contract stable
-
-Dev server stable
-
-Namespace structure correct
-
-Next Phase (Tomorrow)
-1. Internal Linking Strategy
-
-Link service pages → location variants
-
-Link location pages → service variants
-
-Add structured navigation blocks
-
-2. SEO Structure
-
-Dynamic <title> tags
-
-Dynamic meta descriptions
-
-Canonical URLs
-
-Clean heading hierarchy
-
-3. Layout Upgrade
-
-Shared header + footer
-
-Structured service overview sections
-
-Conversion CTA blocks
-
-4. Performance Discipline
-
-No unnecessary loops
-
-No repeated data scanning
-
-Clean import paths only
+4. Conversion plumbing (later)
+- Lead form component + validation
+- Submission endpoint (Cloudflare Pages/Workers later)

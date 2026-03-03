@@ -1,61 +1,277 @@
 # CamCleans – MASTER STATE
 
 ## Objective
-Build a national UK cleaning lead-generation platform with near-zero running costs.
+Build a national UK cleaning lead-generation platform with near-zero running costs and scalable programmatic SEO.
+
+---
 
 ## Tech Stack
 - Astro (static-first)
-- Dev Container
 - Node 20
-- Static hosting target (Cloudflare Pages later)
+- Dev Container
+- Static build output
+- Target deploy: Cloudflare Pages
 
-## Monetisation
+---
+
+## Monetisation Model
 Lead generation.
-Customer submits form → lead captured → assign cleaner → commission retained.
+Customer submits form → lead captured → cleaner assigned → commission retained.
 
-## Services (Phase 1)
-- Airbnb Cleans
-- End Of Tenancy Cleaning
-- One Off Deep Cleaning
-- After Builders Cleaning
-- Carpet & Rug Cleaning
-- Oven Cleaning
-- Office Cleaning
-- After Party Cleaning
-- Appliances Cleaning
-- Housekeeper / Cleaner
-- Mattress Cleaning
-- Sofa & Upholstery Cleaning
-- Seniors Cleaning
+No phone-first funnel.
+Email / form driven conversion.
 
-## Locations (Phase 1)
-London
-Glasgow
-Birmingham
-Manchester
-Leeds
-Liverpool
-Bristol
-Cardiff
-Oxford
-Edinburgh
-Cambridge
-Brighton
-Aberdeen
-Newcastle
-Sheffield
-Chester
-Harrogate
-Nottingham
+---
 
-## Architecture Direction
-Programmatic SEO:
-Service pages
-Location pages
-Service × Location generation
+## Phase 1 – Foundation (COMPLETE)
 
-## Current Phase
-Phase 1 – Structural Foundation
+### Data Layer
+- services.ts → object keyed by slug
+- locations.ts → object keyed by slug
 
-## Next Step
-Create centralised services + locations data layer.
+### Routing Layer
+- `/`
+- `/services/[slug]`
+- `/locations/[slug]`
+- `/services/[service]/[location]`
+
+### Static Generation
+- 13 services
+- 18 locations
+- 234 service-location pages
+- 266 total pages built
+
+### SEO Infrastructure
+- Canonical base set in astro.config.mjs
+- Sitemap integration installed
+- sitemap-index.xml generated
+- robots.txt added
+- Full crawl path confirmed
+
+Architecture stable.
+Build deterministic.
+No runtime rendering.
+
+---
+
+## Phase 2 – Content Engine (Current Phase)
+
+### Objectives
+1. Add structured content blocks:
+   - Service page sections
+   - Location page localised copy
+   - Service×Location template copy
+
+2. Implement:
+   - Clean heading hierarchy
+   - Dynamic titles + descriptions refinement
+   - Breadcrumb structure
+   - Basic internal linking blocks
+
+3. Maintain:
+   - Static-only output
+   - No heavy loops
+   - No duplicated logic
+   - Clean import paths
+
+---
+
+## Phase 3 – Conversion Layer (Future)
+- Lead form component
+- Submission endpoint
+- Cleaner assignment logic
+- Commission tracking
+- Stripe integration later
+
+---
+
+## Non-Negotiables
+- Zero unnecessary runtime logic
+- Static generation only
+- Crawlable from homepage
+- No broken canonical URLs
+- No duplicated meta tags# CamCleans – MASTER STATE
+
+## Objective
+Build a national UK cleaning lead-generation platform with near-zero running costs and scalable programmatic SEO.
+
+---
+
+## Tech Stack
+- Astro (static-first)
+- Node 20
+- Dev Container
+- Static build output
+- Target deploy: Cloudflare Pages
+
+---
+
+## Monetisation Model
+Lead generation.
+Customer submits form → lead captured → cleaner assigned → commission retained.
+
+No phone-first funnel.
+Email / form driven conversion.
+
+---
+
+## Phase 1 – Foundation (COMPLETE)
+
+### Data Layer
+- services.ts → object keyed by slug
+- locations.ts → object keyed by slug
+
+### Routing Layer
+- `/`
+- `/services/[slug]`
+- `/locations/[slug]`
+- `/services/[service]/[location]`
+
+### Static Generation
+- 13 services
+- 18 locations
+- 234 service-location pages
+- 266 total pages built
+
+### SEO Infrastructure
+- Canonical base set in astro.config.mjs
+- Sitemap integration installed
+- sitemap-index.xml generated
+- robots.txt added
+- Full crawl path confirmed
+
+Architecture stable.
+Build deterministic.
+No runtime rendering.
+
+---
+
+## Phase 2 – Content Engine (Current Phase)
+
+### Objectives
+1. Add structured content blocks:
+   - Service page sections
+   - Location page localised copy
+   - Service×Location template copy
+
+2. Implement:
+   - Clean heading hierarchy
+   - Dynamic titles + descriptions refinement
+   - Breadcrumb structure
+   - Basic internal linking blocks
+
+3. Maintain:
+   - Static-only output
+   - No heavy loops
+   - No duplicated logic
+   - Clean import paths
+
+---
+
+## Phase 3 – Conversion Layer (Future)
+- Lead form component
+- Submission endpoint
+- Cleaner assignment logic
+- Commission tracking
+- Stripe integration later
+
+---
+
+## Non-Negotiables
+- Zero unnecessary runtime logic
+- Static generation only
+- Crawlable from homepage
+- No broken canonical URLs
+- No duplicated meta tags# CamCleans – MASTER STATE
+
+## Objective
+Build a national UK cleaning lead-generation platform with near-zero running costs and scalable programmatic SEO.
+
+---
+
+## Tech Stack
+- Astro (static-first)
+- Node 20
+- Dev Container
+- Static build output
+- Target deploy: Cloudflare Pages
+
+---
+
+## Monetisation Model
+Lead generation.
+Customer submits form → lead captured → cleaner assigned → commission retained.
+
+No phone-first funnel.
+Email / form driven conversion.
+
+---
+
+## Phase 1 – Foundation (COMPLETE)
+
+### Data Layer
+- services.ts → object keyed by slug
+- locations.ts → object keyed by slug
+
+### Routing Layer
+- `/`
+- `/services/[slug]`
+- `/locations/[slug]`
+- `/services/[service]/[location]`
+
+### Static Generation
+- 13 services
+- 18 locations
+- 234 service-location pages
+- 266 total pages built
+
+### SEO Infrastructure
+- Canonical base set in astro.config.mjs
+- Sitemap integration installed
+- sitemap-index.xml generated
+- robots.txt added
+- Full crawl path confirmed
+
+Architecture stable.
+Build deterministic.
+No runtime rendering.
+
+---
+
+## Phase 2 – Content Engine (Current Phase)
+
+### Objectives
+1. Add structured content blocks:
+   - Service page sections
+   - Location page localised copy
+   - Service×Location template copy
+
+2. Implement:
+   - Clean heading hierarchy
+   - Dynamic titles + descriptions refinement
+   - Breadcrumb structure
+   - Basic internal linking blocks
+
+3. Maintain:
+   - Static-only output
+   - No heavy loops
+   - No duplicated logic
+   - Clean import paths
+
+---
+
+## Phase 3 – Conversion Layer (Future)
+- Lead form component
+- Submission endpoint
+- Cleaner assignment logic
+- Commission tracking
+- Stripe integration later
+
+---
+
+## Non-Negotiables
+- Zero unnecessary runtime logic
+- Static generation only
+- Crawlable from homepage
+- No broken canonical URLs
+- No duplicated meta tags
