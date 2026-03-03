@@ -1,11 +1,10 @@
 ---
 import services from "../../data/services";
-import locations from "../../data/locations";
 import Layout from "../../layouts/Layout.astro";
 
 export async function getStaticPaths() {
-  return Object.keys(services).map((slug) => ({
-    params: { slug },
+  return Object.values(services).map((service) => ({
+    params: { slug: service.slug },
   }));
 }
 
@@ -16,111 +15,102 @@ if (!service) {
   throw new Error("Service not found");
 }
 
-const title = `${service.name} | CamCleans`;
-const description = service.short;
-const canonicalPath = `/services/${slug}`;
-
-/* ---------- PRIORITY ORDERING ---------- */
-
-const priorityMarkets = [
-  "london",
-  "manchester",
-  "birmingham",
-  "glasgow",
-  "edinburgh"
-];
-
-const orderedLocations = Object.keys(locations).sort((a, b) => {
-  const aPriority = priorityMarkets.includes(a) ? 0 : 1;
-  const bPriority = priorityMarkets.includes(b) ? 0 : 1;
-  return aPriority - bPriority;
-});
+const isAfterBuilders = slug === "after-builders-cleaning";
 ---
 
 <Layout
-  title={title}
-  description={description}
-  canonicalPath={canonicalPath}
+  title={`${service.name} | CamCleans`}
+  description={service.short}
+  canonicalPath={`/services/${service.slug}`}
 >
 
-  <h1>{service.name}</h1>
+  <section>
+    <h1>{service.name}</h1>
+    <p>{service.intro}</p>
+  </section>
 
-  <p>{service.intro}</p>
+  <section>
+    <h2>What's Included</h2>
+    <ul>
+      {service.inclusions.map((item) => (
+        <li>{item}</li>
+      ))}
+    </ul>
+  </section>
 
-  <h2>What This Service Covers</h2>
-  <ul>
-    {service.inclusions.map((item) => <li>{item}</li>)}
-  </ul>
+  <section>
+    <h2>What's Excluded</h2>
+    <ul>
+      {service.exclusions.map((item) => (
+        <li>{item}</li>
+      ))}
+    </ul>
+  </section>
 
-  <h2>What’s Not Included</h2>
-  <ul>
-    {service.exclusions.map((item) => <li>{item}</li>)}
-  </ul>
+  <section>
+    <h2>Ideal For</h2>
+    <ul>
+      {service.idealFor.map((item) => (
+        <li>{item}</li>
+      ))}
+    </ul>
+  </section>
 
-  <h2>Who This Service Is For</h2>
-  <ul>
-    {service.idealFor.map((item) => <li>{item}</li>)}
-  </ul>
+  {isAfterBuilders && (
+    <section>
+      <h2>Construction Phase Cleaning Structure</h2>
 
-  <h2>Typical Checklist Standards</h2>
-  <ul>
-    {service.checklist.map((item) => <li>{item}</li>)}
-  </ul>
-
-  {slug === "end-of-tenancy-cleaning" && (
-    <>
-      <h2>Common Reasons Deposits Are Reduced</h2>
+      <h3>Stage 1: Initial Debris Reset</h3>
       <p>
-        During end-of-tenancy inspections, landlords and agents frequently
-        focus on kitchens, bathrooms, internal cupboards, appliances, and
-        limescale build-up. Grease in extractor units, soap residue on shower
-        screens, and overlooked skirting boards are among the most common
-        causes of cleaning-related deductions.
-      </p>
-      <p>
-        Our structured approach prioritises these high-risk areas to help
-        reduce avoidable disputes. While cleaning alone cannot resolve damage
-        or wear-related issues, thorough preparation significantly improves
-        inspection readiness.
+        Removal of fine plaster dust, installation residue and surface-level build contamination once builders have cleared major waste.
       </p>
 
-      <h2>Inspection Alignment Approach</h2>
+      <h3>Stage 2: Detailed Surface Extraction</h3>
       <p>
-        The service is designed around practical inspection behaviour rather
-        than surface-level tidying. High-touch points, internal storage areas,
-        and visible limescale-prone surfaces are methodically addressed. Clear
-        scope definitions ensure both inclusions and exclusions are transparent
-        before work begins.
+        Structured extraction of dust from horizontal, vertical and high-level surfaces including frames, fixtures and newly installed units.
       </p>
-    </>
+
+      <h3>Stage 3: Handover Presentation Finish</h3>
+      <p>
+        Final polish of internal glazing, skirting, floors and sanitary installations to achieve inspection-ready standards.
+      </p>
+
+      <h3>Commercial & Developer Scheduling</h3>
+      <p>
+        Suitable for phased developments, refurbishment cycles and contractor-led completion schedules.
+      </p>
+    </section>
   )}
 
-  <h2>Frequently Asked Questions</h2>
-  {service.faqs.map((faq) => (
-    <details>
-      <summary>{faq.q}</summary>
-      <p>{faq.a}</p>
-    </details>
-  ))}
+  <section>
+    <h2>Service Checklist</h2>
+    <ul>
+      {service.checklist.map((item) => (
+        <li>{item}</li>
+      ))}
+    </ul>
+    </section>
 
-  <h2>Available Locations</h2>
-  <ul>
-    {orderedLocations.map((locationSlug) => (
-      <li>
-        <a href={`/services/${slug}/${locationSlug}`}>
-          {service.name} in {locations[locationSlug].name}
-        </a>
-      </li>
+  <section>
+    <h2>Frequently Asked Questions</h2>
+    {service.faqs.map((faq) => (
+      <div>
+        <h3>{faq.q}</h3>
+        <p>{faq.a}</p>
+      </div>
     ))}
-  </ul>
+  </section>
 
-  <h2>{service.cta.heading}</h2>
-  <ul>
-    {service.cta.bullets.map((b) => <li>{b}</li>)}
-  </ul>
-
-  <a href={service.cta.buttonHref}>
-    {service.cta.buttonText}
-  </a>
+  <section>
+    <h2>{service.cta.heading}</h2>
+    <ul>
+      {service.cta.bullets.map((b) => (
+        <li>{b}</li>
+      ))}
+    </ul>
+    <a href={service.cta.buttonHref}>
+      {service.cta.buttonText}
+    </a>
+  </section>
 
 </Layout>
