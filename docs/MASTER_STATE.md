@@ -1,277 +1,135 @@
 # CamCleans – MASTER STATE
 
-## Objective
-Build a national UK cleaning lead-generation platform with near-zero running costs and scalable programmatic SEO.
+## Core Objective
+
+Build a national UK cleaning lead-generation platform
+with:
+
+- Near-zero running costs
+- Fully static infrastructure
+- Programmatic SEO dominance
+- Cluster-based authority depth
+- Controlled internal link architecture
+
+Authority before aesthetics.
+Structure before scale.
 
 ---
 
-## Tech Stack
-- Astro (static-first)
-- Node 20
-- Dev Container
-- Static build output
-- Target deploy: Cloudflare Pages
+## Current System Status
+
+Architecture stable.
+Matrix deployed.
+Internal linking matured.
+Core commercial clusters established.
+
+No runtime rendering.
+No unstable routing.
+No structural debt.
+
+---
+
+## Scale Snapshot
+
+- 13 services
+- 18 UK locations
+- 234 service-location pages
+- 266 total static pages
+
+Matrix breadth complete for Phase 1.
+
+---
+
+## Established Authority Clusters
+
+### End of Tenancy Cleaning
+Inspection-first logic.
+Deposit-risk framing.
+Rental-density differentiation.
+
+### Airbnb Cleaning
+Short-let turnover positioning.
+Presentation-weighted.
+Urban demand amplification.
+
+### One-Off Deep Cleaning
+Neglect and build-up focus.
+Urban usage weighting.
+Pre-sale / renovation alignment.
+
+### After Builders Cleaning
+Construction-grade positioning.
+Developer intent targeting.
+Renovation-heavy city amplification.
+Post-handover framing.
+
+---
+
+## SEO Infrastructure
+
+- Canonical control stable
+- Auto-generated sitemap
+- Robots.txt active
+- Structured JSON-LD across matrix
+- Breadcrumb hierarchy consistent
+- Controlled internal link distribution
 
 ---
 
 ## Monetisation Model
-Lead generation.
-Customer submits form → lead captured → cleaner assigned → commission retained.
+
+Lead-generation engine.
+
+Customer submits structured form.
+Lead captured.
+Cleaner assigned.
+Commission retained.
 
 No phone-first funnel.
-Email / form driven conversion.
-
----
-
-## Phase 1 – Foundation (COMPLETE)
-
-### Data Layer
-- services.ts → object keyed by slug
-- locations.ts → object keyed by slug
-
-### Routing Layer
-- `/`
-- `/services/[slug]`
-- `/locations/[slug]`
-- `/services/[service]/[location]`
-
-### Static Generation
-- 13 services
-- 18 locations
-- 234 service-location pages
-- 266 total pages built
-
-### SEO Infrastructure
-- Canonical base set in astro.config.mjs
-- Sitemap integration installed
-- sitemap-index.xml generated
-- robots.txt added
-- Full crawl path confirmed
-
-Architecture stable.
-Build deterministic.
-No runtime rendering.
-
----
-
-## Phase 2 – Content Engine (Current Phase)
-
-### Objectives
-1. Add structured content blocks:
-   - Service page sections
-   - Location page localised copy
-   - Service×Location template copy
-
-2. Implement:
-   - Clean heading hierarchy
-   - Dynamic titles + descriptions refinement
-   - Breadcrumb structure
-   - Basic internal linking blocks
-
-3. Maintain:
-   - Static-only output
-   - No heavy loops
-   - No duplicated logic
-   - Clean import paths
-
----
-
-## Phase 3 – Conversion Layer (Future)
-- Lead form component
-- Submission endpoint
-- Cleaner assignment logic
-- Commission tracking
-- Stripe integration later
+Email + structured capture only.
 
 ---
 
 ## Non-Negotiables
-- Zero unnecessary runtime logic
-- Static generation only
-- Crawlable from homepage
-- No broken canonical URLs
-- No duplicated meta tags# CamCleans – MASTER STATE
 
-## Objective
-Build a national UK cleaning lead-generation platform with near-zero running costs and scalable programmatic SEO.
-
----
-
-## Tech Stack
-- Astro (static-first)
-- Node 20
-- Dev Container
-- Static build output
-- Target deploy: Cloudflare Pages
+- Static-only architecture
+- Deterministic builds
+- No runtime database
+- No thin duplication
+- No decorative churn
+- Authority compounding model
 
 ---
 
-## Monetisation Model
-Lead generation.
-Customer submits form → lead captured → cleaner assigned → commission retained.
+## Strategic Position
 
-No phone-first funnel.
-Email / form driven conversion.
+Matrix breadth complete.
+Now entering Depth Phase.
 
 ---
 
-## Phase 1 – Foundation (COMPLETE)
+## Immediate Next Phase
 
-### Data Layer
-- services.ts → object keyed by slug
-- locations.ts → object keyed by slug
+Authority Depth Expansion
+(Vertical cluster reinforcement)
 
-### Routing Layer
-- `/`
-- `/services/[slug]`
-- `/locations/[slug]`
-- `/services/[service]/[location]`
+Initial focus:
 
-### Static Generation
-- 13 services
-- 18 locations
-- 234 service-location pages
-- 266 total pages built
+After Builders Cleaning support cluster.
 
-### SEO Infrastructure
-- Canonical base set in astro.config.mjs
-- Sitemap integration installed
-- sitemap-index.xml generated
-- robots.txt added
-- Full crawl path confirmed
+Planned support assets:
 
-Architecture stable.
-Build deterministic.
-No runtime rendering.
+- Dust removal guide
+- Post-renovation cleaning checklist
+- Cost and scope explainer
+- Developer handover guide
+- Post-construction vs deep cleaning comparison
 
----
+Purpose:
+Deepen topical relevance.
+Capture long-tail intent.
+Reinforce commercial service hubs.
+Compound internal authority.
 
-## Phase 2 – Content Engine (Current Phase)
-
-### Objectives
-1. Add structured content blocks:
-   - Service page sections
-   - Location page localised copy
-   - Service×Location template copy
-
-2. Implement:
-   - Clean heading hierarchy
-   - Dynamic titles + descriptions refinement
-   - Breadcrumb structure
-   - Basic internal linking blocks
-
-3. Maintain:
-   - Static-only output
-   - No heavy loops
-   - No duplicated logic
-   - Clean import paths
-
----
-
-## Phase 3 – Conversion Layer (Future)
-- Lead form component
-- Submission endpoint
-- Cleaner assignment logic
-- Commission tracking
-- Stripe integration later
-
----
-
-## Non-Negotiables
-- Zero unnecessary runtime logic
-- Static generation only
-- Crawlable from homepage
-- No broken canonical URLs
-- No duplicated meta tags# CamCleans – MASTER STATE
-
-## Objective
-Build a national UK cleaning lead-generation platform with near-zero running costs and scalable programmatic SEO.
-
----
-
-## Tech Stack
-- Astro (static-first)
-- Node 20
-- Dev Container
-- Static build output
-- Target deploy: Cloudflare Pages
-
----
-
-## Monetisation Model
-Lead generation.
-Customer submits form → lead captured → cleaner assigned → commission retained.
-
-No phone-first funnel.
-Email / form driven conversion.
-
----
-
-## Phase 1 – Foundation (COMPLETE)
-
-### Data Layer
-- services.ts → object keyed by slug
-- locations.ts → object keyed by slug
-
-### Routing Layer
-- `/`
-- `/services/[slug]`
-- `/locations/[slug]`
-- `/services/[service]/[location]`
-
-### Static Generation
-- 13 services
-- 18 locations
-- 234 service-location pages
-- 266 total pages built
-
-### SEO Infrastructure
-- Canonical base set in astro.config.mjs
-- Sitemap integration installed
-- sitemap-index.xml generated
-- robots.txt added
-- Full crawl path confirmed
-
-Architecture stable.
-Build deterministic.
-No runtime rendering.
-
----
-
-## Phase 2 – Content Engine (Current Phase)
-
-### Objectives
-1. Add structured content blocks:
-   - Service page sections
-   - Location page localised copy
-   - Service×Location template copy
-
-2. Implement:
-   - Clean heading hierarchy
-   - Dynamic titles + descriptions refinement
-   - Breadcrumb structure
-   - Basic internal linking blocks
-
-3. Maintain:
-   - Static-only output
-   - No heavy loops
-   - No duplicated logic
-   - Clean import paths
-
----
-
-## Phase 3 – Conversion Layer (Future)
-- Lead form component
-- Submission endpoint
-- Cleaner assignment logic
-- Commission tracking
-- Stripe integration later
-
----
-
-## Non-Negotiables
-- Zero unnecessary runtime logic
-- Static generation only
-- Crawlable from homepage
-- No broken canonical URLs
-- No duplicated meta tags
+No matrix expansion during this phase.
+No structural rewrites.

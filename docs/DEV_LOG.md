@@ -1,85 +1,132 @@
-# DEV LOG
+# DEV_LOG
 
 ## Status
-Foundation + SEO plumbing complete. Build is clean and deterministic.
+Programmatic SEO matrix stable and deployed.
+Internal link architecture upgraded.
+After Builders Cleaning elevated to authority-grade structure.
+
+---
 
 ## Environment
 - Astro v5.18.0
 - Node v20.20.0
-- Dev container
+- Dev Container
 - Dev command: `npx astro dev --host --port 4321`
 - Build command: `npm run build`
+- Deployment: Cloudflare Pages (static output)
 
-## Resolved Issues
-- Dev container freeze / zombie terminals (fixed by new terminal + clean restart)
-- Port binding issue (needed `--host`)
-- `services.ts` schema mismatch (array → object keyed by slug)
-- `.map is not a function` + data contract break
-- Broken dynamic route after folder rebuild
-- Accidental filename confusion (quoted display from `ls`)
+---
 
-## Current Working Routes
+## Current Static Scope
+- 13 services
+- 18 locations
+- 234 service-location pages
+- 13 service hub pages
+- 18 location hub pages
+- 1 homepage
+- 266 total static pages
+
+All pages build deterministically.
+No runtime rendering.
+No dynamic fetch.
+
+---
+
+## Authority Layers Implemented
+
+### 1. End of Tenancy
+- Inspection-led positioning
+- Deposit-risk logic
+- Rental-intensity differentiation
+
+### 2. Airbnb Cleaning
+- Short-let turnover logic
+- Presentation-first positioning
+- High-density market emphasis
+
+### 3. One-Off Deep Cleaning
+- Neglect build-up positioning
+- Urban density variation
+- Renovation-support framing
+
+### 4. After Builders Cleaning
+- Construction-grade positioning
+- Renovation-heavy city logic
+- Developer / contractor intent targeting
+- Post-project handover framing
+
+---
+
+## Internal Link Architecture
+
+Service-location pages now:
+
+- Link to service hub
+- Link to location hub
+- Link to 2–3 semantically related services
+- Avoid full-matrix spam linking
+- Reinforce cluster hierarchy
+
+Controlled authority flow active.
+
+---
+
+## Market Differentiation Logic
+
+- Major city classification
+- Renovation-heavy city weighting
+- Service-specific conditional amplification
+
+Static logic.
+No runtime evaluation.
+
+---
+
+## Schema Layer Active
+
+- BreadcrumbList JSON-LD
+- Service JSON-LD
+- LocalBusiness JSON-LD
+- Canonical paths controlled
+- Sitemap auto-generated
+- Robots.txt active
+
+No schema duplication.
+No canonical conflicts.
+
+---
+
+## Architecture Locked
+
+### Data Layer
+- services.ts → structured object keyed by slug
+- locations.ts → structured object keyed by slug
+
+### Routing Layer
 - `/`
 - `/services/[slug]`
 - `/locations/[slug]`
 - `/services/[service]/[location]`
 
-## Architecture Now Stable
-### Data Layer
-- `src/data/services.ts` → object keyed by slug
-- `src/data/locations.ts` → object keyed by slug
+### Rendering Mode
+- Fully static
+- Deterministic output
+- Zero runtime cost
 
-### Dynamic Routes
-- `src/pages/services/[slug].astro`
-- `src/pages/locations/[slug].astro`
-- `src/pages/services/[service]/[location].astro`
+---
 
-### Internal Linking
-- Service pages list all location variants
-- Location pages list all service variants
-- Full crawlability across programmatic pages
+## Structural Freeze
 
-## SEO + Indexing
-### Layout Meta
-- Layout supports `title`, `description`, `canonicalPath`
-- OG tags present
+Core matrix structure is now locked.
+No further structural modifications unless critical.
 
-### Production Canonical Base
-- `astro.config.mjs` set:
-- `site: "https://camcleans.co.uk"`
+---
 
-### Sitemap
-- Installed + enabled `@astrojs/sitemap`
-- `npm run build` generates:
-- `dist/sitemap-index.xml`
-- `dist/sitemap-0.xml`
-- Confirmed sitemap index points to:
-- `https://camcleans.co.uk/sitemap-0.xml`
+## Next Strategic Phase
 
-### Robots
-- Added `public/robots.txt`
-- Confirmed output: `dist/robots.txt`
-- Contains sitemap reference:
-- `Sitemap: https://camcleans.co.uk/sitemap-index.xml`
+Begin vertical authority expansion.
 
-## Static Generation Scope
-- 13 services × 18 locations = 234 service-location pages
-- Total built pages reported by Astro: 266
+Focus:
+After Builders Cleaning support content cluster.
 
-## Next Phase
-1. Content blocks (non-styled but structured)
-- Service page: scope, inclusions, FAQs, CTA
-- Location page: localised intro, coverage notes, CTA
-- Service×Location page: unique copy template + CTA
-
-2. Structured data (JSON-LD)
-- LocalBusiness / Service (minimal, safe claims)
-- BreadcrumbList
-
-3. Navigation + footer
-- Header/nav skeleton
-- Footer: services list, locations list, legal links
-
-4. Conversion plumbing (later)
-- Lead form component + validation
-- Submission endpoint (Cloudflare Pages/Workers later)
+Build 3–5 informational support assets to deepen topical dominance without altering matrix architecture.

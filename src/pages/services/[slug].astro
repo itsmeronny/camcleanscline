@@ -89,7 +89,7 @@ const isAfterBuilders = slug === "after-builders-cleaning";
         <li>{item}</li>
       ))}
     </ul>
-    </section>
+  </section>
 
   <section>
     <h2>Frequently Asked Questions</h2>
@@ -100,6 +100,19 @@ const isAfterBuilders = slug === "after-builders-cleaning";
       </div>
     ))}
   </section>
+
+  {isAfterBuilders && (
+    <section>
+      <h2>After Builders Cleaning Guides</h2>
+      <ul>
+        <li>
+          <a href="/guides/after-builders-dust-removal">
+            After Builders Dust Removal Guide
+          </a>
+        </li>
+      </ul>
+    </section>
+  )}
 
   <section>
     <h2>{service.cta.heading}</h2>
