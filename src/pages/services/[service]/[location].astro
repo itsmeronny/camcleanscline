@@ -54,6 +54,7 @@ const renovationHeavyCities = [
 const isEOT = serviceSlug === "end-of-tenancy-cleaning";
 const isAirbnb = serviceSlug === "airbnb-cleaning";
 const isDeepClean = serviceSlug === "one-off-deep-cleaning";
+const isAfterBuilders = serviceSlug === "after-builders-cleaning";
 
 const isMajorCity = majorCities.includes(locationSlug);
 const isRenovationCity = renovationHeavyCities.includes(locationSlug);
@@ -90,61 +91,88 @@ const isRenovationCity = renovationHeavyCities.includes(locationSlug);
 
   <p>
     CamCleans provides structured {service.name.toLowerCase()} services
-    throughout {location.name}. This service targets accumulated build-up,
-    neglected areas, and high-detail resets beyond routine cleaning.
+    throughout {location.name}. All services operate with defined scope,
+    checklist alignment, and consistent execution standards.
   </p>
+
+  {/* AFTER BUILDERS AUTHORITY INSERT */}
+
+  {isAfterBuilders && (
+    <>
+      <h2>Post-Construction Cleaning in {location.name}</h2>
+
+      <p>
+        After builders cleaning supports renovation, refurbishment,
+        extension and fit-out projects across {location.name}.
+        The service removes fine construction dust, installation residue,
+        plaster particles and presentation-impacting contamination
+        prior to occupation or inspection.
+      </p>
+
+      {isRenovationCity && (
+        <>
+          <h3>Renovation & Refurbishment Activity</h3>
+          <p>
+            {location.name} experiences consistent development and
+            refurbishment cycles. Post-construction cleaning ensures
+            properties are handover-ready for landlords, buyers,
+            tenants or commercial occupants.
+          </p>
+        </>
+      )}
+
+      {isMajorCity && (
+        <>
+          <h3>Developer & Contractor Scheduling</h3>
+          <p>
+            In larger urban markets such as {location.name},
+            phased project completion and tight handover timelines
+            require structured scheduling and predictable execution.
+          </p>
+        </>
+      )}
+
+      <h3>Typical Post-Build Areas Addressed</h3>
+      <ul>
+        <li>Fine plaster dust removal from horizontal surfaces</li>
+        <li>Internal glazing and frame detailing</li>
+        <li>Skirting board and door frame wipe-down</li>
+        <li>Light fitting and socket detailing</li>
+        <li>Kitchen and bathroom installation cleaning</li>
+        <li>Hard floor vacuuming and mopping</li>
+      </ul>
+
+      <h3>Related Post-Project Services</h3>
+      <ul>
+        <li>
+          <a href={`/services/office-cleaning/${locationSlug}`}>
+            Office Cleaning in {location.name}
+          </a>
+        </li>
+        <li>
+          <a href={`/services/one-off-deep-cleaning/${locationSlug}`}>
+            One Off Deep Cleaning in {location.name}
+          </a>
+        </li>
+        <li>
+          <a href={`/services/end-of-tenancy-cleaning/${locationSlug}`}>
+            End of Tenancy Cleaning in {location.name}
+          </a>
+        </li>
+      </ul>
+    </>
+  )}
+
+  {/* EXISTING SERVICE-SPECIFIC LOGIC */}
 
   {isDeepClean && (
     <>
       <h2>What One-Off Deep Cleaning Covers in {location.name}</h2>
-
       <p>
-        One-off deep cleaning is designed for properties requiring more than
-        maintenance cleaning. It focuses on high-touch build-up areas,
-        neglected surfaces, internal doors, skirting boards, and detailed
-        kitchen and bathroom restoration.
+        One-off deep cleaning focuses on accumulated build-up,
+        neglected surfaces, internal doors, skirting boards,
+        and detailed kitchen and bathroom restoration.
       </p>
-
-      {isMajorCity && (
-        <>
-          <h3>Urban Property Considerations</h3>
-          <p>
-            In larger cities such as {location.name}, properties often
-            experience higher occupancy turnover and heavier daily use.
-            Deep cleaning frequently addresses grease accumulation,
-            limescale, internal cupboard dust, and edge detailing.
-          </p>
-        </>
-      )}
-
-      {isRenovationCity && (
-        <>
-          <h3>Post-Renovation & Pre-Sale Preparation</h3>
-          <p>
-            {location.name} sees significant renovation and resale activity.
-            One-off deep cleaning is commonly used before property viewings
-            or following light refurbishment to restore presentation quality.
-          </p>
-        </>
-      )}
-
-      <h3>Common Areas Addressed During Deep Cleaning</h3>
-      <ul>
-        <li>Kitchen degreasing and splashback cleaning</li>
-        <li>Bathroom descaling and grout surface treatment</li>
-        <li>Internal doors and frame wipe-down</li>
-        <li>Skirting board detailing</li>
-        <li>Surface-level upholstery vacuuming</li>
-        <li>Hard floor mopping and edge vacuuming</li>
-      </ul>
-
-      <h3>When To Book a Deep Clean</h3>
-      <ul>
-        <li>Spring property reset</li>
-        <li>Before property sale photography</li>
-        <li>After illness or extended vacancy</li>
-        <li>Following tenants with light build-up</li>
-      </ul>
     </>
   )}
 
@@ -153,7 +181,7 @@ const isRenovationCity = renovationHeavyCities.includes(locationSlug);
       <h2>Inspection-Focused End of Tenancy Cleaning in {location.name}</h2>
       <p>
         End of tenancy cleaning aligns with inventory-led inspections,
-        prioritising high-risk deposit deduction areas.
+        prioritising deposit-sensitive areas.
       </p>
     </>
   )}
@@ -162,8 +190,8 @@ const isRenovationCity = renovationHeavyCities.includes(locationSlug);
     <>
       <h2>Airbnb Turnover Cleaning in {location.name}</h2>
       <p>
-        Airbnb cleaning prioritises presentation standards and high-touch
-        sanitisation to support positive guest reviews.
+        Airbnb cleaning prioritises presentation standards and
+        high-touch sanitisation to support guest experience.
       </p>
     </>
   )}
