@@ -1,0 +1,40 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import services from "../../../data/services";
+import locations from "../../../data/locations";
+
+export async function getStaticPaths() {
+  const paths = [];
+
+  for (const serviceSlug of Object.keys(services)) {
+    for (const locationSlug of Object.keys(locations)) {
+      paths.push({
+        params: {
+          service: serviceSlug,
+          location: locationSlug
+        }
+      });
+    }
+  }
+
+  return paths;
+}
+
+const { service: serviceSlug, location: locationSlug } = Astro.params;
+
+const service = services[serviceSlug];
+const location = locations[locationSlug];
+
+if (!service || !location) {
+  throw new Error("Invalid route");
+}
+---
+
+<Layout>
+  <main>
+    <h1>{service.name} in {location.name}</h1>
+    <p>
+      Professional {service.name.toLowerCase()} services available in {location.name}.
+    </p>
+  </main>
+</Layout>

@@ -1,0 +1,22 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import services from "../../data/services";
+
+export async function getStaticPaths() {
+  return Object.keys(services).map((slug) => ({
+    params: { slug }
+  }));
+}
+
+const { slug } = Astro.params;
+const service = services[slug];
+
+if (!service) throw new Error("Service not found");
+---
+
+<Layout>
+  <main>
+    <h1>{service.name}</h1>
+    <p>{service.short}</p>
+  </main>
+</Layout>
