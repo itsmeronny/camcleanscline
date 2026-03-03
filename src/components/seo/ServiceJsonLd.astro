@@ -1,0 +1,24 @@
+---
+const { serviceName, description, url } = Astro.props;
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: serviceName,
+  description,
+  provider: {
+    "@type": "Organization",
+    name: "CamCleans",
+    url: "https://camcleans.co.uk"
+  },
+  areaServed: {
+    "@type": "Country",
+    name: "United Kingdom"
+  },
+  url
+};
+---
+
+<script type="application/ld+json">
+  {JSON.stringify(schema)}
+</script>

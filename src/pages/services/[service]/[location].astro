@@ -1,22 +1,23 @@
 ---
-import Layout from "../../../layouts/Layout.astro";
 import services from "../../../data/services";
 import locations from "../../../data/locations";
+import Layout from "../../../layouts/Layout.astro";
+import BreadcrumbJsonLd from "../../../components/seo/BreadcrumbJsonLd.astro";
+import ServiceJsonLd from "../../../components/seo/ServiceJsonLd.astro";
+import LocalBusinessJsonLd from "../../../components/seo/LocalBusinessJsonLd.astro";
 
 export async function getStaticPaths() {
   const paths = [];
-
   for (const serviceSlug of Object.keys(services)) {
     for (const locationSlug of Object.keys(locations)) {
       paths.push({
         params: {
           service: serviceSlug,
-          location: locationSlug
-        }
+          location: locationSlug,
+        },
       });
     }
   }
-
   return paths;
 }
 
@@ -26,16 +27,177 @@ const service = services[serviceSlug];
 const location = locations[locationSlug];
 
 if (!service || !location) {
-  throw new Error("Invalid route");
+  throw new Error("Invalid service or location");
 }
+
+const canonicalPath = `/services/${serviceSlug}/${locationSlug}`;
+const title = `${service.name} in ${location.name} | CamCleans`;
+const description = `${service.short} Available in ${location.name}. Structured scope and consistent cleaning standards.`;
+
+/* ---------- MARKET CLASSIFICATION ---------- */
+
+const majorCities = [
+  "london",
+  "manchester",
+  "birmingham",
+  "glasgow",
+  "edinburgh"
+];
+
+const renovationHeavyCities = [
+  "london",
+  "manchester",
+  "birmingham",
+  "bristol"
+];
+
+const isEOT = serviceSlug === "end-of-tenancy-cleaning";
+const isAirbnb = serviceSlug === "airbnb-cleaning";
+const isDeepClean = serviceSlug === "one-off-deep-cleaning";
+
+const isMajorCity = majorCities.includes(locationSlug);
+const isRenovationCity = renovationHeavyCities.includes(locationSlug);
 ---
 
 <Layout
-  title={`${service.name} in ${location.name} | CamCleans`}
-  description={`Book ${service.name.toLowerCase()} in ${location.name}. Clear scope, vetted cleaners, fast availability.`}
-  canonicalPath={`/services/${serviceSlug}/${locationSlug}`}
+  title={title}
+  description={description}
+  canonicalPath={canonicalPath}
 >
-  <main>
-    ...
-  </main>
+
+  <BreadcrumbJsonLd
+    items={[
+      { name: "Home", path: "/" },
+      { name: "Services", path: "/services" },
+      { name: service.name, path: `/services/${serviceSlug}` },
+      { name: location.name, path: canonicalPath }
+    ]}
+  />
+
+  <ServiceJsonLd
+    serviceName={`${service.name} in ${location.name}`}
+    description={description}
+    url={`https://camcleans.co.uk${canonicalPath}`}
+  />
+
+  <LocalBusinessJsonLd
+    serviceName={service.name}
+    locationName={location.name}
+    url={`https://camcleans.co.uk${canonicalPath}`}
+  />
+
+  <h1>{service.name} in {location.name}</h1>
+
+  <p>
+    CamCleans provides structured {service.name.toLowerCase()} services
+    throughout {location.name}. This service targets accumulated build-up,
+    neglected areas, and high-detail resets beyond routine cleaning.
+  </p>
+
+  {isDeepClean && (
+    <>
+      <h2>What One-Off Deep Cleaning Covers in {location.name}</h2>
+
+      <p>
+        One-off deep cleaning is designed for properties requiring more than
+        maintenance cleaning. It focuses on high-touch build-up areas,
+        neglected surfaces, internal doors, skirting boards, and detailed
+        kitchen and bathroom restoration.
+      </p>
+
+      {isMajorCity && (
+        <>
+          <h3>Urban Property Considerations</h3>
+          <p>
+            In larger cities such as {location.name}, properties often
+            experience higher occupancy turnover and heavier daily use.
+            Deep cleaning frequently addresses grease accumulation,
+            limescale, internal cupboard dust, and edge detailing.
+          </p>
+        </>
+      )}
+
+      {isRenovationCity && (
+        <>
+          <h3>Post-Renovation & Pre-Sale Preparation</h3>
+          <p>
+            {location.name} sees significant renovation and resale activity.
+            One-off deep cleaning is commonly used before property viewings
+            or following light refurbishment to restore presentation quality.
+          </p>
+        </>
+      )}
+
+      <h3>Common Areas Addressed During Deep Cleaning</h3>
+      <ul>
+        <li>Kitchen degreasing and splashback cleaning</li>
+        <li>Bathroom descaling and grout surface treatment</li>
+        <li>Internal doors and frame wipe-down</li>
+        <li>Skirting board detailing</li>
+        <li>Surface-level upholstery vacuuming</li>
+        <li>Hard floor mopping and edge vacuuming</li>
+      </ul>
+
+      <h3>When To Book a Deep Clean</h3>
+      <ul>
+        <li>Spring property reset</li>
+        <li>Before property sale photography</li>
+        <li>After illness or extended vacancy</li>
+        <li>Following tenants with light build-up</li>
+      </ul>
+    </>
+  )}
+
+  {isEOT && (
+    <>
+      <h2>Inspection-Focused End of Tenancy Cleaning in {location.name}</h2>
+      <p>
+        End of tenancy cleaning aligns with inventory-led inspections,
+        prioritising high-risk deposit deduction areas.
+      </p>
+    </>
+  )}
+
+  {isAirbnb && (
+    <>
+      <h2>Airbnb Turnover Cleaning in {location.name}</h2>
+      <p>
+        Airbnb cleaning prioritises presentation standards and high-touch
+        sanitisation to support positive guest reviews.
+      </p>
+    </>
+  )}
+
+  <h2>What This Service Covers in {location.name}</h2>
+  <ul>
+    {service.inclusions.map((item) => <li>{item}</li>)}
+  </ul>
+
+  <h2>Who Typically Books This Service in {location.name}</h2>
+  <ul>
+    {service.idealFor.map((item) => <li>{item}</li>)}
+  </ul>
+
+  <h2>Related Services in {location.name}</h2>
+  <ul>
+    {Object.keys(services)
+      .filter((s) => s !== serviceSlug)
+      .map((s) => (
+        <li>
+          <a href={`/services/${s}/${locationSlug}`}>
+            {services[s].name} in {location.name}
+          </a>
+        </li>
+      ))}
+  </ul>
+
+  <h2>Book {service.name} in {location.name}</h2>
+  <ul>
+    {service.cta.bullets.map((b) => <li>{b}</li>)}
+  </ul>
+
+  <a href={service.cta.buttonHref}>
+    {service.cta.buttonText}
+  </a>
+
 </Layout>

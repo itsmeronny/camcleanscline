@@ -1,20 +1,45 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import services from "../data/services";
 ---
 
-<Layout>
-  <main>
-    <h1>CamCleans</h1>
+<Layout
+  title="CamCleans | Nationwide Structured Cleaning Services"
+  description="Structured cleaning services across major UK cities. Inspection-aligned standards and clear scope."
+  canonicalPath="/"
+>
 
-    <ul>
-      {Object.entries(services).map(([slug, service]) => (
-        <li>
-          <a href={`/services/${slug}`}>
-            {service.name}
-          </a>
-        </li>
-      ))}
-    </ul>
-  </main>
+  <h1>Nationwide Cleaning Services</h1>
+
+  <p>
+    CamCleans provides structured, inspection-aligned cleaning services
+    across major UK rental markets.
+  </p>
+
+  <h2>Featured Service</h2>
+
+  <ul>
+    <li>
+      <a href="/services/end-of-tenancy-cleaning/london">
+        End of Tenancy Cleaning in London
+      </a>
+    </li>
+  </ul>
+
+  <h2>Major Rental Markets</h2>
+
+  <ul>
+    <li><a href="/services/end-of-tenancy-cleaning/manchester">End of Tenancy Cleaning in Manchester</a></li>
+    <li><a href="/services/end-of-tenancy-cleaning/birmingham">End of Tenancy Cleaning in Birmingham</a></li>
+    <li><a href="/services/end-of-tenancy-cleaning/glasgow">End of Tenancy Cleaning in Glasgow</a></li>
+    <li><a href="/services/end-of-tenancy-cleaning/edinburgh">End of Tenancy Cleaning in Edinburgh</a></li>
+  </ul>
+
+  <h2>All Services</h2>
+
+  <ul>
+    <li><a href="/services/end-of-tenancy-cleaning">End of Tenancy Cleaning</a></li>
+    <li><a href="/services/airbnb-cleaning">Airbnb Cleaning</a></li>
+    <li><a href="/services/one-off-deep-cleaning">One Off Deep Cleaning</a></li>
+  </ul>
+
 </Layout>

@@ -1,26 +1,126 @@
 ---
-import Layout from "../../layouts/Layout.astro";
 import services from "../../data/services";
 import locations from "../../data/locations";
+import Layout from "../../layouts/Layout.astro";
 
 export async function getStaticPaths() {
   return Object.keys(services).map((slug) => ({
-    params: { slug }
+    params: { slug },
   }));
 }
 
 const { slug } = Astro.params;
 const service = services[slug];
 
-if (!service) throw new Error("Service not found");
+if (!service) {
+  throw new Error("Service not found");
+}
+
+const title = `${service.name} | CamCleans`;
+const description = service.short;
+const canonicalPath = `/services/${slug}`;
+
+/* ---------- PRIORITY ORDERING ---------- */
+
+const priorityMarkets = [
+  "london",
+  "manchester",
+  "birmingham",
+  "glasgow",
+  "edinburgh"
+];
+
+const orderedLocations = Object.keys(locations).sort((a, b) => {
+  const aPriority = priorityMarkets.includes(a) ? 0 : 1;
+  const bPriority = priorityMarkets.includes(b) ? 0 : 1;
+  return aPriority - bPriority;
+});
 ---
 
 <Layout
-  title={`${service.name} | CamCleans`}
-  description={service.short}
-  canonicalPath={`/services/${slug}`}
+  title={title}
+  description={description}
+  canonicalPath={canonicalPath}
 >
-  <main>
-    ...
-  </main>
+
+  <h1>{service.name}</h1>
+
+  <p>{service.intro}</p>
+
+  <h2>What This Service Covers</h2>
+  <ul>
+    {service.inclusions.map((item) => <li>{item}</li>)}
+  </ul>
+
+  <h2>What’s Not Included</h2>
+  <ul>
+    {service.exclusions.map((item) => <li>{item}</li>)}
+  </ul>
+
+  <h2>Who This Service Is For</h2>
+  <ul>
+    {service.idealFor.map((item) => <li>{item}</li>)}
+  </ul>
+
+  <h2>Typical Checklist Standards</h2>
+  <ul>
+    {service.checklist.map((item) => <li>{item}</li>)}
+  </ul>
+
+  {slug === "end-of-tenancy-cleaning" && (
+    <>
+      <h2>Common Reasons Deposits Are Reduced</h2>
+      <p>
+        During end-of-tenancy inspections, landlords and agents frequently
+        focus on kitchens, bathrooms, internal cupboards, appliances, and
+        limescale build-up. Grease in extractor units, soap residue on shower
+        screens, and overlooked skirting boards are among the most common
+        causes of cleaning-related deductions.
+      </p>
+      <p>
+        Our structured approach prioritises these high-risk areas to help
+        reduce avoidable disputes. While cleaning alone cannot resolve damage
+        or wear-related issues, thorough preparation significantly improves
+        inspection readiness.
+      </p>
+
+      <h2>Inspection Alignment Approach</h2>
+      <p>
+        The service is designed around practical inspection behaviour rather
+        than surface-level tidying. High-touch points, internal storage areas,
+        and visible limescale-prone surfaces are methodically addressed. Clear
+        scope definitions ensure both inclusions and exclusions are transparent
+        before work begins.
+      </p>
+    </>
+  )}
+
+  <h2>Frequently Asked Questions</h2>
+  {service.faqs.map((faq) => (
+    <details>
+      <summary>{faq.q}</summary>
+      <p>{faq.a}</p>
+    </details>
+  ))}
+
+  <h2>Available Locations</h2>
+  <ul>
+    {orderedLocations.map((locationSlug) => (
+      <li>
+        <a href={`/services/${slug}/${locationSlug}`}>
+          {service.name} in {locations[locationSlug].name}
+        </a>
+      </li>
+    ))}
+  </ul>
+
+  <h2>{service.cta.heading}</h2>
+  <ul>
+    {service.cta.bullets.map((b) => <li>{b}</li>)}
+  </ul>
+
+  <a href={service.cta.buttonHref}>
+    {service.cta.buttonText}
+  </a>
+
 </Layout>

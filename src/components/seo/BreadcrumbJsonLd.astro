@@ -1,0 +1,20 @@
+---
+const { items } = Astro.props;
+
+const baseUrl = "https://camcleans.co.uk";
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: items.map((item, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: item.name,
+    item: `${baseUrl}${item.path}`
+  }))
+};
+---
+
+<script type="application/ld+json">
+  {JSON.stringify(breadcrumbSchema)}
+</script>
