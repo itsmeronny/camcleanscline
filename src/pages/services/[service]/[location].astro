@@ -36,14 +36,6 @@ const description = `${service.short} Available in ${location.name}. Structured 
 
 /* ---------- MARKET CLASSIFICATION ---------- */
 
-const majorCities = [
-  "london",
-  "manchester",
-  "birmingham",
-  "glasgow",
-  "edinburgh"
-];
-
 const renovationHeavyCities = [
   "london",
   "manchester",
@@ -51,13 +43,35 @@ const renovationHeavyCities = [
   "bristol"
 ];
 
-const isEOT = serviceSlug === "end-of-tenancy-cleaning";
-const isAirbnb = serviceSlug === "airbnb-cleaning";
-const isDeepClean = serviceSlug === "one-off-deep-cleaning";
 const isAfterBuilders = serviceSlug === "after-builders-cleaning";
-
-const isMajorCity = majorCities.includes(locationSlug);
 const isRenovationCity = renovationHeavyCities.includes(locationSlug);
+
+/* ---------- RELATED SERVICE LOGIC ---------- */
+
+const relatedMap = {
+  "after-builders-cleaning": [
+    "one-off-deep-cleaning",
+    "office-cleaning",
+    "end-of-tenancy-cleaning"
+  ],
+  "end-of-tenancy-cleaning": [
+    "oven-cleaning",
+    "carpet-rug-cleaning",
+    "appliances-cleaning"
+  ],
+  "airbnb-cleaning": [
+    "housekeeper-cleaner",
+    "linen-cleaning",
+    "one-off-deep-cleaning"
+  ],
+  "one-off-deep-cleaning": [
+    "after-builders-cleaning",
+    "carpet-rug-cleaning",
+    "sofa-upholstery-cleaning"
+  ]
+};
+
+const relatedServices = relatedMap[serviceSlug] || [];
 ---
 
 <Layout
@@ -95,103 +109,13 @@ const isRenovationCity = renovationHeavyCities.includes(locationSlug);
     checklist alignment, and consistent execution standards.
   </p>
 
-  {/* AFTER BUILDERS AUTHORITY INSERT */}
-
-  {isAfterBuilders && (
+  {isAfterBuilders && isRenovationCity && (
     <>
-      <h2>Post-Construction Cleaning in {location.name}</h2>
-
+      <h2>Post-Construction Activity in {location.name}</h2>
       <p>
-        After builders cleaning supports renovation, refurbishment,
-        extension and fit-out projects across {location.name}.
-        The service removes fine construction dust, installation residue,
-        plaster particles and presentation-impacting contamination
-        prior to occupation or inspection.
-      </p>
-
-      {isRenovationCity && (
-        <>
-          <h3>Renovation & Refurbishment Activity</h3>
-          <p>
-            {location.name} experiences consistent development and
-            refurbishment cycles. Post-construction cleaning ensures
-            properties are handover-ready for landlords, buyers,
-            tenants or commercial occupants.
-          </p>
-        </>
-      )}
-
-      {isMajorCity && (
-        <>
-          <h3>Developer & Contractor Scheduling</h3>
-          <p>
-            In larger urban markets such as {location.name},
-            phased project completion and tight handover timelines
-            require structured scheduling and predictable execution.
-          </p>
-        </>
-      )}
-
-      <h3>Typical Post-Build Areas Addressed</h3>
-      <ul>
-        <li>Fine plaster dust removal from horizontal surfaces</li>
-        <li>Internal glazing and frame detailing</li>
-        <li>Skirting board and door frame wipe-down</li>
-        <li>Light fitting and socket detailing</li>
-        <li>Kitchen and bathroom installation cleaning</li>
-        <li>Hard floor vacuuming and mopping</li>
-      </ul>
-
-      <h3>Related Post-Project Services</h3>
-      <ul>
-        <li>
-          <a href={`/services/office-cleaning/${locationSlug}`}>
-            Office Cleaning in {location.name}
-          </a>
-        </li>
-        <li>
-          <a href={`/services/one-off-deep-cleaning/${locationSlug}`}>
-            One Off Deep Cleaning in {location.name}
-          </a>
-        </li>
-        <li>
-          <a href={`/services/end-of-tenancy-cleaning/${locationSlug}`}>
-            End of Tenancy Cleaning in {location.name}
-          </a>
-        </li>
-      </ul>
-    </>
-  )}
-
-  {/* EXISTING SERVICE-SPECIFIC LOGIC */}
-
-  {isDeepClean && (
-    <>
-      <h2>What One-Off Deep Cleaning Covers in {location.name}</h2>
-      <p>
-        One-off deep cleaning focuses on accumulated build-up,
-        neglected surfaces, internal doors, skirting boards,
-        and detailed kitchen and bathroom restoration.
-      </p>
-    </>
-  )}
-
-  {isEOT && (
-    <>
-      <h2>Inspection-Focused End of Tenancy Cleaning in {location.name}</h2>
-      <p>
-        End of tenancy cleaning aligns with inventory-led inspections,
-        prioritising deposit-sensitive areas.
-      </p>
-    </>
-  )}
-
-  {isAirbnb && (
-    <>
-      <h2>Airbnb Turnover Cleaning in {location.name}</h2>
-      <p>
-        Airbnb cleaning prioritises presentation standards and
-        high-touch sanitisation to support guest experience.
+        {location.name} experiences consistent renovation and refurbishment
+        cycles. After builders cleaning ensures properties are
+        inspection-ready and presentation-complete following project completion.
       </p>
     </>
   )}
@@ -201,22 +125,35 @@ const isRenovationCity = renovationHeavyCities.includes(locationSlug);
     {service.inclusions.map((item) => <li>{item}</li>)}
   </ul>
 
-  <h2>Who Typically Books This Service in {location.name}</h2>
+  <h2>Who Books This Service in {location.name}</h2>
   <ul>
     {service.idealFor.map((item) => <li>{item}</li>)}
   </ul>
 
-  <h2>Related Services in {location.name}</h2>
+  {/* STRUCTURAL AUTHORITY LINKS */}
+
+  <h2>Explore Related Services in {location.name}</h2>
   <ul>
-    {Object.keys(services)
-      .filter((s) => s !== serviceSlug)
-      .map((s) => (
+    <li>
+      <a href={`/services/${serviceSlug}`}>
+        View {service.name} Service Overview
+      </a>
+    </li>
+    <li>
+      <a href={`/locations/${locationSlug}`}>
+        All Cleaning Services in {location.name}
+      </a>
+    </li>
+
+    {relatedServices.map((related) =>
+      services[related] ? (
         <li>
-          <a href={`/services/${s}/${locationSlug}`}>
-            {services[s].name} in {location.name}
+          <a href={`/services/${related}/${locationSlug}`}>
+            {services[related].name} in {location.name}
           </a>
         </li>
-      ))}
+      ) : null
+    )}
   </ul>
 
   <h2>Book {service.name} in {location.name}</h2>
