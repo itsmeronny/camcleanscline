@@ -5,8 +5,11 @@ import RelatedGuides from "../components/RelatedGuides.astro";
 const {
   title,
   description,
-  cluster = ""
+  cluster = "",
+  canonicalPath,
 } = Astro.props;
+
+const resolvedCanonicalPath = canonicalPath ?? Astro.url?.pathname ?? "/";
 
 const SERVICE_MAP = {
   "after-builders": {
@@ -41,7 +44,7 @@ const SERVICE_MAP = {
 const service = SERVICE_MAP[cluster] || null;
 ---
 
-<Layout title={title} description={description}>
+<Layout title={title} description={description} canonicalPath={resolvedCanonicalPath}>
 
 <article class="guide-container">
 
