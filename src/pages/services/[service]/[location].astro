@@ -2,167 +2,128 @@
 import services from "../../../data/services";
 import locations from "../../../data/locations";
 import Layout from "../../../layouts/Layout.astro";
-import BreadcrumbJsonLd from "../../../components/seo/BreadcrumbJsonLd.astro";
-import ServiceJsonLd from "../../../components/seo/ServiceJsonLd.astro";
-import LocalBusinessJsonLd from "../../../components/seo/LocalBusinessJsonLd.astro";
 
 export async function getStaticPaths() {
+
   const paths = [];
-  for (const serviceSlug of Object.keys(services)) {
-    for (const locationSlug of Object.keys(locations)) {
+
+  const serviceEntries = Object.entries(services);
+  const locationEntries = Object.entries(locations);
+
+  for (const [, service] of serviceEntries) {
+    for (const [, location] of locationEntries) {
+
+      if (!service.slug || !location.slug) continue;
+
       paths.push({
         params: {
-          service: serviceSlug,
-          location: locationSlug,
-        },
+          service: service.slug,
+          location: location.slug
+        }
       });
+
     }
   }
+
   return paths;
 }
 
-const { service: serviceSlug, location: locationSlug } = Astro.params;
+const { service, location } = Astro.params;
 
-const service = services[serviceSlug];
-const location = locations[locationSlug];
+const serviceData = services[service];
+const locationData = locations[location];
 
-if (!service || !location) {
+if (!serviceData || !locationData) {
   throw new Error("Invalid service or location");
 }
 
-const canonicalPath = `/services/${serviceSlug}/${locationSlug}`;
-const title = `${service.name} in ${location.name} | CamCleans`;
-const description = `${service.short} Available in ${location.name}. Structured scope and consistent cleaning standards.`;
-
-/* ---------- MARKET CLASSIFICATION ---------- */
-
-const renovationHeavyCities = [
-  "london",
-  "manchester",
-  "birmingham",
-  "bristol"
-];
-
-const isAfterBuilders = serviceSlug === "after-builders-cleaning";
-const isRenovationCity = renovationHeavyCities.includes(locationSlug);
-
-/* ---------- RELATED SERVICE LOGIC ---------- */
-
-const relatedMap = {
-  "after-builders-cleaning": [
-    "one-off-deep-cleaning",
-    "office-cleaning",
-    "end-of-tenancy-cleaning"
-  ],
-  "end-of-tenancy-cleaning": [
-    "oven-cleaning",
-    "carpet-rug-cleaning",
-    "appliances-cleaning"
-  ],
-  "airbnb-cleaning": [
-    "housekeeper-cleaner",
-    "linen-cleaning",
-    "one-off-deep-cleaning"
-  ],
-  "one-off-deep-cleaning": [
-    "after-builders-cleaning",
-    "carpet-rug-cleaning",
-    "sofa-upholstery-cleaning"
-  ]
-};
-
-const relatedServices = relatedMap[serviceSlug] || [];
+const isAfterBuilders = service === "after-builders-cleaning";
+const isEndOfTenancy = service === "end-of-tenancy-cleaning";
 ---
 
 <Layout
-  title={title}
-  description={description}
-  canonicalPath={canonicalPath}
+  title={`${serviceData.name} ${locationData.name} | CamCleans`}
+  description={`${serviceData.name} services available in ${locationData.name}. Professional cleaning delivered to structured standards.`}
+  canonicalPath={`/services/${service}/${location}`}
 >
 
-  <BreadcrumbJsonLd
-    items={[
-      { name: "Home", path: "/" },
-      { name: "Services", path: "/services" },
-      { name: service.name, path: `/services/${serviceSlug}` },
-      { name: location.name, path: canonicalPath }
-    ]}
-  />
+<section>
+<h1>{serviceData.name} in {locationData.name}</h1>
 
-  <ServiceJsonLd
-    serviceName={`${service.name} in ${location.name}`}
-    description={description}
-    url={`https://camcleans.co.uk${canonicalPath}`}
-  />
+<p>
+CamCleans provides structured {serviceData.name.toLowerCase()} services across
+{locationData.name}. Work is completed using controlled cleaning processes
+designed for residential and commercial environments.
+</p>
+</section>
 
-  <LocalBusinessJsonLd
-    serviceName={service.name}
-    locationName={location.name}
-    url={`https://camcleans.co.uk${canonicalPath}`}
-  />
+<section>
+<h2>Service Coverage in {locationData.name}</h2>
+<ul>
+<li>Central {locationData.name}</li>
+<li>Residential districts</li>
+<li>Apartment developments</li>
+<li>Property management portfolios</li>
+</ul>
+</section>
 
-  <h1>{service.name} in {location.name}</h1>
+<section>
+<h2>Service Scope</h2>
+<ul>
+{serviceData.inclusions.map((item) => (
+<li>{item}</li>
+))}
+</ul>
+</section>
 
-  <p>
-    CamCleans provides structured {service.name.toLowerCase()} services
-    throughout {location.name}. All services operate with defined scope,
-    checklist alignment, and consistent execution standards.
-  </p>
+<section>
+<h2>Property Types</h2>
+<ul>
+<li>Apartments</li>
+<li>Houses</li>
+<li>Rental properties</li>
+<li>Renovation projects</li>
+</ul>
+</section>
 
-  {isAfterBuilders && isRenovationCity && (
-    <>
-      <h2>Post-Construction Activity in {location.name}</h2>
-      <p>
-        {location.name} experiences consistent renovation and refurbishment
-        cycles. After builders cleaning ensures properties are
-        inspection-ready and presentation-complete following project completion.
-      </p>
-    </>
-  )}
+{isAfterBuilders && (
+<section>
+<h2>After Builders Cleaning Guides</h2>
+<ul>
+<li><a href="/guides/after-builders-dust-removal">After Builders Dust Removal Guide</a></li>
+<li><a href="/guides/post-renovation-cleaning-checklist">Post Renovation Cleaning Checklist</a></li>
+<li><a href="/guides/after-builders-cleaning-vs-deep-cleaning">After Builders Cleaning vs Deep Cleaning</a></li>
+<li><a href="/guides/developer-handover-cleaning-guide">Developer Handover Cleaning Guide</a></li>
+<li><a href="/guides/after-builders-cleaning-cost-guide">After Builders Cleaning Cost Guide</a></li>
+</ul>
+</section>
+)}
 
-  <h2>What This Service Covers in {location.name}</h2>
-  <ul>
-    {service.inclusions.map((item) => <li>{item}</li>)}
-  </ul>
+{isEndOfTenancy && (
+<section>
+<h2>End of Tenancy Cleaning Guides</h2>
+<ul>
+<li><a href="/guides/end-of-tenancy-cleaning-checklist">End of Tenancy Cleaning Checklist</a></li>
+<li><a href="/guides/landlord-inspection-cleaning-guide">Landlord Inspection Cleaning Guide</a></li>
+<li><a href="/guides/deposit-deduction-cleaning-guide">Deposit Deduction Cleaning Guide</a></li>
+<li><a href="/guides/professional-vs-diy-tenancy-cleaning">Professional vs DIY Tenancy Cleaning</a></li>
+<li><a href="/guides/end-of-tenancy-cleaning-cost-guide">End of Tenancy Cleaning Cost Guide</a></li>
+</ul>
+</section>
+)}
 
-  <h2>Who Books This Service in {location.name}</h2>
-  <ul>
-    {service.idealFor.map((item) => <li>{item}</li>)}
-  </ul>
+<section>
+<h2>Book {serviceData.name} in {locationData.name}</h2>
+<p>
+CamCleans provides structured cleaning services delivered through a
+controlled process designed for reliability and inspection-ready results.
+</p>
 
-  {/* STRUCTURAL AUTHORITY LINKS */}
-
-  <h2>Explore Related Services in {location.name}</h2>
-  <ul>
-    <li>
-      <a href={`/services/${serviceSlug}`}>
-        View {service.name} Service Overview
-      </a>
-    </li>
-    <li>
-      <a href={`/locations/${locationSlug}`}>
-        All Cleaning Services in {location.name}
-      </a>
-    </li>
-
-    {relatedServices.map((related) =>
-      services[related] ? (
-        <li>
-          <a href={`/services/${related}/${locationSlug}`}>
-            {services[related].name} in {location.name}
-          </a>
-        </li>
-      ) : null
-    )}
-  </ul>
-
-  <h2>Book {service.name} in {location.name}</h2>
-  <ul>
-    {service.cta.bullets.map((b) => <li>{b}</li>)}
-  </ul>
-
-  <a href={service.cta.buttonHref}>
-    {service.cta.buttonText}
-  </a>
+<p>
+<a href={`/services/${service}`}>
+View {serviceData.name} Service
+</a>
+</p>
+</section>
 
 </Layout>
