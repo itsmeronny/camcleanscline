@@ -1,0 +1,82 @@
+---
+import Layout from "./Layout.astro";
+
+const { title, description } = Astro.props;
+---
+
+<Layout title={title} description={description}>
+
+<article class="guide-container">
+
+<header class="guide-header">
+<h1>{title}</h1>
+</header>
+
+<section class="guide-content">
+<slot />
+</section>
+
+<hr />
+
+<section class="guide-service">
+<h2>Professional After Builders Cleaning</h2>
+
+<p>
+Construction dust, plaster residue and renovation debris require specialist cleaning.
+Our after builders cleaning service removes fine dust, construction particles and
+post-build contamination so properties are safe, presentable and ready for occupation.
+</p>
+
+<p>
+<a href="/services/after-builders-cleaning">
+View the After Builders Cleaning Service
+</a>
+</p>
+
+</section>
+
+<hr />
+
+<section class="guide-related">
+
+<h3>Related Guides</h3>
+
+<ul>
+
+<li>
+<a href="/guides/after-builders-dust-removal">
+How to Remove Builders Dust
+</a>
+</li>
+
+<li>
+<a href="/guides/post-renovation-cleaning-checklist">
+Post Renovation Cleaning Checklist
+</a>
+</li>
+
+<li>
+<a href="/guides/developer-handover-cleaning-guide">
+Developer Handover Cleaning Guide
+</a>
+</li>
+
+<li>
+<a href="/guides/after-builders-cleaning-cost-guide">
+After Builders Cleaning Cost Guide
+</a>
+</li>
+
+<li>
+<a href="/guides/after-builders-cleaning-vs-deep-cleaning">
+After Builders Cleaning vs Deep Cleaning
+</a>
+</li>
+
+</ul>
+
+</section>
+
+</article>
+
+</Layout>

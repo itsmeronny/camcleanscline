@@ -43,7 +43,7 @@ const isEndOfTenancy = service === "end-of-tenancy-cleaning";
 
 <Layout
   title={`${serviceData.name} ${locationData.name} | CamCleans`}
-  description={`${serviceData.name} services available in ${locationData.name}. Professional cleaning delivered to structured standards.`}
+  description={`${serviceData.name} services available in ${locationData.name}. Structured cleaning delivered to professional standards.`}
   canonicalPath={`/services/${service}/${location}`}
 >
 
@@ -52,19 +52,9 @@ const isEndOfTenancy = service === "end-of-tenancy-cleaning";
 
 <p>
 CamCleans provides structured {serviceData.name.toLowerCase()} services across
-{locationData.name}. Work is completed using controlled cleaning processes
-designed for residential and commercial environments.
+{locationData.name}. Cleaning is delivered using checklist-driven standards
+designed for inspection-ready results.
 </p>
-</section>
-
-<section>
-<h2>Service Coverage in {locationData.name}</h2>
-<ul>
-<li>Central {locationData.name}</li>
-<li>Residential districts</li>
-<li>Apartment developments</li>
-<li>Property management portfolios</li>
-</ul>
 </section>
 
 <section>
@@ -113,10 +103,21 @@ designed for residential and commercial environments.
 )}
 
 <section>
+<h2>Service Coverage in {locationData.name}</h2>
+<ul>
+<li>Central {locationData.name}</li>
+<li>Residential districts</li>
+<li>Apartment developments</li>
+<li>Rental portfolios</li>
+</ul>
+</section>
+
+<section>
 <h2>Book {serviceData.name} in {locationData.name}</h2>
+
 <p>
-CamCleans provides structured cleaning services delivered through a
-controlled process designed for reliability and inspection-ready results.
+CamCleans provides structured cleaning services with checklist-driven
+standards designed for reliability and inspection-ready results.
 </p>
 
 <p>
@@ -124,6 +125,7 @@ controlled process designed for reliability and inspection-ready results.
 View {serviceData.name} Service
 </a>
 </p>
+
 </section>
 
 </Layout>

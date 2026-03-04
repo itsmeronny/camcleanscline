@@ -1,69 +1,65 @@
 ---
-import Layout from "../../layouts/Layout.astro";
 import services from "../../data/services";
 import locations from "../../data/locations";
-import BreadcrumbJsonLd from "../../components/seo/BreadcrumbJsonLd.astro";
+import Layout from "../../layouts/Layout.astro";
 
 export async function getStaticPaths() {
-  return Object.keys(locations).map((slug) => ({
-    params: { slug }
+  return Object.values(locations).map((location) => ({
+    params: { slug: location.slug },
   }));
 }
 
 const { slug } = Astro.params;
 const location = locations[slug];
 
-if (!location) throw new Error("Location not found");
-
-const canonicalPath = `/locations/${slug}`;
-const title = `Cleaning Services in ${location.name} | CamCleans`;
-const description = `Professional cleaning services available in ${location.name}. Structured scope, consistent standards, and email-based booking.`;
+if (!location) {
+  throw new Error("Location not found");
+}
 ---
 
 <Layout
-  title={title}
-  description={description}
-  canonicalPath={canonicalPath}
+  title={`Cleaning Services in ${location.name} | CamCleans`}
+  description={`Professional cleaning services available across ${location.name}.`}
+  canonicalPath={`/locations/${location.slug}`}
 >
 
-  <BreadcrumbJsonLd
-    items={[
-      { name: "Home", path: "/" },
-      { name: "Locations", path: "/locations" },
-      { name: location.name, path: canonicalPath }
-    ]}
-  />
+<section>
+<h1>Cleaning Services in {location.name}</h1>
 
-  <main>
+<p>
+CamCleans coordinates structured cleaning services throughout {location.name}.
+Services are delivered using checklist-driven cleaning standards designed for
+reliability and inspection-ready results.
+</p>
+</section>
 
-    <h1>Cleaning Services in {location.name}</h1>
+<section>
+<h2>Available Services in {location.name}</h2>
 
-    <p>
-      CamCleans provides structured cleaning services throughout {location.name}.
-      Each service follows clearly defined inclusions and checklist standards
-      to ensure consistency and clarity.
-    </p>
+<ul>
+{Object.values(services).map((service) => (
+<li>
+<a href={`/services/${service.slug}/${location.slug}`}>
+{service.name} in {location.name}
+</a>
+</li>
+))}
+</ul>
 
-    <h2>Available Services in {location.name}</h2>
+</section>
 
-    <ul>
-      {Object.keys(services).map((serviceSlug) => (
-        <li>
-          <a href={`/services/${serviceSlug}/${slug}`}>
-            {services[serviceSlug].name} in {location.name}
-          </a>
-        </li>
-      ))}
-    </ul>
+<section>
 
-    <h2>Service Standards</h2>
+<h2>Property Types Covered</h2>
 
-    <p>
-      All services in {location.name} follow structured scopes rather than
-      informal cleaning arrangements. This ensures expectations remain aligned
-      before work begins.
-    </p>
+<ul>
+<li>Apartments</li>
+<li>Houses</li>
+<li>Rental properties</li>
+<li>Renovation projects</li>
+<li>Commercial offices</li>
+</ul>
 
-  </main>
+</section>
 
 </Layout>
