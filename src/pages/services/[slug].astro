@@ -15,6 +15,16 @@ const service = services[slug];
 if (!service) {
   throw new Error("Service not found");
 }
+
+/* map service slug → guide cluster */
+const CLUSTER_MAP = {
+  "after-builders-cleaning": "after-builders",
+  "end-of-tenancy-cleaning": "end-of-tenancy",
+  "one-off-deep-cleaning": "deep-cleaning",
+  "carpet-rug-cleaning": "carpet-cleaning"
+};
+
+const cluster = CLUSTER_MAP[slug] || "";
 ---
 
 <Layout title={service.name} description={service.description}>
@@ -50,7 +60,13 @@ tenancies, renovations and commercial properties.
 
 </section>
 
-<GuideLinks />
+{cluster && (
+<section class="service-guides">
+
+<GuideLinks cluster={cluster} />
+
+</section>
+)}
 
 </article>
 

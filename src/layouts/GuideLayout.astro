@@ -1,52 +1,67 @@
 ---
-import Layout from "./Layout.astro";
-import RelatedGuides from "../components/RelatedGuides.astro";
+const { cluster = "" } = Astro.props;
 
-const { title, description } = Astro.props;
+const CLUSTER_GUIDES = {
+
+  "after-builders": [
+    { title: "Post Renovation Cleaning Checklist", url: "/guides/post-renovation-cleaning-checklist" },
+    { title: "Removing Plaster Dust After Renovation", url: "/guides/removing-plaster-dust-after-renovation" },
+    { title: "Removing Cement Dust From Floors", url: "/guides/removing-cement-dust-from-floors" },
+    { title: "Removing Paint Splatter After Renovation", url: "/guides/removing-paint-splatter-after-renovation" },
+    { title: "Why Builders Dust Keeps Coming Back", url: "/guides/why-builders-dust-keeps-coming-back" },
+    { title: "Tools Used In After Builders Cleaning", url: "/guides/tools-used-in-after-builders-cleaning" },
+    { title: "Post Construction Window Cleaning", url: "/guides/post-construction-window-cleaning" },
+    { title: "Post Renovation Air Quality Cleaning", url: "/guides/post-renovation-air-quality-cleaning" }
+  ],
+
+  "end-of-tenancy": [
+    { title: "Tenancy Cleaning Room By Room Checklist", url: "/guides/tenancy-cleaning-room-by-room-checklist" },
+    { title: "Tenancy Cleaning Timeline Before Moving Out", url: "/guides/tenancy-cleaning-timeline-before-moving-out" },
+    { title: "Tenancy Cleaning Mistakes That Cost Deposits", url: "/guides/tenancy-cleaning-mistakes-that-cost-deposits" },
+    { title: "Professional Vs DIY Tenancy Cleaning", url: "/guides/professional-vs-diy-tenancy-cleaning" },
+    { title: "What Letting Agents Look For In Cleaning", url: "/guides/what-letting-agents-look-for-in-cleaning" },
+    { title: "Professional Tenancy Cleaning Proof Guide", url: "/guides/professional-tenancy-cleaning-proof-guide" },
+    { title: "Pet Damage Cleaning Before Inspection", url: "/guides/pet-damage-cleaning-before-inspection" }
+  ],
+
+  "deep-cleaning": [
+    { title: "What Is Deep Cleaning House", url: "/guides/what-is-deep-cleaning-house" },
+    { title: "What Is Included In Deep Cleaning", url: "/guides/what-is-included-in-deep-cleaning" },
+    { title: "Spring Cleaning Vs Deep Cleaning", url: "/guides/spring-cleaning-vs-deep-cleaning" }
+  ],
+
+  "carpet-cleaning": [
+    { title: "Remove Carpet Stains Guide", url: "/guides/remove-carpet-stains-guide" },
+    { title: "Professional Vs DIY Carpet Cleaning", url: "/guides/professional-vs-diy-carpet-cleaning" },
+    { title: "Steam Cleaning Carpets Explained", url: "/guides/steam-cleaning-carpets-explained" },
+    { title: "Pet Odour Carpet Cleaning", url: "/guides/pet-odour-carpet-cleaning" }
+  ]
+
+};
+
+const guides = CLUSTER_GUIDES[cluster] || [];
 ---
 
-<Layout title={title} description={description}>
+{guides.length > 0 && (
 
-<article class="guide-container">
+<section class="guide-links">
 
-<header class="guide-header">
-<h1>{title}</h1>
-</header>
+<h3>Related Cleaning Guides</h3>
 
-<section class="guide-content">
-<slot />
-</section>
+<ul>
 
-<hr />
+{guides.map((guide) => (
 
-<section class="guide-service">
-
-<h2>Professional After Builders Cleaning</h2>
-
-<p>
-Construction dust, plaster residue and renovation debris require specialist cleaning.
-Our after builders cleaning service removes fine dust, construction particles and
-post-build contamination so properties are safe, presentable and ready for occupation.
-</p>
-
-<p>
-<a href="/services/after-builders-cleaning">
-View the After Builders Cleaning Service
+<li>
+<a href={guide.url}>
+{guide.title}
 </a>
-</p>
+</li>
+
+))}
+
+</ul>
 
 </section>
 
-<hr />
-
-<section class="guide-related">
-
-<h3>Related Guides</h3>
-
-<RelatedGuides />
-
-</section>
-
-</article>
-
-</Layout>
+)}
