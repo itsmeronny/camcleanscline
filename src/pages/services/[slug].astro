@@ -16,6 +16,7 @@ if (!service) {
 }
 
 const isAfterBuilders = slug === "after-builders-cleaning";
+const isEndOfTenancy = slug === "end-of-tenancy-cleaning";
 ---
 
 <Layout
@@ -134,6 +135,46 @@ const isAfterBuilders = slug === "after-builders-cleaning";
         <li>
           <a href="/guides/after-builders-cleaning-cost-guide">
             After Builders Cleaning Cost Guide
+          </a>
+        </li>
+
+      </ul>
+    </section>
+  )}
+
+  {isEndOfTenancy && (
+    <section>
+      <h2>End of Tenancy Cleaning Guides</h2>
+
+      <ul>
+
+        <li>
+          <a href="/guides/end-of-tenancy-cleaning-checklist">
+            End of Tenancy Cleaning Checklist
+          </a>
+        </li>
+
+        <li>
+          <a href="/guides/landlord-inspection-cleaning-guide">
+            Landlord Inspection Cleaning Guide
+          </a>
+        </li>
+
+        <li>
+          <a href="/guides/deposit-deduction-cleaning-guide">
+            Deposit Deduction Cleaning Guide
+          </a>
+        </li>
+
+        <li>
+          <a href="/guides/professional-vs-diy-tenancy-cleaning">
+            Professional vs DIY Tenancy Cleaning
+          </a>
+        </li>
+
+        <li>
+          <a href="/guides/end-of-tenancy-cleaning-cost-guide">
+            End of Tenancy Cleaning Cost Guide
           </a>
         </li>
 
