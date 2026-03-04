@@ -1,0 +1,202 @@
+]633;E;for f in src/layouts/*.astro src/components/*.astro;d81545bd-3a53-4831-be3e-4a8e0569e743]633;C===== src/layouts/GuideLayout.astro =====
+---
+import Layout from "./Layout.astro";
+import RelatedGuides from "../components/RelatedGuides.astro";
+
+const {
+  title,
+  description,
+  cluster = ""
+} = Astro.props;
+
+const SERVICE_MAP = {
+  "after-builders": {
+    title: "After Builders Cleaning",
+    url: "/services/after-builders-cleaning",
+    text:
+      "After builders cleaning removes plaster dust, cement residue and construction debris left behind after renovation or building work. Professional equipment is used to safely remove fine construction particles and restore the property to a clean, liveable condition."
+  },
+
+  "end-of-tenancy": {
+    title: "End Of Tenancy Cleaning",
+    url: "/services/end-of-tenancy-cleaning",
+    text:
+      "End of tenancy cleaning prepares rental properties for landlord inspections and inventory checks. Professional tenancy cleaning helps tenants avoid deposit deductions by meeting letting agent cleaning standards."
+  },
+
+  "deep-cleaning": {
+    title: "Deep Cleaning",
+    url: "/services/one-off-deep-cleaning",
+    text:
+      "Deep cleaning removes heavy dirt build-up, grease and neglected contamination throughout a property. It is typically used before moving in, after long tenancies, or when restoring homes to hygienic condition."
+  },
+
+  "carpet-cleaning": {
+    title: "Carpet & Rug Cleaning",
+    url: "/services/carpet-rug-cleaning",
+    text:
+      "Professional carpet cleaning removes embedded dirt, stains and allergens trapped within carpet fibres. Specialist cleaning equipment restores carpets and improves indoor hygiene."
+  }
+};
+
+const service = SERVICE_MAP[cluster] || null;
+---
+
+<Layout title={title} description={description}>
+
+<article class="guide-container">
+
+<header class="guide-header">
+<h1>{title}</h1>
+</header>
+
+<section class="guide-content">
+<slot />
+</section>
+
+{service && (
+
+<section class="guide-service">
+
+<hr />
+
+<h2>Professional {service.title}</h2>
+
+<p>
+{service.text}
+</p>
+
+<p>
+<a href={service.url}>
+View the {service.title} Service
+</a>
+</p>
+
+</section>
+
+)}
+
+<hr />
+
+<section class="guide-related">
+
+<h3>Related Guides</h3>
+
+<RelatedGuides />
+
+</section>
+
+</article>
+
+</Layout>
+===== src/layouts/Layout.astro =====
+---
+import "../styles.css";
+
+const {
+  title = "CamCleans",
+  description = "Professional cleaning services across the UK.",
+  canonicalPath = "/",
+} = Astro.props;
+
+const canonical = new URL(
+  canonicalPath,
+  Astro.site ?? "http://localhost:4321"
+).toString();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+===== src/components/GuideLinks.astro =====
+---
+const guides = [
+  { href: "/guides/after-builders-dust-removal", title: "After Builders Dust Removal" },
+  { href: "/guides/post-renovation-cleaning-checklist", title: "Post Renovation Cleaning Checklist" },
+  { href: "/guides/developer-handover-cleaning-guide", title: "Developer Handover Cleaning Guide" },
+  { href: "/guides/after-builders-cleaning-cost-guide", title: "After Builders Cleaning Cost Guide" },
+  { href: "/guides/after-builders-cleaning-vs-deep-cleaning", title: "After Builders vs Deep Cleaning" },
+
+  { href: "/guides/tenancy-cleaning-room-by-room-checklist", title: "Tenancy Cleaning Room Checklist" },
+  { href: "/guides/tenancy-cleaning-mistakes-that-cost-deposits", title: "Tenancy Cleaning Mistakes" },
+  { href: "/guides/what-letting-agents-look-for-in-cleaning", title: "Letting Agent Inspection Standards" },
+
+  { href: "/guides/what-is-deep-cleaning-house", title: "What Is Deep Cleaning" },
+  { href: "/guides/deep-cleaning-vs-regular-cleaning", title: "Deep vs Regular Cleaning" },
+  { href: "/guides/how-often-should-you-deep-clean", title: "How Often To Deep Clean" },
+
+  { href: "/guides/how-carpet-cleaning-works", title: "How Carpet Cleaning Works" },
+  { href: "/guides/carpet-cleaning-vs-steam-cleaning", title: "Carpet Cleaning vs Steam Cleaning" },
+  { href: "/guides/remove-carpet-stains-guide", title: "Carpet Stain Removal Guide" }
+];
+---
+
+<section class="service-guides">
+
+<h2>Cleaning Guides</h2>
+
+<ul>
+{guides.map((g) => (
+<li>
+<a href={g.href}>{g.title}</a>
+</li>
+))}
+</ul>
+
+</section>
+
+===== src/components/RelatedGuides.astro =====
+---
+const guides = [
+  { href: "/guides/after-builders-dust-removal", title: "After Builders Dust Removal Guide" },
+  { href: "/guides/post-renovation-cleaning-checklist", title: "Post Renovation Cleaning Checklist" },
+  { href: "/guides/after-builders-cleaning-vs-deep-cleaning", title: "After Builders vs Deep Cleaning" },
+  { href: "/guides/developer-handover-cleaning-guide", title: "Developer Handover Cleaning Guide" },
+  { href: "/guides/after-builders-cleaning-cost-guide", title: "After Builders Cleaning Cost Guide" },
+
+  { href: "/guides/tenancy-cleaning-room-by-room-checklist", title: "Tenancy Cleaning Room Checklist" },
+  { href: "/guides/tenancy-cleaning-mistakes-that-cost-deposits", title: "Tenancy Cleaning Mistakes" },
+  { href: "/guides/what-letting-agents-look-for-in-cleaning", title: "Letting Agent Inspection Standards" },
+  { href: "/guides/tenancy-cleaning-timeline-before-moving-out", title: "Tenancy Cleaning Timeline" },
+
+  { href: "/guides/what-is-deep-cleaning-house", title: "What Is Deep Cleaning" },
+  { href: "/guides/deep-cleaning-vs-regular-cleaning", title: "Deep vs Regular Cleaning" },
+  { href: "/guides/how-often-should-you-deep-clean", title: "How Often To Deep Clean" },
+  { href: "/guides/deep-cleaning-checklist-room-by-room", title: "Deep Cleaning Checklist" },
+
+  { href: "/guides/how-carpet-cleaning-works", title: "How Carpet Cleaning Works" },
+  { href: "/guides/how-often-should-you-clean-carpets", title: "How Often To Clean Carpets" },
+  { href: "/guides/carpet-cleaning-vs-steam-cleaning", title: "Carpet Cleaning vs Steam Cleaning" },
+  { href: "/guides/remove-carpet-stains-guide", title: "Carpet Stain Removal Guide" }
+];
+---
+
+<section>
+  <h2>Related Cleaning Guides</h2>
+  <ul>
+    {guides.map((g) => (
+      <li>
+        <a href={g.href}>{g.title}</a>
+      </li>
+    ))}
+  </ul>
+</section>
+

@@ -1,0 +1,74 @@
+]633;E;for f in src/pages/services/*.astro;d81545bd-3a53-4831-be3e-4a8e0569e743]633;C===== src/pages/services/[slug].astro =====
+---
+import Layout from "../../layouts/Layout.astro";
+import GuideLinks from "../../components/GuideLinks.astro";
+import services from "../../data/services";
+
+export async function getStaticPaths() {
+  return Object.values(services).map((service) => ({
+    params: { slug: service.slug }
+  }));
+}
+
+const { slug } = Astro.params;
+const service = services[slug];
+
+if (!service) {
+  throw new Error("Service not found");
+}
+
+/* map service slug → guide cluster */
+const CLUSTER_MAP = {
+  "after-builders-cleaning": "after-builders",
+  "end-of-tenancy-cleaning": "end-of-tenancy",
+  "one-off-deep-cleaning": "deep-cleaning",
+  "carpet-rug-cleaning": "carpet-cleaning"
+};
+
+const cluster = CLUSTER_MAP[slug] || "";
+---
+
+<Layout title={service.name} description={service.description}>
+
+<article class="service-container">
+
+<header class="service-header">
+<h1>{service.name}</h1>
+<p>{service.description}</p>
+</header>
+
+<section class="service-content">
+<p>
+Professional {service.name.toLowerCase()} delivered to consistent national
+standards. Structured cleaning processes ensure reliable results for homes,
+tenancies, renovations and commercial properties.
+</p>
+</section>
+
+<section class="service-locations">
+
+<h2>Available Locations</h2>
+
+<ul>
+{Object.keys(service.locations || {}).map((location) => (
+<li>
+<a href={`/services/${slug}/${location}`}>
+{service.name} in {location}
+</a>
+</li>
+))}
+</ul>
+
+</section>
+
+{cluster && (
+<section class="service-guides">
+
+<GuideLinks cluster={cluster} />
+
+</section>
+)}
+
+</article>
+
+</Layout>

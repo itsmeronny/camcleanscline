@@ -1,0 +1,1733 @@
+]633;E;for f in src/pages/guides/*.astro;d81545bd-3a53-4831-be3e-4a8e0569e743]633;C===== src/pages/guides/after-builders-cleaning-checklist-room-by-room.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+
+const title = "After Builders Cleaning Checklist (Room by Room)";
+const description = "Room-by-room checklist for cleaning a property after renovation or building work.";
+---
+
+<GuideLayout title={title} description={description}>
+
+<p>After builders cleaning requires a systematic approach to remove construction dust from every surface.</p>
+
+<h2>Kitchen</h2>
+<p>Clean cabinets, appliances, surfaces and flooring to remove construction residue.</p>
+
+<h2>Bathrooms</h2>
+<p>Remove dust from tiles, fixtures and ventilation areas.</p>
+
+<h2>Living Areas</h2>
+<p>Vacuum floors, wipe surfaces and clean windows to remove plaster dust.</p>
+
+</GuideLayout>
+
+===== src/pages/guides/after-builders-cleaning-cost-guide.astro =====
+---
+import Layout from "../../layouts/Layout.astro";
+
+const title = "After Builders Cleaning Cost Guide (UK)";
+const description =
+  "Understand typical after builders cleaning costs in the UK. Learn what affects pricing after renovation, refurbishment and construction projects.";
+
+const canonical = "/guides/after-builders-cleaning-cost-guide";
+---
+
+<Layout
+  title={title}
+  description={description}
+  canonicalPath={canonical}
+>
+
+<section>
+
+<h1>After Builders Cleaning Cost Guide</h1>
+
+<p>
+After renovation work is completed most properties require specialist
+cleaning to remove plaster dust, installation residue and construction
+contamination. The cost of after builders cleaning varies depending on the
+size of the property, the scale of renovation work and the amount of
+construction dust present.
+</p>
+
+</section>
+
+<section>
+
+<h2>Typical After Builders Cleaning Costs</h2>
+
+<p>
+Prices vary depending on property size and project intensity, but typical
+ranges in the UK are:
+</p>
+
+<ul>
+<li>Small apartment renovation clean: £120 – £220</li>
+<li>2–3 bedroom property refurb clean: £180 – £350</li>
+<li>Large renovation or extension clean: £300 – £600+</li>
+</ul>
+
+<p>
+These ranges reflect the additional time required to remove fine plaster
+dust and installation residue compared with standard domestic cleaning.
+</p>
+
+</section>
+
+<section>
+
+<h2>What Affects After Builders Cleaning Costs</h2>
+
+<ul>
+<li>Size of the property</li>
+<li>Number of renovated rooms</li>
+<li>Level of plaster and sanding dust</li>
+<li>Kitchen or bathroom installation residue</li>
+<li>Floor sanding projects</li>
+<li>Access and parking conditions</li>
+</ul>
+
+</section>
+
+<section>
+
+<h2>Why Construction Dust Increases Cleaning Time</h2>
+
+<p>
+Fine plaster dust spreads easily throughout a property and often requires
+multiple extraction passes before surfaces remain clear. High-level dust
+removal, fixture detailing and repeated vacuuming increase labour time
+compared with standard cleaning.
+</p>
+
+</section>
+
+<section>
+
+<h2>When After Builders Cleaning Is Required</h2>
+
+<ul>
+<li>Full property refurbishment</li>
+<li>Kitchen installation</li>
+<li>Bathroom renovation</li>
+<li>Property extension projects</li>
+<li>New build handover preparation</li>
+</ul>
+
+</section>
+
+<section>
+
+<h2>Professional After Builders Cleaning</h2>
+
+<p>
+Professional after builders cleaning removes construction dust and residue
+after renovation projects and prepares the property for occupation or
+inspection.
+</p>
+
+<p>
+<a href="/services/after-builders-cleaning">
+View After Builders Cleaning Service
+</a>
+</p>
+
+</section>
+
+<section>
+
+<h2>Related Guides</h2>
+
+<ul>
+
+<li>
+<a href="/guides/after-builders-dust-removal">
+After Builders Dust Removal Guide
+</a>
+</li>
+
+<li>
+<a href="/guides/post-renovation-cleaning-checklist">
+Post Renovation Cleaning Checklist
+</a>
+</li>
+
+<li>
+<a href="/guides/after-builders-cleaning-vs-deep-cleaning">
+After Builders Cleaning vs Deep Cleaning
+</a>
+</li>
+
+<li>
+<a href="/guides/developer-handover-cleaning-guide">
+Developer Handover Cleaning Guide
+</a>
+</li>
+
+</ul>
+
+</section>
+
+</Layout>
+===== src/pages/guides/after-builders-cleaning-vs-deep-cleaning.astro =====
+---
+import Layout from "../../layouts/Layout.astro";
+
+const title = "After Builders Cleaning vs Deep Cleaning (UK)";
+const description =
+  "Understand the difference between after builders cleaning and deep cleaning. Learn when each service is required after renovation or heavy property use.";
+
+const canonical = "/guides/after-builders-cleaning-vs-deep-cleaning";
+---
+
+<Layout
+  title={title}
+  description={description}
+  canonicalPath={canonical}
+>
+
+<section>
+<h1>After Builders Cleaning vs Deep Cleaning</h1>
+
+<p>
+After renovation work many property owners assume a standard deep clean is
+sufficient. In reality, post-construction environments create a different
+type of contamination that requires specialised cleaning processes.
+</p>
+
+<p>
+Understanding the difference between after builders cleaning and deep
+cleaning helps determine the correct service following refurbishment or
+heavy property use.
+</p>
+
+</section>
+
+<section>
+
+<h2>What Is After Builders Cleaning?</h2>
+
+<p>
+After builders cleaning is a specialist cleaning process designed to remove
+construction residue following renovation or installation work.
+</p>
+
+<ul>
+<li>Fine plaster and cement dust removal</li>
+<li>Adhesive, silicone and installation residue cleaning</li>
+<li>Detailed fixture and frame extraction</li>
+<li>High-level dust removal</li>
+<li>Multiple vacuum passes for fine particulate</li>
+</ul>
+
+<p>
+This process typically occurs after kitchen installations, plastering,
+property extensions or full refurbishments.
+</p>
+
+</section>
+
+<section>
+
+<h2>What Is Deep Cleaning?</h2>
+
+<p>
+Deep cleaning focuses on removing accumulated domestic dirt, grease and
+general build-up within a property.
+</p>
+
+<ul>
+<li>Kitchen degreasing</li>
+<li>Bathroom descaling</li>
+<li>Appliance cleaning</li>
+<li>Carpet vacuuming</li>
+<li>General surface sanitation</li>
+</ul>
+
+<p>
+Deep cleaning is usually required after extended occupancy, pre-sale
+preparation or periodic maintenance cleaning.
+</p>
+
+</section>
+
+<section>
+
+<h2>Key Differences</h2>
+
+<ul>
+<li><strong>Source of contamination</strong> — construction dust vs domestic build-up</li>
+<li><strong>Cleaning equipment</strong> — HEPA extraction vs standard cleaning tools</li>
+<li><strong>Dust management</strong> — staged extraction vs single-pass cleaning</li>
+<li><strong>Typical trigger</strong> — renovation completion vs property maintenance</li>
+</ul>
+
+</section>
+
+<section>
+
+<h2>When After Builders Cleaning Is Required</h2>
+
+<ul>
+<li>Plastering work has been completed</li>
+<li>Kitchen or bathroom installations finished</li>
+<li>Floor sanding projects</li>
+<li>Extension or refurbishment work</li>
+<li>New build property handovers</li>
+</ul>
+
+<p>
+In these environments construction dust and installation residue require a
+specialist cleaning sequence.
+</p>
+
+</section>
+
+<section>
+
+<h2>When Deep Cleaning Is More Suitable</h2>
+
+<ul>
+<li>General property refresh</li>
+<li>Pre-sale preparation</li>
+<li>Heavy domestic build-up</li>
+<li>Seasonal maintenance cleaning</li>
+</ul>
+
+</section>
+
+<section>
+
+<h2>Professional After Builders Cleaning</h2>
+
+<p>
+After renovation projects many properties require specialist cleaning to
+remove plaster dust, adhesive residue and construction contamination.
+</p>
+
+<p>
+See our full service here:
+</p>
+
+<p>
+<a href="/services/after-builders-cleaning">
+After Builders Cleaning Service
+</a>
+</p>
+
+</section>
+
+<section>
+
+<h2>Related Guides</h2>
+
+<ul>
+<li>
+<a href="/guides/after-builders-dust-removal">
+After Builders Dust Removal Guide
+</a>
+</li>
+
+<li>
+<a href="/guides/post-renovation-cleaning-checklist">
+Post Renovation Cleaning Checklist
+</a>
+</li>
+
+</ul>
+
+</section>
+
+</Layout>
+===== src/pages/guides/after-builders-dust-removal.astro =====
+---
+import Layout from "../../layouts/Layout.astro";
+
+const title = "After Builders Dust Removal Guide (UK)";
+const description = "Professional guide to removing fine plaster and construction dust after renovation. Understand sequencing, risk, and when specialist after builders cleaning is required.";
+
+const canonical = "https://camcleans.co.uk/guides/after-builders-dust-removal/";
+---
+
+<Layout title={title} description={description} canonical={canonical}>
+
+<main class="container guide">
+
+  <nav class="breadcrumbs">
+    <a href="/">Home</a> →
+    <a href="/services/after-builders-cleaning">After Builders Cleaning</a> →
+    <span>Dust Removal Guide</span>
+  </nav>
+
+  <h1>After Builders Dust Removal Guide (UK)</h1>
+
+  <p class="intro">
+    Post-renovation dust is not standard household dust. Plaster particles,
+    cement residue and construction debris behave differently — remaining
+    airborne, re-settling repeatedly, and embedding into fixtures and soft
+    materials. Proper removal requires correct sequencing and filtration.
+  </p>
+
+  <section>
+    <h2>Why Builder’s Dust Is Different</h2>
+    <p>
+      Construction environments generate ultra-fine particulate matter.
+      Unlike domestic dust, plaster and cement particles are micron-level
+      and remain suspended in air long after work finishes.
+    </p>
+
+    <ul>
+      <li>Plaster dust – fine airborne particulate</li>
+      <li>Cement residue – alkaline surface film</li>
+      <li>Sawdust – fibrous cling to corners and frames</li>
+      <li>Silicone & filler smears – require controlled removal</li>
+      <li>Repeated airborne redeposit cycle</li>
+    </ul>
+
+    <p>
+      Domestic cleaning methods are not designed for post-construction
+      contamination.
+    </p>
+  </section>
+
+  <section>
+    <h2>The Real Problem With Fine Plaster Dust</h2>
+    <p>
+      Fine plaster dust can continue settling for 48–72 hours after the
+      visible work has ended. It embeds into:
+    </p>
+
+    <ul>
+      <li>Electrical sockets and switches</li>
+      <li>Light fittings and recessed spotlights</li>
+      <li>Ventilation units and extractor fans</li>
+      <li>Soft furnishings and upholstery</li>
+      <li>Carpet fibres</li>
+    </ul>
+
+    <p>
+      Standard vacuum cleaners without HEPA filtration risk motor damage
+      and simply redistribute fine particles back into the air.
+    </p>
+  </section>
+
+  <section>
+    <h2>Correct Dust Removal Order</h2>
+
+    <ol>
+      <li>Allow minimum 24–48 hours for airborne settling.</li>
+      <li>High-level dry vacuum using HEPA filtration.</li>
+      <li>Detail clean of sockets, fittings and frames.</li>
+      <li>Controlled microfibre wall wipe (not saturated).</li>
+      <li>Multi-pass floor vacuum.</li>
+      <li>Final damp mop stage.</li>
+      <li>Glass and polishing completed last.</li>
+    </ol>
+
+    <p>
+      Cleaning floors first or wet wiping too early can create paste residue
+      and prolong contamination.
+    </p>
+  </section>
+
+  <section>
+    <h2>Common Post-Renovation Cleaning Mistakes</h2>
+
+    <ul>
+      <li>Using domestic vacuums without filtration control</li>
+      <li>Wet wiping before dry extraction</li>
+      <li>Ignoring loft hatches and ventilation grilles</li>
+      <li>Skipping light fixture detailing</li>
+      <li>Attempting full clean before dust has settled</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>How Professional After Builders Cleaning Handles Dust</h2>
+
+    <p>
+      Professional post-construction cleaning uses structured, staged
+      extraction and detailing. This typically includes:
+    </p>
+
+    <ul>
+      <li>Commercial HEPA filtration systems</li>
+      <li>Multi-stage dust passes</li>
+      <li>Fixture-level detailing</li>
+      <li>Residue and adhesive removal</li>
+      <li>Final clarity inspection</li>
+    </ul>
+
+    <p>
+      For full construction-grade cleaning, see our
+      <a href="/services/after-builders-cleaning">After Builders Cleaning service</a>.
+    </p>
+  </section>
+
+  <section>
+    <h2>When DIY Is Not Enough</h2>
+
+    <p>Professional intervention is typically required where:</p>
+
+    <ul>
+      <li>Multiple rooms have been plastered</li>
+      <li>Full kitchen or bathroom refit completed</li>
+      <li>Floor sanding undertaken</li>
+      <li>New build property handover stage</li>
+      <li>Heavy cement or grout residue present</li>
+    </ul>
+
+    <p>
+      Large-scale renovation dust requires structured removal
+      to prevent re-contamination.
+    </p>
+  </section>
+
+  <section class="cta">
+    <h2>Need Professional After Builders Cleaning?</h2>
+    <p>
+      CamCleans provides construction-grade cleaning following renovation,
+      extension, and full refurb projects across major UK cities.
+    </p>
+
+    <a class="button" href="/services/after-builders-cleaning">
+      View After Builders Cleaning Service
+    </a>
+  </section>
+
+  <section class="related">
+    <h3>Related</h3>
+    <ul>
+      <li><a href="/services/after-builders-cleaning/london">After Builders Cleaning London</a></li>
+      <li><a href="/services/after-builders-cleaning/manchester">After Builders Cleaning Manchester</a></li>
+      <li><a href="/services/one-off-deep-cleaning">One-Off Deep Cleaning</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "After Builders Dust Removal Guide (UK)",
+  "description": "Professional guide to removing fine plaster and construction dust after renovation.",
+  "author": {
+    "@type": "Organization",
+    "name": "CamCleans"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "CamCleans"
+  }
+}
+</script>
+
+</Layout>
+===== src/pages/guides/bathroom-deep-cleaning-guide.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "Bathroom Deep Cleaning Guide";
+const description = "How bathrooms are deep cleaned to remove limescale and bacteria.";
+---
+<GuideLayout title={title} description={description}>
+<p>Bathrooms require thorough descaling and sanitising during deep cleaning.</p>
+<h2>Main tasks</h2>
+<p>Cleaning grout, descaling taps and scrubbing tiles are core tasks.</p>
+</GuideLayout>
+
+===== src/pages/guides/builders-cleaning-safety-procedures.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "Builders Cleaning Safety Procedures";
+const description = "Safety procedures followed during professional after builders cleaning.";
+---
+<GuideLayout title={title} description={description}>
+<p>After builders cleaning must be carried out carefully due to dust, debris and leftover materials.</p>
+<h2>Safety considerations</h2>
+<p>Protective equipment and controlled cleaning processes are essential when handling construction residue.</p>
+<h2>Professional standards</h2>
+<p>Professional cleaning teams follow structured safety procedures when working in newly renovated properties.</p>
+</GuideLayout>
+
+===== src/pages/guides/builders-clean-vs-sparkle-clean.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+
+const title = "Builders Clean vs Sparkle Clean";
+const description = "Understanding the difference between a builders clean and a sparkle clean after construction work.";
+---
+
+<GuideLayout title={title} description={description}>
+
+<p>Construction projects often require two stages of cleaning: the builders clean and the sparkle clean.</p>
+
+<h2>Builders Clean</h2>
+<p>This stage removes heavy debris, plaster dust, paint splatter and construction residue left after building work.</p>
+
+<h2>Sparkle Clean</h2>
+<p>The sparkle clean occurs after the builders clean and prepares the property for presentation, handover or occupation.</p>
+
+</GuideLayout>
+
+===== src/pages/guides/carpet-cleaning-allergy-benefits.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "Carpet Cleaning Allergy Benefits";
+const description = "How carpet cleaning improves indoor air quality.";
+---
+<GuideLayout title={title} description={description}>
+<p>Carpets can trap dust mites, pollen and allergens.</p>
+</GuideLayout>
+
+===== src/pages/guides/carpet-cleaning-before-moving-out.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "Carpet Cleaning Before Moving Out";
+const description = "Why carpets are often cleaned before tenancy inspections.";
+---
+<GuideLayout title={title} description={description}>
+<p>Many tenancy agreements require carpets to be returned in clean condition.</p>
+</GuideLayout>
+
+===== src/pages/guides/carpet-cleaning-drying-time.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "Carpet Cleaning Drying Time";
+const description = "Typical drying times after professional carpet cleaning.";
+---
+<GuideLayout title={title} description={description}>
+<p>After cleaning, carpets need time to dry before normal use.</p>
+<h2>Typical timeframe</h2>
+<p>Most carpets dry within several hours depending on ventilation and humidity.</p>
+</GuideLayout>
+
+===== src/pages/guides/carpet-cleaning-required-for-tenancy.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "Is Carpet Cleaning Required For Tenancy?";
+const description = "When carpet cleaning is required before moving out of a rental property.";
+---
+<GuideLayout title={title} description={description}>
+<p>Carpet condition often affects deposit returns during tenancy inspections.</p>
+<h2>When cleaning is expected</h2>
+<p>Heavy wear, stains or pet damage usually require professional carpet cleaning.</p>
+</GuideLayout>
+
+===== src/pages/guides/carpet-cleaning-vs-steam-cleaning.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "Carpet Cleaning vs Steam Cleaning";
+const description = "Understanding the difference between general carpet cleaning and steam extraction.";
+---
+<GuideLayout title={title} description={description}>
+<p>Steam cleaning is a specific carpet cleaning method that uses hot water extraction to remove debris.</p>
+</GuideLayout>
+
+===== src/pages/guides/construction-dust-health-risks.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "Construction Dust Health Risks";
+const description = "Health risks associated with construction dust and why proper after builders cleaning is essential.";
+---
+<GuideLayout title={title} description={description}>
+<p>Construction dust from plaster, silica and building materials can remain airborne long after renovation work finishes.</p>
+<h2>Why construction dust is harmful</h2>
+<p>Fine particles can irritate lungs, eyes and skin, particularly in enclosed residential spaces.</p>
+<h2>Proper removal</h2>
+<p>Professional after builders cleaning removes these particles using HEPA filtration and controlled surface cleaning.</p>
+</GuideLayout>
+
+===== src/pages/guides/deep-cleaning-before-selling-house.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "Deep Cleaning Before Selling A House";
+const description = "Why deep cleaning improves property presentation before sale.";
+---
+<GuideLayout title={title} description={description}>
+<p>A clean property improves buyer perception and property presentation.</p>
+<h2>Preparation</h2>
+<p>Deep cleaning removes buildup and improves overall visual appeal.</p>
+</GuideLayout>
+
+===== src/pages/guides/deep-cleaning-checklist-room-by-room.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "Deep Cleaning Checklist Room by Room";
+const description = "Checklist for performing a full property deep clean.";
+---
+<GuideLayout title={title} description={description}>
+<p>A structured checklist ensures no area of the property is overlooked.</p>
+<h2>Key rooms</h2>
+<p>Kitchens, bathrooms, living areas and bedrooms all require targeted cleaning tasks.</p>
+</GuideLayout>
+
+===== src/pages/guides/deep-cleaning-neglected-house.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "Deep Cleaning A Neglected House";
+const description = "Steps required to restore heavily neglected properties.";
+---
+<GuideLayout title={title} description={description}>
+<p>Neglected homes require intensive cleaning to remove accumulated dirt and debris.</p>
+</GuideLayout>
+
+===== src/pages/guides/deep-cleaning-vs-regular-cleaning.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "Deep Cleaning vs Regular Cleaning";
+const description = "Key differences between routine cleaning and a full deep clean.";
+---
+<GuideLayout title={title} description={description}>
+<p>Regular cleaning maintains a property, while deep cleaning restores it by addressing accumulated grime.</p>
+<h2>Main differences</h2>
+<p>Deep cleaning targets neglected areas such as grout lines, vents and behind appliances.</p>
+</GuideLayout>
+
+===== src/pages/guides/deposit-deduction-cleaning-guide.astro =====
+---
+import Layout from "../../layouts/Layout.astro";
+
+const title = "Deposit Deduction Cleaning Guide";
+const description =
+  "Understand common cleaning issues that cause deposit deductions at the end of a tenancy.";
+
+const canonical = "/guides/deposit-deduction-cleaning-guide";
+---
+
+<Layout title={title} description={description} canonicalPath={canonical}>
+
+<section>
+<h1>Deposit Deduction Cleaning Guide</h1>
+<p>Cleaning issues are one of the most common causes of tenancy deposit deductions.</p>
+</section>
+
+<section>
+<h2>Common Issues</h2>
+<ul>
+<li>Kitchen grease</li>
+<li>Bathroom limescale</li>
+<li>Carpet stains</li>
+<li>Oven residue</li>
+</ul>
+</section>
+
+<section>
+<h2>How to Avoid Deductions</h2>
+<ul>
+<li>Deep clean before inspection</li>
+<li>Follow inventory condition</li>
+<li>Use professional cleaning when required</li>
+</ul>
+</section>
+
+<section>
+<p><a href="/services/end-of-tenancy-cleaning">End of Tenancy Cleaning Service</a></p>
+</section>
+
+</Layout>
+
+===== src/pages/guides/developer-handover-cleaning-guide.astro =====
+---
+import Layout from "../../layouts/Layout.astro";
+
+const title = "Developer Handover Cleaning Guide (UK)";
+const description =
+  "Guide to developer and contractor handover cleaning after construction or refurbishment projects. Understand inspection-ready cleaning standards for property completion.";
+
+const canonical = "/guides/developer-handover-cleaning-guide";
+---
+
+<Layout
+  title={title}
+  description={description}
+  canonicalPath={canonical}
+>
+
+<section>
+<h1>Developer Handover Cleaning Guide</h1>
+
+<p>
+When a construction or refurbishment project reaches completion, properties
+must be presented in an inspection-ready condition before being handed to
+owners, tenants or property managers. Developer handover cleaning ensures
+that all remaining construction residue, dust and installation marks are
+removed prior to final sign-off.
+</p>
+
+<p>
+This stage is often referred to as a post-construction or after builders
+clean and forms the final preparation step before occupation.
+</p>
+
+</section>
+
+<section>
+
+<h2>Why Handover Cleaning Is Required</h2>
+
+<p>
+Even when builders remove major debris, construction work leaves fine dust
+and installation residue throughout the property. Without a structured
+cleaning process these materials continue settling onto surfaces and can
+affect presentation during property inspection.
+</p>
+
+<ul>
+<li>Fine plaster and sanding dust</li>
+<li>Cement residue and grout haze</li>
+<li>Silicone and adhesive marks</li>
+<li>Protective film residue on new fittings</li>
+<li>Dust inside frames, fixtures and ventilation areas</li>
+</ul>
+
+</section>
+
+<section>
+
+<h2>Typical Developer Handover Cleaning Stages</h2>
+
+<h3>Stage 1 – Debris and Surface Reset</h3>
+
+<ul>
+<li>Removal of protective coverings and packaging</li>
+<li>Collection of minor construction debris</li>
+<li>Initial dust control and ventilation</li>
+</ul>
+
+<h3>Stage 2 – Full Dust Extraction</h3>
+
+<ul>
+<li>High-level dust removal from ceilings and fittings</li>
+<li>Frame, fixture and joinery detailing</li>
+<li>Vacuum extraction of fine plaster dust</li>
+</ul>
+
+<h3>Stage 3 – Surface Cleaning</h3>
+
+<ul>
+<li>Kitchen and bathroom fixture cleaning</li>
+<li>Internal glazing and frame cleaning</li>
+<li>Switches, sockets and skirting detailing</li>
+</ul>
+
+<h3>Stage 4 – Final Presentation Finish</h3>
+
+<ul>
+<li>Floor vacuum and damp mop where appropriate</li>
+<li>Glass polishing</li>
+<li>Final inspection-ready wipe down</li>
+</ul>
+
+</section>
+
+<section>
+
+<h2>Properties That Typically Require Handover Cleaning</h2>
+
+<ul>
+<li>New build homes</li>
+<li>Property refurbishments</li>
+<li>Apartment developments</li>
+<li>Commercial-to-residential conversions</li>
+<li>Large renovation projects</li>
+</ul>
+
+</section>
+
+<section>
+
+<h2>Common Issues Identified During Handover Cleaning</h2>
+
+<ul>
+<li>Dust inside newly installed cupboards and units</li>
+<li>Protective film left on appliances or glass</li>
+<li>Silicone residue around fixtures</li>
+<li>Fine plaster dust embedded in flooring</li>
+<li>Construction dust inside extractor vents</li>
+</ul>
+
+<p>
+A structured after builders cleaning process ensures these issues are
+resolved before final property presentation.
+</p>
+
+</section>
+
+<section>
+
+<h2>After Builders Cleaning Services</h2>
+
+<p>
+Professional after builders cleaning removes construction dust, installation
+residue and debris following refurbishment or development projects.
+</p>
+
+<p>
+See the full service here:
+</p>
+
+<p>
+<a href="/services/after-builders-cleaning">
+After Builders Cleaning Service
+</a>
+</p>
+
+</section>
+
+<section>
+
+<h2>Related Guides</h2>
+
+<ul>
+
+<li>
+<a href="/guides/after-builders-dust-removal">
+After Builders Dust Removal Guide
+</a>
+</li>
+
+<li>
+<a href="/guides/post-renovation-cleaning-checklist">
+Post Renovation Cleaning Checklist
+</a>
+</li>
+
+<li>
+<a href="/guides/after-builders-cleaning-vs-deep-cleaning">
+After Builders Cleaning vs Deep Cleaning
+</a>
+</li>
+
+</ul>
+
+</section>
+
+</Layout>
+===== src/pages/guides/end-of-tenancy-cleaning-checklist.astro =====
+---
+import Layout from "../../layouts/Layout.astro";
+
+const title = "End of Tenancy Cleaning Checklist (UK)";
+const description =
+  "Room-by-room checklist used when preparing a rental property for landlord inspection at the end of a tenancy.";
+
+const canonical = "/guides/end-of-tenancy-cleaning-checklist";
+---
+
+<Layout title={title} description={description} canonicalPath={canonical}>
+
+<section>
+<h1>End of Tenancy Cleaning Checklist</h1>
+<p>End of tenancy cleaning prepares a rental property for landlord inspection and helps avoid deposit deductions.</p>
+</section>
+
+<section>
+<h2>Kitchen</h2>
+<ul>
+<li>Clean cupboards inside and out</li>
+<li>Degrease hob and extractor</li>
+<li>Clean oven interior</li>
+<li>Sanitise worktops</li>
+<li>Wipe appliances</li>
+</ul>
+</section>
+
+<section>
+<h2>Bathroom</h2>
+<ul>
+<li>Descale shower and tiles</li>
+<li>Clean toilet and sink</li>
+<li>Remove limescale</li>
+<li>Clean mirrors and cabinets</li>
+</ul>
+</section>
+
+<section>
+<h2>Living Areas</h2>
+<ul>
+<li>Dust surfaces</li>
+<li>Clean skirting boards</li>
+<li>Vacuum carpets</li>
+<li>Clean windows</li>
+</ul>
+</section>
+
+<section>
+<h2>Professional Service</h2>
+<p><a href="/services/end-of-tenancy-cleaning">End of Tenancy Cleaning Service</a></p>
+</section>
+
+</Layout>
+
+===== src/pages/guides/end-of-tenancy-cleaning-cost-guide.astro =====
+---
+import Layout from "../../layouts/Layout.astro";
+
+const title = "End of Tenancy Cleaning Cost Guide (UK)";
+const description =
+  "Typical end of tenancy cleaning prices in the UK and what affects the cost.";
+
+const canonical = "/guides/end-of-tenancy-cleaning-cost-guide";
+---
+
+<Layout title={title} description={description} canonicalPath={canonical}>
+
+<section>
+<h1>End of Tenancy Cleaning Cost Guide</h1>
+<p>Costs vary depending on property size and cleaning intensity.</p>
+</section>
+
+<section>
+<h2>Typical Price Ranges</h2>
+<ul>
+<li>Studio / 1 bed: £90 – £150</li>
+<li>2 bed property: £140 – £220</li>
+<li>3–4 bed property: £200 – £400+</li>
+</ul>
+</section>
+
+<section>
+<h2>Cost Factors</h2>
+<ul>
+<li>Property size</li>
+<li>Carpet cleaning</li>
+<li>Oven cleaning</li>
+<li>Condition of property</li>
+</ul>
+</section>
+
+<section>
+<p><a href="/services/end-of-tenancy-cleaning">View End of Tenancy Cleaning Service</a></p>
+</section>
+
+</Layout>
+
+===== src/pages/guides/how-carpet-cleaning-works.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "How Carpet Cleaning Works";
+const description = "Explanation of how professional carpet cleaning removes embedded dirt and stains.";
+---
+<GuideLayout title={title} description={description}>
+<p>Professional carpet cleaning removes embedded dirt, allergens and stains that regular vacuuming cannot reach.</p>
+<h2>Main process</h2>
+<p>Technicians typically use hot water extraction or steam cleaning equipment to lift debris from deep within carpet fibres.</p>
+</GuideLayout>
+
+===== src/pages/guides/how-long-does-after-builders-cleaning-take.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+
+const title = "How Long Does After Builders Cleaning Take?";
+const description = "Typical timelines for professional after builders cleaning following renovation work.";
+---
+
+<GuideLayout title={title} description={description}>
+
+<p>The time required for after builders cleaning depends on the size of the property and the scale of the renovation work.</p>
+
+<h2>Small Renovations</h2>
+<p>Minor renovation work may require several hours of detailed cleaning.</p>
+
+<h2>Full Property Renovations</h2>
+<p>Full refurbishment projects can require a full day or more depending on dust levels and debris.</p>
+
+</GuideLayout>
+
+===== src/pages/guides/how-long-does-deep-cleaning-take.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "How Long Does Deep Cleaning Take";
+const description = "Estimated time required for a professional deep clean.";
+---
+<GuideLayout title={title} description={description}>
+<p>The duration of a deep clean depends on property size and condition.</p>
+<h2>Typical timeframe</h2>
+<p>Most homes require several hours to complete a full deep cleaning process.</p>
+</GuideLayout>
+
+===== src/pages/guides/how-often-should-you-clean-carpets.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "How Often Should You Clean Carpets";
+const description = "Recommended frequency for professional carpet cleaning.";
+---
+<GuideLayout title={title} description={description}>
+<p>Carpets accumulate dust, allergens and oils over time.</p>
+<h2>Typical frequency</h2>
+<p>Most households benefit from professional carpet cleaning once every 12–18 months.</p>
+</GuideLayout>
+
+===== src/pages/guides/how-often-should-you-deep-clean.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "How Often Should You Deep Clean";
+const description = "Recommended frequency for deep cleaning a home.";
+---
+<GuideLayout title={title} description={description}>
+<p>Most households benefit from periodic deep cleaning to remove buildup not addressed by routine cleaning.</p>
+<h2>Typical frequency</h2>
+<p>Many properties schedule deep cleaning once or twice per year.</p>
+</GuideLayout>
+
+===== src/pages/guides/index.astro =====
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Cleaning Guides" description="Professional cleaning guides covering tenancy cleaning, after builders cleaning, deep cleaning and specialist cleaning topics.">
+
+<main class="container">
+
+<h1>Professional Cleaning Guides</h1>
+
+<p>
+These guides explain professional cleaning standards used for tenancy cleaning,
+after builders cleaning, deep cleaning and specialist property cleaning.
+</p>
+
+<h2>After Builders Cleaning Guides</h2>
+
+<ul>
+<li><a href="/guides/after-builders-dust-removal">After Builders Dust Removal</a></li>
+<li><a href="/guides/post-renovation-cleaning-checklist">Post Renovation Cleaning Checklist</a></li>
+<li><a href="/guides/after-builders-cleaning-vs-deep-cleaning">After Builders Cleaning vs Deep Cleaning</a></li>
+<li><a href="/guides/developer-handover-cleaning-guide">Developer Handover Cleaning Guide</a></li>
+<li><a href="/guides/after-builders-cleaning-cost-guide">After Builders Cleaning Cost Guide</a></li>
+<li><a href="/guides/removing-plaster-dust-after-renovation">Removing Plaster Dust After Renovation</a></li>
+<li><a href="/guides/tools-used-in-after-builders-cleaning">Tools Used in After Builders Cleaning</a></li>
+<li><a href="/guides/how-long-does-after-builders-cleaning-take">How Long After Builders Cleaning Takes</a></li>
+<li><a href="/guides/after-builders-cleaning-checklist-room-by-room">After Builders Cleaning Checklist</a></li>
+<li><a href="/guides/builders-clean-vs-sparkle-clean">Builders Clean vs Sparkle Clean</a></li>
+</ul>
+
+<p>
+Commercial service:
+<a href="/services/after-builders-cleaning">After Builders Cleaning Service</a>
+</p>
+
+<h2>End of Tenancy Cleaning Guides</h2>
+
+<ul>
+<li><a href="/guides/end-of-tenancy-cleaning-checklist">End of Tenancy Cleaning Checklist</a></li>
+<li><a href="/guides/end-of-tenancy-cleaning-cost-guide">End of Tenancy Cleaning Cost Guide</a></li>
+<li><a href="/guides/deposit-deduction-cleaning-guide">Deposit Deduction Cleaning Guide</a></li>
+<li><a href="/guides/landlord-inspection-cleaning-guide">Landlord Inspection Cleaning Guide</a></li>
+<li><a href="/guides/professional-vs-diy-tenancy-cleaning">Professional vs DIY Tenancy Cleaning</a></li>
+<li><a href="/guides/tenancy-cleaning-room-by-room-checklist">Tenancy Cleaning Room Checklist</a></li>
+<li><a href="/guides/tenancy-cleaning-mistakes-that-cost-deposits">Tenancy Cleaning Mistakes That Cost Deposits</a></li>
+<li><a href="/guides/tenancy-cleaning-timeline-before-moving-out">Tenancy Cleaning Timeline</a></li>
+<li><a href="/guides/limescale-removal-before-tenancy-inspection">Limescale Removal Before Inspection</a></li>
+<li><a href="/guides/pet-damage-cleaning-before-inspection">Pet Damage Cleaning Before Inspection</a></li>
+</ul>
+
+<p>
+Commercial service:
+<a href="/services/end-of-tenancy-cleaning">End of Tenancy Cleaning</a>
+</p>
+
+<h2>Deep Cleaning Guides</h2>
+
+<ul>
+<li><a href="/guides/what-is-deep-cleaning-house">What Is Deep Cleaning</a></li>
+<li><a href="/guides/deep-cleaning-vs-regular-cleaning">Deep Cleaning vs Regular Cleaning</a></li>
+<li><a href="/guides/how-often-should-you-deep-clean">How Often Should You Deep Clean</a></li>
+<li><a href="/guides/deep-cleaning-checklist-room-by-room">Deep Cleaning Checklist</a></li>
+<li><a href="/guides/deep-cleaning-neglected-house">Deep Cleaning a Neglected House</a></li>
+<li><a href="/guides/deep-cleaning-before-selling-house">Deep Cleaning Before Selling</a></li>
+<li><a href="/guides/move-in-deep-cleaning-guide">Move In Deep Cleaning Guide</a></li>
+<li><a href="/guides/how-long-does-deep-cleaning-take">How Long Deep Cleaning Takes</a></li>
+<li><a href="/guides/kitchen-deep-cleaning-guide">Kitchen Deep Cleaning Guide</a></li>
+<li><a href="/guides/bathroom-deep-cleaning-guide">Bathroom Deep Cleaning Guide</a></li>
+</ul>
+
+<p>
+Commercial service:
+<a href="/services/one-off-deep-cleaning">One Off Deep Cleaning</a>
+</p>
+
+<h2>Carpet Cleaning Guides</h2>
+
+<ul>
+<li><a href="/guides/how-carpet-cleaning-works">How Carpet Cleaning Works</a></li>
+<li><a href="/guides/carpet-cleaning-vs-steam-cleaning">Carpet Cleaning vs Steam Cleaning</a></li>
+<li><a href="/guides/professional-vs-diy-carpet-cleaning">Professional vs DIY Carpet Cleaning</a></li>
+<li><a href="/guides/remove-carpet-stains-guide">Carpet Stain Removal Guide</a></li>
+<li><a href="/guides/how-often-should-you-clean-carpets">How Often Carpets Should Be Cleaned</a></li>
+<li><a href="/guides/carpet-cleaning-required-for-tenancy">Carpet Cleaning for Tenancy</a></li>
+<li><a href="/guides/carpet-cleaning-before-moving-out">Carpet Cleaning Before Moving Out</a></li>
+<li><a href="/guides/carpet-cleaning-drying-time">Carpet Cleaning Drying Time</a></li>
+<li><a href="/guides/pet-odour-carpet-cleaning">Pet Odour Carpet Cleaning</a></li>
+<li><a href="/guides/carpet-cleaning-allergy-benefits">Carpet Cleaning for Allergies</a></li>
+</ul>
+
+<p>
+Commercial service:
+<a href="/services/carpet-rug-cleaning">Carpet & Rug Cleaning</a>
+</p>
+
+</main>
+
+</Layout>
+===== src/pages/guides/kitchen-deep-cleaning-guide.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "Kitchen Deep Cleaning Guide";
+const description = "Guide to deep cleaning a kitchen including appliances and surfaces.";
+---
+<GuideLayout title={title} description={description}>
+<p>Kitchens accumulate grease, food residue and limescale over time.</p>
+<h2>Focus areas</h2>
+<p>Appliances, cabinets, splashbacks and floors require intensive cleaning.</p>
+</GuideLayout>
+
+===== src/pages/guides/landlord-cleaning-standards-guide.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "Landlord Cleaning Standards Guide";
+const description = "Typical cleanliness standards landlords expect during end of tenancy inspections.";
+---
+<GuideLayout title={title} description={description}>
+<p>Landlords expect properties to be returned in the same condition as at the start of the tenancy.</p>
+<h2>Inspection criteria</h2>
+<p>Clean surfaces, appliances and flooring are key areas examined during inspection.</p>
+</GuideLayout>
+
+===== src/pages/guides/landlord-inspection-cleaning-guide.astro =====
+---
+import Layout from "../../layouts/Layout.astro";
+
+const title = "Landlord Inspection Cleaning Guide";
+const description =
+  "Guide to preparing a rental property for landlord inspection at the end of a tenancy.";
+
+const canonical = "/guides/landlord-inspection-cleaning-guide";
+---
+
+<Layout title={title} description={description} canonicalPath={canonical}>
+
+<section>
+<h1>Landlord Inspection Cleaning Guide</h1>
+<p>Landlord inspections focus on cleanliness, damage and maintenance.</p>
+</section>
+
+<section>
+<h2>Inspection Areas</h2>
+<ul>
+<li>Kitchen grease and appliances</li>
+<li>Bathroom limescale</li>
+<li>Carpet cleanliness</li>
+<li>Window frames and glass</li>
+</ul>
+</section>
+
+<section>
+<h2>Preparation Steps</h2>
+<ul>
+<li>Remove personal items</li>
+<li>Complete full property clean</li>
+<li>Check fixtures and fittings</li>
+</ul>
+</section>
+
+<section>
+<p><a href="/services/end-of-tenancy-cleaning">Professional End of Tenancy Cleaning</a></p>
+</section>
+
+</Layout>
+
+===== src/pages/guides/limescale-removal-before-tenancy-inspection.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "Limescale Removal Before Tenancy Inspection";
+const description = "How limescale buildup affects tenancy inspections.";
+---
+<GuideLayout title={title} description={description}>
+<p>Limescale buildup around taps, showers and tiles is a common inspection issue.</p>
+<h2>Cleaning focus</h2>
+<p>Bathrooms and kitchens should be descaled before the final inspection.</p>
+</GuideLayout>
+
+===== src/pages/guides/move-in-deep-cleaning-guide.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "Move In Deep Cleaning Guide";
+const description = "Why properties should be deep cleaned before new occupants move in.";
+---
+<GuideLayout title={title} description={description}>
+<p>Deep cleaning before moving in ensures the property starts in hygienic condition.</p>
+</GuideLayout>
+
+===== src/pages/guides/new-build-cleaning-checklist.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "New Build Cleaning Checklist";
+const description = "Checklist for cleaning a newly built property before handover or occupancy.";
+---
+<GuideLayout title={title} description={description}>
+<p>Newly constructed properties require a detailed clean before they are ready for occupation.</p>
+<h2>Typical residue</h2>
+<p>Dust, adhesive, plaster particles and packaging debris are commonly present.</p>
+<h2>Checklist approach</h2>
+<p>Professional cleaners follow systematic room-by-room procedures to prepare new builds for handover.</p>
+</GuideLayout>
+
+===== src/pages/guides/oven-cleaning-required-for-tenancy.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "Is Oven Cleaning Required For Tenancy?";
+const description = "Why oven cleaning is one of the most common issues in tenancy inspections.";
+---
+<GuideLayout title={title} description={description}>
+<p>Ovens are frequently checked during end-of-tenancy inspections.</p>
+<h2>Typical issues</h2>
+<p>Grease buildup and burnt residue often lead to deposit deductions.</p>
+</GuideLayout>
+
+===== src/pages/guides/pet-damage-cleaning-before-inspection.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "Pet Damage Cleaning Before Inspection";
+const description = "Cleaning steps required when pets have lived in a rental property.";
+---
+<GuideLayout title={title} description={description}>
+<p>Pets often leave hair, odours and marks that require additional cleaning.</p>
+<h2>Preparation</h2>
+<p>Deep cleaning carpets and upholstery helps remove lingering pet residue.</p>
+</GuideLayout>
+
+===== src/pages/guides/pet-odour-carpet-cleaning.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "Pet Odour Carpet Cleaning";
+const description = "How professional cleaning removes pet odours from carpets.";
+---
+<GuideLayout title={title} description={description}>
+<p>Pet accidents can penetrate carpet fibres and padding.</p>
+</GuideLayout>
+
+===== src/pages/guides/post-construction-window-cleaning.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "Post Construction Window Cleaning";
+const description = "How windows should be cleaned safely after building or renovation work.";
+---
+<GuideLayout title={title} description={description}>
+<p>Windows often collect plaster dust, paint splatter and adhesive residue during construction.</p>
+<h2>Common residue</h2>
+<p>Paint, silicone and dust frequently adhere to glass and frames after renovation.</p>
+<h2>Cleaning approach</h2>
+<p>Professional cleaning removes residue carefully without scratching glass or damaging frames.</p>
+</GuideLayout>
+
+===== src/pages/guides/post-renovation-air-quality-cleaning.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "Post Renovation Air Quality Cleaning";
+const description = "How professional cleaning improves indoor air quality after renovation.";
+---
+<GuideLayout title={title} description={description}>
+<p>Renovation work often leaves microscopic dust particles suspended in indoor air.</p>
+<h2>Air quality issues</h2>
+<p>Construction dust can remain in ventilation systems and soft furnishings.</p>
+<h2>Cleaning solution</h2>
+<p>Professional after builders cleaning reduces airborne dust through deep surface and filtration cleaning.</p>
+</GuideLayout>
+
+===== src/pages/guides/post-renovation-cleaning-checklist.astro =====
+---
+import Layout from "../../layouts/Layout.astro";
+
+const title = "Post Renovation Cleaning Checklist (UK)";
+const description =
+  "Structured post-renovation cleaning checklist used after building or refurbishment work. Understand the correct order for removing plaster dust, debris and construction residue.";
+
+const canonical = "/guides/post-renovation-cleaning-checklist";
+---
+
+<Layout
+  title={title}
+  description={description}
+  canonicalPath={canonical}
+>
+
+<section>
+<h1>Post Renovation Cleaning Checklist</h1>
+
+<p>
+After building work finishes, fine plaster dust, installation residue and
+construction debris remain across surfaces throughout the property. Proper
+post-renovation cleaning follows a structured sequence so dust is removed
+without spreading contamination to previously cleaned areas.
+</p>
+
+<p>
+This checklist outlines the typical stages used when cleaning a property
+after renovation, refurbishment or extension work.
+</p>
+</section>
+
+<section>
+<h2>Stage 1 – Initial Site Reset</h2>
+
+<ul>
+<li>Remove remaining packaging, coverings and protective sheets</li>
+<li>Collect visible debris and offcuts</li>
+<li>Open windows where possible to allow airborne dust to settle</li>
+<li>Allow a settling period before detailed cleaning begins</li>
+</ul>
+
+</section>
+
+<section>
+<h2>Stage 2 – High Level Dust Extraction</h2>
+
+<ul>
+<li>Vacuum ceilings, beams and upper wall areas</li>
+<li>Clean light fittings and recessed spotlights</li>
+<li>Dust extractor fans and ventilation covers</li>
+<li>Remove dust from curtain rails and high shelving</li>
+</ul>
+
+<p>
+High-level dust removal must occur before any floor work to prevent
+re-contamination.
+</p>
+
+</section>
+
+<section>
+<h2>Stage 3 – Detailed Surface Cleaning</h2>
+
+<ul>
+<li>Window frames and internal glazing</li>
+<li>Door frames, handles and hinges</li>
+<li>Kitchen unit fronts and internal shelving</li>
+<li>Bathroom fittings and sanitary ware</li>
+<li>Switches, sockets and skirting boards</li>
+</ul>
+
+</section>
+
+<section>
+<h2>Stage 4 – Floor Dust Removal</h2>
+
+<ul>
+<li>Initial HEPA vacuum extraction</li>
+<li>Edge detailing along skirting boards</li>
+<li>Second vacuum pass for fine plaster dust</li>
+<li>Damp mop where appropriate</li>
+</ul>
+
+<p>
+Fine plaster dust may require multiple passes before floors are fully clear.
+</p>
+
+</section>
+
+<section>
+<h2>Stage 5 – Final Handover Finish</h2>
+
+<ul>
+<li>Glass polishing</li>
+<li>Final wipe of surfaces and fixtures</li>
+<li>Spot removal for adhesive or silicone residue</li>
+<li>Inspection-ready presentation</li>
+</ul>
+
+</section>
+
+<section>
+<h2>When Professional After Builders Cleaning Is Required</h2>
+
+<p>
+Professional post-construction cleaning is typically required after:
+</p>
+
+<ul>
+<li>Full refurbishments</li>
+<li>Kitchen or bathroom installations</li>
+<li>Property extensions</li>
+<li>Floor sanding or plastering projects</li>
+<li>New build property handovers</li>
+</ul>
+
+<p>
+For full construction-grade cleaning services see:
+</p>
+
+<p>
+<a href="/services/after-builders-cleaning">
+After Builders Cleaning Service
+</a>
+</p>
+
+</section>
+
+<section>
+<h2>Related Guide</h2>
+
+<ul>
+<li>
+<a href="/guides/after-builders-dust-removal">
+After Builders Dust Removal Guide
+</a>
+</li>
+</ul>
+
+</section>
+
+</Layout>
+===== src/pages/guides/professional-tenancy-cleaning-proof-guide.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "Professional Tenancy Cleaning Proof Guide";
+const description = "How to document cleaning work before a tenancy inspection.";
+---
+<GuideLayout title={title} description={description}>
+<p>Documentation can help resolve disputes about property cleanliness.</p>
+<h2>Proof methods</h2>
+<p>Photos and cleaning receipts demonstrate that the property was properly cleaned.</p>
+</GuideLayout>
+
+===== src/pages/guides/professional-vs-diy-carpet-cleaning.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "Professional vs DIY Carpet Cleaning";
+const description = "Comparison of professional carpet cleaning and DIY machines.";
+---
+<GuideLayout title={title} description={description}>
+<p>Professional carpet cleaning uses stronger equipment and specialised cleaning agents.</p>
+</GuideLayout>
+
+===== src/pages/guides/professional-vs-diy-tenancy-cleaning.astro =====
+---
+import Layout from "../../layouts/Layout.astro";
+
+const title = "Professional vs DIY End of Tenancy Cleaning";
+const description =
+  "Comparison between professional end of tenancy cleaning and DIY cleaning before landlord inspection.";
+
+const canonical = "/guides/professional-vs-diy-tenancy-cleaning";
+---
+
+<Layout title={title} description={description} canonicalPath={canonical}>
+
+<section>
+<h1>Professional vs DIY End of Tenancy Cleaning</h1>
+<p>Tenants often choose between cleaning themselves or hiring professionals.</p>
+</section>
+
+<section>
+<h2>DIY Cleaning</h2>
+<ul>
+<li>Lower cost</li>
+<li>Time intensive</li>
+<li>Higher risk of missed areas</li>
+</ul>
+</section>
+
+<section>
+<h2>Professional Cleaning</h2>
+<ul>
+<li>Inspection-ready finish</li>
+<li>Specialist equipment</li>
+<li>Reduced deposit risk</li>
+</ul>
+</section>
+
+<section>
+<p><a href="/services/end-of-tenancy-cleaning">End of Tenancy Cleaning Service</a></p>
+</section>
+
+</Layout>
+
+===== src/pages/guides/remove-carpet-stains-guide.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "Remove Carpet Stains Guide";
+const description = "Guide to removing common stains from carpets.";
+---
+<GuideLayout title={title} description={description}>
+<p>Different stains require different treatment methods.</p>
+<h2>Common stains</h2>
+<p>Food, drinks, mud and pet accidents are among the most frequent carpet stains.</p>
+</GuideLayout>
+
+===== src/pages/guides/removing-cement-dust-from-floors.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "Removing Cement Dust From Floors";
+const description = "How cement and construction dust is removed from flooring after building work.";
+---
+<GuideLayout title={title} description={description}>
+<p>Cement dust forms a fine powder that settles across flooring after renovation work.</p>
+<h2>Why cement dust spreads</h2>
+<p>Fine particles travel easily through the property during construction activity.</p>
+<h2>Cleaning method</h2>
+<p>HEPA vacuuming followed by damp microfibre cleaning removes cement residue effectively.</p>
+</GuideLayout>
+
+===== src/pages/guides/removing-paint-splatter-after-renovation.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "Removing Paint Splatter After Renovation";
+const description = "Techniques used to remove paint splatter left after decorating or renovation work.";
+---
+<GuideLayout title={title} description={description}>
+<p>Paint splatter is common after decorating and refurbishment projects.</p>
+<h2>Where splatter occurs</h2>
+<p>Floors, windows and fixtures are typical areas where paint residue appears.</p>
+<h2>Removal methods</h2>
+<p>Professional cleaners use controlled scraping tools and safe solvents to remove paint without surface damage.</p>
+</GuideLayout>
+
+===== src/pages/guides/removing-plaster-dust-after-renovation.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+
+const title = "Removing Plaster Dust After Renovation";
+const description = "How to remove plaster dust safely after renovation or building work.";
+---
+
+<GuideLayout title={title} description={description}>
+
+<p>Plaster dust spreads easily through a property after renovation work. Fine gypsum particles settle on floors, walls, surfaces and inside ventilation systems.</p>
+
+<h2>Why plaster dust spreads through a property</h2>
+<p>Cutting plasterboard and sanding filler releases extremely fine dust. Without correct removal methods it redistributes rather than being removed.</p>
+
+<h2>Correct removal process</h2>
+<p>Professional after builders cleaning uses HEPA filtration vacuum systems followed by damp microfibre wiping to capture remaining particles.</p>
+
+</GuideLayout>
+
+===== src/pages/guides/spring-cleaning-vs-deep-cleaning.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "Spring Cleaning vs Deep Cleaning";
+const description = "Comparison of seasonal spring cleaning and full deep cleaning.";
+---
+<GuideLayout title={title} description={description}>
+<p>Spring cleaning refreshes a home while deep cleaning targets built-up grime and neglected areas.</p>
+</GuideLayout>
+
+===== src/pages/guides/steam-cleaning-carpets-explained.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "Steam Cleaning Carpets Explained";
+const description = "Explanation of steam cleaning for carpets.";
+---
+<GuideLayout title={title} description={description}>
+<p>Steam cleaning uses heated water extraction to remove dirt and bacteria from carpets.</p>
+</GuideLayout>
+
+===== src/pages/guides/tenancy-cleaning-mistakes-that-cost-deposits.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "Tenancy Cleaning Mistakes That Cost Deposits";
+const description = "Common cleaning mistakes that lead to deposit deductions at the end of a tenancy.";
+---
+<GuideLayout title={title} description={description}>
+<p>Many deposit deductions occur because cleaning standards do not meet landlord expectations.</p>
+<h2>Common issues</h2>
+<p>Oven grease, limescale and neglected carpets are frequent problems.</p>
+</GuideLayout>
+
+===== src/pages/guides/tenancy-cleaning-room-by-room-checklist.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "Tenancy Cleaning Room-by-Room Checklist";
+const description = "Complete room-by-room checklist for preparing a rental property for end-of-tenancy inspection.";
+---
+<GuideLayout title={title} description={description}>
+<p>End of tenancy cleaning requires a systematic approach covering every room in the property.</p>
+<h2>Kitchen</h2>
+<p>Clean appliances, cabinets, worktops and floors thoroughly.</p>
+<h2>Bathrooms</h2>
+<p>Remove limescale and clean fixtures, tiles and ventilation areas.</p>
+</GuideLayout>
+
+===== src/pages/guides/tenancy-cleaning-timeline-before-moving-out.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "Tenancy Cleaning Timeline Before Moving Out";
+const description = "Recommended timeline for preparing a rental property for inspection.";
+---
+<GuideLayout title={title} description={description}>
+<p>Cleaning should begin several days before the final inspection.</p>
+<h2>Planning the process</h2>
+<p>Staggering tasks helps ensure nothing is missed before the landlord visit.</p>
+</GuideLayout>
+
+===== src/pages/guides/tools-used-in-after-builders-cleaning.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+
+const title = "Tools Used in After Builders Cleaning";
+const description = "Specialist equipment used to remove construction dust and residue after building work.";
+---
+
+<GuideLayout title={title} description={description}>
+
+<p>After builders cleaning requires specialist tools designed to remove fine construction dust safely.</p>
+
+<h2>HEPA Vacuum Systems</h2>
+<p>These vacuums capture extremely fine particles such as plaster dust that standard household vacuums cannot filter effectively.</p>
+
+<h2>Microfibre Cleaning Systems</h2>
+<p>Microfibre cloths capture remaining dust particles during surface wiping.</p>
+
+</GuideLayout>
+
+===== src/pages/guides/what-is-deep-cleaning-house.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "What Is Deep Cleaning A House";
+const description = "Explanation of what deep cleaning involves compared with standard cleaning.";
+---
+<GuideLayout title={title} description={description}>
+<p>Deep cleaning focuses on removing built-up dirt, grease and hidden dust that regular cleaning does not address.</p>
+<h2>Typical tasks</h2>
+<p>Cleaning behind appliances, scrubbing grout, descaling fixtures and washing high-touch surfaces.</p>
+</GuideLayout>
+
+===== src/pages/guides/what-is-included-in-deep-cleaning.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "What Is Included In Deep Cleaning";
+const description = "Typical tasks included in a professional deep cleaning service.";
+---
+<GuideLayout title={title} description={description}>
+<p>Deep cleaning includes detailed work beyond routine cleaning tasks.</p>
+<h2>Common inclusions</h2>
+<p>Appliance cleaning, grout scrubbing and detailed surface sanitation.</p>
+</GuideLayout>
+
+===== src/pages/guides/what-letting-agents-look-for-in-cleaning.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "What Letting Agents Look For In Cleaning";
+const description = "Cleaning standards letting agents typically inspect at the end of a tenancy.";
+---
+<GuideLayout title={title} description={description}>
+<p>Letting agents perform structured inspections before approving deposit returns.</p>
+<h2>Focus areas</h2>
+<p>Kitchens, bathrooms and flooring receive the closest inspection.</p>
+</GuideLayout>
+
+===== src/pages/guides/why-builders-dust-keeps-coming-back.astro =====
+---
+import GuideLayout from "../../layouts/GuideLayout.astro";
+const title = "Why Builders Dust Keeps Coming Back";
+const description = "Why construction dust reappears after renovation and how it is properly removed.";
+---
+<GuideLayout title={title} description={description}>
+<p>Many property owners notice dust returning repeatedly after renovation work.</p>
+<h2>Hidden dust sources</h2>
+<p>Dust collects inside vents, behind fixtures and within soft furnishings.</p>
+<h2>Professional removal</h2>
+<p>Structured after builders cleaning removes these hidden sources and prevents dust redistribution.</p>
+</GuideLayout>
+
