@@ -1,67 +1,90 @@
 ---
-const { cluster = "" } = Astro.props;
+import Layout from "./Layout.astro";
+import RelatedGuides from "../components/RelatedGuides.astro";
 
-const CLUSTER_GUIDES = {
+const {
+  title,
+  description,
+  cluster = ""
+} = Astro.props;
 
-  "after-builders": [
-    { title: "Post Renovation Cleaning Checklist", url: "/guides/post-renovation-cleaning-checklist" },
-    { title: "Removing Plaster Dust After Renovation", url: "/guides/removing-plaster-dust-after-renovation" },
-    { title: "Removing Cement Dust From Floors", url: "/guides/removing-cement-dust-from-floors" },
-    { title: "Removing Paint Splatter After Renovation", url: "/guides/removing-paint-splatter-after-renovation" },
-    { title: "Why Builders Dust Keeps Coming Back", url: "/guides/why-builders-dust-keeps-coming-back" },
-    { title: "Tools Used In After Builders Cleaning", url: "/guides/tools-used-in-after-builders-cleaning" },
-    { title: "Post Construction Window Cleaning", url: "/guides/post-construction-window-cleaning" },
-    { title: "Post Renovation Air Quality Cleaning", url: "/guides/post-renovation-air-quality-cleaning" }
-  ],
+const SERVICE_MAP = {
+  "after-builders": {
+    title: "After Builders Cleaning",
+    url: "/services/after-builders-cleaning",
+    text:
+      "After builders cleaning removes plaster dust, cement residue and construction debris left behind after renovation or building work. Professional equipment is used to safely remove fine construction particles and restore the property to a clean, liveable condition."
+  },
 
-  "end-of-tenancy": [
-    { title: "Tenancy Cleaning Room By Room Checklist", url: "/guides/tenancy-cleaning-room-by-room-checklist" },
-    { title: "Tenancy Cleaning Timeline Before Moving Out", url: "/guides/tenancy-cleaning-timeline-before-moving-out" },
-    { title: "Tenancy Cleaning Mistakes That Cost Deposits", url: "/guides/tenancy-cleaning-mistakes-that-cost-deposits" },
-    { title: "Professional Vs DIY Tenancy Cleaning", url: "/guides/professional-vs-diy-tenancy-cleaning" },
-    { title: "What Letting Agents Look For In Cleaning", url: "/guides/what-letting-agents-look-for-in-cleaning" },
-    { title: "Professional Tenancy Cleaning Proof Guide", url: "/guides/professional-tenancy-cleaning-proof-guide" },
-    { title: "Pet Damage Cleaning Before Inspection", url: "/guides/pet-damage-cleaning-before-inspection" }
-  ],
+  "end-of-tenancy": {
+    title: "End Of Tenancy Cleaning",
+    url: "/services/end-of-tenancy-cleaning",
+    text:
+      "End of tenancy cleaning prepares rental properties for landlord inspections and inventory checks. Professional tenancy cleaning helps tenants avoid deposit deductions by meeting letting agent cleaning standards."
+  },
 
-  "deep-cleaning": [
-    { title: "What Is Deep Cleaning House", url: "/guides/what-is-deep-cleaning-house" },
-    { title: "What Is Included In Deep Cleaning", url: "/guides/what-is-included-in-deep-cleaning" },
-    { title: "Spring Cleaning Vs Deep Cleaning", url: "/guides/spring-cleaning-vs-deep-cleaning" }
-  ],
+  "deep-cleaning": {
+    title: "Deep Cleaning",
+    url: "/services/one-off-deep-cleaning",
+    text:
+      "Deep cleaning removes heavy dirt build-up, grease and neglected contamination throughout a property. It is typically used before moving in, after long tenancies, or when restoring homes to hygienic condition."
+  },
 
-  "carpet-cleaning": [
-    { title: "Remove Carpet Stains Guide", url: "/guides/remove-carpet-stains-guide" },
-    { title: "Professional Vs DIY Carpet Cleaning", url: "/guides/professional-vs-diy-carpet-cleaning" },
-    { title: "Steam Cleaning Carpets Explained", url: "/guides/steam-cleaning-carpets-explained" },
-    { title: "Pet Odour Carpet Cleaning", url: "/guides/pet-odour-carpet-cleaning" }
-  ]
-
+  "carpet-cleaning": {
+    title: "Carpet & Rug Cleaning",
+    url: "/services/carpet-rug-cleaning",
+    text:
+      "Professional carpet cleaning removes embedded dirt, stains and allergens trapped within carpet fibres. Specialist cleaning equipment restores carpets and improves indoor hygiene."
+  }
 };
 
-const guides = CLUSTER_GUIDES[cluster] || [];
+const service = SERVICE_MAP[cluster] || null;
 ---
 
-{guides.length > 0 && (
+<Layout title={title} description={description}>
 
-<section class="guide-links">
+<article class="guide-container">
 
-<h3>Related Cleaning Guides</h3>
+<header class="guide-header">
+<h1>{title}</h1>
+</header>
 
-<ul>
+<section class="guide-content">
+<slot />
+</section>
 
-{guides.map((guide) => (
+{service && (
 
-<li>
-<a href={guide.url}>
-{guide.title}
+<section class="guide-service">
+
+<hr />
+
+<h2>Professional {service.title}</h2>
+
+<p>
+{service.text}
+</p>
+
+<p>
+<a href={service.url}>
+View the {service.title} Service
 </a>
-</li>
-
-))}
-
-</ul>
+</p>
 
 </section>
 
 )}
+
+<hr />
+
+<section class="guide-related">
+
+<h3>Related Guides</h3>
+
+<RelatedGuides />
+
+</section>
+
+</article>
+
+</Layout>
