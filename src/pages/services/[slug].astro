@@ -1,10 +1,11 @@
 ---
-import services from "../../data/services";
 import Layout from "../../layouts/Layout.astro";
+import GuideLinks from "../../components/GuideLinks.astro";
+import services from "../../data/services";
 
 export async function getStaticPaths() {
   return Object.values(services).map((service) => ({
-    params: { slug: service.slug },
+    params: { slug: service.slug }
   }));
 }
 
@@ -14,184 +15,43 @@ const service = services[slug];
 if (!service) {
   throw new Error("Service not found");
 }
-
-const isAfterBuilders = slug === "after-builders-cleaning";
-const isEndOfTenancy = slug === "end-of-tenancy-cleaning";
 ---
 
-<Layout
-  title={`${service.name} | CamCleans`}
-  description={service.short}
-  canonicalPath={`/services/${service.slug}`}
->
+<Layout title={service.name} description={service.description}>
 
-  <section>
-    <h1>{service.name}</h1>
-    <p>{service.intro}</p>
-  </section>
+<article class="service-container">
 
-  <section>
-    <h2>What's Included</h2>
-    <ul>
-      {service.inclusions.map((item) => (
-        <li>{item}</li>
-      ))}
-    </ul>
-  </section>
+<header class="service-header">
+<h1>{service.name}</h1>
+<p>{service.description}</p>
+</header>
 
-  <section>
-    <h2>What's Excluded</h2>
-    <ul>
-      {service.exclusions.map((item) => (
-        <li>{item}</li>
-      ))}
-    </ul>
-  </section>
+<section class="service-content">
+<p>
+Professional {service.name.toLowerCase()} delivered to consistent national
+standards. Structured cleaning processes ensure reliable results for homes,
+tenancies, renovations and commercial properties.
+</p>
+</section>
 
-  <section>
-    <h2>Ideal For</h2>
-    <ul>
-      {service.idealFor.map((item) => (
-        <li>{item}</li>
-      ))}
-    </ul>
-  </section>
+<section class="service-locations">
 
-  {isAfterBuilders && (
-    <section>
-      <h2>Construction Phase Cleaning Structure</h2>
+<h2>Available Locations</h2>
 
-      <h3>Stage 1: Initial Debris Reset</h3>
-      <p>
-        Removal of fine plaster dust, installation residue and surface-level build contamination once builders have cleared major waste.
-      </p>
+<ul>
+{Object.keys(service.locations || {}).map((location) => (
+<li>
+<a href={`/services/${slug}/${location}`}>
+{service.name} in {location}
+</a>
+</li>
+))}
+</ul>
 
-      <h3>Stage 2: Detailed Surface Extraction</h3>
-      <p>
-        Structured extraction of dust from horizontal, vertical and high-level surfaces including frames, fixtures and newly installed units.
-      </p>
+</section>
 
-      <h3>Stage 3: Handover Presentation Finish</h3>
-      <p>
-        Final polish of internal glazing, skirting, floors and sanitary installations to achieve inspection-ready standards.
-      </p>
+<GuideLinks />
 
-      <h3>Commercial & Developer Scheduling</h3>
-      <p>
-        Suitable for phased developments, refurbishment cycles and contractor-led completion schedules.
-      </p>
-    </section>
-  )}
-
-  <section>
-    <h2>Service Checklist</h2>
-    <ul>
-      {service.checklist.map((item) => (
-        <li>{item}</li>
-      ))}
-    </ul>
-  </section>
-
-  <section>
-    <h2>Frequently Asked Questions</h2>
-    {service.faqs.map((faq) => (
-      <div>
-        <h3>{faq.q}</h3>
-        <p>{faq.a}</p>
-      </div>
-    ))}
-  </section>
-
-  {isAfterBuilders && (
-    <section>
-      <h2>After Builders Cleaning Guides</h2>
-
-      <ul>
-
-        <li>
-          <a href="/guides/after-builders-dust-removal">
-            After Builders Dust Removal Guide
-          </a>
-        </li>
-
-        <li>
-          <a href="/guides/post-renovation-cleaning-checklist">
-            Post Renovation Cleaning Checklist
-          </a>
-        </li>
-
-        <li>
-          <a href="/guides/after-builders-cleaning-vs-deep-cleaning">
-            After Builders Cleaning vs Deep Cleaning
-          </a>
-        </li>
-
-        <li>
-          <a href="/guides/developer-handover-cleaning-guide">
-            Developer Handover Cleaning Guide
-          </a>
-        </li>
-
-        <li>
-          <a href="/guides/after-builders-cleaning-cost-guide">
-            After Builders Cleaning Cost Guide
-          </a>
-        </li>
-
-      </ul>
-    </section>
-  )}
-
-  {isEndOfTenancy && (
-    <section>
-      <h2>End of Tenancy Cleaning Guides</h2>
-
-      <ul>
-
-        <li>
-          <a href="/guides/end-of-tenancy-cleaning-checklist">
-            End of Tenancy Cleaning Checklist
-          </a>
-        </li>
-
-        <li>
-          <a href="/guides/landlord-inspection-cleaning-guide">
-            Landlord Inspection Cleaning Guide
-          </a>
-        </li>
-
-        <li>
-          <a href="/guides/deposit-deduction-cleaning-guide">
-            Deposit Deduction Cleaning Guide
-          </a>
-        </li>
-
-        <li>
-          <a href="/guides/professional-vs-diy-tenancy-cleaning">
-            Professional vs DIY Tenancy Cleaning
-          </a>
-        </li>
-
-        <li>
-          <a href="/guides/end-of-tenancy-cleaning-cost-guide">
-            End of Tenancy Cleaning Cost Guide
-          </a>
-        </li>
-
-      </ul>
-    </section>
-  )}
-
-  <section>
-    <h2>{service.cta.heading}</h2>
-    <ul>
-      {service.cta.bullets.map((b) => (
-        <li>{b}</li>
-      ))}
-    </ul>
-    <a href={service.cta.buttonHref}>
-      {service.cta.buttonText}
-    </a>
-  </section>
+</article>
 
 </Layout>

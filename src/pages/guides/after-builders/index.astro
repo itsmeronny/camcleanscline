@@ -1,0 +1,40 @@
+---
+const CLUSTER = "after-builders";
+const CLUSTER_TITLE = "After Builders Cleaning Guides";
+const CLUSTER_DESC =
+  "Construction-grade after builders cleaning guidance: builders dust removal, renovation handover cleaning, residues, checklists, timelines, and DIY vs professional thresholds.";
+
+const all = await Astro.glob("../**/*.{md,mdx,astro}");
+
+function isGuideEntry(entry) {
+  const url = entry?.url ?? "";
+  if (!url.startsWith("/guides/")) return false;
+  if (url === "/guides/") return false;
+  if (url.endsWith("/index/") || url.endsWith("/index")) return false;
+  if (url === `/guides/${CLUSTER}/`) return false;
+  return true;
+}
+
+function clusterMatch(entry) {
+  const url = entry?.url ?? "";
+  const fm = entry?.frontmatter ?? {};
+  const fmCluster = typeof fm.cluster === "string" ? fm.cluster.trim() : "";
+  const urlMatch = url.includes(`/guides/${CLUSTER}/`);
+  const fmMatch = fmCluster === CLUSTER;
+  return urlMatch || fmMatch;
+}
+
+const guides = all
+  .filter(isGuideEntry)
+  .filter(clusterMatch)
+  .map((g) => {
+    const fm = g.frontmatter ?? {};
+    const title = fm.title ?? fm.h1 ?? g.url?.split("/").filter(Boolean).slice(-1)[0]?.replace(/-/g, " ") ?? "Guide";
+    const description = fm.description ?? fm.metaDescription ?? fm.excerpt ?? "";
+    const updated = fm.updated ?? fm.lastUpdated ?? "";
+    const intentType = fm.intentType ?? fm.intent ?? "";
+    return { url: g.url, title, description, updated, intentType };
+  })
+  .sort((a, b) => a.title.localeCompare(b.title, "en"));
+
+const canonical = `https://camcleans.co.uk/guides/${CLUSTER}/`;

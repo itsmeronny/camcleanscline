@@ -2,12 +2,21 @@
 
 ## Status
 Programmatic SEO matrix stable and deployed.
-Internal link architecture upgraded.
-After Builders Cleaning elevated to authority-grade structure.
+Authority inheritance implemented.
+Internal linking architecture fully operational.
+Guide cluster system expanded.
+Guide hub clustering implemented.
+Bidirectional authority flow established between guides and service hubs.
+
+System builds deterministically and deploys cleanly.
+
+Latest confirmed build:
+322 static pages generated.
 
 ---
 
 ## Environment
+
 - Astro v5.18.0
 - Node v20.20.0
 - Dev Container
@@ -18,17 +27,24 @@ After Builders Cleaning elevated to authority-grade structure.
 ---
 
 ## Current Static Scope
+
 - 13 services
 - 18 locations
 - 234 service-location pages
 - 13 service hub pages
 - 18 location hub pages
+- ~56 authority guide pages
+- 1 guide hub
 - 1 homepage
-- 266 total static pages
 
-All pages build deterministically.
+Total:
+- 322 static pages
+
+All pages generated deterministically.
+
 No runtime rendering.
-No dynamic fetch.
+No runtime database.
+No external fetch.
 
 ---
 
@@ -38,6 +54,8 @@ No dynamic fetch.
 - Inspection-led positioning
 - Deposit-risk logic
 - Rental-intensity differentiation
+- Landlord inspection preparation guides
+- Deposit deduction prevention guides
 
 ### 2. Airbnb Cleaning
 - Short-let turnover logic
@@ -47,7 +65,8 @@ No dynamic fetch.
 ### 3. One-Off Deep Cleaning
 - Neglect build-up positioning
 - Urban density variation
-- Renovation-support framing
+- Move-in / property reset framing
+- Property sale preparation guides
 
 ### 4. After Builders Cleaning
 - Construction-grade positioning
@@ -55,41 +74,92 @@ No dynamic fetch.
 - Developer / contractor intent targeting
 - Post-project handover framing
 
+### 5. Carpet & Rug Cleaning
+- stain removal logic
+- tenancy carpet compliance
+- allergy reduction positioning
+- professional vs DIY comparisons
+
+---
+
+## Guide Cluster System
+
+Guide clusters implemented:
+
+- After Builders Cleaning
+- End of Tenancy Cleaning
+- Deep Cleaning
+- Carpet Cleaning
+
+Each cluster includes:
+
+- multiple support guides
+- cluster navigation from guide hub
+- reinforcement links to commercial services
+
 ---
 
 ## Internal Link Architecture
 
-Service-location pages now:
+Full authority loop implemented.
 
-- Link to service hub
-- Link to location hub
-- Link to 2–3 semantically related services
-- Avoid full-matrix spam linking
-- Reinforce cluster hierarchy
+Guides  
+↓  
+Service hubs  
+↓  
+Service-location pages  
+↑  
+Location hubs  
+↑  
+Service hubs  
+↑  
+Guides
 
-Controlled authority flow active.
+Supporting mechanisms:
+
+GuideLayout  
+- service reinforcement block
+- related guide network
+
+GuideLinks component  
+- injected into service hubs
+- pushes authority back into guide cluster
+
+Guide hub  
+- cluster-based guide discovery
+
+Result: closed topical authority loop.
 
 ---
 
 ## Market Differentiation Logic
 
-- Major city classification
-- Renovation-heavy city weighting
-- Service-specific conditional amplification
+Static positioning logic embedded in service content:
 
-Static logic.
+- major city classification
+- renovation-heavy city weighting
+- rental-density differentiation
+- service-specific contextual framing
+
 No runtime evaluation.
+
+All logic baked into static output.
 
 ---
 
 ## Schema Layer Active
 
+Structured data:
+
 - BreadcrumbList JSON-LD
 - Service JSON-LD
 - LocalBusiness JSON-LD
-- Canonical paths controlled
-- Sitemap auto-generated
-- Robots.txt active
+
+SEO infrastructure:
+
+- canonical paths controlled
+- sitemap auto-generated
+- robots.txt active
 
 No schema duplication.
 No canonical conflicts.
@@ -99,34 +169,65 @@ No canonical conflicts.
 ## Architecture Locked
 
 ### Data Layer
-- services.ts → structured object keyed by slug
-- locations.ts → structured object keyed by slug
+
+- `services.ts` → structured object keyed by slug
+- `locations.ts` → structured object keyed by slug
 
 ### Routing Layer
-- `/`
-- `/services/[slug]`
-- `/locations/[slug]`
-- `/services/[service]/[location]`
+
+/
+ /guides/*
+ /services/[slug]
+ /locations/[slug]
+ /services/[service]/[location]
 
 ### Rendering Mode
-- Fully static
-- Deterministic output
-- Zero runtime cost
+
+Fully static.
+
+Deterministic output.
+
+Zero runtime infrastructure.
 
 ---
 
 ## Structural Freeze
 
-Core matrix structure is now locked.
-No further structural modifications unless critical.
+Core programmatic matrix locked.
+
+13 services × 18 locations.
+
+No matrix expansion in this phase.
+
+Scaling occurs via:
+
+- authority cluster expansion
+- informational guide coverage
+- internal link reinforcement
 
 ---
 
-## Next Strategic Phase
+## Current Strategic Phase
 
-Begin vertical authority expansion.
+Authority Depth Expansion.
 
-Focus:
-After Builders Cleaning support content cluster.
+Cluster coverage now expanded beyond the original phase.
 
-Build 3–5 informational support assets to deepen topical dominance without altering matrix architecture.
+Existing clusters:
+
+- After Builders Cleaning
+- End of Tenancy Cleaning
+- Deep Cleaning
+- Carpet Cleaning
+
+Guide hub now exposes cluster structure.
+
+Next focus:
+
+- cluster density expansion
+- additional topical coverage inside existing clusters
+- guide → service reinforcement
+- crawl depth optimisation
+
+No routing changes planned.
+No architectural rewrites permitted.

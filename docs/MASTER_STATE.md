@@ -2,14 +2,13 @@
 
 ## Core Objective
 
-Build a national UK cleaning lead-generation platform
-with:
+Build a national UK cleaning lead-generation platform based on:
 
-- Near-zero running costs
-- Fully static infrastructure
-- Programmatic SEO dominance
-- Cluster-based authority depth
-- Controlled internal link architecture
+- near-zero infrastructure costs
+- static-first architecture
+- programmatic SEO coverage
+- authority cluster expansion
+- controlled internal linking
 
 Authority before aesthetics.
 Structure before scale.
@@ -20,116 +19,265 @@ Structure before scale.
 
 Architecture stable.
 Matrix deployed.
-Internal linking matured.
-Core commercial clusters established.
+Guide clusters expanded.
+Internal linking architecture mature.
+Authority loop complete.
 
-No runtime rendering.
-No unstable routing.
-No structural debt.
+System characteristics:
+
+- fully static
+- deterministic build
+- no runtime database
+- no API dependencies
+
+Infrastructure remains near-zero cost.
 
 ---
 
-## Scale Snapshot
+## Platform Scale
 
-- 13 services
-- 18 UK locations
+Current footprint:
+
+13 services  
+18 UK locations  
+
+Generated pages:
+
 - 234 service-location pages
-- 266 total static pages
+- 13 service hub pages
+- 18 location hub pages
+- ~56 authority guides
+- 1 guide hub
+- 1 homepage
+
+Total:
+
+322 static pages
 
 Matrix breadth complete for Phase 1.
 
 ---
 
-## Established Authority Clusters
+## Site Structure
 
-### End of Tenancy Cleaning
-Inspection-first logic.
-Deposit-risk framing.
-Rental-density differentiation.
+Search architecture pyramid:
 
-### Airbnb Cleaning
-Short-let turnover positioning.
-Presentation-weighted.
-Urban demand amplification.
+Guides  
+↓  
+Service hubs  
+↓  
+Service-location pages  
+↑  
+Location hubs
 
-### One-Off Deep Cleaning
-Neglect and build-up focus.
-Urban usage weighting.
-Pre-sale / renovation alignment.
+Additional reinforcement:
+
+Guide clusters  
+↕  
+Service hubs
+
+This creates a closed authority loop across informational and commercial pages.
+
+---
+
+## Authority Clusters
 
 ### After Builders Cleaning
-Construction-grade positioning.
-Developer intent targeting.
-Renovation-heavy city amplification.
-Post-handover framing.
+
+Positioning:
+
+- construction dust removal
+- renovation handover preparation
+- developer project completion cleaning
+
+Search intent captured:
+
+- renovation clean-up
+- builder dust removal
+- contractor handover cleaning
+- construction dust removal
+
+---
+
+### End of Tenancy Cleaning
+
+Positioning:
+
+- inspection-first cleaning
+- deposit protection focus
+- landlord compliance preparation
+
+Search intent captured:
+
+- tenant move-out cleaning
+- landlord inspection preparation
+- deposit dispute prevention
+
+---
+
+### Deep Cleaning
+
+Positioning:
+
+- neglected property recovery
+- move-in cleaning
+- property sale preparation
+- periodic intensive cleaning
+
+Search intent captured:
+
+- heavy domestic cleaning
+- property reset cleaning
+- seasonal deep cleaning
+
+---
+
+### Carpet & Rug Cleaning
+
+Positioning:
+
+- stain removal
+- tenancy carpet compliance
+- allergy reduction
+
+Search intent captured:
+
+- carpet steam cleaning
+- stain removal
+- professional vs DIY cleaning
 
 ---
 
 ## SEO Infrastructure
 
-- Canonical control stable
-- Auto-generated sitemap
-- Robots.txt active
-- Structured JSON-LD across matrix
-- Breadcrumb hierarchy consistent
-- Controlled internal link distribution
+Implemented:
+
+- sitemap auto-generation
+- robots.txt control
+- canonical path enforcement
+- JSON-LD structured data
+- breadcrumb hierarchy
+
+Schema used:
+
+- BreadcrumbList
+- Service
+- LocalBusiness
+
+Search engines receive fully structured static pages.
+
+---
+
+## Internal Link System
+
+Authority loop architecture:
+
+Guides  
+↓  
+Service hubs  
+↓  
+Service-location pages  
+↑  
+Location hubs  
+↑  
+Service hubs  
+↑  
+Guides
+
+Supporting elements:
+
+Guide hub  
+Related guide networks  
+Service hub guide injection
+
+This ensures authority flows across the entire site.
 
 ---
 
 ## Monetisation Model
 
-Lead-generation engine.
+Lead-generation platform.
 
-Customer submits structured form.
-Lead captured.
-Cleaner assigned.
-Commission retained.
+Customer journey:
 
-No phone-first funnel.
-Email + structured capture only.
+1. User lands on service-location page.
+2. User submits structured enquiry.
+3. Lead captured by platform.
+4. Cleaner assigned.
+5. Commission retained.
+
+Primary capture channels:
+
+- structured enquiry forms
+- email lead routing
 
 ---
 
-## Non-Negotiables
+## Cost Structure
 
-- Static-only architecture
-- Deterministic builds
-- No runtime database
-- No thin duplication
-- No decorative churn
-- Authority compounding model
+Infrastructure design goals:
+
+- static-only architecture
+- minimal operational overhead
+- CDN-delivered content
+- no runtime servers
+
+Expected cost profile:
+
+- static hosting
+- minimal operational expenses
+- scalable to national traffic
+
+---
+
+## Non-Negotiable Constraints
+
+- static-first architecture
+- deterministic builds
+- no runtime database
+- no dynamic content generation
+- no thin programmatic duplication
+- no structural churn
+
+Authority compounding model mandatory.
 
 ---
 
 ## Strategic Position
 
 Matrix breadth complete.
-Now entering Depth Phase.
+
+Programmatic SEO foundation operational.
+
+Guide clusters expanding.
+
+Internal linking architecture mature.
+
+System positioned for authority compounding.
 
 ---
 
-## Immediate Next Phase
+## Next Strategic Phase
 
-Authority Depth Expansion
-(Vertical cluster reinforcement)
+Authority Density Expansion.
 
-Initial focus:
+Focus areas:
 
-After Builders Cleaning support cluster.
+- deepen existing guide clusters
+- expand informational coverage
+- strengthen guide → service reinforcement
+- increase topical saturation in core clusters
 
-Planned support assets:
+Clusters currently active:
 
-- Dust removal guide
-- Post-renovation cleaning checklist
-- Cost and scope explainer
-- Developer handover guide
-- Post-construction vs deep cleaning comparison
+- After Builders Cleaning
+- End of Tenancy Cleaning
+- Deep Cleaning
+- Carpet Cleaning
 
-Purpose:
-Deepen topical relevance.
-Capture long-tail intent.
-Reinforce commercial service hubs.
-Compound internal authority.
+Future growth will come from:
 
-No matrix expansion during this phase.
-No structural rewrites.
+- guide density expansion
+- cluster strengthening
+- service vertical deepening
+- incremental new service clusters

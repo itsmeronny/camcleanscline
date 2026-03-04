@@ -1,5 +1,6 @@
 ---
 import Layout from "./Layout.astro";
+import RelatedGuides from "../components/RelatedGuides.astro";
 
 const { title, description } = Astro.props;
 ---
@@ -19,6 +20,7 @@ const { title, description } = Astro.props;
 <hr />
 
 <section class="guide-service">
+
 <h2>Professional After Builders Cleaning</h2>
 
 <p>
@@ -41,42 +43,10 @@ View the After Builders Cleaning Service
 
 <h3>Related Guides</h3>
 
-<ul>
-
-<li>
-<a href="/guides/after-builders-dust-removal">
-How to Remove Builders Dust
-</a>
-</li>
-
-<li>
-<a href="/guides/post-renovation-cleaning-checklist">
-Post Renovation Cleaning Checklist
-</a>
-</li>
-
-<li>
-<a href="/guides/developer-handover-cleaning-guide">
-Developer Handover Cleaning Guide
-</a>
-</li>
-
-<li>
-<a href="/guides/after-builders-cleaning-cost-guide">
-After Builders Cleaning Cost Guide
-</a>
-</li>
-
-<li>
-<a href="/guides/after-builders-cleaning-vs-deep-cleaning">
-After Builders Cleaning vs Deep Cleaning
-</a>
-</li>
-
-</ul>
+<RelatedGuides />
 
 </section>
 
 </article>
 
-</Layout><RelatedGuides />
+</Layout>

@@ -1,0 +1,35 @@
+---
+const guides = [
+  { href: "/guides/after-builders-dust-removal", title: "After Builders Dust Removal" },
+  { href: "/guides/post-renovation-cleaning-checklist", title: "Post Renovation Cleaning Checklist" },
+  { href: "/guides/developer-handover-cleaning-guide", title: "Developer Handover Cleaning Guide" },
+  { href: "/guides/after-builders-cleaning-cost-guide", title: "After Builders Cleaning Cost Guide" },
+  { href: "/guides/after-builders-cleaning-vs-deep-cleaning", title: "After Builders vs Deep Cleaning" },
+
+  { href: "/guides/tenancy-cleaning-room-by-room-checklist", title: "Tenancy Cleaning Room Checklist" },
+  { href: "/guides/tenancy-cleaning-mistakes-that-cost-deposits", title: "Tenancy Cleaning Mistakes" },
+  { href: "/guides/what-letting-agents-look-for-in-cleaning", title: "Letting Agent Inspection Standards" },
+
+  { href: "/guides/what-is-deep-cleaning-house", title: "What Is Deep Cleaning" },
+  { href: "/guides/deep-cleaning-vs-regular-cleaning", title: "Deep vs Regular Cleaning" },
+  { href: "/guides/how-often-should-you-deep-clean", title: "How Often To Deep Clean" },
+
+  { href: "/guides/how-carpet-cleaning-works", title: "How Carpet Cleaning Works" },
+  { href: "/guides/carpet-cleaning-vs-steam-cleaning", title: "Carpet Cleaning vs Steam Cleaning" },
+  { href: "/guides/remove-carpet-stains-guide", title: "Carpet Stain Removal Guide" }
+];
+---
+
+<section class="service-guides">
+
+<h2>Cleaning Guides</h2>
+
+<ul>
+{guides.map((g) => (
+<li>
+<a href={g.href}>{g.title}</a>
+</li>
+))}
+</ul>
+
+</section>
