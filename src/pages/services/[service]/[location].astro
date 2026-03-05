@@ -1,31 +1,24 @@
 ---
+import Layout from "../../../layouts/Layout.astro";
 import services from "../../../data/services";
 import locations from "../../../data/locations";
-import Layout from "../../../layouts/Layout.astro";
 
 export async function getStaticPaths() {
 
-  const paths = [];
+const paths = [];
 
-  const serviceEntries = Object.entries(services);
-  const locationEntries = Object.entries(locations);
-
-  for (const [, service] of serviceEntries) {
-    for (const [, location] of locationEntries) {
-
-      if (!service.slug || !location.slug) continue;
-
-      paths.push({
-        params: {
-          service: service.slug,
-          location: location.slug
-        }
-      });
-
-    }
+for (const service of Object.values(services)) {
+  for (const location of Object.values(locations)) {
+    paths.push({
+      params: {
+        service: service.slug,
+        location: location.slug
+      }
+    });
   }
+}
 
-  return paths;
+return paths;
 }
 
 const { service, location } = Astro.params;
@@ -34,98 +27,62 @@ const serviceData = services[service];
 const locationData = locations[location];
 
 if (!serviceData || !locationData) {
-  throw new Error("Invalid service or location");
+  throw new Error("Page data missing");
 }
-
-const isAfterBuilders = service === "after-builders-cleaning";
-const isEndOfTenancy = service === "end-of-tenancy-cleaning";
 ---
 
 <Layout
-  title={`${serviceData.name} ${locationData.name} | CamCleans`}
-  description={`${serviceData.name} services available in ${locationData.name}. Structured cleaning delivered to professional standards.`}
-  canonicalPath={`/services/${service}/${location}`}
+title={`${serviceData.name} in ${locationData.name}`}
+description={`${serviceData.name} available in ${locationData.name}. Book trusted professional cleaning services.`}
 >
 
-<section>
+<article class="service-location-container">
+
+<header>
 <h1>{serviceData.name} in {locationData.name}</h1>
+</header>
+
+<section>
 
 <p>
-CamCleans provides structured {serviceData.name.toLowerCase()} services across
-{locationData.name}. Cleaning is delivered using checklist-driven standards
-designed for inspection-ready results.
-</p>
-</section>
-
-<section>
-<h2>Service Scope</h2>
-<ul>
-{serviceData.inclusions.map((item) => (
-<li>{item}</li>
-))}
-</ul>
-</section>
-
-<section>
-<h2>Property Types</h2>
-<ul>
-<li>Apartments</li>
-<li>Houses</li>
-<li>Rental properties</li>
-<li>Renovation projects</li>
-</ul>
-</section>
-
-{isAfterBuilders && (
-<section>
-<h2>After Builders Cleaning Guides</h2>
-<ul>
-<li><a href="/guides/after-builders-dust-removal">After Builders Dust Removal Guide</a></li>
-<li><a href="/guides/post-renovation-cleaning-checklist">Post Renovation Cleaning Checklist</a></li>
-<li><a href="/guides/after-builders-cleaning-vs-deep-cleaning">After Builders Cleaning vs Deep Cleaning</a></li>
-<li><a href="/guides/developer-handover-cleaning-guide">Developer Handover Cleaning Guide</a></li>
-<li><a href="/guides/after-builders-cleaning-cost-guide">After Builders Cleaning Cost Guide</a></li>
-</ul>
-</section>
-)}
-
-{isEndOfTenancy && (
-<section>
-<h2>End of Tenancy Cleaning Guides</h2>
-<ul>
-<li><a href="/guides/end-of-tenancy-cleaning-checklist">End of Tenancy Cleaning Checklist</a></li>
-<li><a href="/guides/landlord-inspection-cleaning-guide">Landlord Inspection Cleaning Guide</a></li>
-<li><a href="/guides/deposit-deduction-cleaning-guide">Deposit Deduction Cleaning Guide</a></li>
-<li><a href="/guides/professional-vs-diy-tenancy-cleaning">Professional vs DIY Tenancy Cleaning</a></li>
-<li><a href="/guides/end-of-tenancy-cleaning-cost-guide">End of Tenancy Cleaning Cost Guide</a></li>
-</ul>
-</section>
-)}
-
-<section>
-<h2>Service Coverage in {locationData.name}</h2>
-<ul>
-<li>Central {locationData.name}</li>
-<li>Residential districts</li>
-<li>Apartment developments</li>
-<li>Rental portfolios</li>
-</ul>
-</section>
-
-<section>
-<h2>Book {serviceData.name} in {locationData.name}</h2>
-
-<p>
-CamCleans provides structured cleaning services with checklist-driven
-standards designed for reliability and inspection-ready results.
-</p>
-
-<p>
-<a href={`/services/${service}`}>
-View {serviceData.name} Service
-</a>
+Professional {serviceData.name.toLowerCase()} services are available in {locationData.name}.
+Our platform connects customers with experienced cleaners delivering reliable and
+high-quality results.
 </p>
 
 </section>
+
+<hr />
+
+<section class="service-benefits">
+
+<h2>Why Choose Professional Cleaning</h2>
+
+<ul>
+<li>Experienced professional cleaners</li>
+<li>Specialist cleaning equipment</li>
+<li>Reliable service standards</li>
+<li>Flexible booking availability</li>
+</ul>
+
+</section>
+
+<hr />
+
+<section class="service-cta">
+
+<h2>Request a Quote</h2>
+
+<p>
+Submit a cleaning enquiry and receive quotes from available cleaners in {locationData.name}.
+</p>
+
+<p>
+<a href="/contact">Request Cleaning Quote</a>
+</p>
+
+</section>
+
+</article>
 
 </Layout>
