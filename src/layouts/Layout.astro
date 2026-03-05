@@ -18,6 +18,8 @@ const schema = {
     "Carpet Cleaning"
   ]
 };
+
+const schemaJson = JSON.stringify(schema);
 ---
 
 <!DOCTYPE html>
@@ -28,14 +30,14 @@ const schema = {
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+<meta name="google-site-verification" content="pAsatR2k1X-eVnAENBpTB9Scyy41cSObLsYixLSqxM4" />
+
 <title>{title}</title>
+<script type="application/ld+json" set:html={schemaJson} />
 <meta name="description" content={description} />
 
 <link rel="canonical" href={canonical} />
 
-<script type="application/ld+json">
-{JSON.stringify(schema)}
-</script>
 
 </head>
 
