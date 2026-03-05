@@ -5,7 +5,7 @@ import services from "../../data/services";
 
 export async function getStaticPaths() {
   return Object.values(services).map((service) => ({
-    params: { slug: service.slug }
+    params: { slug: service.slug },
   }));
 }
 
@@ -15,58 +15,44 @@ const service = services[slug];
 if (!service) {
   throw new Error("Service not found");
 }
-
-/* map service slug → guide cluster */
-const CLUSTER_MAP = {
-  "after-builders-cleaning": "after-builders",
-  "end-of-tenancy-cleaning": "end-of-tenancy",
-  "one-off-deep-cleaning": "deep-cleaning",
-  "carpet-rug-cleaning": "carpet-cleaning"
-};
-
-const cluster = CLUSTER_MAP[slug] || "";
 ---
 
 <Layout title={service.name} description={service.description}>
 
 <article class="service-container">
 
-<header class="service-header">
+<header>
 <h1>{service.name}</h1>
-<p>{service.description}</p>
 </header>
 
-<section class="service-content">
-<p>
-Professional {service.name.toLowerCase()} delivered to consistent national
-standards. Structured cleaning processes ensure reliable results for homes,
-tenancies, renovations and commercial properties.
-</p>
+<section>
+<p>{service.description}</p>
 </section>
 
-<section class="service-locations">
+<hr />
 
-<h2>Available Locations</h2>
+<section class="service-guides">
+
+<h2>Helpful Cleaning Guides</h2>
+
+<GuideLinks service={slug} />
+
+</section>
+
+<hr />
+
+<section class="service-related-services">
+
+<h2>Related Cleaning Services</h2>
 
 <ul>
-{Object.keys(service.locations || {}).map((location) => (
-<li>
-<a href={`/services/${slug}/${location}`}>
-{service.name} in {location}
-</a>
-</li>
-))}
+<li><a href="/services/end-of-tenancy-cleaning/">End of Tenancy Cleaning</a></li>
+<li><a href="/services/one-off-deep-cleaning/">Deep Cleaning</a></li>
+<li><a href="/services/after-builders-cleaning/">After Builders Cleaning</a></li>
+<li><a href="/services/carpet-rug-cleaning/">Carpet & Rug Cleaning</a></li>
 </ul>
 
 </section>
-
-{cluster && (
-<section class="service-guides">
-
-<GuideLinks cluster={cluster} />
-
-</section>
-)}
 
 </article>
 
