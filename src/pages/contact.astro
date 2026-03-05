@@ -1,0 +1,64 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+title="Request Cleaning Quote"
+description="Request a cleaning quote for professional services including tenancy cleaning, deep cleaning and carpet cleaning."
+>
+
+<article class="contact-container">
+
+<header>
+<h1>Request a Cleaning Quote</h1>
+</header>
+
+<section>
+
+<p>
+Submit a cleaning enquiry and we will connect you with available professional cleaners.
+</p>
+
+<form method="POST">
+
+<label>
+Name
+<input type="text" name="name" required />
+</label>
+
+<label>
+Email
+<input type="email" name="email" required />
+</label>
+
+<label>
+Postcode
+<input type="text" name="postcode" required />
+</label>
+
+<label>
+Service
+<select name="service">
+
+<option>End of Tenancy Cleaning</option>
+<option>Deep Cleaning</option>
+<option>After Builders Cleaning</option>
+<option>Carpet Cleaning</option>
+
+</select>
+</label>
+
+<label>
+Details
+<textarea name="details"></textarea>
+</label>
+
+<button type="submit">Request Quote</button>
+
+</form>
+
+</section>
+
+</article>
+
+</Layout>
