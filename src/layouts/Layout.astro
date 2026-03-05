@@ -1,36 +1,50 @@
 ---
-import "../styles.css";
+const { title, description, canonicalPath = "/" } = Astro.props;
 
-const {
-  title = "CamCleans",
-  description = "Professional cleaning services across the UK.",
-  canonicalPath = "/",
-} = Astro.props;
+const baseUrl = "https://camcleans.co.uk";
+const canonical = `${baseUrl}${canonicalPath}`;
 
-const canonical = new URL(
-  canonicalPath,
-  Astro.site ?? "http://localhost:4321"
-).toString();
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "CamCleans",
+  url: baseUrl,
+  description: "Professional cleaning services across the UK including end of tenancy cleaning, deep cleaning, after builders cleaning and carpet cleaning.",
+  areaServed: "United Kingdom",
+  serviceType: [
+    "End of Tenancy Cleaning",
+    "Deep Cleaning",
+    "After Builders Cleaning",
+    "Carpet Cleaning"
+  ]
+};
 ---
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="generator" content={Astro.generator} />
 
-    <title>{title}</title>
-    <meta name="description" content={description} />
-    <link rel="canonical" href={canonical} />
+<head>
 
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content={canonical} />
-  </head>
-  <body>
-    <slot />
-  </body>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>{title}</title>
+<meta name="description" content={description} />
+
+<link rel="canonical" href={canonical} />
+
+<script type="application/ld+json">
+{JSON.stringify(schema)}
+</script>
+
+</head>
+
+<body>
+
+<main>
+<slot />
+</main>
+
+</body>
+
 </html>
