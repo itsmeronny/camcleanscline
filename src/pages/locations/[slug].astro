@@ -1,7 +1,7 @@
 ---
+import Layout from "../../layouts/Layout.astro";
 import services from "../../data/services";
 import locations from "../../data/locations";
-import Layout from "../../layouts/Layout.astro";
 
 export async function getStaticPaths() {
   return Object.values(locations).map((location) => ({
@@ -17,49 +17,61 @@ if (!location) {
 }
 ---
 
-<Layout
-  title={`Cleaning Services in ${location.name} | CamCleans`}
-  description={`Professional cleaning services available across ${location.name}.`}
-  canonicalPath={`/locations/${location.slug}`}
->
+<Layout title={`Cleaning Services in ${location.name}`} description={`Professional cleaning services available in ${location.name}.`}>
+
+<article class="location-container">
+
+<header>
+<h1>Cleaning Services in {location.name}</h1>
+</header>
 
 <section>
-<h1>Cleaning Services in {location.name}</h1>
 
 <p>
-CamCleans coordinates structured cleaning services throughout {location.name}.
-Services are delivered using checklist-driven cleaning standards designed for
-reliability and inspection-ready results.
+Professional cleaning services are available throughout {location.name}. 
+Our platform connects customers with trusted cleaners for specialist services 
+including tenancy cleaning, deep cleaning, after builders cleaning and carpet cleaning.
 </p>
+
 </section>
 
-<section>
-<h2>Available Services in {location.name}</h2>
+<hr />
+
+<section class="location-services">
+
+<h2>Available Cleaning Services</h2>
 
 <ul>
+
 {Object.values(services).map((service) => (
+
 <li>
 <a href={`/services/${service.slug}/${location.slug}`}>
 {service.name} in {location.name}
 </a>
 </li>
+
 ))}
+
 </ul>
 
 </section>
 
-<section>
+<hr />
 
-<h2>Property Types Covered</h2>
+<section class="location-core-services">
+
+<h2>Popular Cleaning Services</h2>
 
 <ul>
-<li>Apartments</li>
-<li>Houses</li>
-<li>Rental properties</li>
-<li>Renovation projects</li>
-<li>Commercial offices</li>
+<li><a href="/services/end-of-tenancy-cleaning/">End of Tenancy Cleaning</a></li>
+<li><a href="/services/one-off-deep-cleaning/">Deep Cleaning</a></li>
+<li><a href="/services/after-builders-cleaning/">After Builders Cleaning</a></li>
+<li><a href="/services/carpet-rug-cleaning/">Carpet & Rug Cleaning</a></li>
 </ul>
 
 </section>
+
+</article>
 
 </Layout>
