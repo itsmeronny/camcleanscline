@@ -3,6 +3,7 @@ export async function onRequestPost(context) {
   const formData = await context.request.formData();
   const data = Object.fromEntries(formData);
 
+  // Honeypot spam trap
   if (data.company) {
     return new Response(null, {
       status: 302,
@@ -10,6 +11,13 @@ export async function onRequestPost(context) {
         Location: "/enquiry-received"
       }
     });
+  }
+
+  // UK postcode validation
+  const UK_POSTCODE_REGEX = /^[A-Z]{1,2}\d[A-Z\d]?\s?\d[A-Z]{2}$/i;
+
+  if (!UK_POSTCODE_REGEX.test(data.postcode)) {
+    return new Response("Invalid postcode", { status: 400 });
   }
 
   const BASE_PRICES = {
@@ -51,6 +59,18 @@ export async function onRequestPost(context) {
 
   price = Math.round(price);
 
+  // Price sanity limits
+  if (price < 120) price = 120;
+
+  if (price > 600) {
+    return new Response(null, {
+      status: 302,
+      headers: {
+        Location: "/manual-quote-required"
+      }
+    });
+  }
+
   const cleanerPayout = Math.round(price * 0.65);
   const margin = price - cleanerPayout;
 
@@ -80,7 +100,8 @@ Phone: ${data.phone}
 
   const resendKey = context.env.RESEND_API_KEY;
 
-  const response = await fetch("https://api.resend.com/emails", {
+  // Admin lead email
+  const adminResponse = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: {
       "Authorization": `Bearer ${resendKey}`,
@@ -94,8 +115,45 @@ Phone: ${data.phone}
     })
   });
 
-  const resendResult = await response.text();
-  console.log("RESEND RESPONSE:", resendResult);
+  const adminResult = await adminResponse.text();
+  console.log("ADMIN EMAIL RESPONSE:", adminResult);
+
+  // Customer confirmation email
+  const customerResponse = await fetch("https://api.resend.com/emails", {
+    method: "POST",
+    headers: {
+      "Authorization": `Bearer ${resendKey}`,
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      from: "CamCleans <onboarding@resend.dev>",
+      to: [data.email],
+      subject: "CamCleans Quote Request Received",
+      text: `Hi ${data.name},
+
+Thanks for requesting a cleaning quote from CamCleans.
+
+Estimated Price: £${price}
+
+A cleaner will review your request and confirm availability shortly.
+
+Property:
+${data.property_type}
+${data.bedrooms} bedroom
+${data.bathrooms} bathroom
+${data.clean_type}
+
+Postcode:
+${data.postcode}
+
+If any details are incorrect simply reply to this email.
+
+CamCleans`
+    })
+  });
+
+  const customerResult = await customerResponse.text();
+  console.log("CUSTOMER EMAIL RESPONSE:", customerResult);
 
   return new Response(null, {
     status: 302,
