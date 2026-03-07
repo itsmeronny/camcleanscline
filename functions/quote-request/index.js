@@ -108,7 +108,7 @@ Phone: ${data.phone}
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
-      from: "CamCleans <onboarding@resend.dev>",
+      from: "CamCleans <quotes@camcleans.co.uk>",
       to: ["camcleansnetwork@gmail.com"],
       subject: "New CamCleans Quote Request",
       text: message
@@ -126,7 +126,7 @@ Phone: ${data.phone}
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
-      from: "CamCleans <onboarding@resend.dev>",
+      from: "CamCleans <quotes@camcleans.co.uk>",
       to: [data.email],
       subject: "CamCleans Quote Request Received",
       text: `Hi ${data.name},
