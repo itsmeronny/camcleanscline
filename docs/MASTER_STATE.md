@@ -31,6 +31,37 @@ https://camcleans.co.uk/join-cleaners
 Customer enquiry channel operational via:
 https://camcleans.co.uk/contact
 
+Structured quote intake channel operational via:
+https://camcleans.co.uk/quote
+
+Quote pricing engine operational.
+
+Pricing engine characteristics:
+
+base service pricing
+bedroom-based scaling
+bathroom additive pricing
+property-type multipliers
+cleaner payout calculation
+platform margin calculation
+
+Pricing stability safeguards implemented.
+
+System protections:
+
+NaN prevention logic
+fallback multipliers
+defensive parsing of bedroom and bathroom values
+expanded property type coverage
+
+Spam protection layer implemented for quote system.
+
+Protection method:
+
+honeypot field embedded in quote form
+bot detection via hidden field population
+automatic request discard for spam submissions
+
 System characteristics:
 
 fully static
@@ -58,6 +89,7 @@ Generated pages:
 1 homepage
 1 cleaner network intake page
 1 customer enquiry page
+1 structured quote intake page
 2 confirmation pages
 3 trust pages
 
@@ -102,7 +134,6 @@ builder dust removal
 contractor handover cleaning
 construction dust removal
 
-
 End of Tenancy Cleaning
 
 Positioning:
@@ -114,7 +145,6 @@ Search intent captured:
 tenant move-out cleaning
 landlord inspection preparation
 deposit dispute prevention
-
 
 Deep Cleaning
 
@@ -128,7 +158,6 @@ Search intent captured:
 heavy domestic cleaning
 property reset cleaning
 seasonal deep cleaning
-
 
 Carpet Cleaning
 
@@ -194,7 +223,7 @@ Lead-generation platform.
 Customer journey:
 
 User lands on service-location page
-User submits structured enquiry (/contact)
+User submits structured enquiry or quote request
 Lead captured by platform
 Cleaner assigned
 Commission retained
@@ -208,6 +237,7 @@ Cleaner receives local job opportunities
 
 Primary capture channels:
 
+structured quote intake
 customer enquiry forms
 cleaner network applications
 email lead routing
@@ -242,6 +272,7 @@ Functions implemented:
 
 /cleaner-application
 /contact-enquiry
+/quote-request
 
 Email transport:
 
@@ -285,6 +316,9 @@ Trust layer implemented.
 
 Cleaner supply intake operational.
 Customer enquiry intake operational.
+Structured quote intake operational.
+Pricing engine operational.
+Spam protection operational.
 
 System released to search engine indexing cycle.
 
@@ -305,5 +339,5 @@ data-driven guide expansion
 commercial page reinforcement
 conversion optimisation
 cleaner supply acquisition
-structured quote intake system
+quote intake optimisation
 network expansion of local cleaners.

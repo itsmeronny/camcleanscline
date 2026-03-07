@@ -1,0 +1,33 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import services from "../../data/services";
+
+const title = "Professional Cleaning Services | CamCleans";
+const description = "Explore professional cleaning services offered by CamCleans across the United Kingdom.";
+---
+
+<Layout title={title} description={description} canonicalPath="/services">
+
+<h1>Professional Cleaning Services</h1>
+
+<p>
+CamCleans connects customers with professional cleaners across the United Kingdom.
+Our services support landlords, property managers, developers and businesses
+requiring specialist cleaning before occupation, handover or inspection.
+</p>
+
+<h2>Available Services</h2>
+
+<ul>
+{Object.values(services).map((service) => (
+
+<li>
+<a href={`/services/${service.slug}`}>
+{service.name}
+</a>
+</li>
+
+))}
+</ul>
+
+</Layout>

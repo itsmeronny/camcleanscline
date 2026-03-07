@@ -31,8 +31,8 @@ Guide reinforcement blocks implemented:
 * guide → guide lateral linking
 * service → guide reinforcement
 
-Guide slug protection workflow implemented via GUIDE_SLUGS.txt.
-GUIDE_SLUGS.txt regeneration workflow implemented and verified via terminal workflow.
+Guide slug protection workflow implemented via GUIDE_SLUGS inventory.
+GUIDE_SLUGS regeneration workflow verified via terminal workflow.
 
 Global navigation layer implemented across Layout.astro:
 * Home
@@ -40,6 +40,7 @@ Global navigation layer implemented across Layout.astro:
 * Cleaner Standards
 * Cleaning Checklist
 * Contact
+* Get a Quote (primary CTA)
 
 Trust and credibility pages deployed:
 * /how-camcleans-works
@@ -70,11 +71,59 @@ Customer enquiry intake:
 * Enquiries delivered to camcleansnetwork@gmail.com
 * Confirmation redirect implemented → /enquiry-received
 
+Structured quote intake system implemented.
+
+Quote system:
+* /quote page implemented
+* structured job data capture introduced
+* form fields implemented for:
+  postcode
+  property type
+  bedrooms
+  bathrooms
+  clean type
+  preferred date
+* quote pathway integrated into navigation and service pages
+* primary conversion CTA updated → "Get a Quote"
+
+Quote pricing engine implemented.
+
+Pricing logic includes:
+* base service pricing
+* bedroom scaling multipliers
+* bathroom additive pricing
+* property-type multipliers
+* cleaner payout calculation
+* platform margin calculation
+
+Pricing stability hardening implemented.
+
+Pricing engine improvements:
+* fallback logic introduced to prevent NaN outputs
+* additional property types supported
+* bungalow multiplier implemented
+* other-property multiplier implemented
+* defensive calculations added for missing values
+
+Spam protection layer implemented.
+
+Quote form spam mitigation:
+* hidden honeypot field added to form
+* automated bot submissions filtered
+* honeypot validation implemented in Cloudflare function
+
+Navigation reinforcement:
+* quote link added to global navigation
+* quote CTA integrated into service-location pages
+* cleaner recruitment link added to footer
+* recruitment messaging integrated across site
+
 Cloudflare Pages Functions layer verified operational.
 
 Active backend endpoints:
 * /cleaner-application
 * /contact-enquiry
+* /quote-request
 
 Deployment workflow simplified.
 
@@ -127,6 +176,7 @@ Current Static Scope
 1 homepage
 1 cleaner network intake page
 1 contact enquiry page
+1 structured quote intake page
 2 confirmation pages
 3 trust pages
 
@@ -182,7 +232,7 @@ multiple support guides
 cluster navigation from guide hub
 reinforcement links to commercial services
 
-Guide slug inventory maintained via GUIDE_SLUGS.txt.
+Guide slug inventory maintained via GUIDE_SLUGS.
 
 Internal Link Architecture
 
@@ -228,17 +278,18 @@ System architecture locked.
 Site released to search engine crawl pipeline.
 
 Lead capture infrastructure operational.
-
 Cleaner supply intake operational.
 Customer enquiry intake operational.
+Structured quote intake operational.
 
 Next focus:
 monitor crawl behaviour
 observe query discovery
 analyse impressions and early rankings
 reinforce successful clusters later via data-driven expansion
-expand structured quote intake system
-begin cleaner supply acquisition
+conversion optimisation
+cleaner supply acquisition
+quote intake refinement
 
 No routing changes planned.
 No architectural rewrites permitted.

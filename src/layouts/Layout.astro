@@ -10,13 +10,7 @@ const schema = {
   name: "CamCleans",
   url: baseUrl,
   description: "Professional cleaning services across the UK including end of tenancy cleaning, deep cleaning, after builders cleaning and carpet cleaning.",
-  areaServed: "United Kingdom",
-  serviceType: [
-    "End of Tenancy Cleaning",
-    "Deep Cleaning",
-    "After Builders Cleaning",
-    "Carpet Cleaning"
-  ]
+  areaServed: "United Kingdom"
 };
 
 const schemaJson = JSON.stringify(schema);
@@ -33,7 +27,11 @@ const schemaJson = JSON.stringify(schema);
 <meta name="google-site-verification" content="pAsatR2k1X-eVnAENBpTB9Scyy41cSObLsYixLSqxM4" />
 
 <title>{title}</title>
-<script type="application/ld+json" set:html={schemaJson} />
+
+<script type="application/ld+json">
+{schemaJson}
+</script>
+
 <meta name="description" content={description} />
 
 <link rel="canonical" href={canonical} />
@@ -119,6 +117,7 @@ footer {
 <header>
 <nav>
 <a href="/">Home</a>
+<a href="/services">Services</a>
 <a href="/how-camcleans-works">How It Works</a>
 <a href="/cleaner-standards">Cleaner Standards</a>
 <a href="/cleaning-checklist">Cleaning Checklist</a>

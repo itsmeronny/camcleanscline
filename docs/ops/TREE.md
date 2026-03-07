@@ -1,3 +1,4 @@
+Updated: Sat  7 Mar 2026 19:27:57 UTC
 .
 ├── .astro
 │   ├── collections
@@ -7,6 +8,7 @@
 │   ├── data-store.json
 │   ├── settings.json
 │   └── types.d.ts
+├── .DS_Store
 ├── .gitignore
 ├── .vscode
 │   ├── extensions.json
@@ -21,7 +23,9 @@
 ├── functions
 │   ├── cleaner-application
 │   │   └── index.js
-│   └── contact-enquiry
+│   ├── contact-enquiry
+│   │   └── index.js
+│   └── quote-request
 │       └── index.js
 ├── GUIDE_CLUSTER_LINK_BLOCK.html
 ├── GUIDE_CLUSTER_SAFE.txt
@@ -40,8 +44,9 @@
 ├── GUIDE_SLUGS_LOCKED.txt
 ├── GUIDE_SLUGS.deduped.txt
 ├── GUIDE_SLUGS.expected.txt
-├── GUIDE_SLUGS.txt
+├── GUIDE_SLUGS.md
 ├── layout_component_dump.txt
+├── leads.csv
 ├── NEW_GUIDES_SAFE.txt
 ├── NEW_GUIDES.txt
 ├── package-lock.json
@@ -342,14 +347,17 @@
 │   │   │   └── index.astro
 │   │   ├── locations
 │   │   │   └── [slug].astro
+│   │   ├── quote
+│   │   │   └── index.astro
 │   │   └── services
 │   │       ├── [service]
 │   │       │   └── [location].astro
-│   │       └── [slug].astro
+│   │       ├── [slug].astro
+│   │       └── index.astro
 │   └── styles.css
 ├── tatus
 ├── TENANCY_GUIDES_SAFE.txt
 ├── TREE.md
 └── tsconfig.json
 
-31 directories, 322 files
+33 directories, 327 files
