@@ -1,107 +1,41 @@
 ---
 import Layout from "./Layout.astro";
-import RelatedGuides from "../components/RelatedGuides.astro";
 
-const {
-  title,
-  description,
-  cluster = "",
-  canonicalPath,
-} = Astro.props;
-
-const resolvedCanonicalPath = canonicalPath ?? Astro.url?.pathname ?? "/";
-
-const SERVICE_MAP = {
-  "after-builders": {
-    title: "After Builders Cleaning",
-    url: "/services/after-builders-cleaning",
-    text:
-      "After builders cleaning removes plaster dust, cement residue and construction debris left behind after renovation or building work. Professional equipment is used to safely remove fine construction particles and restore the property to a clean, liveable condition."
-  },
-
-  "end-of-tenancy": {
-    title: "End Of Tenancy Cleaning",
-    url: "/services/end-of-tenancy-cleaning",
-    text:
-      "End of tenancy cleaning prepares rental properties for landlord inspections and inventory checks. Professional tenancy cleaning helps tenants avoid deposit deductions by meeting letting agent cleaning standards."
-  },
-
-  "deep-cleaning": {
-    title: "Deep Cleaning",
-    url: "/services/one-off-deep-cleaning",
-    text:
-      "Deep cleaning removes heavy dirt build-up, grease and neglected contamination throughout a property. It is typically used before moving in, after long tenancies, or when restoring homes to hygienic condition."
-  },
-
-  "carpet-cleaning": {
-    title: "Carpet & Rug Cleaning",
-    url: "/services/carpet-rug-cleaning",
-    text:
-      "Professional carpet cleaning removes embedded dirt, stains and allergens trapped within carpet fibres. Specialist cleaning equipment restores carpets and improves indoor hygiene."
-  }
-};
-
-const service = SERVICE_MAP[cluster] || null;
+const { title, description, canonicalPath = "/" } = Astro.props;
 ---
 
-<Layout title={title} description={description} canonicalPath={resolvedCanonicalPath}>
+<Layout title={title} description={description} canonicalPath={canonicalPath}>
 
-<article class="guide-container">
+<article>
 
-<header class="guide-header">
-<h1>{title}</h1>
-</header>
-
-<section class="guide-content">
 <slot />
-</section>
-
-{service && (
-
-<section class="guide-service">
 
 <hr />
 
-<h2>Professional {service.title}</h2>
+<h2>Need Professional Cleaning Help?</h2>
 
 <p>
-{service.text}
+CamCleans connects customers with professional cleaners across the United Kingdom.
+If you require end of tenancy cleaning, deep cleaning, after builders cleaning
+or carpet cleaning, you can request a quote.
 </p>
 
 <p>
-<a href={service.url}>
-View the {service.title} Service
-</a>
+<a href="/quote">Request a Cleaning Quote</a>
 </p>
 
-</section>
-
-)}
-
 <hr />
 
-<section class="guide-services">
+<h2>Are You a Professional Cleaner?</h2>
 
-<h2>Related Cleaning Services</h2>
+<p>
+CamCleans is expanding its national cleaner network.
+Professional cleaners can apply to receive local cleaning job enquiries.
+</p>
 
-<ul>
-<li><a href="/services/end-of-tenancy-cleaning/">End of Tenancy Cleaning</a></li>
-<li><a href="/services/one-off-deep-cleaning/">Deep Cleaning</a></li>
-<li><a href="/services/after-builders-cleaning/">After Builders Cleaning</a></li>
-<li><a href="/services/carpet-rug-cleaning/">Carpet & Rug Cleaning</a></li>
-</ul>
-
-</section>
-
-<hr />
-
-<section class="guide-related">
-
-<h3>Related Guides</h3>
-
-<RelatedGuides />
-
-</section>
+<p>
+<a href="/join-cleaners">Apply to Join the CamCleans Cleaner Network</a>
+</p>
 
 </article>
 

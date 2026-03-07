@@ -1,283 +1,309 @@
-# CamCleans – MASTER STATE
+Core Objective
+Build a national UK cleaning lead-generation platform using:
 
-## Core Objective
-
-Build a national UK cleaning lead-generation platform based on:
-
-- near-zero infrastructure costs
-- static-first architecture
-- programmatic SEO coverage
-- authority cluster expansion
-- controlled internal linking
+* near-zero infrastructure costs
+* static-first architecture
+* deterministic programmatic SEO
+* authority cluster expansion
+* controlled internal linking
 
 Authority before aesthetics.
 Structure before scale.
 
----
-
-## Current System Status
+Current System Status
 
 Architecture stable.
 Matrix deployed.
 Guide clusters expanded.
 Internal linking architecture mature.
 Authority loop complete.
+Production domain live and canonical.
+Google Search Console configured and sitemap processed.
+
+Structured data layer operational with deterministic JSON-LD generation.
+Trust and credibility layer implemented via supporting informational pages.
+
+Lead intake infrastructure implemented.
+
+Cleaner acquisition channel operational via:
+https://camcleans.co.uk/join-cleaners
+
+Customer enquiry channel operational via:
+https://camcleans.co.uk/contact
 
 System characteristics:
 
-- fully static
-- deterministic build
-- no runtime database
-- no API dependencies
+fully static
+deterministic build output
+no runtime database
+no API dependencies for frontend
+near-zero operating cost profile
 
-Infrastructure remains near-zero cost.
+Cloudflare Pages Functions provide minimal backend processing for form handling.
 
----
-
-## Platform Scale
+Platform Scale
 
 Current footprint:
 
-13 services  
-18 UK locations  
+13 services
+18 UK locations
 
 Generated pages:
 
-- 234 service-location pages
-- 13 service hub pages
-- 18 location hub pages
-- ~56 authority guides
-- 1 guide hub
-- 1 homepage
+234 service-location pages
+13 service hub pages
+18 location hub pages
+242 authority guides
+1 guide hub
+1 homepage
+1 cleaner network intake page
+1 customer enquiry page
+2 confirmation pages
+3 trust pages
 
 Total:
 
-322 static pages
+514 static pages
 
 Matrix breadth complete for Phase 1.
 
----
-
-## Site Structure
+Site Structure
 
 Search architecture pyramid:
 
-Guides  
-↓  
-Service hubs  
-↓  
-Service-location pages  
-↑  
+Guides
+↓
+Service hubs
+↓
+Service-location pages
+↑
 Location hubs
 
 Additional reinforcement:
 
-Guide clusters  
-↕  
-Service hubs
+Guide clusters ↕ Service hubs
 
-This creates a closed authority loop across informational and commercial pages.
+Result:
 
----
+Closed authority loop across informational and commercial pages.
 
-## Authority Clusters
+Authority Clusters (Active)
 
-### After Builders Cleaning
+After Builders Cleaning
 
 Positioning:
-
-- construction dust removal
-- renovation handover preparation
-- developer project completion cleaning
+construction dust removal
+renovation handover preparation
+developer project completion cleaning
 
 Search intent captured:
+renovation clean-up
+builder dust removal
+contractor handover cleaning
+construction dust removal
 
-- renovation clean-up
-- builder dust removal
-- contractor handover cleaning
-- construction dust removal
 
----
-
-### End of Tenancy Cleaning
+End of Tenancy Cleaning
 
 Positioning:
-
-- inspection-first cleaning
-- deposit protection focus
-- landlord compliance preparation
+inspection-first cleaning
+deposit protection focus
+landlord compliance preparation
 
 Search intent captured:
+tenant move-out cleaning
+landlord inspection preparation
+deposit dispute prevention
 
-- tenant move-out cleaning
-- landlord inspection preparation
-- deposit dispute prevention
 
----
-
-### Deep Cleaning
+Deep Cleaning
 
 Positioning:
-
-- neglected property recovery
-- move-in cleaning
-- property sale preparation
-- periodic intensive cleaning
+neglected property recovery
+move-in cleaning
+property sale preparation
+periodic intensive cleaning
 
 Search intent captured:
+heavy domestic cleaning
+property reset cleaning
+seasonal deep cleaning
 
-- heavy domestic cleaning
-- property reset cleaning
-- seasonal deep cleaning
 
----
-
-### Carpet & Rug Cleaning
+Carpet Cleaning
 
 Positioning:
-
-- stain removal
-- tenancy carpet compliance
-- allergy reduction
+stain removal
+tenancy carpet compliance
+allergy reduction
 
 Search intent captured:
+carpet steam cleaning
+stain removal
+professional vs DIY cleaning
 
-- carpet steam cleaning
-- stain removal
-- professional vs DIY cleaning
-
----
-
-## SEO Infrastructure
+SEO Infrastructure
 
 Implemented:
 
-- sitemap auto-generation
-- robots.txt control
-- canonical path enforcement
-- JSON-LD structured data
-- breadcrumb hierarchy
+sitemap auto-generation (index + child sitemaps)
+robots.txt
+canonical path enforcement
+JSON-LD structured data
+breadcrumb hierarchy
+Google Search Console verification
+Google Search Console sitemap submission
 
 Schema used:
 
-- BreadcrumbList
-- Service
-- LocalBusiness
+BreadcrumbList
+Service
+LocalBusiness
 
 Search engines receive fully structured static pages.
 
----
-
-## Internal Link System
+Internal Link System
 
 Authority loop architecture:
 
-Guides  
-↓  
-Service hubs  
-↓  
-Service-location pages  
-↑  
-Location hubs  
-↑  
-Service hubs  
-↑  
+Guides
+↓
+Service hubs
+↓
+Service-location pages
+↑
+Location hubs
+↑
+Service hubs
+↑
 Guides
 
 Supporting elements:
 
-Guide hub  
-Related guide networks  
-Service hub guide injection
+guide hub for cluster discovery
+related guide networks within clusters
+service hub guide injection
+location hub service propagation
 
-This ensures authority flows across the entire site.
+Authority flows across the entire site.
 
----
-
-## Monetisation Model
+Monetisation Model
 
 Lead-generation platform.
 
 Customer journey:
 
-1. User lands on service-location page.
-2. User submits structured enquiry.
-3. Lead captured by platform.
-4. Cleaner assigned.
-5. Commission retained.
+User lands on service-location page
+User submits structured enquiry (/contact)
+Lead captured by platform
+Cleaner assigned
+Commission retained
+
+Cleaner acquisition journey:
+
+Cleaner discovers platform
+Cleaner applies via /join-cleaners
+Cleaner added to CamCleans network
+Cleaner receives local job opportunities
 
 Primary capture channels:
 
-- structured enquiry forms
-- email lead routing
+customer enquiry forms
+cleaner network applications
+email lead routing
 
----
+Infrastructure & Deployment
 
-## Cost Structure
+Hosting layer:
 
-Infrastructure design goals:
+Cloudflare Pages
 
-- static-only architecture
-- minimal operational overhead
-- CDN-delivered content
-- no runtime servers
+Project:
+camcleanscline
 
-Expected cost profile:
+Deployment target:
+dist/
 
-- static hosting
-- minimal operational expenses
-- scalable to national traffic
+Deploy command:
 
----
+npm run deploy
 
-## Non-Negotiable Constraints
+Build stack:
 
-- static-first architecture
-- deterministic builds
-- no runtime database
-- no dynamic content generation
-- no thin programmatic duplication
-- no structural churn
+Astro static generation
+Node 20
+Dev Container workflow
 
-Authority compounding model mandatory.
+Backend layer:
 
----
+Cloudflare Pages Functions
 
-## Strategic Position
+Functions implemented:
+
+/cleaner-application
+/contact-enquiry
+
+Email transport:
+
+Resend API
+
+Inbox destination:
+
+camcleansnetwork@gmail.com
+
+Environment secret:
+
+RESEND_API_KEY
+
+No runtime servers.
+No traditional backend infrastructure.
+
+Production Domain Architecture
+
+Primary canonical domain:
+
+https://camcleans.co.uk
+
+Redirect matrix:
+
+https://www.camcleans.co.uk → https://camcleans.co.uk
+https://camcleans.com → https://camcleans.co.uk
+https://www.camcleans.com → https://camcleans.co.uk
+
+Cloudflare Pages dev domain:
+
+https://camcleanscline.pages.dev
+
+Strategic Position
 
 Matrix breadth complete.
-
 Programmatic SEO foundation operational.
+Domain canonicalised and live.
+Search discovery pipeline active.
+Authority loop mature.
+Trust layer implemented.
 
-Guide clusters expanding.
+Cleaner supply intake operational.
+Customer enquiry intake operational.
 
-Internal linking architecture mature.
+System released to search engine indexing cycle.
 
-System positioned for authority compounding.
+Current Strategic Phase
 
----
-
-## Next Strategic Phase
-
-Authority Density Expansion.
+Indexing Observation Phase.
 
 Focus areas:
 
-- deepen existing guide clusters
-- expand informational coverage
-- strengthen guide → service reinforcement
-- increase topical saturation in core clusters
+monitor crawl coverage
+observe ranking emergence
+analyse search impressions
+identify guide clusters producing query discovery
 
-Clusters currently active:
+Future growth will occur through:
 
-- After Builders Cleaning
-- End of Tenancy Cleaning
-- Deep Cleaning
-- Carpet Cleaning
-
-Future growth will come from:
-
-- guide density expansion
-- cluster strengthening
-- service vertical deepening
-- incremental new service clusters
+data-driven guide expansion
+commercial page reinforcement
+conversion optimisation
+cleaner supply acquisition
+structured quote intake system
+network expansion of local cleaners.

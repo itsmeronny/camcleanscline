@@ -3,62 +3,69 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout
-title="Request Cleaning Quote"
-description="Request a cleaning quote for professional services including tenancy cleaning, deep cleaning and carpet cleaning."
+  title="Contact CamCleans | Cleaning Enquiries Across the UK"
+  description="Contact CamCleans for cleaning enquiries including end of tenancy cleaning, deep cleaning, after builders cleaning, carpet cleaning and commercial cleaning."
+  canonicalPath="/contact"
 >
 
-<article class="contact-container">
-
-<header>
-<h1>Request a Cleaning Quote</h1>
-</header>
-
-<section>
+<h1>Contact CamCleans</h1>
 
 <p>
-Submit a cleaning enquiry and we will connect you with available professional cleaners.
+Use the form below to send a cleaning enquiry. CamCleans works with independent cleaners and professional cleaning companies across the United Kingdom.
 </p>
 
-<form method="POST">
+<h2>Send an Enquiry</h2>
 
-<label>
-Name
-<input type="text" name="name" required />
+<form action="/contact-enquiry" method="POST" enctype="application/x-www-form-urlencoded">
+
+<p>
+<label>Name<br>
+<input type="text" name="name" required>
 </label>
+</p>
 
-<label>
-Email
-<input type="email" name="email" required />
+<p>
+<label>Email<br>
+<input type="email" name="email" required>
 </label>
+</p>
 
-<label>
-Postcode
-<input type="text" name="postcode" required />
+<p>
+<label>Phone<br>
+<input type="tel" name="phone">
 </label>
+</p>
 
-<label>
-Service
+<p>
+<label>Postcode<br>
+<input type="text" name="postcode" required>
+</label>
+</p>
+
+<p>
+<label>Service Required<br>
 <select name="service">
-
+<option value="">Select</option>
 <option>End of Tenancy Cleaning</option>
 <option>Deep Cleaning</option>
 <option>After Builders Cleaning</option>
 <option>Carpet Cleaning</option>
-
+<option>Commercial Cleaning</option>
+<option>Airbnb Cleaning</option>
 </select>
 </label>
+</p>
 
-<label>
-Details
-<textarea name="details"></textarea>
+<p>
+<label>Message<br>
+<textarea name="message" rows="6" required></textarea>
 </label>
+</p>
 
-<button type="submit">Request Quote</button>
+<p>
+<button type="submit">Send Cleaning Enquiry</button>
+</p>
 
 </form>
-
-</section>
-
-</article>
 
 </Layout>

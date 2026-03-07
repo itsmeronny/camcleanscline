@@ -1,35 +1,43 @@
 ---
-const guides = [
-  { href: "/guides/after-builders-dust-removal", title: "After Builders Dust Removal" },
-  { href: "/guides/post-renovation-cleaning-checklist", title: "Post Renovation Cleaning Checklist" },
-  { href: "/guides/developer-handover-cleaning-guide", title: "Developer Handover Cleaning Guide" },
-  { href: "/guides/after-builders-cleaning-cost-guide", title: "After Builders Cleaning Cost Guide" },
-  { href: "/guides/after-builders-cleaning-vs-deep-cleaning", title: "After Builders vs Deep Cleaning" },
+import services from "../data/services";
+import locations from "../data/locations";
 
-  { href: "/guides/tenancy-cleaning-room-by-room-checklist", title: "Tenancy Cleaning Room Checklist" },
-  { href: "/guides/tenancy-cleaning-mistakes-that-cost-deposits", title: "Tenancy Cleaning Mistakes" },
-  { href: "/guides/what-letting-agents-look-for-in-cleaning", title: "Letting Agent Inspection Standards" },
+const { serviceSlug } = Astro.props;
 
-  { href: "/guides/what-is-deep-cleaning-house", title: "What Is Deep Cleaning" },
-  { href: "/guides/deep-cleaning-vs-regular-cleaning", title: "Deep vs Regular Cleaning" },
-  { href: "/guides/how-often-should-you-deep-clean", title: "How Often To Deep Clean" },
+const service = services.find((s) => s.slug === serviceSlug);
 
-  { href: "/guides/how-carpet-cleaning-works", title: "How Carpet Cleaning Works" },
-  { href: "/guides/carpet-cleaning-vs-steam-cleaning", title: "Carpet Cleaning vs Steam Cleaning" },
-  { href: "/guides/remove-carpet-stains-guide", title: "Carpet Stain Removal Guide" }
-];
+if (!service) {
+  throw new Error("GuideLinks requires a valid serviceSlug");
+}
+
+const sampleLocations = locations.slice(0, 6);
 ---
 
-<section class="service-guides">
+<section>
 
-<h2>Cleaning Guides</h2>
+<h2>{service.name} Services</h2>
+
+<p>
+CamCleans provides professional {service.name.toLowerCase()} services across the United Kingdom.
+Below are some locations where cleaners are available.
+</p>
 
 <ul>
-{guides.map((g) => (
+
+{sampleLocations.map((location) => (
+
 <li>
-<a href={g.href}>{g.title}</a>
+<a href={`/services/${service.slug}/${location.slug}`}>
+{service.name} in {location.name}
+</a>
 </li>
+
 ))}
+
 </ul>
+
+<p>
+<a href={`/services/${service.slug}`}>View all {service.name.toLowerCase()} services</a>
+</p>
 
 </section>

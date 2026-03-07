@@ -1,4 +1,4 @@
-.astro
+
 aberdeen-end-of-tenancy-cleaning-checklist
 after-builders-cleaning-adhesive-residue-removal
 after-builders-cleaning-air-quality-after-renovation
@@ -42,6 +42,7 @@ after-builders-cleaning-wood-floor-protection
 after-builders-dust-health-risks
 after-builders-dust-removal
 after-builders-window-cleaning-guide
+after-builders/index
 bathroom-deep-cleaning-guide
 best-method-for-carpet-stain-removal
 birmingham-end-of-tenancy-cleaning-checklist
@@ -83,6 +84,7 @@ carpet-cleaning-required-for-tenancy
 carpet-cleaning-steam-vs-shampoo
 carpet-cleaning-traffic-lane-restoration
 carpet-cleaning-vs-steam-cleaning
+carpet-cleaning/index
 chester-end-of-tenancy-cleaning-checklist
 cleaning-new-build-property-before-moving-in
 cleaning-requirements-for-letting-agents
@@ -116,6 +118,7 @@ deep-cleaning-vs-regular-cleaning
 deep-cleaning-vs-standard-cleaning-cost
 deep-cleaning-washing-machine-cleaning
 deep-cleaning-whole-house-reset
+deep-cleaning/index
 deposit-deduction-cleaning-guide
 developer-handover-cleaning-guide
 do-you-need-professional-end-of-tenancy-cleaning
@@ -162,6 +165,7 @@ end-of-tenancy-cleaning-wall-mark-removal-guide
 end-of-tenancy-cleaning-wall-scuff-mark-removal
 end-of-tenancy-cleaning-what-counts-as-fair-wear-and-tear
 end-of-tenancy-cleaning-window-cleaning-guide
+end-of-tenancy/index
 final-tenancy-inspection-checklist
 glasgow-end-of-tenancy-cleaning-checklist
 harrogate-end-of-tenancy-cleaning-checklist
@@ -181,10 +185,6 @@ how-to-pass-end-of-tenancy-inspection
 how-to-remove-coffee-stains-from-carpet
 how-to-remove-plaster-dust-from-house
 how-to-remove-red-wine-from-carpet
-index
-index
-index
-index
 index
 kitchen-deep-cleaning-guide
 landlord-cleaning-standards-guide
