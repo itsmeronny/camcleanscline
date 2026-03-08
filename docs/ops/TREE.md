@@ -1,4 +1,6 @@
-Updated: Sat  7 Mar 2026 19:27:57 UTC
+# PROJECT TREE snapshot
+Generated: 2026-03-08 03:08:06 UTC
+
 .
 ├── .astro
 │   ├── collections
@@ -17,9 +19,37 @@ Updated: Sat  7 Mar 2026 19:27:57 UTC
 │   └── tmp
 ├── astro.config.mjs
 ├── camcleans_snapshot.tar.gz
+├── data
+│   └── leads.csv
 ├── docs
 │   ├── DEV_LOG.md
-│   └── MASTER_STATE.md
+│   ├── guide-control
+│   │   ├── GUIDE_CLUSTER_LINK_BLOCK.html
+│   │   ├── GUIDE_CLUSTER_SAFE.txt
+│   │   ├── GUIDE_CLUSTER_SATURATION.txt
+│   │   ├── guide_dump.txt
+│   │   ├── GUIDE_EXPANSION_NEXT.txt
+│   │   ├── GUIDE_EXPANSION_SAFE.txt
+│   │   ├── GUIDE_EXTRA.pages.txt
+│   │   ├── GUIDE_FILES.actual.txt
+│   │   ├── GUIDE_LOCATION_EXPANSION.txt
+│   │   ├── GUIDE_LOCATION_SAFE.txt
+│   │   ├── GUIDE_MISSING.pages.txt
+│   │   ├── GUIDE_SERVICE_INTENT.txt
+│   │   ├── GUIDE_SERVICE_LOCATION_SAFE.txt
+│   │   ├── GUIDE_SERVICE_SAFE.txt
+│   │   ├── GUIDE_SLUGS_LOCKED.txt
+│   │   ├── GUIDE_SLUGS.deduped.txt
+│   │   ├── GUIDE_SLUGS.expected.txt
+│   │   ├── layout_component_dump.txt
+│   │   ├── NEW_GUIDES_SAFE.txt
+│   │   ├── NEW_GUIDES.txt
+│   │   ├── service_dump.txt
+│   │   └── TENANCY_GUIDES_SAFE.txt
+│   ├── MASTER_STATE.md
+│   └── ops
+│       ├── GUIDE_SLUGS.md
+│       └── TREE.md
 ├── functions
 │   ├── cleaner-application
 │   │   └── index.js
@@ -27,28 +57,6 @@ Updated: Sat  7 Mar 2026 19:27:57 UTC
 │   │   └── index.js
 │   └── quote-request
 │       └── index.js
-├── GUIDE_CLUSTER_LINK_BLOCK.html
-├── GUIDE_CLUSTER_SAFE.txt
-├── GUIDE_CLUSTER_SATURATION.txt
-├── guide_dump.txt
-├── GUIDE_EXPANSION_NEXT.txt
-├── GUIDE_EXPANSION_SAFE.txt
-├── GUIDE_EXTRA.pages.txt
-├── GUIDE_FILES.actual.txt
-├── GUIDE_LOCATION_EXPANSION.txt
-├── GUIDE_LOCATION_SAFE.txt
-├── GUIDE_MISSING.pages.txt
-├── GUIDE_SERVICE_INTENT.txt
-├── GUIDE_SERVICE_LOCATION_SAFE.txt
-├── GUIDE_SERVICE_SAFE.txt
-├── GUIDE_SLUGS_LOCKED.txt
-├── GUIDE_SLUGS.deduped.txt
-├── GUIDE_SLUGS.expected.txt
-├── GUIDE_SLUGS.md
-├── layout_component_dump.txt
-├── leads.csv
-├── NEW_GUIDES_SAFE.txt
-├── NEW_GUIDES.txt
 ├── package-lock.json
 ├── package.json
 ├── public
@@ -56,7 +64,6 @@ Updated: Sat  7 Mar 2026 19:27:57 UTC
 │   ├── favicon.svg
 │   └── robots.txt
 ├── README.md
-├── service_dump.txt
 ├── src
 │   ├── components
 │   │   ├── GuideLinks.astro
@@ -355,9 +362,6 @@ Updated: Sat  7 Mar 2026 19:27:57 UTC
 │   │       ├── [slug].astro
 │   │       └── index.astro
 │   └── styles.css
-├── tatus
-├── TENANCY_GUIDES_SAFE.txt
-├── TREE.md
 └── tsconfig.json
 
-33 directories, 327 files
+36 directories, 326 files
