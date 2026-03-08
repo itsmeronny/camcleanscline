@@ -1,6 +1,11 @@
 # GUIDE_SLUGS snapshot
-Generated: 2026-03-08 03:14:13 UTC
+Generated: 2026-03-08 03:23:12 UTC
 
+application-received/index
+cleaner-standards/index
+cleaning-checklist/index
+contact
+enquiry-received/index
 guides/
 guides/aberdeen-end-of-tenancy-cleaning-checklist
 guides/after-builders-cleaning-adhesive-residue-removal
@@ -243,3 +248,11 @@ guides/what-letting-agents-check-before-deposit-return
 guides/what-letting-agents-look-for-in-cleaning
 guides/when-you-need-deep-cleaning
 guides/why-builders-dust-keeps-coming-back
+how-camcleans-works/index
+index
+join-cleaners/index
+locations/[slug]
+quote/index
+services/[service]/[location]
+services/[slug]
+services/index
