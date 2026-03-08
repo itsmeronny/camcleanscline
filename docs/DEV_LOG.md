@@ -1,23 +1,26 @@
-Status
-Programmatic SEO matrix stable and deployed.
-Authority inheritance implemented.
-Internal linking architecture fully operational.
-Guide cluster system expanded.
-Guide hub clustering implemented.
-Bidirectional authority flow established between guides and service hubs.
-Service → guide reverse linking implemented.
-Location hub authority layer implemented.
-Conversion layer added to service-location pages.
-Lead capture page implemented.
-Trust layer implemented with supporting informational pages.
-Schema layer expanded.
-Google Search Console verification completed.
-Google Search Console sitemap submitted and processed.
-Production domain canonicalisation completed.
+# DEV_LOG
+
+## Status
+
+Programmatic SEO matrix stable and deployed.  
+Authority inheritance implemented.  
+Internal linking architecture fully operational.  
+Guide cluster system expanded.  
+Guide hub clustering implemented.  
+Bidirectional authority flow established between guides and service hubs.  
+Service → guide reverse linking implemented.  
+Location hub authority layer implemented.  
+Conversion layer added to service-location pages.  
+Lead capture page implemented.  
+Trust layer implemented with supporting informational pages.  
+Schema layer expanded.  
+Google Search Console verification completed.  
+Google Search Console sitemap submitted and processed.  
+Production domain canonicalisation completed.  
 Cloudflare Pages deployment active.
 
-Structured data rendering issue identified and resolved at source level.
-JSON-LD injection logic corrected across layout and SEO components.
+Structured data rendering issue identified and resolved at source level.  
+JSON-LD injection logic corrected across layout and SEO components.  
 Astro rendering behaviour verified during build phase.
 
 Authority cluster expansion executed across:
@@ -31,8 +34,10 @@ Guide reinforcement blocks implemented:
 * guide → guide lateral linking
 * service → guide reinforcement
 
-Guide slug protection workflow implemented via GUIDE_SLUGS inventory.
-GUIDE_SLUGS regeneration workflow verified via terminal workflow.
+Guide slug protection workflow implemented via GUIDE_SLUGS inventory.  
+GUIDE_SLUGS regeneration workflow verified via terminal workflow.  
+Live guide slug uniqueness check executed against generated guide paths.  
+No duplicate live guide slugs detected.
 
 Global navigation layer implemented across Layout.astro:
 * Home
@@ -83,6 +88,10 @@ Quote system:
   bathrooms
   clean type
   preferred date
+* customer details capture implemented for:
+  name
+  email
+  phone
 * quote pathway integrated into navigation and service pages
 * primary conversion CTA updated → "Get a Quote"
 
@@ -104,6 +113,9 @@ Pricing engine improvements:
 * bungalow multiplier implemented
 * other-property multiplier implemented
 * defensive calculations added for missing values
+* minimum automated quote floor implemented → £120
+* maximum automated quote ceiling implemented → £600
+* manual quote redirect implemented for over-cap jobs → /manual-quote-required
 
 Spam protection layer implemented.
 
@@ -111,6 +123,25 @@ Quote form spam mitigation:
 * hidden honeypot field added to form
 * automated bot submissions filtered
 * honeypot validation implemented in Cloudflare function
+
+Quote request validation and communications hardening implemented.
+
+Quote backend protections:
+* UK postcode format validation implemented
+* invalid postcode submissions rejected
+* customer confirmation email implemented
+* admin lead notification retained
+* customer confirmation subject implemented → "CamCleans Quote Request Received"
+
+Email infrastructure upgraded.
+
+Email transport updates:
+* Resend sending domain verified for camcleans.co.uk
+* DKIM verified
+* SPF verified
+* MX verified
+* sender upgraded from Resend sandbox sender to verified domain sender
+* quote emails now sent from → quotes@camcleans.co.uk
 
 Navigation reinforcement:
 * quote link added to global navigation
@@ -131,17 +162,30 @@ package.json deploy script implemented:
 npm run deploy
 
 Current deploy workflow:
-npm run build
+npm run build  
 npm run deploy
+
+Repository hygiene pass completed.
+
+Repository cleanup:
+* operational files isolated into docs/ops
+* guide-control files isolated into docs/guide-control
+* lead data isolated into data
+* project root cleaned to runtime-relevant structure
+* stray junk file removed
+* temporary slug audit workflow executed
 
 System builds deterministically.
 
 Latest confirmed build:
 514 static pages generated.
 
-Environment
-Astro v5.18.0
-Node v20.20.0
+---
+
+## Environment
+
+Astro v5.18.0  
+Node v20.20.0  
 Dev Container
 
 Dev command:
@@ -165,131 +209,149 @@ enabled
 Environment secret:
 RESEND_API_KEY
 
-Current Static Scope
-13 services
-18 locations
-234 service-location pages
-13 service hub pages
-18 location hub pages
-242 authority guide pages
-1 guide hub
-1 homepage
-1 cleaner network intake page
-1 contact enquiry page
-1 structured quote intake page
-2 confirmation pages
+---
+
+## Current Static Scope
+
+13 services  
+18 locations  
+234 service-location pages  
+13 service hub pages  
+18 location hub pages  
+242 authority guide pages  
+1 guide hub  
+1 homepage  
+1 cleaner network intake page  
+1 contact enquiry page  
+1 structured quote intake page  
+2 confirmation pages  
 3 trust pages
 
 Total:
 514 static pages
 
-All pages generated deterministically.
-No runtime rendering.
-No runtime database.
+All pages generated deterministically.  
+No runtime rendering.  
+No runtime database.  
 No external fetch.
 
-Authority Layers Implemented
+---
 
-End of Tenancy Cleaning
-Inspection-led positioning
-Deposit-risk logic
-Rental-intensity differentiation
-Landlord inspection preparation guides
+## Authority Layers Implemented
+
+### End of Tenancy Cleaning
+Inspection-led positioning  
+Deposit-risk logic  
+Rental-intensity differentiation  
+Landlord inspection preparation guides  
 Deposit deduction prevention guides
 
-Airbnb Cleaning
-Short-let turnover logic
-Presentation-first positioning
+### Airbnb Cleaning
+Short-let turnover logic  
+Presentation-first positioning  
 High-density market emphasis
 
-Deep Cleaning
-Neglect build-up positioning
-Urban density variation
-Move-in / property reset framing
+### Deep Cleaning
+Neglect build-up positioning  
+Urban density variation  
+Move-in / property reset framing  
 Property sale preparation guides
 
-After Builders Cleaning
-Construction-grade positioning
-Renovation-heavy city logic
-Developer / contractor intent targeting
+### After Builders Cleaning
+Construction-grade positioning  
+Renovation-heavy city logic  
+Developer / contractor intent targeting  
 Post-project handover framing
 
-Carpet Cleaning
-Stain removal logic
-Tenancy carpet compliance
-Allergy reduction positioning
+### Carpet Cleaning
+Stain removal logic  
+Tenancy carpet compliance  
+Allergy reduction positioning  
 Professional vs DIY comparisons
 
-Guide Cluster System
+---
+
+## Guide Cluster System
+
 Clusters implemented:
-After Builders Cleaning
-End of Tenancy Cleaning
-Deep Cleaning
-Carpet Cleaning
+* After Builders Cleaning
+* End of Tenancy Cleaning
+* Deep Cleaning
+* Carpet Cleaning
 
 Each cluster includes:
-multiple support guides
-cluster navigation from guide hub
-reinforcement links to commercial services
+* multiple support guides
+* cluster navigation from guide hub
+* reinforcement links to commercial services
 
-Guide slug inventory maintained via GUIDE_SLUGS.
+Guide slug inventory maintained via GUIDE_SLUGS.  
+Live slug uniqueness verified against generated guide route structure.
 
-Internal Link Architecture
+---
+
+## Internal Link Architecture
 
 Authority loop implemented:
 
-Guides
-↓
-Service hubs
-↓
-Service-location pages
-↑
-Location hubs
-↑
-Service hubs
-↑
+Guides  
+↓  
+Service hubs  
+↓  
+Service-location pages  
+↑  
+Location hubs  
+↑  
+Service hubs  
+↑  
 Guides
 
 Supporting mechanisms:
 
-GuideLayout
-service reinforcement block
+GuideLayout  
+service reinforcement block  
 related guide network
 
-GuideLinks component
-injected into service hubs
+GuideLinks component  
+injected into service hubs  
 pushes authority back into guide clusters
 
-Location hubs
-service listing injection
+Location hubs  
+service listing injection  
 service-location link propagation
 
-Guide hub
+Guide hub  
 cluster-based guide discovery
 
 Result:
 closed topical authority loop.
 
-Current Strategic Phase
+---
+
+## Current Strategic Phase
+
 Indexing Observation Phase.
 
-Guide cluster expansion paused.
-System architecture locked.
+Guide cluster expansion paused.  
+System architecture locked.  
 Site released to search engine crawl pipeline.
 
-Lead capture infrastructure operational.
-Cleaner supply intake operational.
-Customer enquiry intake operational.
-Structured quote intake operational.
+Lead capture infrastructure operational.  
+Cleaner supply intake operational.  
+Customer enquiry intake operational.  
+Structured quote intake operational.  
+Quote communications hardening operational.  
+Verified domain email delivery operational.
 
 Next focus:
-monitor crawl behaviour
-observe query discovery
-analyse impressions and early rankings
-reinforce successful clusters later via data-driven expansion
-conversion optimisation
-cleaner supply acquisition
-quote intake refinement
+* monitor crawl behaviour
+* observe query discovery
+* analyse impressions and early rankings
+* reinforce successful clusters later via data-driven expansion
+* conversion optimisation
+* cleaner supply acquisition
+* quote intake refinement
+* branded communications layer
+* logo creation and email presentation upgrades
 
-No routing changes planned.
+No routing changes planned.  
 No architectural rewrites permitted.
