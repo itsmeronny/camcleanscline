@@ -1,364 +1,374 @@
-# PROJECT TREE snapshot
-Generated: 2026-03-08 03:23:20 UTC
+# TREE SNAPSHOT
+Generated: Mon  9 Mar 2026 17:00:57 UTC
 
 .
-./.astro
-./.astro/collections
-./.astro/content-assets.mjs
-./.astro/content-modules.mjs
-./.astro/content.d.ts
-./.astro/data-store.json
-./.astro/settings.json
-./.astro/types.d.ts
-./.DS_Store
-./.vscode
-./.vscode/extensions.json
-./.vscode/launch.json
-./.wrangler
-./.wrangler/tmp
-./astro.config.mjs
-./camcleans_snapshot.tar.gz
-./data
-./data/leads.csv
-./docs
-./docs/DEV_LOG.md
-./docs/guide-control
-./docs/guide-control/GUIDE_CLUSTER_LINK_BLOCK.html
-./docs/guide-control/GUIDE_CLUSTER_SAFE.txt
-./docs/guide-control/GUIDE_CLUSTER_SATURATION.txt
-./docs/guide-control/guide_dump.txt
-./docs/guide-control/GUIDE_EXPANSION_NEXT.txt
-./docs/guide-control/GUIDE_EXPANSION_SAFE.txt
-./docs/guide-control/GUIDE_EXTRA.pages.txt
-./docs/guide-control/GUIDE_FILES.actual.txt
-./docs/guide-control/GUIDE_LOCATION_EXPANSION.txt
-./docs/guide-control/GUIDE_LOCATION_SAFE.txt
-./docs/guide-control/GUIDE_MISSING.pages.txt
-./docs/guide-control/GUIDE_SERVICE_INTENT.txt
-./docs/guide-control/GUIDE_SERVICE_LOCATION_SAFE.txt
-./docs/guide-control/GUIDE_SERVICE_SAFE.txt
-./docs/guide-control/GUIDE_SLUGS_LOCKED.txt
-./docs/guide-control/GUIDE_SLUGS.deduped.txt
-./docs/guide-control/GUIDE_SLUGS.expected.txt
-./docs/guide-control/layout_component_dump.txt
-./docs/guide-control/NEW_GUIDES_SAFE.txt
-./docs/guide-control/NEW_GUIDES.txt
-./docs/guide-control/service_dump.txt
-./docs/guide-control/TENANCY_GUIDES_SAFE.txt
-./docs/MASTER_STATE.md
-./docs/ops
-./docs/ops/GUIDE_SLUGS.md
-./docs/ops/TREE.md
-./functions
-./functions/cleaner-application
-./functions/cleaner-application/index.js
-./functions/contact-enquiry
-./functions/contact-enquiry/index.js
-./functions/quote-request
-./functions/quote-request/index.js
-./package-lock.json
-./package.json
-./public
-./public/favicon.ico
-./public/favicon.svg
-./public/robots.txt
-./README.md
-./src
-./src/components
-./src/components/GuideLinks.astro
-./src/components/RelatedGuides.astro
-./src/components/seo
-./src/components/seo/BreadcrumbJsonLd.astro
-./src/components/seo/LocalBusinessJsonLd.astro
-./src/components/seo/ServiceJsonLd.astro
-./src/data
-./src/data/locations.ts
-./src/data/services.ts
-./src/layouts
-./src/layouts/GuideLayout.astro
-./src/layouts/Layout.astro
-./src/pages
-./src/pages/application-received
-./src/pages/application-received/index.astro
-./src/pages/cleaner-standards
-./src/pages/cleaner-standards/index.astro
-./src/pages/cleaning-checklist
-./src/pages/cleaning-checklist/index.astro
-./src/pages/contact.astro
-./src/pages/enquiry-received
-./src/pages/enquiry-received/index.astro
-./src/pages/guides
-./src/pages/guides/.astro
-./src/pages/guides/aberdeen-end-of-tenancy-cleaning-checklist.astro
-./src/pages/guides/after-builders
-./src/pages/guides/after-builders-cleaning-adhesive-residue-removal.astro
-./src/pages/guides/after-builders-cleaning-air-quality-after-renovation.astro
-./src/pages/guides/after-builders-cleaning-bathroom-after-renovation.astro
-./src/pages/guides/after-builders-cleaning-before-handover-checklist.astro
-./src/pages/guides/after-builders-cleaning-cement-dust-removal.astro
-./src/pages/guides/after-builders-cleaning-checklist-builders.astro
-./src/pages/guides/after-builders-cleaning-checklist-homeowners.astro
-./src/pages/guides/after-builders-cleaning-checklist-room-by-room.astro
-./src/pages/guides/after-builders-cleaning-checklist.astro
-./src/pages/guides/after-builders-cleaning-common-mistakes.astro
-./src/pages/guides/after-builders-cleaning-construction-dust-airborne-risks.astro
-./src/pages/guides/after-builders-cleaning-construction-dust-health-risk.astro
-./src/pages/guides/after-builders-cleaning-construction-dust-ventilation-clean.astro
-./src/pages/guides/after-builders-cleaning-cost-guide.astro
-./src/pages/guides/after-builders-cleaning-cost-uk.astro
-./src/pages/guides/after-builders-cleaning-final-site-handover-clean.astro
-./src/pages/guides/after-builders-cleaning-floor-grout-haze-removal.astro
-./src/pages/guides/after-builders-cleaning-floor-protection-after-renovation.astro
-./src/pages/guides/after-builders-cleaning-for-home-renovations.astro
-./src/pages/guides/after-builders-cleaning-for-new-build-homes.astro
-./src/pages/guides/after-builders-cleaning-kitchen-after-renovation.astro
-./src/pages/guides/after-builders-cleaning-laminate-floor-cleaning.astro
-./src/pages/guides/after-builders-cleaning-order-of-cleaning.astro
-./src/pages/guides/after-builders-cleaning-paint-splatter-removal.astro
-./src/pages/guides/after-builders-cleaning-plaster-dust-removal.astro
-./src/pages/guides/after-builders-cleaning-plaster-wall-dust-removal.astro
-./src/pages/guides/after-builders-cleaning-silicone-removal.astro
-./src/pages/guides/after-builders-cleaning-silicone-sealant-residue-removal.astro
-./src/pages/guides/after-builders-cleaning-skirting-boards-and-doors.astro
-./src/pages/guides/after-builders-cleaning-tile-and-grout-cleaning.astro
-./src/pages/guides/after-builders-cleaning-timeline.astro
-./src/pages/guides/after-builders-cleaning-tools-and-equipment.astro
-./src/pages/guides/after-builders-cleaning-vs-deep-cleaning.astro
-./src/pages/guides/after-builders-cleaning-walls-and-paintwork-safe-cleaning.astro
-./src/pages/guides/after-builders-cleaning-why-it-is-needed.astro
-./src/pages/guides/after-builders-cleaning-window-and-frame-cleaning.astro
-./src/pages/guides/after-builders-cleaning-window-paint-splatter-removal.astro
-./src/pages/guides/after-builders-cleaning-window-silicone-removal.astro
-./src/pages/guides/after-builders-cleaning-wood-floor-protection.astro
-./src/pages/guides/after-builders-dust-health-risks.astro
-./src/pages/guides/after-builders-dust-removal.astro
-./src/pages/guides/after-builders-window-cleaning-guide.astro
-./src/pages/guides/after-builders/index.astro
-./src/pages/guides/bathroom-deep-cleaning-guide
-./src/pages/guides/bathroom-deep-cleaning-guide.astro
-./src/pages/guides/best-method-for-carpet-stain-removal.astro
-./src/pages/guides/birmingham-end-of-tenancy-cleaning-checklist.astro
-./src/pages/guides/brighton-end-of-tenancy-cleaning-checklist.astro
-./src/pages/guides/bristol-end-of-tenancy-cleaning-checklist.astro
-./src/pages/guides/builders-clean-vs-sparkle-clean.astro
-./src/pages/guides/builders-cleaning-safety-procedures.astro
-./src/pages/guides/cambridge-end-of-tenancy-cleaning-checklist.astro
-./src/pages/guides/can-carpet-cleaning-remove-mould-smell.astro
-./src/pages/guides/can-landlord-force-professional-cleaning-uk.astro
-./src/pages/guides/cardiff-end-of-tenancy-cleaning-checklist.astro
-./src/pages/guides/carpet-cleaning
-./src/pages/guides/carpet-cleaning-allergy-benefits.astro
-./src/pages/guides/carpet-cleaning-allergy-reduction-methods.astro
-./src/pages/guides/carpet-cleaning-before-house-sale.astro
-./src/pages/guides/carpet-cleaning-before-moving-out.astro
-./src/pages/guides/carpet-cleaning-before-selling-house.astro
-./src/pages/guides/carpet-cleaning-before-tenancy-inspection.astro
-./src/pages/guides/carpet-cleaning-cost-guide-uk.astro
-./src/pages/guides/carpet-cleaning-cost-uk-per-room.astro
-./src/pages/guides/carpet-cleaning-drying-time.astro
-./src/pages/guides/carpet-cleaning-drying-times.astro
-./src/pages/guides/carpet-cleaning-dust-allergy-treatment.astro
-./src/pages/guides/carpet-cleaning-dust-mite-removal.astro
-./src/pages/guides/carpet-cleaning-for-allergy-sufferers.astro
-./src/pages/guides/carpet-cleaning-for-dust-mites.astro
-./src/pages/guides/carpet-cleaning-for-pet-hair-removal.astro
-./src/pages/guides/carpet-cleaning-for-pet-owners.astro
-./src/pages/guides/carpet-cleaning-heavy-traffic-lanes.astro
-./src/pages/guides/carpet-cleaning-how-long-to-dry.astro
-./src/pages/guides/carpet-cleaning-mould-removal.astro
-./src/pages/guides/carpet-cleaning-pet-odour-removal.astro
-./src/pages/guides/carpet-cleaning-pet-stain-treatment.astro
-./src/pages/guides/carpet-cleaning-pet-urine-treatment.astro
-./src/pages/guides/carpet-cleaning-professional-equipment-guide.astro
-./src/pages/guides/carpet-cleaning-professional-extraction-method.astro
-./src/pages/guides/carpet-cleaning-red-wine-stain-guide.astro
-./src/pages/guides/carpet-cleaning-red-wine-stain-removal.astro
-./src/pages/guides/carpet-cleaning-required-for-tenancy.astro
-./src/pages/guides/carpet-cleaning-steam-vs-shampoo.astro
-./src/pages/guides/carpet-cleaning-traffic-lane-restoration.astro
-./src/pages/guides/carpet-cleaning-vs-steam-cleaning.astro
-./src/pages/guides/carpet-cleaning/index.astro
-./src/pages/guides/chester-end-of-tenancy-cleaning-checklist.astro
-./src/pages/guides/cleaning-new-build-property-before-moving-in.astro
-./src/pages/guides/cleaning-requirements-for-letting-agents.astro
-./src/pages/guides/construction-dust-health-risks.astro
-./src/pages/guides/deep-cleaning
-./src/pages/guides/deep-cleaning-bathroom-limescale-guide.astro
-./src/pages/guides/deep-cleaning-bathroom-limescale-removal.astro
-./src/pages/guides/deep-cleaning-bathroom-mould-removal.astro
-./src/pages/guides/deep-cleaning-bathroom-scale-removal.astro
-./src/pages/guides/deep-cleaning-bedroom-allergen-removal.astro
-./src/pages/guides/deep-cleaning-before-guests-arrive.astro
-./src/pages/guides/deep-cleaning-before-moving-in.astro
-./src/pages/guides/deep-cleaning-before-moving-into-house.astro
-./src/pages/guides/deep-cleaning-before-selling-house
-./src/pages/guides/deep-cleaning-before-selling-house.astro
-./src/pages/guides/deep-cleaning-before-selling-property.astro
-./src/pages/guides/deep-cleaning-checklist-room-by-room
-./src/pages/guides/deep-cleaning-checklist-room-by-room.astro
-./src/pages/guides/deep-cleaning-for-allergy-households.astro
-./src/pages/guides/deep-cleaning-for-allergy-reduction.astro
-./src/pages/guides/deep-cleaning-for-allergy-sufferers.astro
-./src/pages/guides/deep-cleaning-for-hoarded-homes.astro
-./src/pages/guides/deep-cleaning-fridge-and-freezer-cleaning.astro
-./src/pages/guides/deep-cleaning-house-cost-uk.astro
-./src/pages/guides/deep-cleaning-kitchen-appliance-degreasing.astro
-./src/pages/guides/deep-cleaning-kitchen-appliances.astro
-./src/pages/guides/deep-cleaning-kitchen-cupboard-degreasing.astro
-./src/pages/guides/deep-cleaning-kitchen-grease-removal.astro
-./src/pages/guides/deep-cleaning-living-room-fabric-cleaning.astro
-./src/pages/guides/deep-cleaning-neglected-home-checklist.astro
-./src/pages/guides/deep-cleaning-neglected-house
-./src/pages/guides/deep-cleaning-neglected-house.astro
-./src/pages/guides/deep-cleaning-oven-grease-removal.astro
-./src/pages/guides/deep-cleaning-vs-regular-cleaning
-./src/pages/guides/deep-cleaning-vs-regular-cleaning.astro
-./src/pages/guides/deep-cleaning-vs-standard-cleaning-cost.astro
-./src/pages/guides/deep-cleaning-washing-machine-cleaning.astro
-./src/pages/guides/deep-cleaning-whole-house-reset.astro
-./src/pages/guides/deep-cleaning/index.astro
-./src/pages/guides/deposit-deduction-cleaning-guide.astro
-./src/pages/guides/developer-handover-cleaning-guide.astro
-./src/pages/guides/do-you-need-professional-end-of-tenancy-cleaning.astro
-./src/pages/guides/edinburgh-end-of-tenancy-cleaning-checklist.astro
-./src/pages/guides/end-of-tenancy
-./src/pages/guides/end-of-tenancy-cleaning-bathroom-checklist-landlord.astro
-./src/pages/guides/end-of-tenancy-cleaning-bathroom-limescale-landlord-check.astro
-./src/pages/guides/end-of-tenancy-cleaning-bathroom-mould-removal.astro
-./src/pages/guides/end-of-tenancy-cleaning-bathroom-mould-responsibility.astro
-./src/pages/guides/end-of-tenancy-cleaning-bedroom-checklist.astro
-./src/pages/guides/end-of-tenancy-cleaning-before-letting-agent-inspection.astro
-./src/pages/guides/end-of-tenancy-cleaning-before-moving-day.astro
-./src/pages/guides/end-of-tenancy-cleaning-carpet-condition-check.astro
-./src/pages/guides/end-of-tenancy-cleaning-carpet-condition-requirements.astro
-./src/pages/guides/end-of-tenancy-cleaning-carpet-inspection-guide.astro
-./src/pages/guides/end-of-tenancy-cleaning-carpet-requirements.astro
-./src/pages/guides/end-of-tenancy-cleaning-checklist-landlords.astro
-./src/pages/guides/end-of-tenancy-cleaning-checklist.astro
-./src/pages/guides/end-of-tenancy-cleaning-checkout-day-cleaning-plan.astro
-./src/pages/guides/end-of-tenancy-cleaning-cost-guide.astro
-./src/pages/guides/end-of-tenancy-cleaning-deposit-deduction-prevention.astro
-./src/pages/guides/end-of-tenancy-cleaning-door-and-handle-cleaning.astro
-./src/pages/guides/end-of-tenancy-cleaning-extractor-fan-cleaning.astro
-./src/pages/guides/end-of-tenancy-cleaning-final-inspection-preparation.astro
-./src/pages/guides/end-of-tenancy-cleaning-final-walkthrough-checklist.astro
-./src/pages/guides/end-of-tenancy-cleaning-fridge-freezer-cleaning.astro
-./src/pages/guides/end-of-tenancy-cleaning-inventory-checklist-explained.astro
-./src/pages/guides/end-of-tenancy-cleaning-kitchen-appliance-standard.astro
-./src/pages/guides/end-of-tenancy-cleaning-kitchen-checklist-landlord.astro
-./src/pages/guides/end-of-tenancy-cleaning-kitchen-grease-removal.astro
-./src/pages/guides/end-of-tenancy-cleaning-kitchen-grease-standard.astro
-./src/pages/guides/end-of-tenancy-cleaning-landlord-requirements.astro
-./src/pages/guides/end-of-tenancy-cleaning-light-switch-cleaning.astro
-./src/pages/guides/end-of-tenancy-cleaning-limescale-removal-checklist.astro
-./src/pages/guides/end-of-tenancy-cleaning-living-room-checklist.astro
-./src/pages/guides/end-of-tenancy-cleaning-london-cost.astro
-./src/pages/guides/end-of-tenancy-cleaning-oven-cleaning-guide.astro
-./src/pages/guides/end-of-tenancy-cleaning-oven-standard-landlords-expect.astro
-./src/pages/guides/end-of-tenancy-cleaning-photographic-evidence-guide.astro
-./src/pages/guides/end-of-tenancy-cleaning-professional-vs-diy.astro
-./src/pages/guides/end-of-tenancy-cleaning-receipt-proof-for-deposit.astro
-./src/pages/guides/end-of-tenancy-cleaning-skirt-board-cleaning.astro
-./src/pages/guides/end-of-tenancy-cleaning-wall-mark-removal-guide.astro
-./src/pages/guides/end-of-tenancy-cleaning-wall-mark-removal.astro
-./src/pages/guides/end-of-tenancy-cleaning-wall-scuff-mark-removal.astro
-./src/pages/guides/end-of-tenancy-cleaning-what-counts-as-fair-wear-and-tear.astro
-./src/pages/guides/end-of-tenancy-cleaning-window-cleaning-guide.astro
-./src/pages/guides/end-of-tenancy/index.astro
-./src/pages/guides/final-tenancy-inspection-checklist.astro
-./src/pages/guides/glasgow-end-of-tenancy-cleaning-checklist.astro
-./src/pages/guides/harrogate-end-of-tenancy-cleaning-checklist.astro
-./src/pages/guides/how-carpet-cleaning-works.astro
-./src/pages/guides/how-clean-must-rental-property-be-when-moving-out.astro
-./src/pages/guides/how-long-after-builders-cleaning-takes.astro
-./src/pages/guides/how-long-deep-cleaning-takes.astro
-./src/pages/guides/how-long-does-after-builders-cleaning-take.astro
-./src/pages/guides/how-long-does-deep-cleaning-take
-./src/pages/guides/how-long-does-deep-cleaning-take.astro
-./src/pages/guides/how-long-end-of-tenancy-cleaning-takes.astro
-./src/pages/guides/how-much-end-of-tenancy-cleaning-costs.astro
-./src/pages/guides/how-often-carpet-cleaning-is-needed.astro
-./src/pages/guides/how-often-should-you-clean-carpets.astro
-./src/pages/guides/how-often-should-you-deep-clean
-./src/pages/guides/how-often-should-you-deep-clean.astro
-./src/pages/guides/how-to-clean-house-after-renovation.astro
-./src/pages/guides/how-to-pass-end-of-tenancy-inspection.astro
-./src/pages/guides/how-to-remove-coffee-stains-from-carpet.astro
-./src/pages/guides/how-to-remove-plaster-dust-from-house.astro
-./src/pages/guides/how-to-remove-red-wine-from-carpet.astro
-./src/pages/guides/index.astro
-./src/pages/guides/kitchen-deep-cleaning-guide
-./src/pages/guides/kitchen-deep-cleaning-guide.astro
-./src/pages/guides/landlord-cleaning-standards-guide.astro
-./src/pages/guides/landlord-inspection-cleaning-guide.astro
-./src/pages/guides/leeds-end-of-tenancy-cleaning-checklist.astro
-./src/pages/guides/limescale-removal-before-tenancy-inspection.astro
-./src/pages/guides/liverpool-end-of-tenancy-cleaning-checklist.astro
-./src/pages/guides/london-end-of-tenancy-cleaning-checklist.astro
-./src/pages/guides/manchester-end-of-tenancy-cleaning-checklist.astro
-./src/pages/guides/move-in-deep-cleaning-guide
-./src/pages/guides/move-in-deep-cleaning-guide.astro
-./src/pages/guides/new-build-cleaning-checklist.astro
-./src/pages/guides/newcastle-end-of-tenancy-cleaning-checklist.astro
-./src/pages/guides/nottingham-end-of-tenancy-cleaning-checklist.astro
-./src/pages/guides/oven-cleaning-required-for-tenancy.astro
-./src/pages/guides/oxford-end-of-tenancy-cleaning-checklist.astro
-./src/pages/guides/pet-damage-cleaning-before-inspection.astro
-./src/pages/guides/pet-odour-carpet-cleaning.astro
-./src/pages/guides/post-construction-window-cleaning.astro
-./src/pages/guides/post-renovation-air-quality-cleaning.astro
-./src/pages/guides/post-renovation-cleaning-checklist.astro
-./src/pages/guides/post-renovation-cleaning-cost-uk.astro
-./src/pages/guides/professional-carpet-cleaning-benefits.astro
-./src/pages/guides/professional-carpet-cleaning-cost-uk.astro
-./src/pages/guides/professional-carpet-cleaning-how-it-works.astro
-./src/pages/guides/professional-carpet-cleaning-vs-diy.astro
-./src/pages/guides/professional-tenancy-cleaning-proof-guide.astro
-./src/pages/guides/professional-vs-diy-carpet-cleaning.astro
-./src/pages/guides/professional-vs-diy-tenancy-cleaning.astro
-./src/pages/guides/remove-carpet-stains-guide.astro
-./src/pages/guides/removing-cement-dust-from-floors.astro
-./src/pages/guides/removing-paint-splatter-after-renovation.astro
-./src/pages/guides/removing-plaster-dust-after-renovation.astro
-./src/pages/guides/sheffield-end-of-tenancy-cleaning-checklist.astro
-./src/pages/guides/spring-cleaning-vs-deep-cleaning
-./src/pages/guides/spring-cleaning-vs-deep-cleaning.astro
-./src/pages/guides/spring-deep-cleaning-checklist.astro
-./src/pages/guides/steam-cleaning-carpets-explained.astro
-./src/pages/guides/tenancy-cleaning-before-inspection.astro
-./src/pages/guides/tenancy-cleaning-common-failures.astro
-./src/pages/guides/tenancy-cleaning-how-long-it-takes.astro
-./src/pages/guides/tenancy-cleaning-inventory-checklist.astro
-./src/pages/guides/tenancy-cleaning-landlord-checklist.astro
-./src/pages/guides/tenancy-cleaning-mistakes-that-cost-deposits.astro
-./src/pages/guides/tenancy-cleaning-room-by-room-checklist.astro
-./src/pages/guides/tenancy-cleaning-timeline-before-moving-out.astro
-./src/pages/guides/tenant-cleaning-responsibilities-uk.astro
-./src/pages/guides/tools-used-in-after-builders-cleaning.astro
-./src/pages/guides/what-is-after-builders-cleaning.astro
-./src/pages/guides/what-is-deep-cleaning-house
-./src/pages/guides/what-is-deep-cleaning-house.astro
-./src/pages/guides/what-is-deep-cleaning-service.astro
-./src/pages/guides/what-is-included-in-deep-cleaning
-./src/pages/guides/what-is-included-in-deep-cleaning.astro
-./src/pages/guides/what-is-included-in-end-of-tenancy-cleaning.astro
-./src/pages/guides/what-letting-agents-check-before-deposit-return.astro
-./src/pages/guides/what-letting-agents-look-for-in-cleaning.astro
-./src/pages/guides/when-you-need-deep-cleaning.astro
-./src/pages/guides/why-builders-dust-keeps-coming-back.astro
-./src/pages/how-camcleans-works
-./src/pages/how-camcleans-works/index.astro
-./src/pages/index.astro
-./src/pages/join-cleaners
-./src/pages/join-cleaners/index.astro
-./src/pages/locations
-./src/pages/locations/[slug].astro
-./src/pages/quote
-./src/pages/quote/index.astro
-./src/pages/services
-./src/pages/services/[service]
-./src/pages/services/[service]/[location].astro
-./src/pages/services/[slug].astro
-./src/pages/services/index.astro
-./src/styles.css
-./tsconfig.json
+├── .astro
+│   ├── collections
+│   ├── content-assets.mjs
+│   ├── content-modules.mjs
+│   ├── content.d.ts
+│   └── types.d.ts
+├── .DS_Store
+├── .gitignore
+├── .vscode
+│   ├── extensions.json
+│   └── launch.json
+├── .wrangler
+│   └── tmp
+├── astro.config.mjs
+├── build.log
+├── camcleans_snapshot.tar.gz
+├── data
+│   └── leads.csv
+├── docs
+│   ├── .DS_Store
+│   ├── branding
+│   │   ├── .DS_Store
+│   │   ├── CamCleans_icon_master.pdf
+│   │   └── CamCleans_master.pdf
+│   ├── DEV_LOG.md
+│   ├── guide-control
+│   │   ├── GUIDE_CLUSTER_LINK_BLOCK.html
+│   │   ├── GUIDE_CLUSTER_SAFE.txt
+│   │   ├── GUIDE_CLUSTER_SATURATION.txt
+│   │   ├── guide_dump.txt
+│   │   ├── GUIDE_EXPANSION_NEXT.txt
+│   │   ├── GUIDE_EXPANSION_SAFE.txt
+│   │   ├── GUIDE_EXTRA.pages.txt
+│   │   ├── GUIDE_FILES.actual.txt
+│   │   ├── GUIDE_LOCATION_EXPANSION.txt
+│   │   ├── GUIDE_LOCATION_SAFE.txt
+│   │   ├── GUIDE_MISSING.pages.txt
+│   │   ├── GUIDE_SERVICE_INTENT.txt
+│   │   ├── GUIDE_SERVICE_LOCATION_SAFE.txt
+│   │   ├── GUIDE_SERVICE_SAFE.txt
+│   │   ├── GUIDE_SLUGS_LOCKED.txt
+│   │   ├── GUIDE_SLUGS.deduped.txt
+│   │   ├── GUIDE_SLUGS.expected.txt
+│   │   ├── layout_component_dump.txt
+│   │   ├── NEW_GUIDES_SAFE.txt
+│   │   ├── NEW_GUIDES.txt
+│   │   ├── service_dump.txt
+│   │   └── TENANCY_GUIDES_SAFE.txt
+│   ├── MASTER_STATE.md
+│   └── ops
+│       ├── GUIDE_SLUGS.md
+│       └── TREE.md
+├── functions
+│   ├── cleaner-application
+│   │   └── index.js
+│   ├── contact-enquiry
+│   │   └── index.js
+│   └── quote-request
+│       └── index.js
+├── package-lock.json
+├── package.json
+├── public
+│   ├── brand
+│   │   ├── camcleans-icon.svg
+│   │   └── camcleans-logo.svg
+│   ├── favicon.ico
+│   ├── favicon.svg
+│   └── robots.txt
+├── README.md
+├── src
+│   ├── components
+│   │   ├── GuideLinks.astro
+│   │   ├── RelatedGuides.astro
+│   │   └── seo
+│   │       ├── BreadcrumbJsonLd.astro
+│   │       ├── LocalBusinessJsonLd.astro
+│   │       └── ServiceJsonLd.astro
+│   ├── data
+│   │   ├── locations.ts
+│   │   └── services.ts
+│   ├── layouts
+│   │   ├── GuideLayout.astro
+│   │   └── Layout.astro
+│   ├── pages
+│   │   ├── application-received
+│   │   │   └── index.astro
+│   │   ├── cleaner-standards
+│   │   │   └── index.astro
+│   │   ├── cleaning-checklist
+│   │   │   └── index.astro
+│   │   ├── contact.astro
+│   │   ├── enquiry-received
+│   │   │   └── index.astro
+│   │   ├── guides
+│   │   │   ├── .astro
+│   │   │   ├── aberdeen-end-of-tenancy-cleaning-checklist.astro
+│   │   │   ├── after-builders
+│   │   │   │   └── index.astro
+│   │   │   ├── after-builders-cleaning-adhesive-residue-removal.astro
+│   │   │   ├── after-builders-cleaning-air-quality-after-renovation.astro
+│   │   │   ├── after-builders-cleaning-bathroom-after-renovation.astro
+│   │   │   ├── after-builders-cleaning-before-handover-checklist.astro
+│   │   │   ├── after-builders-cleaning-cement-dust-removal.astro
+│   │   │   ├── after-builders-cleaning-checklist-builders.astro
+│   │   │   ├── after-builders-cleaning-checklist-homeowners.astro
+│   │   │   ├── after-builders-cleaning-checklist-room-by-room.astro
+│   │   │   ├── after-builders-cleaning-checklist.astro
+│   │   │   ├── after-builders-cleaning-common-mistakes.astro
+│   │   │   ├── after-builders-cleaning-construction-dust-airborne-risks.astro
+│   │   │   ├── after-builders-cleaning-construction-dust-health-risk.astro
+│   │   │   ├── after-builders-cleaning-construction-dust-ventilation-clean.astro
+│   │   │   ├── after-builders-cleaning-cost-guide.astro
+│   │   │   ├── after-builders-cleaning-cost-uk.astro
+│   │   │   ├── after-builders-cleaning-final-site-handover-clean.astro
+│   │   │   ├── after-builders-cleaning-floor-grout-haze-removal.astro
+│   │   │   ├── after-builders-cleaning-floor-protection-after-renovation.astro
+│   │   │   ├── after-builders-cleaning-for-home-renovations.astro
+│   │   │   ├── after-builders-cleaning-for-new-build-homes.astro
+│   │   │   ├── after-builders-cleaning-kitchen-after-renovation.astro
+│   │   │   ├── after-builders-cleaning-laminate-floor-cleaning.astro
+│   │   │   ├── after-builders-cleaning-order-of-cleaning.astro
+│   │   │   ├── after-builders-cleaning-paint-splatter-removal.astro
+│   │   │   ├── after-builders-cleaning-plaster-dust-removal.astro
+│   │   │   ├── after-builders-cleaning-plaster-wall-dust-removal.astro
+│   │   │   ├── after-builders-cleaning-silicone-removal.astro
+│   │   │   ├── after-builders-cleaning-silicone-sealant-residue-removal.astro
+│   │   │   ├── after-builders-cleaning-skirting-boards-and-doors.astro
+│   │   │   ├── after-builders-cleaning-tile-and-grout-cleaning.astro
+│   │   │   ├── after-builders-cleaning-timeline.astro
+│   │   │   ├── after-builders-cleaning-tools-and-equipment.astro
+│   │   │   ├── after-builders-cleaning-vs-deep-cleaning.astro
+│   │   │   ├── after-builders-cleaning-walls-and-paintwork-safe-cleaning.astro
+│   │   │   ├── after-builders-cleaning-why-it-is-needed.astro
+│   │   │   ├── after-builders-cleaning-window-and-frame-cleaning.astro
+│   │   │   ├── after-builders-cleaning-window-paint-splatter-removal.astro
+│   │   │   ├── after-builders-cleaning-window-silicone-removal.astro
+│   │   │   ├── after-builders-cleaning-wood-floor-protection.astro
+│   │   │   ├── after-builders-dust-health-risks.astro
+│   │   │   ├── after-builders-dust-removal.astro
+│   │   │   ├── after-builders-window-cleaning-guide.astro
+│   │   │   ├── bathroom-deep-cleaning-guide
+│   │   │   ├── bathroom-deep-cleaning-guide.astro
+│   │   │   ├── best-method-for-carpet-stain-removal.astro
+│   │   │   ├── birmingham-end-of-tenancy-cleaning-checklist.astro
+│   │   │   ├── brighton-end-of-tenancy-cleaning-checklist.astro
+│   │   │   ├── bristol-end-of-tenancy-cleaning-checklist.astro
+│   │   │   ├── builders-clean-vs-sparkle-clean.astro
+│   │   │   ├── builders-cleaning-safety-procedures.astro
+│   │   │   ├── cambridge-end-of-tenancy-cleaning-checklist.astro
+│   │   │   ├── can-carpet-cleaning-remove-mould-smell.astro
+│   │   │   ├── can-landlord-force-professional-cleaning-uk.astro
+│   │   │   ├── cardiff-end-of-tenancy-cleaning-checklist.astro
+│   │   │   ├── carpet-cleaning
+│   │   │   │   └── index.astro
+│   │   │   ├── carpet-cleaning-allergy-benefits.astro
+│   │   │   ├── carpet-cleaning-allergy-reduction-methods.astro
+│   │   │   ├── carpet-cleaning-before-house-sale.astro
+│   │   │   ├── carpet-cleaning-before-moving-out.astro
+│   │   │   ├── carpet-cleaning-before-selling-house.astro
+│   │   │   ├── carpet-cleaning-before-tenancy-inspection.astro
+│   │   │   ├── carpet-cleaning-cost-guide-uk.astro
+│   │   │   ├── carpet-cleaning-cost-uk-per-room.astro
+│   │   │   ├── carpet-cleaning-drying-time.astro
+│   │   │   ├── carpet-cleaning-drying-times.astro
+│   │   │   ├── carpet-cleaning-dust-allergy-treatment.astro
+│   │   │   ├── carpet-cleaning-dust-mite-removal.astro
+│   │   │   ├── carpet-cleaning-for-allergy-sufferers.astro
+│   │   │   ├── carpet-cleaning-for-dust-mites.astro
+│   │   │   ├── carpet-cleaning-for-pet-hair-removal.astro
+│   │   │   ├── carpet-cleaning-for-pet-owners.astro
+│   │   │   ├── carpet-cleaning-heavy-traffic-lanes.astro
+│   │   │   ├── carpet-cleaning-how-long-to-dry.astro
+│   │   │   ├── carpet-cleaning-mould-removal.astro
+│   │   │   ├── carpet-cleaning-pet-odour-removal.astro
+│   │   │   ├── carpet-cleaning-pet-stain-treatment.astro
+│   │   │   ├── carpet-cleaning-pet-urine-treatment.astro
+│   │   │   ├── carpet-cleaning-professional-equipment-guide.astro
+│   │   │   ├── carpet-cleaning-professional-extraction-method.astro
+│   │   │   ├── carpet-cleaning-red-wine-stain-guide.astro
+│   │   │   ├── carpet-cleaning-red-wine-stain-removal.astro
+│   │   │   ├── carpet-cleaning-required-for-tenancy.astro
+│   │   │   ├── carpet-cleaning-steam-vs-shampoo.astro
+│   │   │   ├── carpet-cleaning-traffic-lane-restoration.astro
+│   │   │   ├── carpet-cleaning-vs-steam-cleaning.astro
+│   │   │   ├── chester-end-of-tenancy-cleaning-checklist.astro
+│   │   │   ├── cleaning-new-build-property-before-moving-in.astro
+│   │   │   ├── cleaning-requirements-for-letting-agents.astro
+│   │   │   ├── construction-dust-health-risks.astro
+│   │   │   ├── deep-cleaning
+│   │   │   │   └── index.astro
+│   │   │   ├── deep-cleaning-bathroom-limescale-guide.astro
+│   │   │   ├── deep-cleaning-bathroom-limescale-removal.astro
+│   │   │   ├── deep-cleaning-bathroom-mould-removal.astro
+│   │   │   ├── deep-cleaning-bathroom-scale-removal.astro
+│   │   │   ├── deep-cleaning-bedroom-allergen-removal.astro
+│   │   │   ├── deep-cleaning-before-guests-arrive.astro
+│   │   │   ├── deep-cleaning-before-moving-in.astro
+│   │   │   ├── deep-cleaning-before-moving-into-house.astro
+│   │   │   ├── deep-cleaning-before-selling-house
+│   │   │   ├── deep-cleaning-before-selling-house.astro
+│   │   │   ├── deep-cleaning-before-selling-property.astro
+│   │   │   ├── deep-cleaning-checklist-room-by-room
+│   │   │   ├── deep-cleaning-checklist-room-by-room.astro
+│   │   │   ├── deep-cleaning-for-allergy-households.astro
+│   │   │   ├── deep-cleaning-for-allergy-reduction.astro
+│   │   │   ├── deep-cleaning-for-allergy-sufferers.astro
+│   │   │   ├── deep-cleaning-for-hoarded-homes.astro
+│   │   │   ├── deep-cleaning-fridge-and-freezer-cleaning.astro
+│   │   │   ├── deep-cleaning-house-cost-uk.astro
+│   │   │   ├── deep-cleaning-kitchen-appliance-degreasing.astro
+│   │   │   ├── deep-cleaning-kitchen-appliances.astro
+│   │   │   ├── deep-cleaning-kitchen-cupboard-degreasing.astro
+│   │   │   ├── deep-cleaning-kitchen-grease-removal.astro
+│   │   │   ├── deep-cleaning-living-room-fabric-cleaning.astro
+│   │   │   ├── deep-cleaning-neglected-home-checklist.astro
+│   │   │   ├── deep-cleaning-neglected-house
+│   │   │   ├── deep-cleaning-neglected-house.astro
+│   │   │   ├── deep-cleaning-oven-grease-removal.astro
+│   │   │   ├── deep-cleaning-vs-regular-cleaning
+│   │   │   ├── deep-cleaning-vs-regular-cleaning.astro
+│   │   │   ├── deep-cleaning-vs-standard-cleaning-cost.astro
+│   │   │   ├── deep-cleaning-washing-machine-cleaning.astro
+│   │   │   ├── deep-cleaning-whole-house-reset.astro
+│   │   │   ├── deposit-deduction-cleaning-guide.astro
+│   │   │   ├── developer-handover-cleaning-guide.astro
+│   │   │   ├── do-you-need-professional-end-of-tenancy-cleaning.astro
+│   │   │   ├── edinburgh-end-of-tenancy-cleaning-checklist.astro
+│   │   │   ├── end-of-tenancy
+│   │   │   │   └── index.astro
+│   │   │   ├── end-of-tenancy-cleaning-bathroom-checklist-landlord.astro
+│   │   │   ├── end-of-tenancy-cleaning-bathroom-limescale-landlord-check.astro
+│   │   │   ├── end-of-tenancy-cleaning-bathroom-mould-removal.astro
+│   │   │   ├── end-of-tenancy-cleaning-bathroom-mould-responsibility.astro
+│   │   │   ├── end-of-tenancy-cleaning-bedroom-checklist.astro
+│   │   │   ├── end-of-tenancy-cleaning-before-letting-agent-inspection.astro
+│   │   │   ├── end-of-tenancy-cleaning-before-moving-day.astro
+│   │   │   ├── end-of-tenancy-cleaning-carpet-condition-check.astro
+│   │   │   ├── end-of-tenancy-cleaning-carpet-condition-requirements.astro
+│   │   │   ├── end-of-tenancy-cleaning-carpet-inspection-guide.astro
+│   │   │   ├── end-of-tenancy-cleaning-carpet-requirements.astro
+│   │   │   ├── end-of-tenancy-cleaning-checklist-landlords.astro
+│   │   │   ├── end-of-tenancy-cleaning-checklist.astro
+│   │   │   ├── end-of-tenancy-cleaning-checkout-day-cleaning-plan.astro
+│   │   │   ├── end-of-tenancy-cleaning-cost-guide.astro
+│   │   │   ├── end-of-tenancy-cleaning-deposit-deduction-prevention.astro
+│   │   │   ├── end-of-tenancy-cleaning-door-and-handle-cleaning.astro
+│   │   │   ├── end-of-tenancy-cleaning-extractor-fan-cleaning.astro
+│   │   │   ├── end-of-tenancy-cleaning-final-inspection-preparation.astro
+│   │   │   ├── end-of-tenancy-cleaning-final-walkthrough-checklist.astro
+│   │   │   ├── end-of-tenancy-cleaning-fridge-freezer-cleaning.astro
+│   │   │   ├── end-of-tenancy-cleaning-inventory-checklist-explained.astro
+│   │   │   ├── end-of-tenancy-cleaning-kitchen-appliance-standard.astro
+│   │   │   ├── end-of-tenancy-cleaning-kitchen-checklist-landlord.astro
+│   │   │   ├── end-of-tenancy-cleaning-kitchen-grease-removal.astro
+│   │   │   ├── end-of-tenancy-cleaning-kitchen-grease-standard.astro
+│   │   │   ├── end-of-tenancy-cleaning-landlord-requirements.astro
+│   │   │   ├── end-of-tenancy-cleaning-light-switch-cleaning.astro
+│   │   │   ├── end-of-tenancy-cleaning-limescale-removal-checklist.astro
+│   │   │   ├── end-of-tenancy-cleaning-living-room-checklist.astro
+│   │   │   ├── end-of-tenancy-cleaning-london-cost.astro
+│   │   │   ├── end-of-tenancy-cleaning-oven-cleaning-guide.astro
+│   │   │   ├── end-of-tenancy-cleaning-oven-standard-landlords-expect.astro
+│   │   │   ├── end-of-tenancy-cleaning-photographic-evidence-guide.astro
+│   │   │   ├── end-of-tenancy-cleaning-professional-vs-diy.astro
+│   │   │   ├── end-of-tenancy-cleaning-receipt-proof-for-deposit.astro
+│   │   │   ├── end-of-tenancy-cleaning-skirt-board-cleaning.astro
+│   │   │   ├── end-of-tenancy-cleaning-wall-mark-removal-guide.astro
+│   │   │   ├── end-of-tenancy-cleaning-wall-mark-removal.astro
+│   │   │   ├── end-of-tenancy-cleaning-wall-scuff-mark-removal.astro
+│   │   │   ├── end-of-tenancy-cleaning-what-counts-as-fair-wear-and-tear.astro
+│   │   │   ├── end-of-tenancy-cleaning-window-cleaning-guide.astro
+│   │   │   ├── final-tenancy-inspection-checklist.astro
+│   │   │   ├── glasgow-end-of-tenancy-cleaning-checklist.astro
+│   │   │   ├── harrogate-end-of-tenancy-cleaning-checklist.astro
+│   │   │   ├── how-carpet-cleaning-works.astro
+│   │   │   ├── how-clean-must-rental-property-be-when-moving-out.astro
+│   │   │   ├── how-long-after-builders-cleaning-takes.astro
+│   │   │   ├── how-long-deep-cleaning-takes.astro
+│   │   │   ├── how-long-does-after-builders-cleaning-take.astro
+│   │   │   ├── how-long-does-deep-cleaning-take
+│   │   │   ├── how-long-does-deep-cleaning-take.astro
+│   │   │   ├── how-long-end-of-tenancy-cleaning-takes.astro
+│   │   │   ├── how-much-end-of-tenancy-cleaning-costs.astro
+│   │   │   ├── how-often-carpet-cleaning-is-needed.astro
+│   │   │   ├── how-often-should-you-clean-carpets.astro
+│   │   │   ├── how-often-should-you-deep-clean
+│   │   │   ├── how-often-should-you-deep-clean.astro
+│   │   │   ├── how-to-clean-house-after-renovation.astro
+│   │   │   ├── how-to-pass-end-of-tenancy-inspection.astro
+│   │   │   ├── how-to-remove-coffee-stains-from-carpet.astro
+│   │   │   ├── how-to-remove-plaster-dust-from-house.astro
+│   │   │   ├── how-to-remove-red-wine-from-carpet.astro
+│   │   │   ├── index.astro
+│   │   │   ├── kitchen-deep-cleaning-guide
+│   │   │   ├── kitchen-deep-cleaning-guide.astro
+│   │   │   ├── landlord-cleaning-standards-guide.astro
+│   │   │   ├── landlord-inspection-cleaning-guide.astro
+│   │   │   ├── leeds-end-of-tenancy-cleaning-checklist.astro
+│   │   │   ├── limescale-removal-before-tenancy-inspection.astro
+│   │   │   ├── liverpool-end-of-tenancy-cleaning-checklist.astro
+│   │   │   ├── london-end-of-tenancy-cleaning-checklist.astro
+│   │   │   ├── manchester-end-of-tenancy-cleaning-checklist.astro
+│   │   │   ├── move-in-deep-cleaning-guide
+│   │   │   ├── move-in-deep-cleaning-guide.astro
+│   │   │   ├── new-build-cleaning-checklist.astro
+│   │   │   ├── newcastle-end-of-tenancy-cleaning-checklist.astro
+│   │   │   ├── nottingham-end-of-tenancy-cleaning-checklist.astro
+│   │   │   ├── oven-cleaning-required-for-tenancy.astro
+│   │   │   ├── oxford-end-of-tenancy-cleaning-checklist.astro
+│   │   │   ├── pet-damage-cleaning-before-inspection.astro
+│   │   │   ├── pet-odour-carpet-cleaning.astro
+│   │   │   ├── post-construction-window-cleaning.astro
+│   │   │   ├── post-renovation-air-quality-cleaning.astro
+│   │   │   ├── post-renovation-cleaning-checklist.astro
+│   │   │   ├── post-renovation-cleaning-cost-uk.astro
+│   │   │   ├── professional-carpet-cleaning-benefits.astro
+│   │   │   ├── professional-carpet-cleaning-cost-uk.astro
+│   │   │   ├── professional-carpet-cleaning-how-it-works.astro
+│   │   │   ├── professional-carpet-cleaning-vs-diy.astro
+│   │   │   ├── professional-tenancy-cleaning-proof-guide.astro
+│   │   │   ├── professional-vs-diy-carpet-cleaning.astro
+│   │   │   ├── professional-vs-diy-tenancy-cleaning.astro
+│   │   │   ├── remove-carpet-stains-guide.astro
+│   │   │   ├── removing-cement-dust-from-floors.astro
+│   │   │   ├── removing-paint-splatter-after-renovation.astro
+│   │   │   ├── removing-plaster-dust-after-renovation.astro
+│   │   │   ├── sheffield-end-of-tenancy-cleaning-checklist.astro
+│   │   │   ├── spring-cleaning-vs-deep-cleaning
+│   │   │   ├── spring-cleaning-vs-deep-cleaning.astro
+│   │   │   ├── spring-deep-cleaning-checklist.astro
+│   │   │   ├── steam-cleaning-carpets-explained.astro
+│   │   │   ├── tenancy-cleaning-before-inspection.astro
+│   │   │   ├── tenancy-cleaning-common-failures.astro
+│   │   │   ├── tenancy-cleaning-how-long-it-takes.astro
+│   │   │   ├── tenancy-cleaning-inventory-checklist.astro
+│   │   │   ├── tenancy-cleaning-landlord-checklist.astro
+│   │   │   ├── tenancy-cleaning-mistakes-that-cost-deposits.astro
+│   │   │   ├── tenancy-cleaning-room-by-room-checklist.astro
+│   │   │   ├── tenancy-cleaning-timeline-before-moving-out.astro
+│   │   │   ├── tenant-cleaning-responsibilities-uk.astro
+│   │   │   ├── tools-used-in-after-builders-cleaning.astro
+│   │   │   ├── what-is-after-builders-cleaning.astro
+│   │   │   ├── what-is-deep-cleaning-house
+│   │   │   ├── what-is-deep-cleaning-house.astro
+│   │   │   ├── what-is-deep-cleaning-service.astro
+│   │   │   ├── what-is-included-in-deep-cleaning
+│   │   │   ├── what-is-included-in-deep-cleaning.astro
+│   │   │   ├── what-is-included-in-end-of-tenancy-cleaning.astro
+│   │   │   ├── what-letting-agents-check-before-deposit-return.astro
+│   │   │   ├── what-letting-agents-look-for-in-cleaning.astro
+│   │   │   ├── when-you-need-deep-cleaning.astro
+│   │   │   └── why-builders-dust-keeps-coming-back.astro
+│   │   ├── how-camcleans-works
+│   │   │   └── index.astro
+│   │   ├── index.astro
+│   │   ├── join-cleaners
+│   │   │   └── index.astro
+│   │   ├── locations
+│   │   │   └── [slug].astro
+│   │   ├── quote
+│   │   │   └── index.astro
+│   │   └── services
+│   │       ├── [service]
+│   │       │   └── [location].astro
+│   │       ├── [slug].astro
+│   │       └── index.astro
+│   └── styles.css
+└── tsconfig.json
+
+38 directories, 331 files
