@@ -21,168 +21,406 @@ const schemaJson = JSON.stringify(schema);
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<meta name="google-site-verification" content="pAsatR2k1X-eVnAENBpTB9Scyy41cSObLsYixLSqxM4" />
-
 <title>{title}</title>
-
 <meta name="description" content={description} />
-
 <link rel="canonical" href={canonical} />
 
-<link rel="icon" href="/favicon.ico">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="apple-touch-icon" href="/brand/icon-192.png">
-<link rel="manifest" href="/site.webmanifest">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-192.png" sizes="192x192">
+<link rel="icon" href="/favicon-512.png" sizes="512x512">
+<link rel="apple-touch-icon" href="/favicon-192.png">
 
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="CamCleans">
-<meta property="og:title" content={title}>
-<meta property="og:description" content={description}>
-<meta property="og:image" content="https://camcleans.co.uk/brand/camcleans-og.png">
-<meta property="og:url" content={canonical}>
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:type" content="website" />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content="/brand/camcleans-og.png" />
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content={title}>
-<meta name="twitter:description" content={description}>
-<meta name="twitter:image" content="https://camcleans.co.uk/brand/camcleans-og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
 
-<script type="application/ld+json">
-{schemaJson}
-</script>
+<script type="application/ld+json">{schemaJson}</script>
 
-<style>
+<style is:global>
 
-body {
-  margin: 0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  line-height: 1.6;
+:root{
+--bg:#f8fbff;
+--surface:#ffffff;
+--surface-alt:#eef4fb;
+--surface-strong:#dbeafe;
+--line:#d9e5f3;
+--ink:#0f172a;
+--text:#334155;
+--muted:#64748b;
+--brand:#2563eb;
+--brand-strong:#1d4ed8;
+--teal:#0f766e;
+--dark:#0b1220;
+--dark-2:#111c31;
+--success:#16a34a;
+--shadow:0 10px 30px rgba(15,23,42,0.08);
+--shadow-strong:0 18px 50px rgba(15,23,42,0.14);
+--radius:22px;
+--container:1240px;
 }
 
-header {
-  border-bottom: 1px solid #e5e5e5;
-  padding: 16px 24px;
-  background: #ffffff;
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
 }
 
-nav {
-  display: flex;
-  gap: 20px;
-  align-items: center;
+html{
+scroll-behavior:smooth;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  margin-right: 10px;
+body{
+font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+background:var(--bg);
+color:var(--text);
+line-height:1.6;
 }
 
-.logo img {
-  height: 34px;
-  width: auto;
-  display: block;
+img{
+max-width:100%;
+display:block;
 }
 
-nav a {
-  text-decoration: none;
-  color: #1a1a1a;
-  font-weight: 500;
+a{
+color:inherit;
 }
 
-nav a:hover {
-  text-decoration: underline;
+main{
+min-height:60vh;
 }
 
-.quote-link {
-  margin-left: auto;
-  background: #1a1a1a;
-  color: white;
-  padding: 8px 14px;
-  border-radius: 6px;
+.container{
+width:min(var(--container), calc(100% - 40px));
+margin:0 auto;
 }
 
-.quote-link:hover {
-  text-decoration: none;
-  opacity: 0.85;
+.section{
+padding:88px 0;
 }
 
-main {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 0 20px;
+.section-tight{
+padding:64px 0;
 }
 
-footer {
-  margin-top: 60px;
-  padding: 30px 20px;
-  border-top: 1px solid #e5e5e5;
-  font-size: 14px;
-  color: #555;
+.section-title{
+max-width:760px;
+margin:0 auto 44px;
+text-align:center;
 }
 
-.footer-links {
-  margin-top: 10px;
-  display: flex;
-  gap: 18px;
-  flex-wrap: wrap;
+.eyebrow{
+display:inline-flex;
+align-items:center;
+gap:10px;
+padding:8px 14px;
+border-radius:999px;
+background:rgba(37,99,235,0.08);
+color:var(--brand-strong);
+font-size:13px;
+font-weight:700;
+letter-spacing:.04em;
+text-transform:uppercase;
 }
 
-.footer-links a {
-  text-decoration: none;
-  color: #1a1a1a;
-  font-weight: 500;
+.section-title h2{
+margin-top:16px;
+font-family:"Manrope","Inter",sans-serif;
+color:var(--ink);
+font-size:clamp(2rem,3vw,3.25rem);
+line-height:1.02;
+letter-spacing:-0.04em;
 }
 
-.footer-links a:hover {
-  text-decoration: underline;
+.section-title p{
+margin-top:16px;
+font-size:18px;
+color:var(--muted);
+}
+
+.grid{
+display:grid;
+gap:24px;
+}
+
+.grid-2{
+grid-template-columns:repeat(2,minmax(0,1fr));
+}
+
+.grid-3{
+grid-template-columns:repeat(3,minmax(0,1fr));
+}
+
+.grid-4{
+grid-template-columns:repeat(4,minmax(0,1fr));
+}
+
+.card{
+background:var(--surface);
+border:1px solid var(--line);
+border-radius:var(--radius);
+box-shadow:var(--shadow);
+}
+
+header.site-header{
+position:sticky;
+top:0;
+z-index:100;
+background:rgba(248,251,255,0.88);
+backdrop-filter:blur(14px);
+border-bottom:1px solid rgba(15,23,42,0.06);
+}
+
+.nav-shell{
+width:min(var(--container), calc(100% - 40px));
+margin:0 auto;
+min-height:88px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:28px;
+}
+
+.brand{
+display:flex;
+align-items:center;
+gap:14px;
+text-decoration:none;
+flex-shrink:0;
+}
+
+.brand-icon{
+width:42px;
+height:42px;
+display:grid;
+place-items:center;
+border-radius:14px;
+background:linear-gradient(135deg,#0f172a 0%,#1d4ed8 100%);
+box-shadow:0 10px 24px rgba(37,99,235,0.24);
+overflow:hidden;
+}
+
+.brand-icon img{
+width:22px;
+height:22px;
+filter:brightness(0) invert(1);
+}
+
+.brand-copy{
+display:flex;
+flex-direction:column;
+line-height:1;
+}
+
+.brand-name{
+font-family:"Manrope","Inter",sans-serif;
+font-size:24px;
+font-weight:800;
+color:var(--ink);
+letter-spacing:-0.04em;
+}
+
+.brand-sub{
+margin-top:4px;
+font-size:11px;
+font-weight:700;
+letter-spacing:.12em;
+text-transform:uppercase;
+color:var(--brand-strong);
+}
+
+.nav-links{
+display:flex;
+align-items:center;
+gap:24px;
+flex-wrap:wrap;
+justify-content:flex-end;
+}
+
+.nav-links a{
+text-decoration:none;
+font-size:14px;
+font-weight:700;
+color:var(--text);
+}
+
+.nav-links a:hover{
+color:var(--ink);
+}
+
+.nav-links .nav-cta{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+min-height:44px;
+padding:0 18px;
+border-radius:999px;
+background:var(--ink);
+color:#fff;
+box-shadow:0 10px 24px rgba(15,23,42,0.16);
+}
+
+.nav-links .nav-cta:hover{
+background:var(--brand-strong);
+color:#fff;
+}
+
+footer.site-footer{
+background:var(--dark);
+color:rgba(255,255,255,0.78);
+margin-top:0;
+}
+
+.footer-grid{
+display:grid;
+grid-template-columns:1.3fr .8fr .8fr .9fr;
+gap:28px;
+padding:64px 0 28px;
+}
+
+.footer-brand{
+display:flex;
+align-items:center;
+gap:14px;
+margin-bottom:18px;
+}
+
+.footer-brand .brand-name{
+color:#fff;
+}
+
+.footer-brand .brand-sub{
+color:#7dd3fc;
+}
+
+.footer-copy{
+max-width:380px;
+font-size:15px;
+color:rgba(255,255,255,0.72);
+}
+
+.footer-col h4{
+margin-bottom:14px;
+color:#fff;
+font-size:15px;
+font-weight:800;
+letter-spacing:.02em;
+}
+
+.footer-col a,
+.footer-col p{
+display:block;
+color:rgba(255,255,255,0.72);
+font-size:14px;
+text-decoration:none;
+margin-bottom:10px;
+}
+
+.footer-col a:hover{
+color:#fff;
+}
+
+.footer-bottom{
+border-top:1px solid rgba(255,255,255,0.08);
+padding:18px 0 26px;
+font-size:13px;
+color:rgba(255,255,255,0.56);
+text-align:center;
 }
 
 </style>
-
 </head>
 
 <body>
 
-<header>
+<header class="site-header">
+<div class="nav-shell">
 
-<nav>
-
-<a class="logo" href="/">
-<img src="/brand/camcleans-logo.svg" alt="CamCleans">
+<a href="/" class="brand" aria-label="CamCleans home">
+<span class="brand-icon">
+<img src="/brand/camcleans-icon.svg" alt="CamCleans icon">
+</span>
+<span class="brand-copy">
+<span class="brand-name">CamCleans</span>
+<span class="brand-sub">National cleaning network</span>
+</span>
 </a>
 
+<nav class="nav-links">
 <a href="/">Home</a>
-<a href="/services">Services</a>
 <a href="/how-camcleans-works">How It Works</a>
 <a href="/cleaner-standards">Cleaner Standards</a>
 <a href="/cleaning-checklist">Cleaning Checklist</a>
 <a href="/contact">Contact</a>
-
-<a class="quote-link" href="/quote">Get a Quote</a>
-
+<a href="/quote" class="nav-cta">Get a Quote</a>
 </nav>
 
+</div>
 </header>
 
 <main>
 <slot />
 </main>
 
-<footer>
+<footer class="site-footer">
 
-<p>CamCleans — Professional cleaning services across the United Kingdom.</p>
+<div class="container footer-grid">
 
-<div class="footer-links">
-<a href="/join-cleaners">Join as a Cleaner</a>
+<div>
+<div class="footer-brand">
+<span class="brand-icon">
+<img src="/brand/camcleans-icon.svg" alt="CamCleans icon">
+</span>
+<span class="brand-copy">
+<span class="brand-name">CamCleans</span>
+<span class="brand-sub">National cleaning network</span>
+</span>
+</div>
+
+<p class="footer-copy">
+Professional cleaning lead generation across the UK, built for high-trust domestic and property cleaning enquiries.
+</p>
+</div>
+
+<div class="footer-col">
+<h4>Explore</h4>
+<a href="/quote">Get a Quote</a>
+<a href="/contact">Contact</a>
+<a href="/join-cleaners">Join Cleaners</a>
+</div>
+
+<div class="footer-col">
+<h4>Trust</h4>
+<a href="/how-camcleans-works">How CamCleans Works</a>
+<a href="/cleaner-standards">Cleaner Standards</a>
+<a href="/cleaning-checklist">Cleaning Checklist</a>
+</div>
+
+<div class="footer-col">
+<h4>Coverage</h4>
+<p>United Kingdom</p>
+<p>End of tenancy</p>
+<p>Deep cleaning</p>
+<p>After builders</p>
+</div>
+
+</div>
+
+<div class="container footer-bottom">
+CamCleans — Professional Cleaning Services Across the UK
 </div>
 
 </footer>
 
 </body>
-
 </html>

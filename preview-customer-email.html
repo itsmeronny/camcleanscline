@@ -1,19 +1,3 @@
-import { Resend } from "resend";
-
-export async function onRequestPost(context) {
-
-  const resend = new Resend(context.env.RESEND_API_KEY);
-
-  try {
-
-    const data = await context.request.json();
-
-    const email = data.email || "";
-    const name = data.name || "there";
-    const phone = data.phone || "";
-    const postcode = data.postcode || "";
-
-    const html = `
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,7 +16,7 @@ export async function onRequestPost(context) {
 
 <tr>
 <td align="center" style="padding:28px;background:#f8fbff;border-bottom:1px solid #e6ebf2;">
-<img src="https://camcleans.co.uk/brand/camcleans-email-transparent.png" alt="CamCleans" width="180" style="display:block;width:180px;height:auto;margin:0 auto;border:0;outline:none;text-decoration:none;">
+<img src="http://localhost:8000/public/brand/camcleans-email-transparent.png" alt="CamCleans" width="180" style="display:block;width:180px;height:auto;margin:0 auto;border:0;outline:none;text-decoration:none;">
 </td>
 </tr>
 
@@ -44,7 +28,7 @@ Thank you for contacting CamCleans
 </h1>
 
 <p style="margin:0 0 18px;font-size:16px;line-height:1.6;color:#374151;">
-Hi ${name}, we have received your request. A member of the CamCleans team will review it and be in touch shortly.
+We have received your request. A member of the CamCleans team will review it and be in touch shortly.
 </p>
 
 <p style="margin:0 0 18px;font-size:15px;line-height:1.6;color:#374151;">
@@ -59,16 +43,16 @@ Below is a summary of the details you submitted.
 
 <table width="100%" cellpadding="10" cellspacing="0" style="border:1px solid #e6ebf2;border-radius:10px;background:#fafcff;">
 <tr>
-<td style="font-size:14px;line-height:1.6;color:#111827;"><strong>Name:</strong> ${name}</td>
+<td style="font-size:14px;line-height:1.6;color:#111827;"><strong>Name:</strong> {{name}}</td>
 </tr>
 <tr>
-<td style="font-size:14px;line-height:1.6;color:#111827;"><strong>Email:</strong> ${email}</td>
+<td style="font-size:14px;line-height:1.6;color:#111827;"><strong>Email:</strong> {{email}}</td>
 </tr>
 <tr>
-<td style="font-size:14px;line-height:1.6;color:#111827;"><strong>Phone:</strong> ${phone}</td>
+<td style="font-size:14px;line-height:1.6;color:#111827;"><strong>Phone:</strong> {{phone}}</td>
 </tr>
 <tr>
-<td style="font-size:14px;line-height:1.6;color:#111827;"><strong>Postcode:</strong> ${postcode}</td>
+<td style="font-size:14px;line-height:1.6;color:#111827;"><strong>Postcode:</strong> {{postcode}}</td>
 </tr>
 </table>
 
@@ -78,8 +62,7 @@ Below is a summary of the details you submitted.
 <tr>
 <td align="center" style="padding:20px 32px 34px 32px;">
 
-<a href="https://camcleans.co.uk"
-style="display:inline-block;padding:14px 22px;background:#111827;color:#ffffff;text-decoration:none;font-size:15px;font-weight:700;border-radius:10px;">
+<a href="https://camcleans.co.uk" style="display:inline-block;padding:14px 22px;background:#111827;color:#ffffff;text-decoration:none;font-size:15px;font-weight:700;border-radius:10px;">
 Visit CamCleans
 </a>
 
@@ -108,26 +91,3 @@ Professional cleaning services across the United Kingdom<br>
 
 </body>
 </html>
-`;
-
-    await resend.emails.send({
-      from: "camcleansnetwork@gmail.com",
-      to: email,
-      subject: "We received your CamCleans request",
-      html
-    });
-
-    return new Response(JSON.stringify({ success: true }), {
-      headers: { "Content-Type": "application/json" }
-    });
-
-  } catch (err) {
-
-    return new Response(JSON.stringify({ error: err.message }), {
-      status: 500,
-      headers: { "Content-Type": "application/json" }
-    });
-
-  }
-
-}
