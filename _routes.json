@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "include": ["/*"],
+  "exclude": [
+    "/brand/*",
+    "/favicon*",
+    "/icon-*",
+    "/site.webmanifest",
+    "/robots.txt"
+  ]
+}

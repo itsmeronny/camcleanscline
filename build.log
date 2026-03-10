@@ -1,0 +1,785 @@
+
+> camcleans@0.0.1 build
+> astro build
+
+16:38:17 [content] Syncing content
+16:38:17 [content] Synced content
+16:38:17 [types] Generated 40ms
+16:38:17 [build] output: "static"
+16:38:17 [build] mode: "static"
+16:38:17 [build] directory: /Users/aaronjames/Documents/camcleanscline/dist/
+16:38:17 [build] Collecting build info...
+16:38:17 [build] ✓ Completed in 98ms.
+16:38:17 [build] Building static entrypoints...
+16:38:19 [vite] ✓ built in 2.16s
+16:38:19 [build] ✓ Completed in 2.20s.
+
+ generating static routes 
+16:38:19 ▶ src/pages/application-received/index.astro
+16:38:19   └─ /application-received/index.html (+11ms) 
+16:38:19 ▶ src/pages/cleaner-standards/index.astro
+16:38:19   └─ /cleaner-standards/index.html (+3ms) 
+16:38:19 ▶ src/pages/cleaning-checklist/index.astro
+16:38:19   └─ /cleaning-checklist/index.html (+2ms) 
+16:38:19 ▶ src/pages/contact.astro
+16:38:19   └─ /contact/index.html (+2ms) 
+16:38:19 ▶ src/pages/enquiry-received/index.astro
+16:38:19   └─ /enquiry-received/index.html (+3ms) 
+16:38:19 ▶ src/pages/guides/aberdeen-end-of-tenancy-cleaning-checklist.astro
+16:38:19   └─ /guides/aberdeen-end-of-tenancy-cleaning-checklist/index.html (+3ms) 
+16:38:19 ▶ src/pages/guides/after-builders/index.astro
+16:38:19   └─ /guides/after-builders/index.htmlAstro.glob is deprecated and will be removed in a future major version of Astro.
+Use import.meta.glob instead: https://vitejs.dev/guide/features.html#glob-import
+ (+247ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-adhesive-residue-removal.astro
+16:38:19   └─ /guides/after-builders-cleaning-adhesive-residue-removal/index.html (+3ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-air-quality-after-renovation.astro
+16:38:19   └─ /guides/after-builders-cleaning-air-quality-after-renovation/index.html (+11ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-bathroom-after-renovation.astro
+16:38:19   └─ /guides/after-builders-cleaning-bathroom-after-renovation/index.html (+3ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-before-handover-checklist.astro
+16:38:19   └─ /guides/after-builders-cleaning-before-handover-checklist/index.html (+2ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-cement-dust-removal.astro
+16:38:19   └─ /guides/after-builders-cleaning-cement-dust-removal/index.html (+2ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-checklist.astro
+16:38:19   └─ /guides/after-builders-cleaning-checklist/index.html (+1ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-checklist-builders.astro
+16:38:19   └─ /guides/after-builders-cleaning-checklist-builders/index.html (+2ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-checklist-homeowners.astro
+16:38:19   └─ /guides/after-builders-cleaning-checklist-homeowners/index.html (+1ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-checklist-room-by-room.astro
+16:38:19   └─ /guides/after-builders-cleaning-checklist-room-by-room/index.html (+2ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-common-mistakes.astro
+16:38:19   └─ /guides/after-builders-cleaning-common-mistakes/index.html (+2ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-construction-dust-airborne-risks.astro
+16:38:19   └─ /guides/after-builders-cleaning-construction-dust-airborne-risks/index.html (+1ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-construction-dust-health-risk.astro
+16:38:19   └─ /guides/after-builders-cleaning-construction-dust-health-risk/index.html (+2ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-construction-dust-ventilation-clean.astro
+16:38:19   └─ /guides/after-builders-cleaning-construction-dust-ventilation-clean/index.html (+1ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-cost-guide.astro
+16:38:19   └─ /guides/after-builders-cleaning-cost-guide/index.html (+2ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-cost-uk.astro
+16:38:19   └─ /guides/after-builders-cleaning-cost-uk/index.html (+2ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-final-site-handover-clean.astro
+16:38:19   └─ /guides/after-builders-cleaning-final-site-handover-clean/index.html (+2ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-floor-grout-haze-removal.astro
+16:38:19   └─ /guides/after-builders-cleaning-floor-grout-haze-removal/index.html (+1ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-floor-protection-after-renovation.astro
+16:38:19   └─ /guides/after-builders-cleaning-floor-protection-after-renovation/index.html (+1ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-for-home-renovations.astro
+16:38:19   └─ /guides/after-builders-cleaning-for-home-renovations/index.html (+2ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-for-new-build-homes.astro
+16:38:19   └─ /guides/after-builders-cleaning-for-new-build-homes/index.html (+2ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-kitchen-after-renovation.astro
+16:38:19   └─ /guides/after-builders-cleaning-kitchen-after-renovation/index.html (+2ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-laminate-floor-cleaning.astro
+16:38:19   └─ /guides/after-builders-cleaning-laminate-floor-cleaning/index.html (+2ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-order-of-cleaning.astro
+16:38:19   └─ /guides/after-builders-cleaning-order-of-cleaning/index.html (+5ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-paint-splatter-removal.astro
+16:38:19   └─ /guides/after-builders-cleaning-paint-splatter-removal/index.html (+2ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-plaster-dust-removal.astro
+16:38:19   └─ /guides/after-builders-cleaning-plaster-dust-removal/index.html (+1ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-plaster-wall-dust-removal.astro
+16:38:19   └─ /guides/after-builders-cleaning-plaster-wall-dust-removal/index.html (+1ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-silicone-removal.astro
+16:38:19   └─ /guides/after-builders-cleaning-silicone-removal/index.html (+1ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-silicone-sealant-residue-removal.astro
+16:38:19   └─ /guides/after-builders-cleaning-silicone-sealant-residue-removal/index.html (+1ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-skirting-boards-and-doors.astro
+16:38:19   └─ /guides/after-builders-cleaning-skirting-boards-and-doors/index.html (+2ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-tile-and-grout-cleaning.astro
+16:38:19   └─ /guides/after-builders-cleaning-tile-and-grout-cleaning/index.html (+2ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-timeline.astro
+16:38:19   └─ /guides/after-builders-cleaning-timeline/index.html (+2ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-tools-and-equipment.astro
+16:38:19   └─ /guides/after-builders-cleaning-tools-and-equipment/index.html (+3ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-vs-deep-cleaning.astro
+16:38:19   └─ /guides/after-builders-cleaning-vs-deep-cleaning/index.html (+2ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-walls-and-paintwork-safe-cleaning.astro
+16:38:19   └─ /guides/after-builders-cleaning-walls-and-paintwork-safe-cleaning/index.html (+2ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-why-it-is-needed.astro
+16:38:19   └─ /guides/after-builders-cleaning-why-it-is-needed/index.html (+2ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-window-and-frame-cleaning.astro
+16:38:19   └─ /guides/after-builders-cleaning-window-and-frame-cleaning/index.html (+2ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-window-paint-splatter-removal.astro
+16:38:19   └─ /guides/after-builders-cleaning-window-paint-splatter-removal/index.html (+2ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-window-silicone-removal.astro
+16:38:19   └─ /guides/after-builders-cleaning-window-silicone-removal/index.html (+1ms) 
+16:38:19 ▶ src/pages/guides/after-builders-cleaning-wood-floor-protection.astro
+16:38:19   └─ /guides/after-builders-cleaning-wood-floor-protection/index.html (+2ms) 
+16:38:19 ▶ src/pages/guides/after-builders-dust-health-risks.astro
+16:38:19   └─ /guides/after-builders-dust-health-risks/index.html (+2ms) 
+16:38:19 ▶ src/pages/guides/after-builders-dust-removal.astro
+16:38:19   └─ /guides/after-builders-dust-removal/index.html (+2ms) 
+16:38:19 ▶ src/pages/guides/after-builders-window-cleaning-guide.astro
+16:38:19   └─ /guides/after-builders-window-cleaning-guide/index.html (+1ms) 
+16:38:19 ▶ src/pages/guides/bathroom-deep-cleaning-guide.astro
+16:38:19   └─ /guides/bathroom-deep-cleaning-guide/index.html (+1ms) 
+16:38:19 ▶ src/pages/guides/best-method-for-carpet-stain-removal.astro
+16:38:19   └─ /guides/best-method-for-carpet-stain-removal/index.html (+1ms) 
+16:38:19 ▶ src/pages/guides/birmingham-end-of-tenancy-cleaning-checklist.astro
+16:38:19   └─ /guides/birmingham-end-of-tenancy-cleaning-checklist/index.html (+1ms) 
+16:38:19 ▶ src/pages/guides/brighton-end-of-tenancy-cleaning-checklist.astro
+16:38:19   └─ /guides/brighton-end-of-tenancy-cleaning-checklist/index.html (+1ms) 
+16:38:19 ▶ src/pages/guides/bristol-end-of-tenancy-cleaning-checklist.astro
+16:38:19   └─ /guides/bristol-end-of-tenancy-cleaning-checklist/index.html (+1ms) 
+16:38:19 ▶ src/pages/guides/builders-clean-vs-sparkle-clean.astro
+16:38:19   └─ /guides/builders-clean-vs-sparkle-clean/index.html (+2ms) 
+16:38:19 ▶ src/pages/guides/builders-cleaning-safety-procedures.astro
+16:38:19   └─ /guides/builders-cleaning-safety-procedures/index.html (+2ms) 
+16:38:19 ▶ src/pages/guides/cambridge-end-of-tenancy-cleaning-checklist.astro
+16:38:19   └─ /guides/cambridge-end-of-tenancy-cleaning-checklist/index.html (+1ms) 
+16:38:19 ▶ src/pages/guides/can-carpet-cleaning-remove-mould-smell.astro
+16:38:19   └─ /guides/can-carpet-cleaning-remove-mould-smell/index.html (+1ms) 
+16:38:19 ▶ src/pages/guides/can-landlord-force-professional-cleaning-uk.astro
+16:38:19   └─ /guides/can-landlord-force-professional-cleaning-uk/index.html (+2ms) 
+16:38:19 ▶ src/pages/guides/cardiff-end-of-tenancy-cleaning-checklist.astro
+16:38:19   └─ /guides/cardiff-end-of-tenancy-cleaning-checklist/index.html (+2ms) 
+16:38:19 ▶ src/pages/guides/carpet-cleaning/index.astro
+16:38:19   └─ /guides/carpet-cleaning/index.htmlAstro.glob is deprecated and will be removed in a future major version of Astro.
+Use import.meta.glob instead: https://vitejs.dev/guide/features.html#glob-import
+ (+21ms) 
+16:38:19 ▶ src/pages/guides/carpet-cleaning-allergy-benefits.astro
+16:38:19   └─ /guides/carpet-cleaning-allergy-benefits/index.html (+1ms) 
+16:38:19 ▶ src/pages/guides/carpet-cleaning-allergy-reduction-methods.astro
+16:38:19   └─ /guides/carpet-cleaning-allergy-reduction-methods/index.html (+1ms) 
+16:38:19 ▶ src/pages/guides/carpet-cleaning-before-house-sale.astro
+16:38:19   └─ /guides/carpet-cleaning-before-house-sale/index.html (+1ms) 
+16:38:19 ▶ src/pages/guides/carpet-cleaning-before-moving-out.astro
+16:38:19   └─ /guides/carpet-cleaning-before-moving-out/index.html (+1ms) 
+16:38:19 ▶ src/pages/guides/carpet-cleaning-before-selling-house.astro
+16:38:19   └─ /guides/carpet-cleaning-before-selling-house/index.html (+2ms) 
+16:38:19 ▶ src/pages/guides/carpet-cleaning-before-tenancy-inspection.astro
+16:38:19   └─ /guides/carpet-cleaning-before-tenancy-inspection/index.html (+2ms) 
+16:38:19 ▶ src/pages/guides/carpet-cleaning-cost-guide-uk.astro
+16:38:19   └─ /guides/carpet-cleaning-cost-guide-uk/index.html (+1ms) 
+16:38:19 ▶ src/pages/guides/carpet-cleaning-cost-uk-per-room.astro
+16:38:19   └─ /guides/carpet-cleaning-cost-uk-per-room/index.html (+1ms) 
+16:38:19 ▶ src/pages/guides/carpet-cleaning-drying-time.astro
+16:38:19   └─ /guides/carpet-cleaning-drying-time/index.html (+2ms) 
+16:38:19 ▶ src/pages/guides/carpet-cleaning-drying-times.astro
+16:38:19   └─ /guides/carpet-cleaning-drying-times/index.html (+2ms) 
+16:38:19 ▶ src/pages/guides/carpet-cleaning-dust-allergy-treatment.astro
+16:38:19   └─ /guides/carpet-cleaning-dust-allergy-treatment/index.html (+1ms) 
+16:38:19 ▶ src/pages/guides/carpet-cleaning-dust-mite-removal.astro
+16:38:19   └─ /guides/carpet-cleaning-dust-mite-removal/index.html (+1ms) 
+16:38:19 ▶ src/pages/guides/carpet-cleaning-for-allergy-sufferers.astro
+16:38:19   └─ /guides/carpet-cleaning-for-allergy-sufferers/index.html (+1ms) 
+16:38:19 ▶ src/pages/guides/carpet-cleaning-for-dust-mites.astro
+16:38:19   └─ /guides/carpet-cleaning-for-dust-mites/index.html (+1ms) 
+16:38:19 ▶ src/pages/guides/carpet-cleaning-for-pet-hair-removal.astro
+16:38:19   └─ /guides/carpet-cleaning-for-pet-hair-removal/index.html (+1ms) 
+16:38:19 ▶ src/pages/guides/carpet-cleaning-for-pet-owners.astro
+16:38:19   └─ /guides/carpet-cleaning-for-pet-owners/index.html (+1ms) 
+16:38:19 ▶ src/pages/guides/carpet-cleaning-heavy-traffic-lanes.astro
+16:38:19   └─ /guides/carpet-cleaning-heavy-traffic-lanes/index.html (+1ms) 
+16:38:19 ▶ src/pages/guides/carpet-cleaning-how-long-to-dry.astro
+16:38:19   └─ /guides/carpet-cleaning-how-long-to-dry/index.html (+1ms) 
+16:38:19 ▶ src/pages/guides/carpet-cleaning-mould-removal.astro
+16:38:19   └─ /guides/carpet-cleaning-mould-removal/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/carpet-cleaning-pet-odour-removal.astro
+16:38:20   └─ /guides/carpet-cleaning-pet-odour-removal/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/carpet-cleaning-pet-stain-treatment.astro
+16:38:20   └─ /guides/carpet-cleaning-pet-stain-treatment/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/carpet-cleaning-pet-urine-treatment.astro
+16:38:20   └─ /guides/carpet-cleaning-pet-urine-treatment/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/carpet-cleaning-professional-equipment-guide.astro
+16:38:20   └─ /guides/carpet-cleaning-professional-equipment-guide/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/carpet-cleaning-professional-extraction-method.astro
+16:38:20   └─ /guides/carpet-cleaning-professional-extraction-method/index.html (+2ms) 
+16:38:20 ▶ src/pages/guides/carpet-cleaning-red-wine-stain-guide.astro
+16:38:20   └─ /guides/carpet-cleaning-red-wine-stain-guide/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/carpet-cleaning-red-wine-stain-removal.astro
+16:38:20   └─ /guides/carpet-cleaning-red-wine-stain-removal/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/carpet-cleaning-required-for-tenancy.astro
+16:38:20   └─ /guides/carpet-cleaning-required-for-tenancy/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/carpet-cleaning-steam-vs-shampoo.astro
+16:38:20   └─ /guides/carpet-cleaning-steam-vs-shampoo/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/carpet-cleaning-traffic-lane-restoration.astro
+16:38:20   └─ /guides/carpet-cleaning-traffic-lane-restoration/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/carpet-cleaning-vs-steam-cleaning.astro
+16:38:20   └─ /guides/carpet-cleaning-vs-steam-cleaning/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/chester-end-of-tenancy-cleaning-checklist.astro
+16:38:20   └─ /guides/chester-end-of-tenancy-cleaning-checklist/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/cleaning-new-build-property-before-moving-in.astro
+16:38:20   └─ /guides/cleaning-new-build-property-before-moving-in/index.html (+2ms) 
+16:38:20 ▶ src/pages/guides/cleaning-requirements-for-letting-agents.astro
+16:38:20   └─ /guides/cleaning-requirements-for-letting-agents/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/construction-dust-health-risks.astro
+16:38:20   └─ /guides/construction-dust-health-risks/index.html (+2ms) 
+16:38:20 ▶ src/pages/guides/deep-cleaning/index.astro
+16:38:20   └─ /guides/deep-cleaning/index.htmlAstro.glob is deprecated and will be removed in a future major version of Astro.
+Use import.meta.glob instead: https://vitejs.dev/guide/features.html#glob-import
+ (+21ms) 
+16:38:20 ▶ src/pages/guides/deep-cleaning-bathroom-limescale-guide.astro
+16:38:20   └─ /guides/deep-cleaning-bathroom-limescale-guide/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/deep-cleaning-bathroom-limescale-removal.astro
+16:38:20   └─ /guides/deep-cleaning-bathroom-limescale-removal/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/deep-cleaning-bathroom-mould-removal.astro
+16:38:20   └─ /guides/deep-cleaning-bathroom-mould-removal/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/deep-cleaning-bathroom-scale-removal.astro
+16:38:20   └─ /guides/deep-cleaning-bathroom-scale-removal/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/deep-cleaning-bedroom-allergen-removal.astro
+16:38:20   └─ /guides/deep-cleaning-bedroom-allergen-removal/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/deep-cleaning-before-guests-arrive.astro
+16:38:20   └─ /guides/deep-cleaning-before-guests-arrive/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/deep-cleaning-before-moving-in.astro
+16:38:20   └─ /guides/deep-cleaning-before-moving-in/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/deep-cleaning-before-moving-into-house.astro
+16:38:20   └─ /guides/deep-cleaning-before-moving-into-house/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/deep-cleaning-before-selling-house.astro
+16:38:20   └─ /guides/deep-cleaning-before-selling-house/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/deep-cleaning-before-selling-property.astro
+16:38:20   └─ /guides/deep-cleaning-before-selling-property/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/deep-cleaning-checklist-room-by-room.astro
+16:38:20   └─ /guides/deep-cleaning-checklist-room-by-room/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/deep-cleaning-for-allergy-households.astro
+16:38:20   └─ /guides/deep-cleaning-for-allergy-households/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/deep-cleaning-for-allergy-reduction.astro
+16:38:20   └─ /guides/deep-cleaning-for-allergy-reduction/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/deep-cleaning-for-allergy-sufferers.astro
+16:38:20   └─ /guides/deep-cleaning-for-allergy-sufferers/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/deep-cleaning-for-hoarded-homes.astro
+16:38:20   └─ /guides/deep-cleaning-for-hoarded-homes/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/deep-cleaning-fridge-and-freezer-cleaning.astro
+16:38:20   └─ /guides/deep-cleaning-fridge-and-freezer-cleaning/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/deep-cleaning-house-cost-uk.astro
+16:38:20   └─ /guides/deep-cleaning-house-cost-uk/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/deep-cleaning-kitchen-appliance-degreasing.astro
+16:38:20   └─ /guides/deep-cleaning-kitchen-appliance-degreasing/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/deep-cleaning-kitchen-appliances.astro
+16:38:20   └─ /guides/deep-cleaning-kitchen-appliances/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/deep-cleaning-kitchen-cupboard-degreasing.astro
+16:38:20   └─ /guides/deep-cleaning-kitchen-cupboard-degreasing/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/deep-cleaning-kitchen-grease-removal.astro
+16:38:20   └─ /guides/deep-cleaning-kitchen-grease-removal/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/deep-cleaning-living-room-fabric-cleaning.astro
+16:38:20   └─ /guides/deep-cleaning-living-room-fabric-cleaning/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/deep-cleaning-neglected-home-checklist.astro
+16:38:20   └─ /guides/deep-cleaning-neglected-home-checklist/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/deep-cleaning-neglected-house.astro
+16:38:20   └─ /guides/deep-cleaning-neglected-house/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/deep-cleaning-oven-grease-removal.astro
+16:38:20   └─ /guides/deep-cleaning-oven-grease-removal/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/deep-cleaning-vs-regular-cleaning.astro
+16:38:20   └─ /guides/deep-cleaning-vs-regular-cleaning/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/deep-cleaning-vs-standard-cleaning-cost.astro
+16:38:20   └─ /guides/deep-cleaning-vs-standard-cleaning-cost/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/deep-cleaning-washing-machine-cleaning.astro
+16:38:20   └─ /guides/deep-cleaning-washing-machine-cleaning/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/deep-cleaning-whole-house-reset.astro
+16:38:20   └─ /guides/deep-cleaning-whole-house-reset/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/deposit-deduction-cleaning-guide.astro
+16:38:20   └─ /guides/deposit-deduction-cleaning-guide/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/developer-handover-cleaning-guide.astro
+16:38:20   └─ /guides/developer-handover-cleaning-guide/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/do-you-need-professional-end-of-tenancy-cleaning.astro
+16:38:20   └─ /guides/do-you-need-professional-end-of-tenancy-cleaning/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/edinburgh-end-of-tenancy-cleaning-checklist.astro
+16:38:20   └─ /guides/edinburgh-end-of-tenancy-cleaning-checklist/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy/index.astro
+16:38:20   └─ /guides/end-of-tenancy/index.htmlAstro.glob is deprecated and will be removed in a future major version of Astro.
+Use import.meta.glob instead: https://vitejs.dev/guide/features.html#glob-import
+ (+17ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-bathroom-checklist-landlord.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-bathroom-checklist-landlord/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-bathroom-limescale-landlord-check.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-bathroom-limescale-landlord-check/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-bathroom-mould-removal.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-bathroom-mould-removal/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-bathroom-mould-responsibility.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-bathroom-mould-responsibility/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-bedroom-checklist.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-bedroom-checklist/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-before-letting-agent-inspection.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-before-letting-agent-inspection/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-before-moving-day.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-before-moving-day/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-carpet-condition-check.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-carpet-condition-check/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-carpet-condition-requirements.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-carpet-condition-requirements/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-carpet-inspection-guide.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-carpet-inspection-guide/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-carpet-requirements.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-carpet-requirements/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-checklist.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-checklist/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-checklist-landlords.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-checklist-landlords/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-checkout-day-cleaning-plan.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-checkout-day-cleaning-plan/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-cost-guide.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-cost-guide/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-deposit-deduction-prevention.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-deposit-deduction-prevention/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-door-and-handle-cleaning.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-door-and-handle-cleaning/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-extractor-fan-cleaning.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-extractor-fan-cleaning/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-final-inspection-preparation.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-final-inspection-preparation/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-final-walkthrough-checklist.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-final-walkthrough-checklist/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-fridge-freezer-cleaning.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-fridge-freezer-cleaning/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-inventory-checklist-explained.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-inventory-checklist-explained/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-kitchen-appliance-standard.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-kitchen-appliance-standard/index.html (+2ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-kitchen-checklist-landlord.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-kitchen-checklist-landlord/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-kitchen-grease-removal.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-kitchen-grease-removal/index.html (+2ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-kitchen-grease-standard.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-kitchen-grease-standard/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-landlord-requirements.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-landlord-requirements/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-light-switch-cleaning.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-light-switch-cleaning/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-limescale-removal-checklist.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-limescale-removal-checklist/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-living-room-checklist.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-living-room-checklist/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-london-cost.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-london-cost/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-oven-cleaning-guide.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-oven-cleaning-guide/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-oven-standard-landlords-expect.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-oven-standard-landlords-expect/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-photographic-evidence-guide.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-photographic-evidence-guide/index.html (+2ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-professional-vs-diy.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-professional-vs-diy/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-receipt-proof-for-deposit.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-receipt-proof-for-deposit/index.html (+2ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-skirt-board-cleaning.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-skirt-board-cleaning/index.html (+3ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-wall-mark-removal.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-wall-mark-removal/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-wall-mark-removal-guide.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-wall-mark-removal-guide/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-wall-scuff-mark-removal.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-wall-scuff-mark-removal/index.html (+2ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-what-counts-as-fair-wear-and-tear.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-what-counts-as-fair-wear-and-tear/index.html (+2ms) 
+16:38:20 ▶ src/pages/guides/end-of-tenancy-cleaning-window-cleaning-guide.astro
+16:38:20   └─ /guides/end-of-tenancy-cleaning-window-cleaning-guide/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/final-tenancy-inspection-checklist.astro
+16:38:20   └─ /guides/final-tenancy-inspection-checklist/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/glasgow-end-of-tenancy-cleaning-checklist.astro
+16:38:20   └─ /guides/glasgow-end-of-tenancy-cleaning-checklist/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/harrogate-end-of-tenancy-cleaning-checklist.astro
+16:38:20   └─ /guides/harrogate-end-of-tenancy-cleaning-checklist/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/how-carpet-cleaning-works.astro
+16:38:20   └─ /guides/how-carpet-cleaning-works/index.html (+2ms) 
+16:38:20 ▶ src/pages/guides/how-clean-must-rental-property-be-when-moving-out.astro
+16:38:20   └─ /guides/how-clean-must-rental-property-be-when-moving-out/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/how-long-after-builders-cleaning-takes.astro
+16:38:20   └─ /guides/how-long-after-builders-cleaning-takes/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/how-long-deep-cleaning-takes.astro
+16:38:20   └─ /guides/how-long-deep-cleaning-takes/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/how-long-does-after-builders-cleaning-take.astro
+16:38:20   └─ /guides/how-long-does-after-builders-cleaning-take/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/how-long-does-deep-cleaning-take.astro
+16:38:20   └─ /guides/how-long-does-deep-cleaning-take/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/how-long-end-of-tenancy-cleaning-takes.astro
+16:38:20   └─ /guides/how-long-end-of-tenancy-cleaning-takes/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/how-much-end-of-tenancy-cleaning-costs.astro
+16:38:20   └─ /guides/how-much-end-of-tenancy-cleaning-costs/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/how-often-carpet-cleaning-is-needed.astro
+16:38:20   └─ /guides/how-often-carpet-cleaning-is-needed/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/how-often-should-you-clean-carpets.astro
+16:38:20   └─ /guides/how-often-should-you-clean-carpets/index.html (+2ms) 
+16:38:20 ▶ src/pages/guides/how-often-should-you-deep-clean.astro
+16:38:20   └─ /guides/how-often-should-you-deep-clean/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/how-to-clean-house-after-renovation.astro
+16:38:20   └─ /guides/how-to-clean-house-after-renovation/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/how-to-pass-end-of-tenancy-inspection.astro
+16:38:20   └─ /guides/how-to-pass-end-of-tenancy-inspection/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/how-to-remove-coffee-stains-from-carpet.astro
+16:38:20   └─ /guides/how-to-remove-coffee-stains-from-carpet/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/how-to-remove-plaster-dust-from-house.astro
+16:38:20   └─ /guides/how-to-remove-plaster-dust-from-house/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/how-to-remove-red-wine-from-carpet.astro
+16:38:20   └─ /guides/how-to-remove-red-wine-from-carpet/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/kitchen-deep-cleaning-guide.astro
+16:38:20   └─ /guides/kitchen-deep-cleaning-guide/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/landlord-cleaning-standards-guide.astro
+16:38:20   └─ /guides/landlord-cleaning-standards-guide/index.html (+2ms) 
+16:38:20 ▶ src/pages/guides/landlord-inspection-cleaning-guide.astro
+16:38:20   └─ /guides/landlord-inspection-cleaning-guide/index.html (+2ms) 
+16:38:20 ▶ src/pages/guides/leeds-end-of-tenancy-cleaning-checklist.astro
+16:38:20   └─ /guides/leeds-end-of-tenancy-cleaning-checklist/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/limescale-removal-before-tenancy-inspection.astro
+16:38:20   └─ /guides/limescale-removal-before-tenancy-inspection/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/liverpool-end-of-tenancy-cleaning-checklist.astro
+16:38:20   └─ /guides/liverpool-end-of-tenancy-cleaning-checklist/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/london-end-of-tenancy-cleaning-checklist.astro
+16:38:20   └─ /guides/london-end-of-tenancy-cleaning-checklist/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/manchester-end-of-tenancy-cleaning-checklist.astro
+16:38:20   └─ /guides/manchester-end-of-tenancy-cleaning-checklist/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/move-in-deep-cleaning-guide.astro
+16:38:20   └─ /guides/move-in-deep-cleaning-guide/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/new-build-cleaning-checklist.astro
+16:38:20   └─ /guides/new-build-cleaning-checklist/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/newcastle-end-of-tenancy-cleaning-checklist.astro
+16:38:20   └─ /guides/newcastle-end-of-tenancy-cleaning-checklist/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/nottingham-end-of-tenancy-cleaning-checklist.astro
+16:38:20   └─ /guides/nottingham-end-of-tenancy-cleaning-checklist/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/oven-cleaning-required-for-tenancy.astro
+16:38:20   └─ /guides/oven-cleaning-required-for-tenancy/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/oxford-end-of-tenancy-cleaning-checklist.astro
+16:38:20   └─ /guides/oxford-end-of-tenancy-cleaning-checklist/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/pet-damage-cleaning-before-inspection.astro
+16:38:20   └─ /guides/pet-damage-cleaning-before-inspection/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/pet-odour-carpet-cleaning.astro
+16:38:20   └─ /guides/pet-odour-carpet-cleaning/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/post-construction-window-cleaning.astro
+16:38:20   └─ /guides/post-construction-window-cleaning/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/post-renovation-air-quality-cleaning.astro
+16:38:20   └─ /guides/post-renovation-air-quality-cleaning/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/post-renovation-cleaning-checklist.astro
+16:38:20   └─ /guides/post-renovation-cleaning-checklist/index.html (+2ms) 
+16:38:20 ▶ src/pages/guides/post-renovation-cleaning-cost-uk.astro
+16:38:20   └─ /guides/post-renovation-cleaning-cost-uk/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/professional-carpet-cleaning-benefits.astro
+16:38:20   └─ /guides/professional-carpet-cleaning-benefits/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/professional-carpet-cleaning-cost-uk.astro
+16:38:20   └─ /guides/professional-carpet-cleaning-cost-uk/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/professional-carpet-cleaning-how-it-works.astro
+16:38:20   └─ /guides/professional-carpet-cleaning-how-it-works/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/professional-carpet-cleaning-vs-diy.astro
+16:38:20   └─ /guides/professional-carpet-cleaning-vs-diy/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/professional-tenancy-cleaning-proof-guide.astro
+16:38:20   └─ /guides/professional-tenancy-cleaning-proof-guide/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/professional-vs-diy-carpet-cleaning.astro
+16:38:20   └─ /guides/professional-vs-diy-carpet-cleaning/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/professional-vs-diy-tenancy-cleaning.astro
+16:38:20   └─ /guides/professional-vs-diy-tenancy-cleaning/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/remove-carpet-stains-guide.astro
+16:38:20   └─ /guides/remove-carpet-stains-guide/index.html (+2ms) 
+16:38:20 ▶ src/pages/guides/removing-cement-dust-from-floors.astro
+16:38:20   └─ /guides/removing-cement-dust-from-floors/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/removing-paint-splatter-after-renovation.astro
+16:38:20   └─ /guides/removing-paint-splatter-after-renovation/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/removing-plaster-dust-after-renovation.astro
+16:38:20   └─ /guides/removing-plaster-dust-after-renovation/index.html (+2ms) 
+16:38:20 ▶ src/pages/guides/sheffield-end-of-tenancy-cleaning-checklist.astro
+16:38:20   └─ /guides/sheffield-end-of-tenancy-cleaning-checklist/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/spring-cleaning-vs-deep-cleaning.astro
+16:38:20   └─ /guides/spring-cleaning-vs-deep-cleaning/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/spring-deep-cleaning-checklist.astro
+16:38:20   └─ /guides/spring-deep-cleaning-checklist/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/steam-cleaning-carpets-explained.astro
+16:38:20   └─ /guides/steam-cleaning-carpets-explained/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/tenancy-cleaning-before-inspection.astro
+16:38:20   └─ /guides/tenancy-cleaning-before-inspection/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/tenancy-cleaning-common-failures.astro
+16:38:20   └─ /guides/tenancy-cleaning-common-failures/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/tenancy-cleaning-how-long-it-takes.astro
+16:38:20   └─ /guides/tenancy-cleaning-how-long-it-takes/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/tenancy-cleaning-inventory-checklist.astro
+16:38:20   └─ /guides/tenancy-cleaning-inventory-checklist/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/tenancy-cleaning-landlord-checklist.astro
+16:38:20   └─ /guides/tenancy-cleaning-landlord-checklist/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/tenancy-cleaning-mistakes-that-cost-deposits.astro
+16:38:20   └─ /guides/tenancy-cleaning-mistakes-that-cost-deposits/index.html (+2ms) 
+16:38:20 ▶ src/pages/guides/tenancy-cleaning-room-by-room-checklist.astro
+16:38:20   └─ /guides/tenancy-cleaning-room-by-room-checklist/index.html (+2ms) 
+16:38:20 ▶ src/pages/guides/tenancy-cleaning-timeline-before-moving-out.astro
+16:38:20   └─ /guides/tenancy-cleaning-timeline-before-moving-out/index.html (+2ms) 
+16:38:20 ▶ src/pages/guides/tenant-cleaning-responsibilities-uk.astro
+16:38:20   └─ /guides/tenant-cleaning-responsibilities-uk/index.html (+2ms) 
+16:38:20 ▶ src/pages/guides/tools-used-in-after-builders-cleaning.astro
+16:38:20   └─ /guides/tools-used-in-after-builders-cleaning/index.html (+2ms) 
+16:38:20 ▶ src/pages/guides/what-is-after-builders-cleaning.astro
+16:38:20   └─ /guides/what-is-after-builders-cleaning/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/what-is-deep-cleaning-house.astro
+16:38:20   └─ /guides/what-is-deep-cleaning-house/index.html (+2ms) 
+16:38:20 ▶ src/pages/guides/what-is-deep-cleaning-service.astro
+16:38:20   └─ /guides/what-is-deep-cleaning-service/index.html (+2ms) 
+16:38:20 ▶ src/pages/guides/what-is-included-in-deep-cleaning.astro
+16:38:20   └─ /guides/what-is-included-in-deep-cleaning/index.html (+2ms) 
+16:38:20 ▶ src/pages/guides/what-is-included-in-end-of-tenancy-cleaning.astro
+16:38:20   └─ /guides/what-is-included-in-end-of-tenancy-cleaning/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/what-letting-agents-check-before-deposit-return.astro
+16:38:20   └─ /guides/what-letting-agents-check-before-deposit-return/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/what-letting-agents-look-for-in-cleaning.astro
+16:38:20   └─ /guides/what-letting-agents-look-for-in-cleaning/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/when-you-need-deep-cleaning.astro
+16:38:20   └─ /guides/when-you-need-deep-cleaning/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/why-builders-dust-keeps-coming-back.astro
+16:38:20   └─ /guides/why-builders-dust-keeps-coming-back/index.html (+1ms) 
+16:38:20 ▶ src/pages/guides/index.astro
+16:38:20   └─ /guides/index.html (+2ms) 
+16:38:20 ▶ src/pages/how-camcleans-works/index.astro
+16:38:20   └─ /how-camcleans-works/index.html (+1ms) 
+16:38:20 ▶ src/pages/join-cleaners/index.astro
+16:38:20   └─ /join-cleaners/index.html (+2ms) 
+16:38:20 ▶ src/pages/locations/[slug].astro
+16:38:20   ├─ /locations/london/index.html (+5ms) 
+16:38:20   ├─ /locations/glasgow/index.html (+2ms) 
+16:38:20   ├─ /locations/birmingham/index.html (+2ms) 
+16:38:20   ├─ /locations/manchester/index.html (+2ms) 
+16:38:20   ├─ /locations/leeds/index.html (+2ms) 
+16:38:20   ├─ /locations/liverpool/index.html (+5ms) 
+16:38:20   ├─ /locations/bristol/index.html (+2ms) 
+16:38:20   ├─ /locations/cardiff/index.html (+2ms) 
+16:38:20   ├─ /locations/oxford/index.html (+2ms) 
+16:38:20   ├─ /locations/edinburgh/index.html (+2ms) 
+16:38:20   ├─ /locations/cambridge/index.html (+2ms) 
+16:38:20   ├─ /locations/brighton/index.html (+2ms) 
+16:38:20   ├─ /locations/aberdeen/index.html (+2ms) 
+16:38:20   ├─ /locations/newcastle/index.html (+2ms) 
+16:38:20   ├─ /locations/sheffield/index.html (+2ms) 
+16:38:20   ├─ /locations/chester/index.html (+2ms) 
+16:38:20   ├─ /locations/harrogate/index.html (+2ms) 
+16:38:20   └─ /locations/nottingham/index.html (+2ms) 
+16:38:20 ▶ src/pages/quote/index.astro
+16:38:20   └─ /quote/index.html (+2ms) 
+16:38:20 ▶ src/pages/services/[service]/[location].astro
+16:38:20   ├─ /services/airbnb-cleaning/london/index.html (+3ms) 
+16:38:20   ├─ /services/airbnb-cleaning/glasgow/index.html (+2ms) 
+16:38:20   ├─ /services/airbnb-cleaning/birmingham/index.html (+2ms) 
+16:38:20   ├─ /services/airbnb-cleaning/manchester/index.html (+2ms) 
+16:38:20   ├─ /services/airbnb-cleaning/leeds/index.html (+1ms) 
+16:38:20   ├─ /services/airbnb-cleaning/liverpool/index.html (+1ms) 
+16:38:20   ├─ /services/airbnb-cleaning/bristol/index.html (+1ms) 
+16:38:20   ├─ /services/airbnb-cleaning/cardiff/index.html (+1ms) 
+16:38:20   ├─ /services/airbnb-cleaning/oxford/index.html (+2ms) 
+16:38:20   ├─ /services/airbnb-cleaning/edinburgh/index.html (+1ms) 
+16:38:20   ├─ /services/airbnb-cleaning/cambridge/index.html (+1ms) 
+16:38:20   ├─ /services/airbnb-cleaning/brighton/index.html (+1ms) 
+16:38:20   ├─ /services/airbnb-cleaning/aberdeen/index.html (+1ms) 
+16:38:20   ├─ /services/airbnb-cleaning/newcastle/index.html (+2ms) 
+16:38:20   ├─ /services/airbnb-cleaning/sheffield/index.html (+2ms) 
+16:38:20   ├─ /services/airbnb-cleaning/chester/index.html (+2ms) 
+16:38:20   ├─ /services/airbnb-cleaning/harrogate/index.html (+2ms) 
+16:38:20   ├─ /services/airbnb-cleaning/nottingham/index.html (+2ms) 
+16:38:20   ├─ /services/end-of-tenancy-cleaning/london/index.html (+2ms) 
+16:38:20   ├─ /services/end-of-tenancy-cleaning/glasgow/index.html (+1ms) 
+16:38:20   ├─ /services/end-of-tenancy-cleaning/birmingham/index.html (+1ms) 
+16:38:20   ├─ /services/end-of-tenancy-cleaning/manchester/index.html (+1ms) 
+16:38:20   ├─ /services/end-of-tenancy-cleaning/leeds/index.html (+1ms) 
+16:38:20   ├─ /services/end-of-tenancy-cleaning/liverpool/index.html (+1ms) 
+16:38:20   ├─ /services/end-of-tenancy-cleaning/bristol/index.html (+2ms) 
+16:38:20   ├─ /services/end-of-tenancy-cleaning/cardiff/index.html (+2ms) 
+16:38:20   ├─ /services/end-of-tenancy-cleaning/oxford/index.html (+1ms) 
+16:38:20   ├─ /services/end-of-tenancy-cleaning/edinburgh/index.html (+1ms) 
+16:38:20   ├─ /services/end-of-tenancy-cleaning/cambridge/index.html (+1ms) 
+16:38:20   ├─ /services/end-of-tenancy-cleaning/brighton/index.html (+1ms) 
+16:38:20   ├─ /services/end-of-tenancy-cleaning/aberdeen/index.html (+1ms) 
+16:38:20   ├─ /services/end-of-tenancy-cleaning/newcastle/index.html (+1ms) 
+16:38:20   ├─ /services/end-of-tenancy-cleaning/sheffield/index.html (+1ms) 
+16:38:20   ├─ /services/end-of-tenancy-cleaning/chester/index.html (+1ms) 
+16:38:20   ├─ /services/end-of-tenancy-cleaning/harrogate/index.html (+2ms) 
+16:38:20   ├─ /services/end-of-tenancy-cleaning/nottingham/index.html (+1ms) 
+16:38:20   ├─ /services/one-off-deep-cleaning/london/index.html (+2ms) 
+16:38:20   ├─ /services/one-off-deep-cleaning/glasgow/index.html (+1ms) 
+16:38:20   ├─ /services/one-off-deep-cleaning/birmingham/index.html (+1ms) 
+16:38:20   ├─ /services/one-off-deep-cleaning/manchester/index.html (+1ms) 
+16:38:20   ├─ /services/one-off-deep-cleaning/leeds/index.html (+2ms) 
+16:38:20   ├─ /services/one-off-deep-cleaning/liverpool/index.html (+1ms) 
+16:38:20   ├─ /services/one-off-deep-cleaning/bristol/index.html (+1ms) 
+16:38:20   ├─ /services/one-off-deep-cleaning/cardiff/index.html (+1ms) 
+16:38:20   ├─ /services/one-off-deep-cleaning/oxford/index.html (+1ms) 
+16:38:20   ├─ /services/one-off-deep-cleaning/edinburgh/index.html (+1ms) 
+16:38:20   ├─ /services/one-off-deep-cleaning/cambridge/index.html (+1ms) 
+16:38:20   ├─ /services/one-off-deep-cleaning/brighton/index.html (+2ms) 
+16:38:20   ├─ /services/one-off-deep-cleaning/aberdeen/index.html (+2ms) 
+16:38:20   ├─ /services/one-off-deep-cleaning/newcastle/index.html (+2ms) 
+16:38:20   ├─ /services/one-off-deep-cleaning/sheffield/index.html (+2ms) 
+16:38:20   ├─ /services/one-off-deep-cleaning/chester/index.html (+1ms) 
+16:38:20   ├─ /services/one-off-deep-cleaning/harrogate/index.html (+1ms) 
+16:38:20   ├─ /services/one-off-deep-cleaning/nottingham/index.html (+1ms) 
+16:38:20   ├─ /services/after-builders-cleaning/london/index.html (+2ms) 
+16:38:20   ├─ /services/after-builders-cleaning/glasgow/index.html (+2ms) 
+16:38:20   ├─ /services/after-builders-cleaning/birmingham/index.html (+1ms) 
+16:38:20   ├─ /services/after-builders-cleaning/manchester/index.html (+2ms) 
+16:38:20   ├─ /services/after-builders-cleaning/leeds/index.html (+1ms) 
+16:38:20   ├─ /services/after-builders-cleaning/liverpool/index.html (+1ms) 
+16:38:20   ├─ /services/after-builders-cleaning/bristol/index.html (+1ms) 
+16:38:20   ├─ /services/after-builders-cleaning/cardiff/index.html (+2ms) 
+16:38:20   ├─ /services/after-builders-cleaning/oxford/index.html (+2ms) 
+16:38:20   ├─ /services/after-builders-cleaning/edinburgh/index.html (+1ms) 
+16:38:20   ├─ /services/after-builders-cleaning/cambridge/index.html (+61ms) 
+16:38:20   ├─ /services/after-builders-cleaning/brighton/index.html (+2ms) 
+16:38:20   ├─ /services/after-builders-cleaning/aberdeen/index.html (+2ms) 
+16:38:20   ├─ /services/after-builders-cleaning/newcastle/index.html (+1ms) 
+16:38:20   ├─ /services/after-builders-cleaning/sheffield/index.html (+1ms) 
+16:38:20   ├─ /services/after-builders-cleaning/chester/index.html (+1ms) 
+16:38:20   ├─ /services/after-builders-cleaning/harrogate/index.html (+3ms) 
+16:38:20   ├─ /services/after-builders-cleaning/nottingham/index.html (+1ms) 
+16:38:20   ├─ /services/carpet-rug-cleaning/london/index.html (+3ms) 
+16:38:20   ├─ /services/carpet-rug-cleaning/glasgow/index.html (+3ms) 
+16:38:20   ├─ /services/carpet-rug-cleaning/birmingham/index.html (+2ms) 
+16:38:20   ├─ /services/carpet-rug-cleaning/manchester/index.html (+3ms) 
+16:38:20   ├─ /services/carpet-rug-cleaning/leeds/index.html (+3ms) 
+16:38:20   ├─ /services/carpet-rug-cleaning/liverpool/index.html (+3ms) 
+16:38:20   ├─ /services/carpet-rug-cleaning/bristol/index.html (+17ms) 
+16:38:20   ├─ /services/carpet-rug-cleaning/cardiff/index.html (+1ms) 
+16:38:20   ├─ /services/carpet-rug-cleaning/oxford/index.html (+1ms) 
+16:38:20   ├─ /services/carpet-rug-cleaning/edinburgh/index.html (+2ms) 
+16:38:20   ├─ /services/carpet-rug-cleaning/cambridge/index.html (+2ms) 
+16:38:20   ├─ /services/carpet-rug-cleaning/brighton/index.html (+1ms) 
+16:38:20   ├─ /services/carpet-rug-cleaning/aberdeen/index.html (+2ms) 
+16:38:20   ├─ /services/carpet-rug-cleaning/newcastle/index.html (+2ms) 
+16:38:20   ├─ /services/carpet-rug-cleaning/sheffield/index.html (+4ms) 
+16:38:20   ├─ /services/carpet-rug-cleaning/chester/index.html (+2ms) 
+16:38:20   ├─ /services/carpet-rug-cleaning/harrogate/index.html (+2ms) 
+16:38:20   ├─ /services/carpet-rug-cleaning/nottingham/index.html (+2ms) 
+16:38:20   ├─ /services/oven-cleaning/london/index.html (+2ms) 
+16:38:20   ├─ /services/oven-cleaning/glasgow/index.html (+1ms) 
+16:38:20   ├─ /services/oven-cleaning/birmingham/index.html (+1ms) 
+16:38:20   ├─ /services/oven-cleaning/manchester/index.html (+1ms) 
+16:38:20   ├─ /services/oven-cleaning/leeds/index.html (+1ms) 
+16:38:20   ├─ /services/oven-cleaning/liverpool/index.html (+1ms) 
+16:38:20   ├─ /services/oven-cleaning/bristol/index.html (+1ms) 
+16:38:20   ├─ /services/oven-cleaning/cardiff/index.html (+1ms) 
+16:38:20   ├─ /services/oven-cleaning/oxford/index.html (+1ms) 
+16:38:20   ├─ /services/oven-cleaning/edinburgh/index.html (+1ms) 
+16:38:20   ├─ /services/oven-cleaning/cambridge/index.html (+1ms) 
+16:38:20   ├─ /services/oven-cleaning/brighton/index.html (+1ms) 
+16:38:20   ├─ /services/oven-cleaning/aberdeen/index.html (+3ms) 
+16:38:20   ├─ /services/oven-cleaning/newcastle/index.html (+1ms) 
+16:38:20   ├─ /services/oven-cleaning/sheffield/index.html (+1ms) 
+16:38:20   ├─ /services/oven-cleaning/chester/index.html (+1ms) 
+16:38:20   ├─ /services/oven-cleaning/harrogate/index.html (+1ms) 
+16:38:20   ├─ /services/oven-cleaning/nottingham/index.html (+2ms) 
+16:38:20   ├─ /services/office-cleaning/london/index.html (+2ms) 
+16:38:20   ├─ /services/office-cleaning/glasgow/index.html (+2ms) 
+16:38:20   ├─ /services/office-cleaning/birmingham/index.html (+1ms) 
+16:38:20   ├─ /services/office-cleaning/manchester/index.html (+1ms) 
+16:38:20   ├─ /services/office-cleaning/leeds/index.html (+1ms) 
+16:38:20   ├─ /services/office-cleaning/liverpool/index.html (+1ms) 
+16:38:20   ├─ /services/office-cleaning/bristol/index.html (+1ms) 
+16:38:20   ├─ /services/office-cleaning/cardiff/index.html (+1ms) 
+16:38:20   ├─ /services/office-cleaning/oxford/index.html (+1ms) 
+16:38:20   ├─ /services/office-cleaning/edinburgh/index.html (+1ms) 
+16:38:20   ├─ /services/office-cleaning/cambridge/index.html (+1ms) 
+16:38:20   ├─ /services/office-cleaning/brighton/index.html (+1ms) 
+16:38:20   ├─ /services/office-cleaning/aberdeen/index.html (+2ms) 
+16:38:20   ├─ /services/office-cleaning/newcastle/index.html (+1ms) 
+16:38:20   ├─ /services/office-cleaning/sheffield/index.html (+1ms) 
+16:38:20   ├─ /services/office-cleaning/chester/index.html (+1ms) 
+16:38:20   ├─ /services/office-cleaning/harrogate/index.html (+1ms) 
+16:38:20   ├─ /services/office-cleaning/nottingham/index.html (+2ms) 
+16:38:20   ├─ /services/after-party-cleaning/london/index.html (+2ms) 
+16:38:20   ├─ /services/after-party-cleaning/glasgow/index.html (+2ms) 
+16:38:20   ├─ /services/after-party-cleaning/birmingham/index.html (+2ms) 
+16:38:20   ├─ /services/after-party-cleaning/manchester/index.html (+3ms) 
+16:38:20   ├─ /services/after-party-cleaning/leeds/index.html (+2ms) 
+16:38:20   ├─ /services/after-party-cleaning/liverpool/index.html (+2ms) 
+16:38:20   ├─ /services/after-party-cleaning/bristol/index.html (+2ms) 
+16:38:20   ├─ /services/after-party-cleaning/cardiff/index.html (+2ms) 
+16:38:20   ├─ /services/after-party-cleaning/oxford/index.html (+1ms) 
+16:38:20   ├─ /services/after-party-cleaning/edinburgh/index.html (+1ms) 
+16:38:20   ├─ /services/after-party-cleaning/cambridge/index.html (+1ms) 
+16:38:20   ├─ /services/after-party-cleaning/brighton/index.html (+1ms) 
+16:38:20   ├─ /services/after-party-cleaning/aberdeen/index.html (+2ms) 
+16:38:20   ├─ /services/after-party-cleaning/newcastle/index.html (+2ms) 
+16:38:20   ├─ /services/after-party-cleaning/sheffield/index.html (+2ms) 
+16:38:20   ├─ /services/after-party-cleaning/chester/index.html (+1ms) 
+16:38:20   ├─ /services/after-party-cleaning/harrogate/index.html (+1ms) 
+16:38:20   ├─ /services/after-party-cleaning/nottingham/index.html (+1ms) 
+16:38:20   ├─ /services/appliances-cleaning/london/index.html (+2ms) 
+16:38:20   ├─ /services/appliances-cleaning/glasgow/index.html (+1ms) 
+16:38:20   ├─ /services/appliances-cleaning/birmingham/index.html (+1ms) 
+16:38:20   ├─ /services/appliances-cleaning/manchester/index.html (+1ms) 
+16:38:20   ├─ /services/appliances-cleaning/leeds/index.html (+1ms) 
+16:38:20   ├─ /services/appliances-cleaning/liverpool/index.html (+2ms) 
+16:38:20   ├─ /services/appliances-cleaning/bristol/index.html (+2ms) 
+16:38:20   ├─ /services/appliances-cleaning/cardiff/index.html (+2ms) 
+16:38:20   ├─ /services/appliances-cleaning/oxford/index.html (+1ms) 
+16:38:20   ├─ /services/appliances-cleaning/edinburgh/index.html (+1ms) 
+16:38:20   ├─ /services/appliances-cleaning/cambridge/index.html (+2ms) 
+16:38:20   ├─ /services/appliances-cleaning/brighton/index.html (+1ms) 
+16:38:20   ├─ /services/appliances-cleaning/aberdeen/index.html (+1ms) 
+16:38:20   ├─ /services/appliances-cleaning/newcastle/index.html (+1ms) 
+16:38:20   ├─ /services/appliances-cleaning/sheffield/index.html (+1ms) 
+16:38:20   ├─ /services/appliances-cleaning/chester/index.html (+1ms) 
+16:38:20   ├─ /services/appliances-cleaning/harrogate/index.html (+1ms) 
+16:38:20   ├─ /services/appliances-cleaning/nottingham/index.html (+2ms) 
+16:38:20   ├─ /services/housekeeper-cleaner/london/index.html (+3ms) 
+16:38:20   ├─ /services/housekeeper-cleaner/glasgow/index.html (+3ms) 
+16:38:20   ├─ /services/housekeeper-cleaner/birmingham/index.html (+2ms) 
+16:38:20   ├─ /services/housekeeper-cleaner/manchester/index.html (+1ms) 
+16:38:20   ├─ /services/housekeeper-cleaner/leeds/index.html (+1ms) 
+16:38:20   ├─ /services/housekeeper-cleaner/liverpool/index.html (+1ms) 
+16:38:20   ├─ /services/housekeeper-cleaner/bristol/index.html (+1ms) 
+16:38:20   ├─ /services/housekeeper-cleaner/cardiff/index.html (+2ms) 
+16:38:20   ├─ /services/housekeeper-cleaner/oxford/index.html (+1ms) 
+16:38:20   ├─ /services/housekeeper-cleaner/edinburgh/index.html (+2ms) 
+16:38:20   ├─ /services/housekeeper-cleaner/cambridge/index.html (+2ms) 
+16:38:20   ├─ /services/housekeeper-cleaner/brighton/index.html (+1ms) 
+16:38:20   ├─ /services/housekeeper-cleaner/aberdeen/index.html (+1ms) 
+16:38:20   ├─ /services/housekeeper-cleaner/newcastle/index.html (+2ms) 
+16:38:20   ├─ /services/housekeeper-cleaner/sheffield/index.html (+2ms) 
+16:38:20   ├─ /services/housekeeper-cleaner/chester/index.html (+2ms) 
+16:38:20   ├─ /services/housekeeper-cleaner/harrogate/index.html (+2ms) 
+16:38:20   ├─ /services/housekeeper-cleaner/nottingham/index.html (+2ms) 
+16:38:20   ├─ /services/mattress-cleaning/london/index.html (+2ms) 
+16:38:20   ├─ /services/mattress-cleaning/glasgow/index.html (+2ms) 
+16:38:20   ├─ /services/mattress-cleaning/birmingham/index.html (+2ms) 
+16:38:20   ├─ /services/mattress-cleaning/manchester/index.html (+1ms) 
+16:38:20   ├─ /services/mattress-cleaning/leeds/index.html (+1ms) 
+16:38:20   ├─ /services/mattress-cleaning/liverpool/index.html (+1ms) 
+16:38:20   ├─ /services/mattress-cleaning/bristol/index.html (+1ms) 
+16:38:20   ├─ /services/mattress-cleaning/cardiff/index.html (+1ms) 
+16:38:20   ├─ /services/mattress-cleaning/oxford/index.html (+1ms) 
+16:38:20   ├─ /services/mattress-cleaning/edinburgh/index.html (+1ms) 
+16:38:20   ├─ /services/mattress-cleaning/cambridge/index.html (+2ms) 
+16:38:20   ├─ /services/mattress-cleaning/brighton/index.html (+2ms) 
+16:38:20   ├─ /services/mattress-cleaning/aberdeen/index.html (+1ms) 
+16:38:20   ├─ /services/mattress-cleaning/newcastle/index.html (+1ms) 
+16:38:20   ├─ /services/mattress-cleaning/sheffield/index.html (+2ms) 
+16:38:20   ├─ /services/mattress-cleaning/chester/index.html (+2ms) 
+16:38:20   ├─ /services/mattress-cleaning/harrogate/index.html (+1ms) 
+16:38:20   ├─ /services/mattress-cleaning/nottingham/index.html (+1ms) 
+16:38:20   ├─ /services/sofa-upholstery-cleaning/london/index.html (+2ms) 
+16:38:20   ├─ /services/sofa-upholstery-cleaning/glasgow/index.html (+1ms) 
+16:38:20   ├─ /services/sofa-upholstery-cleaning/birmingham/index.html (+1ms) 
+16:38:20   ├─ /services/sofa-upholstery-cleaning/manchester/index.html (+2ms) 
+16:38:20   ├─ /services/sofa-upholstery-cleaning/leeds/index.html (+2ms) 
+16:38:20   ├─ /services/sofa-upholstery-cleaning/liverpool/index.html (+1ms) 
+16:38:20   ├─ /services/sofa-upholstery-cleaning/bristol/index.html (+1ms) 
+16:38:20   ├─ /services/sofa-upholstery-cleaning/cardiff/index.html (+1ms) 
+16:38:20   ├─ /services/sofa-upholstery-cleaning/oxford/index.html (+1ms) 
+16:38:20   ├─ /services/sofa-upholstery-cleaning/edinburgh/index.html (+2ms) 
+16:38:20   ├─ /services/sofa-upholstery-cleaning/cambridge/index.html (+1ms) 
+16:38:20   ├─ /services/sofa-upholstery-cleaning/brighton/index.html (+1ms) 
+16:38:20   ├─ /services/sofa-upholstery-cleaning/aberdeen/index.html (+1ms) 
+16:38:20   ├─ /services/sofa-upholstery-cleaning/newcastle/index.html (+1ms) 
+16:38:20   ├─ /services/sofa-upholstery-cleaning/sheffield/index.html (+1ms) 
+16:38:20   ├─ /services/sofa-upholstery-cleaning/chester/index.html (+2ms) 
+16:38:20   ├─ /services/sofa-upholstery-cleaning/harrogate/index.html (+1ms) 
+16:38:20   ├─ /services/sofa-upholstery-cleaning/nottingham/index.html (+1ms) 
+16:38:20   ├─ /services/seniors-cleaning/london/index.html (+2ms) 
+16:38:20   ├─ /services/seniors-cleaning/glasgow/index.html (+1ms) 
+16:38:20   ├─ /services/seniors-cleaning/birmingham/index.html (+2ms) 
+16:38:20   ├─ /services/seniors-cleaning/manchester/index.html (+2ms) 
+16:38:20   ├─ /services/seniors-cleaning/leeds/index.html (+2ms) 
+16:38:20   ├─ /services/seniors-cleaning/liverpool/index.html (+1ms) 
+16:38:20   ├─ /services/seniors-cleaning/bristol/index.html (+3ms) 
+16:38:20   ├─ /services/seniors-cleaning/cardiff/index.html (+2ms) 
+16:38:20   ├─ /services/seniors-cleaning/oxford/index.html (+2ms) 
+16:38:20   ├─ /services/seniors-cleaning/edinburgh/index.html (+1ms) 
+16:38:20   ├─ /services/seniors-cleaning/cambridge/index.html (+1ms) 
+16:38:20   ├─ /services/seniors-cleaning/brighton/index.html (+1ms) 
+16:38:20   ├─ /services/seniors-cleaning/aberdeen/index.html (+1ms) 
+16:38:20   ├─ /services/seniors-cleaning/newcastle/index.html (+1ms) 
+16:38:20   ├─ /services/seniors-cleaning/sheffield/index.html (+1ms) 
+16:38:20   ├─ /services/seniors-cleaning/chester/index.html (+1ms) 
+16:38:20   ├─ /services/seniors-cleaning/harrogate/index.html (+1ms) 
+16:38:20   └─ /services/seniors-cleaning/nottingham/index.html (+1ms) 
+16:38:20 ▶ src/pages/services/[slug].astro
+16:38:20   ├─ /services/airbnb-cleaning/index.htmlservices.find is not a function
+  Stack trace:
+    at file:///Users/aaronjames/Documents/camcleanscline/dist/pages/services/_slug_.astro.mjs?time=1773074300882:15:28
+    at AstroComponentInstance.init (file:///Users/aaronjames/Documents/camcleanscline/dist/chunks/astro/server_D5l7CbQ4.mjs:1403:29)
+    at Object.render (file:///Users/aaronjames/Documents/camcleanscline/dist/chunks/astro/server_D5l7CbQ4.mjs:1802:23)
+    at file:///Users/aaronjames/Documents/camcleanscline/dist/chunks/astro/server_D5l7CbQ4.mjs:907:18
+    at createBufferedRenderer (file:///Users/aaronjames/Documents/camcleanscline/dist/chunks/astro/server_D5l7CbQ4.mjs:745:10)

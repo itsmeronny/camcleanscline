@@ -45,64 +45,55 @@ If you are an experienced cleaner or operate a cleaning company, you can apply t
 
 <h2>Apply to Join</h2>
 
-<form action="/cleaner-application" method="POST" enctype="application/x-www-form-urlencoded">
+<form method="POST" action="/cleaner-application">
 
 <p>
-<label>Name<br>
-<input type="text" name="name" required>
-</label>
+<label for="name">Name</label><br>
+<input id="name" type="text" name="name" required>
 </p>
 
 <p>
-<label>Business Name<br>
-<input type="text" name="business_name">
-</label>
+<label for="business_name">Business Name</label><br>
+<input id="business_name" type="text" name="business_name">
 </p>
 
 <p>
-<label>Email<br>
-<input type="email" name="email" required>
-</label>
+<label for="email">Email</label><br>
+<input id="email" type="email" name="email" required>
 </p>
 
 <p>
-<label>Phone<br>
-<input type="tel" name="phone" required>
-</label>
+<label for="phone">Phone</label><br>
+<input id="phone" type="tel" name="phone" required>
 </p>
 
 <p>
-<label>Postcode<br>
-<input type="text" name="postcode" required>
-</label>
+<label for="postcode">Postcode</label><br>
+<input id="postcode" type="text" name="postcode" required>
 </p>
 
 <p>
-<label>Areas You Cover<br>
-<input type="text" name="areas">
-</label>
+<label for="areas">Areas You Cover</label><br>
+<input id="areas" type="text" name="areas">
 </p>
 
 <p>
-<label>Services Offered<br>
-<input type="text" name="services">
-</label>
+<label for="services">Services Offered</label><br>
+<input id="services" type="text" name="services">
 </p>
 
 <p>
-<label>Years Experience<br>
-<input type="number" name="experience">
-</label>
+<label for="experience">Years Experience</label><br>
+<input id="experience" type="number" name="experience">
 </p>
 
 <p>
-<label>Public Liability Insurance<br>
-<select name="insurance">
+<label for="insurance">Public Liability Insurance</label><br>
+<select id="insurance" name="insurance">
 <option value="">Select</option>
-<option>Yes</option>
-<option>No</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
 </select>
-</label>
 </p>
 
 <p>

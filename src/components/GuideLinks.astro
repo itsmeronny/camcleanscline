@@ -4,13 +4,13 @@ import locations from "../data/locations";
 
 const { serviceSlug } = Astro.props;
 
-const service = services.find((s) => s.slug === serviceSlug);
+const service = services[serviceSlug];
 
 if (!service) {
   throw new Error("GuideLinks requires a valid serviceSlug");
 }
 
-const sampleLocations = locations.slice(0, 6);
+const sampleLocations = Object.values(locations).slice(0, 6);
 ---
 
 <section>

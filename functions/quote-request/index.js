@@ -100,6 +100,40 @@ Phone: ${data.phone}
 
   const resendKey = context.env.RESEND_API_KEY;
 
+  const adminHtml = `
+  <div style="font-family:Arial,Helvetica,sans-serif;background:#ffffff;padding:0;margin:0;">
+    <div style="max-width:600px;margin:0 auto;padding:20px;">
+
+      <div style="text-align:center;margin-bottom:30px;">
+        <img src="https://camcleans.co.uk/brand/camcleans-email.png" alt="CamCleans" style="max-width:100%;height:auto;width:600px;">
+      </div>
+
+      <h2>New CamCleans Quote Request</h2>
+
+      <p><strong>Estimated Job Price:</strong> £${price}</p>
+      <p><strong>Cleaner Payout:</strong> £${cleanerPayout}</p>
+      <p><strong>CamCleans Margin:</strong> £${margin}</p>
+
+      <h3>Property Details</h3>
+      <p><strong>Postcode:</strong> ${data.postcode}</p>
+      <p><strong>Property Type:</strong> ${data.property_type}</p>
+      <p><strong>Bedrooms:</strong> ${data.bedrooms}</p>
+      <p><strong>Bathrooms:</strong> ${data.bathrooms}</p>
+      <p><strong>Cleaning Type:</strong> ${data.clean_type}</p>
+      <p><strong>Preferred Date:</strong> ${data.date_required}</p>
+
+      <h3>Notes</h3>
+      <p style="white-space:pre-line;">${data.notes}</p>
+
+      <h3>Customer Details</h3>
+      <p><strong>Name:</strong> ${data.name}</p>
+      <p><strong>Email:</strong> ${data.email}</p>
+      <p><strong>Phone:</strong> ${data.phone}</p>
+
+    </div>
+  </div>
+  `;
+
   // Admin lead email
   const adminResponse = await fetch("https://api.resend.com/emails", {
     method: "POST",
@@ -111,12 +145,48 @@ Phone: ${data.phone}
       from: "CamCleans <quotes@camcleans.co.uk>",
       to: ["camcleansnetwork@gmail.com"],
       subject: "New CamCleans Quote Request",
-      text: message
+      text: message,
+      html: adminHtml
     })
   });
 
   const adminResult = await adminResponse.text();
   console.log("ADMIN EMAIL RESPONSE:", adminResult);
+
+  const customerHtml = `
+  <div style="font-family:Arial,Helvetica,sans-serif;background:#ffffff;padding:0;margin:0;">
+    <div style="max-width:600px;margin:0 auto;padding:20px;">
+
+      <div style="text-align:center;margin-bottom:30px;">
+        <img src="https://camcleans.co.uk/brand/camcleans-email.png" alt="CamCleans" style="max-width:100%;height:auto;width:600px;">
+      </div>
+
+      <h2>Quote Request Received</h2>
+
+      <p>Hi ${data.name},</p>
+
+      <p>Thanks for requesting a cleaning quote from CamCleans.</p>
+
+      <p><strong>Estimated Price:</strong> £${price}</p>
+
+      <p>A cleaner will review your request and confirm availability shortly.</p>
+
+      <h3>Property</h3>
+      <p>${data.property_type}</p>
+      <p>${data.bedrooms} bedroom</p>
+      <p>${data.bathrooms} bathroom</p>
+      <p>${data.clean_type}</p>
+
+      <h3>Postcode</h3>
+      <p>${data.postcode}</p>
+
+      <p>If any details are incorrect simply reply to this email.</p>
+
+      <p>CamCleans</p>
+
+    </div>
+  </div>
+  `;
 
   // Customer confirmation email
   const customerResponse = await fetch("https://api.resend.com/emails", {
@@ -135,20 +205,8 @@ Thanks for requesting a cleaning quote from CamCleans.
 
 Estimated Price: £${price}
 
-A cleaner will review your request and confirm availability shortly.
-
-Property:
-${data.property_type}
-${data.bedrooms} bedroom
-${data.bathrooms} bathroom
-${data.clean_type}
-
-Postcode:
-${data.postcode}
-
-If any details are incorrect simply reply to this email.
-
-CamCleans`
+A cleaner will review your request and confirm availability shortly.`,
+      html: customerHtml
     })
   });
 
