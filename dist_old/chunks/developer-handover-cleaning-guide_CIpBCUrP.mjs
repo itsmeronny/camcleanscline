@@ -1,0 +1,53 @@
+import { c as createComponent, r as renderComponent, a as renderTemplate, m as maybeRenderHead } from './astro/server_D5l7CbQ4.mjs';
+import 'piccolore';
+import 'html-escaper';
+import { $ as $$GuideLayout } from './GuideLayout_DgjhLIs_.mjs';
+
+const $$DeveloperHandoverCleaningGuide = createComponent(($$result, $$props, $$slots) => {
+  const title = "Developer Handover Cleaning Guide (UK)";
+  const description = "Guide to developer and contractor handover cleaning after construction or refurbishment projects. Understand inspection-ready cleaning standards for property completion.";
+  const canonical = "/guides/developer-handover-cleaning-guide";
+  return renderTemplate`${renderComponent($$result, "GuideLayout", $$GuideLayout, { "title": title, "description": description, "canonicalPath": canonical }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<section> <h1>Developer Handover Cleaning Guide</h1> <p>
+When a construction or refurbishment project reaches completion, properties
+must be presented in an inspection-ready condition before being handed to
+owners, tenants or property managers. Developer handover cleaning ensures
+that all remaining construction residue, dust and installation marks are
+removed prior to final sign-off.
+</p> <p>
+This stage is often referred to as a post-construction or after builders
+clean and forms the final preparation step before occupation.
+</p> </section> <section> <h2>Why Handover Cleaning Is Required</h2> <p>
+Even when builders remove major debris, construction work leaves fine dust
+and installation residue throughout the property. Without a structured
+cleaning process these materials continue settling onto surfaces and can
+affect presentation during property inspection.
+</p> <ul> <li>Fine plaster and sanding dust</li> <li>Cement residue and grout haze</li> <li>Silicone and adhesive marks</li> <li>Protective film residue on new fittings</li> <li>Dust inside frames, fixtures and ventilation areas</li> </ul> </section> <section> <h2>Typical Developer Handover Cleaning Stages</h2> <h3>Stage 1 – Debris and Surface Reset</h3> <ul> <li>Removal of protective coverings and packaging</li> <li>Collection of minor construction debris</li> <li>Initial dust control and ventilation</li> </ul> <h3>Stage 2 – Full Dust Extraction</h3> <ul> <li>High-level dust removal from ceilings and fittings</li> <li>Frame, fixture and joinery detailing</li> <li>Vacuum extraction of fine plaster dust</li> </ul> <h3>Stage 3 – Surface Cleaning</h3> <ul> <li>Kitchen and bathroom fixture cleaning</li> <li>Internal glazing and frame cleaning</li> <li>Switches, sockets and skirting detailing</li> </ul> <h3>Stage 4 – Final Presentation Finish</h3> <ul> <li>Floor vacuum and damp mop where appropriate</li> <li>Glass polishing</li> <li>Final inspection-ready wipe down</li> </ul> </section> <section> <h2>Properties That Typically Require Handover Cleaning</h2> <ul> <li>New build homes</li> <li>Property refurbishments</li> <li>Apartment developments</li> <li>Commercial-to-residential conversions</li> <li>Large renovation projects</li> </ul> </section> <section> <h2>Common Issues Identified During Handover Cleaning</h2> <ul> <li>Dust inside newly installed cupboards and units</li> <li>Protective film left on appliances or glass</li> <li>Silicone residue around fixtures</li> <li>Fine plaster dust embedded in flooring</li> <li>Construction dust inside extractor vents</li> </ul> <p>
+A structured after builders cleaning process ensures these issues are
+resolved before final property presentation.
+</p> </section> <section> <h2>After Builders Cleaning Services</h2> <p>
+Professional after builders cleaning removes construction dust, installation
+residue and debris following refurbishment or development projects.
+</p> <p>
+See the full service here:
+</p> <p> <a href="/services/after-builders-cleaning">
+After Builders Cleaning Service
+</a> </p> </section> <section> <h2>Related Guides</h2> <ul> <li> <a href="/guides/after-builders-dust-removal">
+After Builders Dust Removal Guide
+</a> </li> <li> <a href="/guides/post-renovation-cleaning-checklist">
+Post Renovation Cleaning Checklist
+</a> </li> <li> <a href="/guides/after-builders-cleaning-vs-deep-cleaning">
+After Builders Cleaning vs Deep Cleaning
+</a> </li> </ul> </section> ` })} <hr> <p><strong>Related cleaning guides:</strong></p> <ul> <li><a href="/guides/end-of-tenancy-cleaning-checklist/">End of tenancy cleaning checklist</a></li> <li><a href="/guides/deep-cleaning-before-moving-in/">Deep cleaning before moving in</a></li> <li><a href="/guides/after-builders-cleaning-checklist/">After builders cleaning checklist</a></li> <li><a href="/guides/carpet-cleaning-steam-vs-shampoo/">Steam vs shampoo carpet cleaning</a></li> </ul>`;
+}, "/Users/aaronjames/Documents/camcleanscline/src/pages/guides/developer-handover-cleaning-guide.astro", void 0);
+
+const $$file = "/Users/aaronjames/Documents/camcleanscline/src/pages/guides/developer-handover-cleaning-guide.astro";
+const $$url = "/guides/developer-handover-cleaning-guide";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$DeveloperHandoverCleaningGuide,
+  file: $$file,
+  url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+export { _page as _ };

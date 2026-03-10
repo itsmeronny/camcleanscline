@@ -1,0 +1,25 @@
+import { c as createComponent, r as renderComponent, a as renderTemplate, m as maybeRenderHead } from '../chunks/astro/server_D5l7CbQ4.mjs';
+import 'piccolore';
+import 'html-escaper';
+import { $ as $$Layout } from '../chunks/Layout_BVJC5qpX.mjs';
+export { renderers } from '../renderers.mjs';
+
+const $$Contact = createComponent(($$result, $$props, $$slots) => {
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Contact CamCleans | Cleaning Enquiries Across the UK", "description": "Contact CamCleans for cleaning enquiries including end of tenancy cleaning, deep cleaning, after builders cleaning, carpet cleaning and commercial cleaning.", "canonicalPath": "/contact" }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<h1>Contact CamCleans</h1> <p>
+Use the form below to send a cleaning enquiry. CamCleans works with independent cleaners and professional cleaning companies across the United Kingdom.
+</p> <h2>Send an Enquiry</h2> <form action="/contact-enquiry" method="POST" enctype="application/x-www-form-urlencoded"> <p> <label>Name<br> <input type="text" name="name" required> </label> </p> <p> <label>Email<br> <input type="email" name="email" required> </label> </p> <p> <label>Phone<br> <input type="tel" name="phone"> </label> </p> <p> <label>Postcode<br> <input type="text" name="postcode" required> </label> </p> <p> <label>Service Required<br> <select name="service"> <option value="">Select</option> <option>End of Tenancy Cleaning</option> <option>Deep Cleaning</option> <option>After Builders Cleaning</option> <option>Carpet Cleaning</option> <option>Commercial Cleaning</option> <option>Airbnb Cleaning</option> </select> </label> </p> <p> <label>Message<br> <textarea name="message" rows="6" required></textarea> </label> </p> <p> <button type="submit">Send Cleaning Enquiry</button> </p> </form> ` })}`;
+}, "/Users/aaronjames/Documents/camcleanscline/src/pages/contact.astro", void 0);
+
+const $$file = "/Users/aaronjames/Documents/camcleanscline/src/pages/contact.astro";
+const $$url = "/contact";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+  __proto__: null,
+  default: $$Contact,
+  file: $$file,
+  url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+const page = () => _page;
+
+export { page };

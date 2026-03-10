@@ -1,0 +1,31 @@
+import { c as createComponent, r as renderComponent, a as renderTemplate, m as maybeRenderHead } from './astro/server_D5l7CbQ4.mjs';
+import 'piccolore';
+import 'html-escaper';
+import { $ as $$GuideLayout } from './GuideLayout_DgjhLIs_.mjs';
+
+const $$Index = createComponent(($$result, $$props, $$slots) => {
+  return renderTemplate`${renderComponent($$result, "GuideLayout", $$GuideLayout, { "title": "Cleaning Guides", "description": "Professional cleaning guides covering tenancy cleaning, after builders cleaning, deep cleaning and specialist cleaning topics." }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<main class="container"> <h1>Professional Cleaning Guides</h1> <p>
+These guides explain professional cleaning standards used for tenancy cleaning,
+after builders cleaning, deep cleaning and specialist property cleaning.
+</p> <h2>After Builders Cleaning Guides</h2> <ul> <li><a href="/guides/after-builders-dust-removal">After Builders Dust Removal</a></li> <li><a href="/guides/post-renovation-cleaning-checklist">Post Renovation Cleaning Checklist</a></li> <li><a href="/guides/after-builders-cleaning-vs-deep-cleaning">After Builders Cleaning vs Deep Cleaning</a></li> <li><a href="/guides/developer-handover-cleaning-guide">Developer Handover Cleaning Guide</a></li> <li><a href="/guides/after-builders-cleaning-cost-guide">After Builders Cleaning Cost Guide</a></li> <li><a href="/guides/removing-plaster-dust-after-renovation">Removing Plaster Dust After Renovation</a></li> <li><a href="/guides/tools-used-in-after-builders-cleaning">Tools Used in After Builders Cleaning</a></li> <li><a href="/guides/how-long-does-after-builders-cleaning-take">How Long After Builders Cleaning Takes</a></li> <li><a href="/guides/after-builders-cleaning-checklist-room-by-room">After Builders Cleaning Checklist</a></li> <li><a href="/guides/builders-clean-vs-sparkle-clean">Builders Clean vs Sparkle Clean</a></li> </ul> <p>
+Commercial service:
+<a href="/services/after-builders-cleaning">After Builders Cleaning Service</a> </p> <h2>End of Tenancy Cleaning Guides</h2> <ul> <li><a href="/guides/end-of-tenancy-cleaning-checklist">End of Tenancy Cleaning Checklist</a></li> <li><a href="/guides/end-of-tenancy-cleaning-cost-guide">End of Tenancy Cleaning Cost Guide</a></li> <li><a href="/guides/deposit-deduction-cleaning-guide">Deposit Deduction Cleaning Guide</a></li> <li><a href="/guides/landlord-inspection-cleaning-guide">Landlord Inspection Cleaning Guide</a></li> <li><a href="/guides/professional-vs-diy-tenancy-cleaning">Professional vs DIY Tenancy Cleaning</a></li> <li><a href="/guides/tenancy-cleaning-room-by-room-checklist">Tenancy Cleaning Room Checklist</a></li> <li><a href="/guides/tenancy-cleaning-mistakes-that-cost-deposits">Tenancy Cleaning Mistakes That Cost Deposits</a></li> <li><a href="/guides/tenancy-cleaning-timeline-before-moving-out">Tenancy Cleaning Timeline</a></li> <li><a href="/guides/limescale-removal-before-tenancy-inspection">Limescale Removal Before Inspection</a></li> <li><a href="/guides/pet-damage-cleaning-before-inspection">Pet Damage Cleaning Before Inspection</a></li> </ul> <p>
+Commercial service:
+<a href="/services/end-of-tenancy-cleaning">End of Tenancy Cleaning</a> </p> <h2>Deep Cleaning Guides</h2> <ul> <li><a href="/guides/what-is-deep-cleaning-house">What Is Deep Cleaning</a></li> <li><a href="/guides/deep-cleaning-vs-regular-cleaning">Deep Cleaning vs Regular Cleaning</a></li> <li><a href="/guides/how-often-should-you-deep-clean">How Often Should You Deep Clean</a></li> <li><a href="/guides/deep-cleaning-checklist-room-by-room">Deep Cleaning Checklist</a></li> <li><a href="/guides/deep-cleaning-neglected-house">Deep Cleaning a Neglected House</a></li> <li><a href="/guides/deep-cleaning-before-selling-house">Deep Cleaning Before Selling</a></li> <li><a href="/guides/move-in-deep-cleaning-guide">Move In Deep Cleaning Guide</a></li> <li><a href="/guides/how-long-does-deep-cleaning-take">How Long Deep Cleaning Takes</a></li> <li><a href="/guides/kitchen-deep-cleaning-guide">Kitchen Deep Cleaning Guide</a></li> <li><a href="/guides/bathroom-deep-cleaning-guide">Bathroom Deep Cleaning Guide</a></li> </ul> <p>
+Commercial service:
+<a href="/services/one-off-deep-cleaning">One Off Deep Cleaning</a> </p> <h2>Carpet Cleaning Guides</h2> <ul> <li><a href="/guides/how-carpet-cleaning-works">How Carpet Cleaning Works</a></li> <li><a href="/guides/carpet-cleaning-vs-steam-cleaning">Carpet Cleaning vs Steam Cleaning</a></li> <li><a href="/guides/professional-vs-diy-carpet-cleaning">Professional vs DIY Carpet Cleaning</a></li> <li><a href="/guides/remove-carpet-stains-guide">Carpet Stain Removal Guide</a></li> <li><a href="/guides/how-often-should-you-clean-carpets">How Often Carpets Should Be Cleaned</a></li> <li><a href="/guides/carpet-cleaning-required-for-tenancy">Carpet Cleaning for Tenancy</a></li> <li><a href="/guides/carpet-cleaning-before-moving-out">Carpet Cleaning Before Moving Out</a></li> <li><a href="/guides/carpet-cleaning-drying-time">Carpet Cleaning Drying Time</a></li> <li><a href="/guides/pet-odour-carpet-cleaning">Pet Odour Carpet Cleaning</a></li> <li><a href="/guides/carpet-cleaning-allergy-benefits">Carpet Cleaning for Allergies</a></li> </ul> <p>
+Commercial service:
+<a href="/services/carpet-rug-cleaning">Carpet & Rug Cleaning</a> </p> </main> ` })} <hr> <p><strong>Related cleaning guides:</strong></p> <ul> <li><a href="/guides/end-of-tenancy-cleaning-checklist/">End of tenancy cleaning checklist</a></li> <li><a href="/guides/deep-cleaning-before-moving-in/">Deep cleaning before moving in</a></li> <li><a href="/guides/after-builders-cleaning-checklist/">After builders cleaning checklist</a></li> <li><a href="/guides/carpet-cleaning-steam-vs-shampoo/">Steam vs shampoo carpet cleaning</a></li> </ul>`;
+}, "/Users/aaronjames/Documents/camcleanscline/src/pages/guides/index.astro", void 0);
+
+const $$file = "/Users/aaronjames/Documents/camcleanscline/src/pages/guides/index.astro";
+const $$url = "/guides";
+
+const _page = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
+	__proto__: null,
+	default: $$Index,
+	file: $$file,
+	url: $$url
+}, Symbol.toStringTag, { value: 'Module' }));
+
+export { _page as _ };
