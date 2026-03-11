@@ -101,20 +101,23 @@ Phone: ${data.phone}
   const resendKey = context.env.RESEND_API_KEY;
 
   const adminHtml = `
-  <div style="font-family:Arial,Helvetica,sans-serif;background:#ffffff;padding:0;margin:0;">
-    <div style="max-width:600px;margin:0 auto;padding:20px;">
+  <div style="font-family:Inter,Arial,Helvetica,sans-serif;background:#f8fbff;margin:0;padding:0;">
+    <div style="max-width:600px;margin:0 auto;background:#ffffff;padding:30px;border-radius:8px;">
 
       <div style="text-align:center;margin-bottom:30px;">
-        <img src="https://camcleans.co.uk/brand/camcleans-email.png" alt="CamCleans" style="max-width:100%;height:auto;width:600px;">
+        <img src="https://camcleans.co.uk/brand/camcleans-email.png" alt="CamCleans" style="width:100%;max-width:600px;height:auto;">
       </div>
 
-      <h2>New CamCleans Quote Request</h2>
+      <h2 style="margin-top:0;">New CamCleans Quote Request</h2>
 
       <p><strong>Estimated Job Price:</strong> £${price}</p>
       <p><strong>Cleaner Payout:</strong> £${cleanerPayout}</p>
       <p><strong>CamCleans Margin:</strong> £${margin}</p>
 
+      <hr style="margin:25px 0;">
+
       <h3>Property Details</h3>
+
       <p><strong>Postcode:</strong> ${data.postcode}</p>
       <p><strong>Property Type:</strong> ${data.property_type}</p>
       <p><strong>Bedrooms:</strong> ${data.bedrooms}</p>
@@ -123,9 +126,12 @@ Phone: ${data.phone}
       <p><strong>Preferred Date:</strong> ${data.date_required}</p>
 
       <h3>Notes</h3>
-      <p style="white-space:pre-line;">${data.notes}</p>
+      <p style="white-space:pre-line;">${data.notes || "None provided"}</p>
+
+      <hr style="margin:25px 0;">
 
       <h3>Customer Details</h3>
+
       <p><strong>Name:</strong> ${data.name}</p>
       <p><strong>Email:</strong> ${data.email}</p>
       <p><strong>Phone:</strong> ${data.phone}</p>
@@ -134,7 +140,6 @@ Phone: ${data.phone}
   </div>
   `;
 
-  // Admin lead email
   const adminResponse = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: {
@@ -154,41 +159,53 @@ Phone: ${data.phone}
   console.log("ADMIN EMAIL RESPONSE:", adminResult);
 
   const customerHtml = `
-  <div style="font-family:Arial,Helvetica,sans-serif;background:#ffffff;padding:0;margin:0;">
-    <div style="max-width:600px;margin:0 auto;padding:20px;">
+  <div style="font-family:Inter,Arial,Helvetica,sans-serif;background:#f8fbff;margin:0;padding:0;">
+    <div style="max-width:600px;margin:0 auto;background:#ffffff;padding:30px;border-radius:8px;">
 
       <div style="text-align:center;margin-bottom:30px;">
-        <img src="https://camcleans.co.uk/brand/camcleans-email.png" alt="CamCleans" style="max-width:100%;height:auto;width:600px;">
+        <img src="https://camcleans.co.uk/brand/camcleans-email.png" alt="CamCleans" style="width:100%;max-width:600px;height:auto;">
       </div>
 
-      <h2>Quote Request Received</h2>
+      <h2 style="margin-top:0;">Quote Request Received</h2>
 
       <p>Hi ${data.name},</p>
 
-      <p>Thanks for requesting a cleaning quote from CamCleans.</p>
+      <p>
+        Thanks for requesting a cleaning quote from CamCleans.
+        Your request has been received and a cleaner will review
+        the details shortly.
+      </p>
 
-      <p><strong>Estimated Price:</strong> £${price}</p>
+      <p style="font-size:18px;">
+        <strong>Estimated Price: £${price}</strong>
+      </p>
 
-      <p>A cleaner will review your request and confirm availability shortly.</p>
+      <hr style="margin:25px 0;">
 
-      <h3>Property</h3>
+      <h3>Property Details</h3>
+
       <p>${data.property_type}</p>
       <p>${data.bedrooms} bedroom</p>
       <p>${data.bathrooms} bathroom</p>
       <p>${data.clean_type}</p>
-
-      <h3>Postcode</h3>
       <p>${data.postcode}</p>
 
-      <p>If any details are incorrect simply reply to this email.</p>
+      <hr style="margin:25px 0;">
 
-      <p>CamCleans</p>
+      <p>
+        If any details are incorrect you can simply reply to this email
+        and the CamCleans team will update the request.
+      </p>
+
+      <p style="margin-top:30px;">
+        CamCleans<br>
+        Professional Cleaning Services
+      </p>
 
     </div>
   </div>
   `;
 
-  // Customer confirmation email
   const customerResponse = await fetch("https://api.resend.com/emails", {
     method: "POST",
     headers: {

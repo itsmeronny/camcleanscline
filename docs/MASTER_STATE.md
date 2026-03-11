@@ -1,238 +1,480 @@
-MASTER_DATA
-Core ObjectiveBuild a national UK cleaning lead-generation platform using:
-near-zero infrastructure costs
-static-first architecture
-deterministic programmatic SEO
-authority cluster expansion
-controlled internal linking
-Authority before aesthetics.Structure before scale.
+# MASTER_DATA
 
-Current System Status
-Architecture stable.Matrix deployed.Guide clusters expanded.Internal linking architecture mature.Authority loop complete.Production domain live and canonical.Google Search Console configured and sitemap processed.
-Structured data layer operational with deterministic JSON-LD generation.Trust and credibility layer implemented via supporting informational pages.
-Lead intake infrastructure implemented.
-Cleaner acquisition channel operational via:
-https://camcleans.co.uk/join-cleaners
-Customer enquiry channel operational via:
-https://camcleans.co.uk/contact
-Structured quote intake channel operational via:
-https://camcleans.co.uk/quote
-Quote pricing engine operational.
-Pricing engine characteristics:
-base service pricing
-bedroom-based scaling
-bathroom additive pricing
-property-type multipliers
-cleaner payout calculation
-platform margin calculation
-Pricing stability safeguards implemented.
+## Core Objective
 
-System Protections
-NaN prevention logic
-fallback multipliers
-defensive parsing of bedroom and bathroom values
-expanded property type coverage
-minimum automated quote floor (120 GBP)
-maximum automated quote ceiling (600 GBP)
-manual quote redirect for larger jobs
+Build a national UK cleaning lead generation platform using:
 
-Spam Protection Layer
-Spam protection layer implemented for quote system.
-Protection method:
-honeypot field embedded in quote form
-bot detection via hidden field population
-automatic request discard for spam submissions
+• near zero infrastructure costs  
+• static first architecture  
+• deterministic programmatic SEO  
+• authority cluster expansion  
+• controlled internal linking  
 
-Quote Request Validation and Communications Hardening
-Communications safeguards:
-UK postcode format validation active
-invalid postcode submissions rejected
-admin lead notification email active
-customer confirmation email active
-verified sending domain active
-quote email sender upgraded to quotes@camcleans.co.uk
+Authority before aesthetics.  
+Structure before scale.
 
-System Characteristics
-fully static
-deterministic build output
-no runtime database
-no API dependencies for frontend
-near-zero operating cost profile
-Cloudflare Pages Functions provide minimal backend processing for form handling.
+---
 
-Platform Scale
-Current footprint:
-13 services
-18 UK locations
-Generated pages:
-234 service-location pages
-13 service hub pages
-18 location hub pages
-242 authority guides
-1 guide hub
-1 homepage
-1 cleaner network intake page
-1 customer enquiry page
-1 structured quote intake page
-2 confirmation pages
-3 trust pages
-Total:
-516 static pages
-Matrix breadth complete for Phase 1.
+# Current System Status
 
-Site Structure
-Search architecture pyramid:
-Guides↓Service hubs↓Service-location pages↑Location hubs
-Additional reinforcement:
-Guide clusters ↔ Service hubs
-Result:
-Closed authority loop across informational and commercial pages.
+## UI Architecture
 
-Authority Clusters (Active)
-After Builders Cleaning
-Positioning:
-construction dust removal
-renovation handover preparation
-developer project completion cleaning
-Search intent captured:
-renovation clean-up
-builder dust removal
-contractor handover cleaning
-construction dust removal
+Enterprise UI system implemented.
 
-End of Tenancy Cleaning
-Positioning:
-inspection-first cleaning
-deposit protection focus
-landlord compliance preparation
-Search intent captured:
-tenant move-out cleaning
-landlord inspection preparation
-deposit dispute prevention
+Design characteristics:
 
-Deep Cleaning
-Positioning:
-neglected property recovery
-move-in cleaning
-property sale preparation
-periodic intensive cleaning
-Search intent captured:
-heavy domestic cleaning
-property reset cleaning
-seasonal deep cleaning
+• national platform positioning  
+• enterprise typography hierarchy  
+• conversion structured hero layout  
+• service grid architecture  
+• trust signalling components  
+• modular section layout  
+• responsive card surface system  
 
-Carpet Cleaning
-Positioning:
-stain removal
-tenancy carpet compliance
-allergy reduction
-Search intent captured:
-carpet steam cleaning
-stain removal
-professional vs DIY cleaning
+Brand system established.
 
-SEO Infrastructure
-Implemented:
-sitemap auto-generation
-robots.txt
-canonical path enforcement
-JSON-LD structured data
-breadcrumb hierarchy
-Google Search Console verification
-Google Search Console sitemap submission
-Schema used:
-BreadcrumbList
-Service
-LocalBusiness
-Search engines receive fully structured static pages.
-Live guide route audit completed.No duplicate live guide slugs detected.
+Primary symbol:  
+CamCleans star icon
 
-Internal Link System
-Authority loop architecture:
-Guides↓Service hubs↓Service-location pages↑Location hubs↑Service hubs↑Guides
-Supporting elements:
-guide hub for cluster discovery
-related guide networks within clusters
-service hub guide injection
-location hub service propagation
-Authority flows across the entire site.
+Typography stack:
 
-Monetisation Model
-Lead-generation platform.
-Customer journey:
-user lands on service-location page
-user submits structured enquiry or quote request
-lead captured by platform
-cleaner assigned
-commission retained
-Cleaner acquisition journey:
-cleaner discovers platform
-cleaner applies via /join-cleaners
-cleaner added to CamCleans network
-cleaner receives local job opportunities
-Primary capture channels:
-structured quote intake
-customer enquiry forms
-cleaner network applications
-email lead routing
+Manrope  
+Inter
 
-Infrastructure and Deployment
-Hosting layer:
-Cloudflare Pages
-Project:
+Colour system:
+
+Ink: #0f172a  
+Brand blue: #2563eb  
+Brand strong: #1d4ed8  
+Surface: #ffffff  
+Background: #f8fbff  
+
+Design baseline locked.
+
+Future work must extend this system rather than redesign it.
+
+---
+
+# Deployment Environment
+
+Cloudflare Pages project:
+
 camcleanscline
-Deployment target:
-dist/
-Deploy command:
-npm run deploy
-Build stack:
-Astro static generation
-Node 20
-Dev Container workflow
-Backend layer:
-Cloudflare Pages Functions
-Functions implemented:
-/cleaner-application
-/contact-enquiry
-/quote-request
-Email transport:
-Resend API
-Inbox destination:
-camcleansnetwork@gmail.com
-Verified sending domain:
-camcleans.co.uk
-Operational sender identity:
-quotes@camcleans.co.uk
-Environment secret:
-RESEND_API_KEY
-No runtime servers.No traditional backend infrastructure.
 
-Production Domain Architecture
-Primary canonical domain:
-https://camcleans.co.uk
-Redirect matrix:
-https://www.camcleans.co.uk → https://camcleans.co.ukhttps://camcleans.com → https://camcleans.co.ukhttps://www.camcleans.com → https://camcleans.co.uk
-Cloudflare Pages dev domain:
+Deployment workflow:
+
+Git push → automatic Cloudflare build
+
+Manual fallback deployment:
+
+wrangler pages deploy dist --project-name camcleanscline
+
+Cloudflare preview environment:
+
 https://camcleanscline.pages.dev
 
-Brand Identity Infrastructure
-Brand assets implemented.
-Production brand assets:
-public/brand/camcleans-email.pngpublic/brand/camcleans-logo.svgpublic/brand/camcleans-icon.svgpublic/brand/camcleans-og.pngpublic/brand/icon-192.pngpublic/brand/icon-512.png
-Brand source assets preserved:
-docs/brandingCamCleans_master.pdfCamCleans_icon_master.pdf
-Brand identity integration implemented.
-Logo integrated into site layout.Structured data logo reference implemented.Favicon infrastructure implemented.OpenGraph social preview implemented.PWA icon infrastructure implemented.Email header branding implemented.
-Asset delivery verified through Cloudflare Pages static asset layer.
+---
 
-Indexing Status
-Search engine indexing enabled.
-Header override implemented via:
-public/_headers
+# Architecture Status
+
+Architecture stable  
+Matrix deployed  
+Guide clusters expanded  
+Internal linking architecture mature  
+Authority loop complete  
+
+Production domain live and canonical.
+
+Google Search Console configured.  
+Sitemap submitted and processed.
+
+Structured data layer operational with deterministic JSON LD generation.
+
+Trust and credibility layer implemented via supporting informational pages.
+
+---
+
+# Lead Infrastructure
+
+Cleaner acquisition channel:
+
+https://camcleans.co.uk/join-cleaners
+
+Customer enquiry channel:
+
+https://camcleans.co.uk/contact
+
+Structured quote intake:
+
+https://camcleans.co.uk/quote
+
+Lead routing handled via Cloudflare Pages Functions.
+
+Email delivery handled via Resend API.
+
+---
+
+# Quote Pricing Engine
+
+Pricing engine operational.
+
+Pricing characteristics:
+
+• base service pricing  
+• bedroom based scaling  
+• bathroom additive pricing  
+• property type multipliers  
+• cleaner payout calculation  
+• platform margin calculation  
+
+Pricing safeguards implemented.
+
+---
+
+# System Protections
+
+• NaN prevention logic  
+• fallback multipliers  
+• defensive parsing of bedroom and bathroom values  
+• expanded property type coverage  
+
+Automated quote limits:
+
+Minimum quote floor: 120 GBP  
+Maximum quote ceiling: 600 GBP
+
+Jobs above ceiling are redirected for manual quote review.
+
+---
+
+# Spam Protection
+
+Quote form protected using honeypot technique.
+
+Protection method:
+
+• hidden form field  
+• automated bot detection  
+• invalid submissions discarded
+
+---
+
+# Quote Validation
+
+Communications safeguards:
+
+• UK postcode format validation  
+• invalid postcode rejection  
+• admin lead notification email  
+• customer confirmation email  
+
+Verified sending domain:
+
+camcleans.co.uk
+
+Operational sender:
+
+quotes@camcleans.co.uk
+
+---
+
+# Platform Characteristics
+
+System architecture:
+
+• fully static  
+• deterministic build output  
+• no runtime database  
+• no frontend API dependencies  
+• near zero operating cost profile  
+
+Cloudflare Pages Functions provide minimal backend processing.
+
+---
+
+# Platform Scale
+
+Phase 1 matrix footprint:
+
+13 services  
+18 UK locations
+
+Generated pages:
+
+234 service location pages  
+13 service hub pages  
+18 location hub pages  
+242 authority guides  
+1 guide hub  
+1 homepage  
+1 cleaner intake page  
+1 enquiry page  
+1 quote page  
+2 confirmation pages  
+3 trust pages  
+
+Total generated pages:
+
+516 static pages
+
+Matrix breadth complete for Phase 1.
+
+---
+
+# Search Architecture
+
+Authority pyramid:
+
+Guides  
+↓  
+Service hubs  
+↓  
+Service location pages  
+↑  
+Location hubs
+
+Additional reinforcement:
+
+Guide clusters ↔ Service hubs
+
+Result:
+
+Closed authority loop between informational and commercial pages.
+
+---
+
+# Authority Clusters
+
+## After Builders Cleaning
+
+Positioning:
+
+construction dust removal  
+renovation handover preparation  
+developer project completion cleaning  
+
+Search intent captured:
+
+renovation clean up  
+builder dust removal  
+contractor handover cleaning  
+construction dust removal
+
+---
+
+## End of Tenancy Cleaning
+
+Positioning:
+
+inspection first cleaning  
+deposit protection focus  
+landlord compliance preparation  
+
+Search intent captured:
+
+tenant move out cleaning  
+landlord inspection preparation  
+deposit dispute prevention
+
+---
+
+## Deep Cleaning
+
+Positioning:
+
+neglected property recovery  
+move in cleaning  
+property sale preparation  
+periodic intensive cleaning
+
+Search intent captured:
+
+heavy domestic cleaning  
+property reset cleaning  
+seasonal deep cleaning
+
+---
+
+## Carpet Cleaning
+
+Positioning:
+
+stain removal  
+tenancy carpet compliance  
+allergy reduction
+
+Search intent captured:
+
+carpet steam cleaning  
+stain removal  
+professional carpet cleaning
+
+---
+
+# SEO Infrastructure
+
+Implemented systems:
+
+• sitemap generation  
+• robots.txt  
+• canonical path enforcement  
+• JSON LD structured data  
+• breadcrumb hierarchy  
+• Google Search Console verification  
+
+Schema types implemented:
+
+BreadcrumbList  
+Service  
+LocalBusiness
+
+Search engines receive fully structured static pages.
+
+Live guide slug audit completed.
+
+No duplicate guide slugs detected.
+
+---
+
+# Internal Linking System
+
+Authority loop architecture:
+
+Guides  
+↓  
+Service hubs  
+↓  
+Service location pages  
+↑  
+Location hubs  
+↑  
+Service hubs  
+↑  
+Guides
+
+Supporting reinforcement:
+
+• guide hub cluster discovery  
+• related guide linking  
+• service hub guide injection  
+• location hub service propagation  
+
+Authority flows across the full site structure.
+
+---
+
+# Monetisation Model
+
+CamCleans operates as a lead generation platform.
+
+Customer journey:
+
+user lands on service location page  
+user submits enquiry or quote request  
+lead captured by platform  
+cleaner assigned  
+commission retained
+
+Cleaner acquisition journey:
+
+cleaner discovers platform  
+cleaner applies via /join-cleaners  
+cleaner added to network  
+cleaner receives job opportunities
+
+Primary capture channels:
+
+• structured quote intake  
+• customer enquiry form  
+• cleaner application form
+
+---
+
+# Infrastructure
+
+Hosting layer:
+
+Cloudflare Pages
+
+Build stack:
+
+Astro static generation  
+Node 20
+
+Backend layer:
+
+Cloudflare Pages Functions
+
+Functions implemented:
+
+/cleaner-application  
+/contact-enquiry  
+/quote-request
+
+Email transport:
+
+Resend API
+
+Inbox destination:
+
+camcleansnetwork@gmail.com
+
+Environment secret:
+
+RESEND_API_KEY
+
+---
+
+# Domain Architecture
+
+Primary domain:
+
+https://camcleans.co.uk
+
+Redirect matrix:
+
+www.camcleans.co.uk → camcleans.co.uk  
+camcleans.com → camcleans.co.uk  
+www.camcleans.com → camcleans.co.uk
+
+Cloudflare preview domain:
+
+https://camcleanscline.pages.dev
+
+---
+
+# Brand Infrastructure
+
+Brand assets:
+
+public/brand/camcleans-email.png  
+public/brand/camcleans-logo.svg  
+public/brand/camcleans-icon.svg  
+public/brand/camcleans-og.png  
+public/brand/icon-192.png  
+public/brand/icon-512.png
+
+Brand integration completed:
+
+• layout navigation logo  
+• favicon system  
+• OpenGraph preview image  
+• PWA icon support  
+• email header branding
+
+---
+
+# Indexing Status
+
+Search indexing enabled.
+
 Header override:
 
-/*
-X-Robots-Tag: all
+public/_headers
+
+Configuration:
+
+X Robots Tag: all
 
 Verification:
 
@@ -242,9 +484,28 @@ Result:
 
 x-robots-tag: all
 
-Search engines permitted to crawl and index all pages.
+Search engines permitted to crawl all pages.
 
-Strategic Position
-Matrix breadth complete.Programmatic SEO foundation operational.Domain canonicalised and live.Search discovery pipeline active.Authority loop mature.Trust layer implemented.
-Cleaner supply intake operational.Customer enquiry intake operational.Structured quote intake operational.Pricing engine operational.Spam protection operational.Quote validation operational.Customer confirmation email operational.Verified domain email delivery operational.
-System released to search engine indexing cycle.
+---
+
+# Strategic Position
+
+Programmatic SEO foundation operational.
+
+Matrix breadth complete.
+
+Authority loop mature.
+
+Lead capture systems active.
+
+Cleaner supply intake active.
+
+Customer enquiry intake active.
+
+Quote pricing engine operational.
+
+Spam protection active.
+
+Email delivery verified.
+
+Platform released into search indexing cycle.

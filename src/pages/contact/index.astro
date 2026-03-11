@@ -1,0 +1,115 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout
+title="Contact CamCleans"
+description="Contact CamCleans for cleaning enquiries, quotes or general questions."
+canonicalPath="/contact"
+>
+
+<section class="hero">
+  <div class="container">
+
+    <h1>Contact CamCleans</h1>
+
+    <p class="hero-intro">
+      If you have a question about cleaning services, a booking request,
+      or want to speak with the CamCleans team, you can contact us using
+      the form below.
+    </p>
+
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container">
+
+    <div class="grid grid-3">
+
+      <div class="card">
+        <h2>General Enquiries</h2>
+        <p>
+          For general questions about CamCleans services, availability
+          or how the platform works, send us a message and we will respond
+          as soon as possible.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Cleaning Quotes</h2>
+        <p>
+          If you are looking for a cleaning quote, the fastest way to
+          receive a price estimate is by using the CamCleans quote system.
+        </p>
+
+        <p>
+          <a class="button" href="/quote">Request a Quote</a>
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Cleaner Applications</h2>
+        <p>
+          Professional cleaners who would like to receive cleaning enquiries
+          through CamCleans can apply to join the platform.
+        </p>
+
+        <p>
+          <a class="button" href="/join-cleaners">Apply as a Cleaner</a>
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section class="section section-soft">
+  <div class="container">
+
+    <h2>Send a Message</h2>
+
+    <p class="section-intro">
+      Use the contact form below to send a message to the CamCleans team.
+      We aim to respond to enquiries as quickly as possible.
+    </p>
+
+    <form method="POST" action="/contact-enquiry" class="form">
+
+      <div class="form-grid">
+
+        <div class="form-field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+
+        <div class="form-field">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" />
+        </div>
+
+      </div>
+
+      <div class="form-field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="button">Send Message</button>
+      </div>
+
+    </form>
+
+  </div>
+</section>
+
+</Layout>
